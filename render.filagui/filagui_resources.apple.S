@@ -1,0 +1,12 @@
+    .global _FILAGUI_RESOURCES_UIBLIT_OFFSET;
+    .global _FILAGUI_RESOURCES_UIBLIT_SIZE;
+
+    .global _FILAGUI_RESOURCES_PACKAGE
+    .section __TEXT,__const
+_FILAGUI_RESOURCES_PACKAGE:
+    .incbin "filagui_resources.bin"
+_FILAGUI_RESOURCES_UIBLIT_OFFSET:
+    .int 0
+_FILAGUI_RESOURCES_UIBLIT_SIZE:
+    .int 99274
+

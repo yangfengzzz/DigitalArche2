@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04549146256020E7004B6515 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454913E256020E7004B6515 /* Cube.cpp */; };
+		04549147256020E7004B6515 /* MeshAssimp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454913F256020E7004B6515 /* MeshAssimp.cpp */; };
+		04549148256020E7004B6515 /* IBL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04549140256020E7004B6515 /* IBL.cpp */; };
+		04549149256020E7004B6515 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04549141256020E7004B6515 /* Image.cpp */; };
+		0454914A256020E7004B6515 /* NativeWindowHelperCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04549142256020E7004B6515 /* NativeWindowHelperCocoa.mm */; };
+		0454914B256020E7004B6515 /* FilamentApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04549143256020E7004B6515 /* FilamentApp.cpp */; };
+		0454914C256020E7004B6515 /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04549144256020E7004B6515 /* Sphere.cpp */; };
+		0454914D256020E7004B6515 /* IcoSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04549145256020E7004B6515 /* IcoSphere.cpp */; };
+		04549162256020FA004B6515 /* MeshAssimp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915A256020F9004B6515 /* MeshAssimp.h */; };
+		04549163256020FA004B6515 /* FilamentApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915B256020F9004B6515 /* FilamentApp.h */; };
+		04549164256020FA004B6515 /* Sphere.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915C256020F9004B6515 /* Sphere.h */; };
+		04549165256020FA004B6515 /* IcoSphere.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915D256020F9004B6515 /* IcoSphere.h */; };
+		04549166256020FA004B6515 /* IBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915E256020F9004B6515 /* IBL.h */; };
+		04549167256020FA004B6515 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915F256020F9004B6515 /* Config.h */; };
+		04549168256020FA004B6515 /* Cube.h in Headers */ = {isa = PBXBuildFile; fileRef = 04549160256020F9004B6515 /* Cube.h */; };
+		04549169256020FA004B6515 /* NativeWindowHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04549161256020FA004B6515 /* NativeWindowHelper.h */; };
+		0454922C2560235D004B6515 /* filamentapp.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 0454922A2560235D004B6515 /* filamentapp.apple.S */; };
+		0454922D2560235D004B6515 /* filamentapp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454922B2560235D004B6515 /* filamentapp.h */; };
+		045492502560239D004B6515 /* imconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 045492472560239D004B6515 /* imconfig.h */; };
+		045492512560239D004B6515 /* imstb_rectpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 045492482560239D004B6515 /* imstb_rectpack.h */; };
+		045492522560239D004B6515 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045492492560239D004B6515 /* imgui_widgets.cpp */; };
+		045492532560239D004B6515 /* imgui_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454924A2560239D004B6515 /* imgui_internal.h */; };
+		045492542560239D004B6515 /* imstb_textedit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454924B2560239D004B6515 /* imstb_textedit.h */; };
+		045492552560239D004B6515 /* imgui.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454924C2560239D004B6515 /* imgui.h */; };
+		045492562560239D004B6515 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454924D2560239D004B6515 /* imgui.cpp */; };
+		045492572560239D004B6515 /* imstb_truetype.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454924E2560239D004B6515 /* imstb_truetype.h */; };
+		045492582560239D004B6515 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454924F2560239D004B6515 /* imgui_draw.cpp */; };
+		0454929D2560244B004B6515 /* ImGuiExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454929A2560244A004B6515 /* ImGuiExtensions.h */; };
+		0454929E2560244B004B6515 /* ImGuiMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454929B2560244A004B6515 /* ImGuiMath.h */; };
+		0454929F2560244B004B6515 /* ImGuiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454929C2560244B004B6515 /* ImGuiHelper.h */; };
+		045492AF25602450004B6515 /* ImGuiHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045492AD25602450004B6515 /* ImGuiHelper.cpp */; };
+		045492B025602450004B6515 /* ImGuiExtensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045492AE25602450004B6515 /* ImGuiExtensions.cpp */; };
+		045492E725602496004B6515 /* filagui_resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 045492E525602496004B6515 /* filagui_resources.h */; };
+		045492E825602496004B6515 /* filagui_resources.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 045492E625602496004B6515 /* filagui_resources.apple.S */; };
+		04549312256024E9004B6515 /* libexternal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4ED255FC64700224683 /* libexternal.dylib */; };
+		04549380256025C1004B6515 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454937F256025C0004B6515 /* CoreVideo.framework */; };
+		0454938F256025CB004B6515 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454938E256025CB004B6515 /* Metal.framework */; };
+		0454942025602673004B6515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454941F25602673004B6515 /* Cocoa.framework */; };
+		0454948D2560280B004B6515 /* libexternal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4ED255FC64700224683 /* libexternal.dylib */; };
+		0454948E2560280B004B6515 /* librender.filagui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454927525602427004B6515 /* librender.filagui.dylib */; };
+		045494DF25602899004B6515 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045494DE25602899004B6515 /* QuartzCore.framework */; };
 		0466C488255FC46100224683 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0466C487255FC46100224683 /* main.cpp */; };
 		0466C7BA255FC77000224683 /* sph_points_to_implicit2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59E255FC75B00224683 /* sph_points_to_implicit2.h */; };
 		0466C7BB255FC77000224683 /* matrix_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59F255FC75B00224683 /* matrix_csr.h */; };
@@ -1102,6 +1143,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		04549310256024E5004B6515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0466C4EC255FC64700224683;
+			remoteInfo = external;
+		};
+		0454948925602805004B6515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0466C4EC255FC64700224683;
+			remoteInfo = external;
+		};
+		0454948B25602805004B6515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0454927425602427004B6515;
+			remoteInfo = render.filagui;
+		};
 		0466D67E255FD3AF00224683 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0466C47C255FC46100224683 /* Project object */;
@@ -1241,6 +1303,48 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0454911B256020B8004B6515 /* librender.filamentapp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.filamentapp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0454913E256020E7004B6515 /* Cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
+		0454913F256020E7004B6515 /* MeshAssimp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshAssimp.cpp; sourceTree = "<group>"; };
+		04549140256020E7004B6515 /* IBL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IBL.cpp; sourceTree = "<group>"; };
+		04549141256020E7004B6515 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		04549142256020E7004B6515 /* NativeWindowHelperCocoa.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NativeWindowHelperCocoa.mm; sourceTree = "<group>"; };
+		04549143256020E7004B6515 /* FilamentApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilamentApp.cpp; sourceTree = "<group>"; };
+		04549144256020E7004B6515 /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
+		04549145256020E7004B6515 /* IcoSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IcoSphere.cpp; sourceTree = "<group>"; };
+		0454915A256020F9004B6515 /* MeshAssimp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeshAssimp.h; path = filamentapp/MeshAssimp.h; sourceTree = "<group>"; };
+		0454915B256020F9004B6515 /* FilamentApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilamentApp.h; path = filamentapp/FilamentApp.h; sourceTree = "<group>"; };
+		0454915C256020F9004B6515 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = filamentapp/Sphere.h; sourceTree = "<group>"; };
+		0454915D256020F9004B6515 /* IcoSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IcoSphere.h; path = filamentapp/IcoSphere.h; sourceTree = "<group>"; };
+		0454915E256020F9004B6515 /* IBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBL.h; path = filamentapp/IBL.h; sourceTree = "<group>"; };
+		0454915F256020F9004B6515 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = filamentapp/Config.h; sourceTree = "<group>"; };
+		04549160256020F9004B6515 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = filamentapp/Cube.h; sourceTree = "<group>"; };
+		04549161256020FA004B6515 /* NativeWindowHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeWindowHelper.h; path = filamentapp/NativeWindowHelper.h; sourceTree = "<group>"; };
+		0454922A2560235D004B6515 /* filamentapp.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = filamentapp.apple.S; sourceTree = "<group>"; };
+		0454922B2560235D004B6515 /* filamentapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filamentapp.h; sourceTree = "<group>"; };
+		045492472560239D004B6515 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = imgui/imconfig.h; sourceTree = "<group>"; };
+		045492482560239D004B6515 /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imstb_rectpack.h; path = imgui/imstb_rectpack.h; sourceTree = "<group>"; };
+		045492492560239D004B6515 /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = imgui/imgui_widgets.cpp; sourceTree = "<group>"; };
+		0454924A2560239D004B6515 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_internal.h; path = imgui/imgui_internal.h; sourceTree = "<group>"; };
+		0454924B2560239D004B6515 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imstb_textedit.h; path = imgui/imstb_textedit.h; sourceTree = "<group>"; };
+		0454924C2560239D004B6515 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui.h; path = imgui/imgui.h; sourceTree = "<group>"; };
+		0454924D2560239D004B6515 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = imgui/imgui.cpp; sourceTree = "<group>"; };
+		0454924E2560239D004B6515 /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imstb_truetype.h; path = imgui/imstb_truetype.h; sourceTree = "<group>"; };
+		0454924F2560239D004B6515 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = imgui/imgui_draw.cpp; sourceTree = "<group>"; };
+		0454927525602427004B6515 /* librender.filagui.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.filagui.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0454929A2560244A004B6515 /* ImGuiExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImGuiExtensions.h; path = filagui/ImGuiExtensions.h; sourceTree = "<group>"; };
+		0454929B2560244A004B6515 /* ImGuiMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImGuiMath.h; path = filagui/ImGuiMath.h; sourceTree = "<group>"; };
+		0454929C2560244B004B6515 /* ImGuiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImGuiHelper.h; path = filagui/ImGuiHelper.h; sourceTree = "<group>"; };
+		045492AD25602450004B6515 /* ImGuiHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImGuiHelper.cpp; sourceTree = "<group>"; };
+		045492AE25602450004B6515 /* ImGuiExtensions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImGuiExtensions.cpp; sourceTree = "<group>"; };
+		045492E525602496004B6515 /* filagui_resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filagui_resources.h; sourceTree = "<group>"; };
+		045492E625602496004B6515 /* filagui_resources.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = filagui_resources.apple.S; sourceTree = "<group>"; };
+		04549313256024EE004B6515 /* filagui_resources.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = filagui_resources.bin; path = render.filagui/filagui_resources.bin; sourceTree = "<group>"; };
+		04549370256025B0004B6515 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		0454937F256025C0004B6515 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0454938E256025CB004B6515 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		0454941F25602673004B6515 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		045494DE25602899004B6515 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0466C484255FC46100224683 /* apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apps; sourceTree = BUILT_PRODUCTS_DIR; };
 		0466C487255FC46100224683 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0466C4B7255FC60C00224683 /* libsrc.common.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.common.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2354,6 +2458,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		04549119256020B8004B6515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045494DF25602899004B6515 /* QuartzCore.framework in Frameworks */,
+				0454948D2560280B004B6515 /* libexternal.dylib in Frameworks */,
+				0454948E2560280B004B6515 /* librender.filagui.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0454927325602427004B6515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0454942025602673004B6515 /* Cocoa.framework in Frameworks */,
+				0454938F256025CB004B6515 /* Metal.framework in Frameworks */,
+				04549380256025C1004B6515 /* CoreVideo.framework in Frameworks */,
+				04549312256024E9004B6515 /* libexternal.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0466C481255FC46100224683 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2444,6 +2569,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0454911C256020B8004B6515 /* render.filamentapp */ = {
+			isa = PBXGroup;
+			children = (
+				0454922B2560235D004B6515 /* filamentapp.h */,
+				0454922A2560235D004B6515 /* filamentapp.apple.S */,
+				0454915F256020F9004B6515 /* Config.h */,
+				0454915B256020F9004B6515 /* FilamentApp.h */,
+				04549143256020E7004B6515 /* FilamentApp.cpp */,
+				04549160256020F9004B6515 /* Cube.h */,
+				0454913E256020E7004B6515 /* Cube.cpp */,
+				0454915C256020F9004B6515 /* Sphere.h */,
+				04549144256020E7004B6515 /* Sphere.cpp */,
+				0454915D256020F9004B6515 /* IcoSphere.h */,
+				04549145256020E7004B6515 /* IcoSphere.cpp */,
+				0454915E256020F9004B6515 /* IBL.h */,
+				04549140256020E7004B6515 /* IBL.cpp */,
+				04549141256020E7004B6515 /* Image.cpp */,
+				0454915A256020F9004B6515 /* MeshAssimp.h */,
+				0454913F256020E7004B6515 /* MeshAssimp.cpp */,
+				04549161256020FA004B6515 /* NativeWindowHelper.h */,
+				04549142256020E7004B6515 /* NativeWindowHelperCocoa.mm */,
+			);
+			path = render.filamentapp;
+			sourceTree = "<group>";
+		};
+		045492462560238E004B6515 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				045492472560239D004B6515 /* imconfig.h */,
+				0454924F2560239D004B6515 /* imgui_draw.cpp */,
+				0454924A2560239D004B6515 /* imgui_internal.h */,
+				045492492560239D004B6515 /* imgui_widgets.cpp */,
+				0454924D2560239D004B6515 /* imgui.cpp */,
+				0454924C2560239D004B6515 /* imgui.h */,
+				045492482560239D004B6515 /* imstb_rectpack.h */,
+				0454924B2560239D004B6515 /* imstb_textedit.h */,
+				0454924E2560239D004B6515 /* imstb_truetype.h */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		0454927625602427004B6515 /* render.filagui */ = {
+			isa = PBXGroup;
+			children = (
+				045492E525602496004B6515 /* filagui_resources.h */,
+				045492E625602496004B6515 /* filagui_resources.apple.S */,
+				0454929B2560244A004B6515 /* ImGuiMath.h */,
+				0454929C2560244B004B6515 /* ImGuiHelper.h */,
+				045492AD25602450004B6515 /* ImGuiHelper.cpp */,
+				0454929A2560244A004B6515 /* ImGuiExtensions.h */,
+				045492AE25602450004B6515 /* ImGuiExtensions.cpp */,
+			);
+			path = render.filagui;
+			sourceTree = "<group>";
+		};
 		0466C47B255FC46100224683 = {
 			isa = PBXGroup;
 			children = (
@@ -2458,6 +2638,8 @@
 				0466C561255FC69400224683 /* mem_perf_tests */,
 				0466C486255FC46100224683 /* apps */,
 				0466C4EE255FC64700224683 /* external */,
+				0454911C256020B8004B6515 /* render.filamentapp */,
+				0454927625602427004B6515 /* render.filagui */,
 				0466C485255FC46100224683 /* Products */,
 				0466D680255FD3B500224683 /* Frameworks */,
 			);
@@ -2477,6 +2659,8 @@
 				0466C537255FC67C00224683 /* manual_tests.vdb */,
 				0466C54B255FC68800224683 /* time_perf_tests */,
 				0466C560255FC69400224683 /* mem_perf_tests */,
+				0454911B256020B8004B6515 /* librender.filamentapp.dylib */,
+				0454927525602427004B6515 /* librender.filagui.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2989,6 +3173,7 @@
 		0466C4EE255FC64700224683 /* external */ = {
 			isa = PBXGroup;
 			children = (
+				045492462560238E004B6515 /* imgui */,
 			);
 			path = external;
 			sourceTree = "<group>";
@@ -3801,6 +3986,12 @@
 		0466D680255FD3B500224683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				045494DE25602899004B6515 /* QuartzCore.framework */,
+				0454941F25602673004B6515 /* Cocoa.framework */,
+				0454938E256025CB004B6515 /* Metal.framework */,
+				0454937F256025C0004B6515 /* CoreVideo.framework */,
+				04549370256025B0004B6515 /* MetalKit.framework */,
+				04549313256024EE004B6515 /* filagui_resources.bin */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4059,6 +4250,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		04549117256020B8004B6515 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04549167256020FA004B6515 /* Config.h in Headers */,
+				04549169256020FA004B6515 /* NativeWindowHelper.h in Headers */,
+				04549163256020FA004B6515 /* FilamentApp.h in Headers */,
+				0454922D2560235D004B6515 /* filamentapp.h in Headers */,
+				04549162256020FA004B6515 /* MeshAssimp.h in Headers */,
+				04549168256020FA004B6515 /* Cube.h in Headers */,
+				04549164256020FA004B6515 /* Sphere.h in Headers */,
+				04549166256020FA004B6515 /* IBL.h in Headers */,
+				04549165256020FA004B6515 /* IcoSphere.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0454927125602427004B6515 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045492E725602496004B6515 /* filagui_resources.h in Headers */,
+				0454929F2560244B004B6515 /* ImGuiHelper.h in Headers */,
+				0454929E2560244B004B6515 /* ImGuiMath.h in Headers */,
+				0454929D2560244B004B6515 /* ImGuiExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0466C4B3255FC60C00224683 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -4580,12 +4798,55 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045492502560239D004B6515 /* imconfig.h in Headers */,
+				045492512560239D004B6515 /* imstb_rectpack.h in Headers */,
+				045492572560239D004B6515 /* imstb_truetype.h in Headers */,
+				045492552560239D004B6515 /* imgui.h in Headers */,
+				045492532560239D004B6515 /* imgui_internal.h in Headers */,
+				045492542560239D004B6515 /* imstb_textedit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0454911A256020B8004B6515 /* render.filamentapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04549125256020B8004B6515 /* Build configuration list for PBXNativeTarget "render.filamentapp" */;
+			buildPhases = (
+				04549117256020B8004B6515 /* Headers */,
+				04549118256020B8004B6515 /* Sources */,
+				04549119256020B8004B6515 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0454948A25602805004B6515 /* PBXTargetDependency */,
+				0454948C25602805004B6515 /* PBXTargetDependency */,
+			);
+			name = render.filamentapp;
+			productName = render.filamentapp;
+			productReference = 0454911B256020B8004B6515 /* librender.filamentapp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		0454927425602427004B6515 /* render.filagui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0454927D25602427004B6515 /* Build configuration list for PBXNativeTarget "render.filagui" */;
+			buildPhases = (
+				0454927125602427004B6515 /* Headers */,
+				0454927225602427004B6515 /* Sources */,
+				0454927325602427004B6515 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04549311256024E5004B6515 /* PBXTargetDependency */,
+			);
+			name = render.filagui;
+			productName = render.filagui;
+			productReference = 0454927525602427004B6515 /* librender.filagui.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		0466C483255FC46100224683 /* apps */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0466C48B255FC46100224683 /* Build configuration list for PBXNativeTarget "apps" */;
@@ -4791,6 +5052,12 @@
 			attributes = {
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					0454911A256020B8004B6515 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					0454927425602427004B6515 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					0466C483255FC46100224683 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -4850,11 +5117,39 @@
 				0466C55F255FC69400224683 /* mem_perf_tests */,
 				0466C483255FC46100224683 /* apps */,
 				0466C4EC255FC64700224683 /* external */,
+				0454911A256020B8004B6515 /* render.filamentapp */,
+				0454927425602427004B6515 /* render.filagui */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04549118256020B8004B6515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0454914D256020E7004B6515 /* IcoSphere.cpp in Sources */,
+				04549148256020E7004B6515 /* IBL.cpp in Sources */,
+				04549149256020E7004B6515 /* Image.cpp in Sources */,
+				04549146256020E7004B6515 /* Cube.cpp in Sources */,
+				0454914A256020E7004B6515 /* NativeWindowHelperCocoa.mm in Sources */,
+				0454914C256020E7004B6515 /* Sphere.cpp in Sources */,
+				04549147256020E7004B6515 /* MeshAssimp.cpp in Sources */,
+				0454914B256020E7004B6515 /* FilamentApp.cpp in Sources */,
+				0454922C2560235D004B6515 /* filamentapp.apple.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0454927225602427004B6515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045492AF25602450004B6515 /* ImGuiHelper.cpp in Sources */,
+				045492E825602496004B6515 /* filagui_resources.apple.S in Sources */,
+				045492B025602450004B6515 /* ImGuiExtensions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0466C480255FC46100224683 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5216,6 +5511,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045492582560239D004B6515 /* imgui_draw.cpp in Sources */,
+				045492522560239D004B6515 /* imgui_widgets.cpp in Sources */,
+				045492562560239D004B6515 /* imgui.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5521,6 +5819,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		04549311256024E5004B6515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0466C4EC255FC64700224683 /* external */;
+			targetProxy = 04549310256024E5004B6515 /* PBXContainerItemProxy */;
+		};
+		0454948A25602805004B6515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0466C4EC255FC64700224683 /* external */;
+			targetProxy = 0454948925602805004B6515 /* PBXContainerItemProxy */;
+		};
+		0454948C25602805004B6515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0454927425602427004B6515 /* render.filagui */;
+			targetProxy = 0454948B25602805004B6515 /* PBXContainerItemProxy */;
+		};
 		0466D67F255FD3AF00224683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0466C4B6255FC60C00224683 /* src.common */;
@@ -5574,6 +5887,170 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		04549123256020B8004B6515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/yangfeng/Desktop/DigitalArche2/render.filamentapp,
+					/Users/yangfeng/Desktop/DigitalArche2/render.filagui,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/lib/x86_64",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lSDL2",
+					"-limage",
+					"-lfilamat",
+					"-lcamutils",
+					"-lshaders",
+					"-lutils",
+					"-lassimp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/include",
+					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/usr/local/include/SDL2,
+					/usr/local/include,
+					"/Users/yangfeng/Desktop/filament-1.9.8/libs/utils/include",
+				);
+			};
+			name = Debug;
+		};
+		04549124256020B8004B6515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/yangfeng/Desktop/DigitalArche2/render.filamentapp,
+					/Users/yangfeng/Desktop/DigitalArche2/render.filagui,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/lib/x86_64",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lSDL2",
+					"-limage",
+					"-lfilamat",
+					"-lcamutils",
+					"-lshaders",
+					"-lutils",
+					"-lassimp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/include",
+					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/usr/local/include/SDL2,
+					/usr/local/include,
+					"/Users/yangfeng/Desktop/filament-1.9.8/libs/utils/include",
+				);
+			};
+			name = Release;
+		};
+		0454927E25602427004B6515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/render.filagui;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/lib/x86_64",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lfilament",
+					"-lutils",
+					"-lfilaflat",
+					"-lsmol-v",
+					"-lbackend",
+					"-lbluegl",
+					"-lbluevk",
+					"-lgeometry",
+					"-libl",
+					"-lfilabridge",
+					"-lmatdbg",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/include",
+					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/usr/local/include/SDL2,
+					/usr/local/include,
+				);
+			};
+			name = Debug;
+		};
+		0454927F25602427004B6515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/render.filagui;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/lib/x86_64",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lfilament",
+					"-lutils",
+					"-lfilaflat",
+					"-lsmol-v",
+					"-lbackend",
+					"-lbluegl",
+					"-lbluevk",
+					"-lgeometry",
+					"-libl",
+					"-lfilabridge",
+					"-lmatdbg",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/include",
+					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/usr/local/include/SDL2,
+					/usr/local/include,
+				);
+			};
+			name = Release;
+		};
 		0466C489255FC46100224683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6144,6 +6621,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04549125256020B8004B6515 /* Build configuration list for PBXNativeTarget "render.filamentapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04549123256020B8004B6515 /* Debug */,
+				04549124256020B8004B6515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0454927D25602427004B6515 /* Build configuration list for PBXNativeTarget "render.filagui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0454927E25602427004B6515 /* Debug */,
+				0454927F25602427004B6515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0466C47F255FC46100224683 /* Build configuration list for PBXProject "DigitalArche2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
