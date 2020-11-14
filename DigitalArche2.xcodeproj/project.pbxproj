@@ -48,7 +48,19 @@
 		0454948D2560280B004B6515 /* libexternal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4ED255FC64700224683 /* libexternal.dylib */; };
 		0454948E2560280B004B6515 /* librender.filagui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454927525602427004B6515 /* librender.filagui.dylib */; };
 		045494DF25602899004B6515 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045494DE25602899004B6515 /* QuartzCore.framework */; };
-		0466C488255FC46100224683 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0466C487255FC46100224683 /* main.cpp */; };
+		0454959B256029C1004B6515 /* libexternal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4ED255FC64700224683 /* libexternal.dylib */; };
+		0454959C256029C1004B6515 /* librender.filagui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454927525602427004B6515 /* librender.filagui.dylib */; };
+		0454959D256029C1004B6515 /* librender.filamentapp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454911B256020B8004B6515 /* librender.filamentapp.dylib */; };
+		045495C525602A4D004B6515 /* resources.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549577256029A5004B6515 /* resources.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
+		045495C625602A4D004B6515 /* gltf_viewer.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549572256029A4004B6515 /* gltf_viewer.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
+		045495C725602A4D004B6515 /* monkey.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549576256029A5004B6515 /* monkey.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
+		0454964225602D08004B6515 /* getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454964125602D08004B6515 /* getopt.h */; };
+		0454965225602D0F004B6515 /* getopt_long.c in Sources */ = {isa = PBXBuildFile; fileRef = 0454965025602D0F004B6515 /* getopt_long.c */; };
+		0454965325602D0F004B6515 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 0454965125602D0F004B6515 /* getopt.c */; };
+		0454977525602FA2004B6515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454941F25602673004B6515 /* Cocoa.framework */; };
+		045497EE256030FD004B6515 /* tinyexr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 045497EC256030FD004B6515 /* tinyexr.cc */; };
+		045497EF256030FD004B6515 /* tinyexr.h in Headers */ = {isa = PBXBuildFile; fileRef = 045497ED256030FD004B6515 /* tinyexr.h */; };
+		04549A7025603779004B6515 /* sample_normal_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954525602959004B6515 /* sample_normal_map.cpp */; };
 		0466C7BA255FC77000224683 /* sph_points_to_implicit2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59E255FC75B00224683 /* sph_points_to_implicit2.h */; };
 		0466C7BB255FC77000224683 /* matrix_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59F255FC75B00224683 /* matrix_csr.h */; };
 		0466C7BC255FC77000224683 /* quadtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C5A0255FC75B00224683 /* quadtree.h */; };
@@ -1164,6 +1176,27 @@
 			remoteGlobalIDString = 0454927425602427004B6515;
 			remoteInfo = render.filagui;
 		};
+		04549595256029B9004B6515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0466C4EC255FC64700224683;
+			remoteInfo = external;
+		};
+		04549597256029B9004B6515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0454927425602427004B6515;
+			remoteInfo = render.filagui;
+		};
+		04549599256029B9004B6515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0454911A256020B8004B6515;
+			remoteInfo = render.filamentapp;
+		};
 		0466D67E255FD3AF00224683 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0466C47C255FC46100224683 /* Project object */;
@@ -1345,8 +1378,40 @@
 		0454938E256025CB004B6515 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		0454941F25602673004B6515 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		045494DE25602899004B6515 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0454953C25602958004B6515 /* depthtesting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = depthtesting.cpp; sourceTree = "<group>"; };
+		0454953D25602958004B6515 /* lightbulb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lightbulb.cpp; sourceTree = "<group>"; };
+		0454953E25602958004B6515 /* material_sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material_sandbox.h; sourceTree = "<group>"; };
+		0454953F25602958004B6515 /* heightfield.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = heightfield.cpp; sourceTree = "<group>"; };
+		0454954025602958004B6515 /* sample_cloth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample_cloth.cpp; sourceTree = "<group>"; };
+		0454954125602959004B6515 /* frame_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frame_generator.cpp; sourceTree = "<group>"; };
+		0454954225602959004B6515 /* shadowtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shadowtest.cpp; sourceTree = "<group>"; };
+		0454954325602959004B6515 /* texturedquad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texturedquad.cpp; sourceTree = "<group>"; };
+		0454954425602959004B6515 /* viewtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = viewtest.cpp; sourceTree = "<group>"; };
+		0454954525602959004B6515 /* sample_normal_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample_normal_map.cpp; sourceTree = "<group>"; };
+		0454954625602959004B6515 /* gltf_instances.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gltf_instances.cpp; sourceTree = "<group>"; };
+		0454954725602959004B6515 /* strobecolor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strobecolor.cpp; sourceTree = "<group>"; };
+		0454954825602959004B6515 /* point_sprites.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point_sprites.cpp; sourceTree = "<group>"; };
+		0454954925602959004B6515 /* gltf_viewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gltf_viewer.cpp; sourceTree = "<group>"; };
+		0454954A25602959004B6515 /* suzanne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suzanne.cpp; sourceTree = "<group>"; };
+		0454954B2560295A004B6515 /* hellotriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hellotriangle.cpp; sourceTree = "<group>"; };
+		0454954C2560295A004B6515 /* animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = animation.cpp; sourceTree = "<group>"; };
+		0454954D2560295A004B6515 /* material_sandbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = material_sandbox.cpp; sourceTree = "<group>"; };
+		0454954E2560295A004B6515 /* sample_full_pbr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sample_full_pbr.cpp; sourceTree = "<group>"; };
+		0454954F2560295A004B6515 /* hellopbr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hellopbr.cpp; sourceTree = "<group>"; };
+		045495502560295A004B6515 /* vbotest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbotest.cpp; sourceTree = "<group>"; };
+		04549572256029A4004B6515 /* gltf_viewer.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = gltf_viewer.apple.S; sourceTree = "<group>"; };
+		04549573256029A4004B6515 /* resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resources.h; sourceTree = "<group>"; };
+		04549574256029A4004B6515 /* gltf_viewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gltf_viewer.h; sourceTree = "<group>"; };
+		04549575256029A5004B6515 /* monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monkey.h; sourceTree = "<group>"; };
+		04549576256029A5004B6515 /* monkey.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = monkey.apple.S; sourceTree = "<group>"; };
+		04549577256029A5004B6515 /* resources.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = resources.apple.S; sourceTree = "<group>"; };
+		0454961725602B39004B6515 /* apps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = apps.entitlements; sourceTree = "<group>"; };
+		0454964125602D08004B6515 /* getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getopt.h; path = getopt/include/getopt/getopt.h; sourceTree = "<group>"; };
+		0454965025602D0F004B6515 /* getopt_long.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getopt_long.c; path = getopt/src/getopt_long.c; sourceTree = "<group>"; };
+		0454965125602D0F004B6515 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getopt.c; path = getopt/src/getopt.c; sourceTree = "<group>"; };
+		045497EC256030FD004B6515 /* tinyexr.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyexr.cc; path = tinyexr/tinyexr.cc; sourceTree = "<group>"; };
+		045497ED256030FD004B6515 /* tinyexr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyexr.h; path = tinyexr/tinyexr.h; sourceTree = "<group>"; };
 		0466C484255FC46100224683 /* apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apps; sourceTree = BUILT_PRODUCTS_DIR; };
-		0466C487255FC46100224683 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0466C4B7255FC60C00224683 /* libsrc.common.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.common.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		0466C4C8255FC61800224683 /* libsrc.vdb.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.vdb.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		0466C4DA255FC62A00224683 /* libsrc.python.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.python.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2483,6 +2548,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0454977525602FA2004B6515 /* Cocoa.framework in Frameworks */,
+				0454959B256029C1004B6515 /* libexternal.dylib in Frameworks */,
+				0454959C256029C1004B6515 /* librender.filagui.dylib in Frameworks */,
+				0454959D256029C1004B6515 /* librender.filamentapp.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2624,6 +2693,32 @@
 			path = render.filagui;
 			sourceTree = "<group>";
 		};
+		0454964025602CFE004B6515 /* getopt */ = {
+			isa = PBXGroup;
+			children = (
+				0454965025602D0F004B6515 /* getopt_long.c */,
+				0454965125602D0F004B6515 /* getopt.c */,
+				0454964125602D08004B6515 /* getopt.h */,
+			);
+			name = getopt;
+			sourceTree = "<group>";
+		};
+		045497EB256030EB004B6515 /* tinyexr */ = {
+			isa = PBXGroup;
+			children = (
+				045497ED256030FD004B6515 /* tinyexr.h */,
+				045497EC256030FD004B6515 /* tinyexr.cc */,
+			);
+			name = tinyexr;
+			sourceTree = "<group>";
+		};
+		0454984825603288004B6515 /* direct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = direct;
+			sourceTree = "<group>";
+		};
 		0466C47B255FC46100224683 = {
 			isa = PBXGroup;
 			children = (
@@ -2636,10 +2731,10 @@
 				0466C538255FC67C00224683 /* manual_tests.vdb */,
 				0466C54C255FC68800224683 /* time_perf_tests */,
 				0466C561255FC69400224683 /* mem_perf_tests */,
-				0466C486255FC46100224683 /* apps */,
 				0466C4EE255FC64700224683 /* external */,
 				0454911C256020B8004B6515 /* render.filamentapp */,
 				0454927625602427004B6515 /* render.filagui */,
+				0466C486255FC46100224683 /* apps */,
 				0466C485255FC46100224683 /* Products */,
 				0466D680255FD3B500224683 /* Frameworks */,
 			);
@@ -2668,7 +2763,35 @@
 		0466C486255FC46100224683 /* apps */ = {
 			isa = PBXGroup;
 			children = (
-				0466C487255FC46100224683 /* main.cpp */,
+				0454961725602B39004B6515 /* apps.entitlements */,
+				04549572256029A4004B6515 /* gltf_viewer.apple.S */,
+				04549574256029A4004B6515 /* gltf_viewer.h */,
+				04549576256029A5004B6515 /* monkey.apple.S */,
+				04549575256029A5004B6515 /* monkey.h */,
+				04549577256029A5004B6515 /* resources.apple.S */,
+				04549573256029A4004B6515 /* resources.h */,
+				0454954F2560295A004B6515 /* hellopbr.cpp */,
+				0454954925602959004B6515 /* gltf_viewer.cpp */,
+				0454953F25602958004B6515 /* heightfield.cpp */,
+				0454954725602959004B6515 /* strobecolor.cpp */,
+				0454954B2560295A004B6515 /* hellotriangle.cpp */,
+				0454954C2560295A004B6515 /* animation.cpp */,
+				0454953C25602958004B6515 /* depthtesting.cpp */,
+				0454954A25602959004B6515 /* suzanne.cpp */,
+				0454954325602959004B6515 /* texturedquad.cpp */,
+				0454954225602959004B6515 /* shadowtest.cpp */,
+				045495502560295A004B6515 /* vbotest.cpp */,
+				0454954425602959004B6515 /* viewtest.cpp */,
+				0454954825602959004B6515 /* point_sprites.cpp */,
+				0454984825603288004B6515 /* direct */,
+				0454953E25602958004B6515 /* material_sandbox.h */,
+				0454954D2560295A004B6515 /* material_sandbox.cpp */,
+				0454954125602959004B6515 /* frame_generator.cpp */,
+				0454953D25602958004B6515 /* lightbulb.cpp */,
+				0454954625602959004B6515 /* gltf_instances.cpp */,
+				0454954025602958004B6515 /* sample_cloth.cpp */,
+				0454954E2560295A004B6515 /* sample_full_pbr.cpp */,
+				0454954525602959004B6515 /* sample_normal_map.cpp */,
 			);
 			path = apps;
 			sourceTree = "<group>";
@@ -3173,6 +3296,8 @@
 		0466C4EE255FC64700224683 /* external */ = {
 			isa = PBXGroup;
 			children = (
+				045497EB256030EB004B6515 /* tinyexr */,
+				0454964025602CFE004B6515 /* getopt */,
 				045492462560238E004B6515 /* imgui */,
 			);
 			path = external;
@@ -4799,6 +4924,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				045492502560239D004B6515 /* imconfig.h in Headers */,
+				0454964225602D08004B6515 /* getopt.h in Headers */,
+				045497EF256030FD004B6515 /* tinyexr.h in Headers */,
 				045492512560239D004B6515 /* imstb_rectpack.h in Headers */,
 				045492572560239D004B6515 /* imstb_truetype.h in Headers */,
 				045492552560239D004B6515 /* imgui.h in Headers */,
@@ -4858,6 +4985,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				04549596256029B9004B6515 /* PBXTargetDependency */,
+				04549598256029B9004B6515 /* PBXTargetDependency */,
+				0454959A256029B9004B6515 /* PBXTargetDependency */,
 			);
 			name = apps;
 			productName = DigitalArche2;
@@ -5115,10 +5245,10 @@
 				0466C536255FC67C00224683 /* manual_tests.vdb */,
 				0466C54A255FC68800224683 /* time_perf_tests */,
 				0466C55F255FC69400224683 /* mem_perf_tests */,
-				0466C483255FC46100224683 /* apps */,
 				0466C4EC255FC64700224683 /* external */,
-				0454911A256020B8004B6515 /* render.filamentapp */,
 				0454927425602427004B6515 /* render.filagui */,
+				0454911A256020B8004B6515 /* render.filamentapp */,
+				0466C483255FC46100224683 /* apps */,
 			);
 		};
 /* End PBXProject section */
@@ -5154,7 +5284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0466C488255FC46100224683 /* main.cpp in Sources */,
+				045495C625602A4D004B6515 /* gltf_viewer.apple.S in Sources */,
+				04549A7025603779004B6515 /* sample_normal_map.cpp in Sources */,
+				045495C725602A4D004B6515 /* monkey.apple.S in Sources */,
+				045495C525602A4D004B6515 /* resources.apple.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5511,7 +5644,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0454965325602D0F004B6515 /* getopt.c in Sources */,
+				0454965225602D0F004B6515 /* getopt_long.c in Sources */,
 				045492582560239D004B6515 /* imgui_draw.cpp in Sources */,
+				045497EE256030FD004B6515 /* tinyexr.cc in Sources */,
 				045492522560239D004B6515 /* imgui_widgets.cpp in Sources */,
 				045492562560239D004B6515 /* imgui.cpp in Sources */,
 			);
@@ -5833,6 +5969,21 @@
 			isa = PBXTargetDependency;
 			target = 0454927425602427004B6515 /* render.filagui */;
 			targetProxy = 0454948B25602805004B6515 /* PBXContainerItemProxy */;
+		};
+		04549596256029B9004B6515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0466C4EC255FC64700224683 /* external */;
+			targetProxy = 04549595256029B9004B6515 /* PBXContainerItemProxy */;
+		};
+		04549598256029B9004B6515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0454927425602427004B6515 /* render.filagui */;
+			targetProxy = 04549597256029B9004B6515 /* PBXContainerItemProxy */;
+		};
+		0454959A256029B9004B6515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0454911A256020B8004B6515 /* render.filamentapp */;
+			targetProxy = 04549599256029B9004B6515 /* PBXContainerItemProxy */;
 		};
 		0466D67F255FD3AF00224683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6165,20 +6316,90 @@
 		0466C48C255FC46100224683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = apps/apps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/yangfeng/Desktop/DigitalArche2/render.filamentapp,
+					/Users/yangfeng/Desktop/DigitalArche2/render.filagui,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/lib/x86_64",
+					/usr/local/lib,
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/cmake-debug/libs/gltfio",
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/cmake-debug/libs/imageio",
+				);
+				OTHER_LDFLAGS = (
+					"-lfilameshio",
+					"-lmeshoptimizer",
+					"-lutils",
+					"-lgltfio",
+					"-lgltfio_core",
+					"-lgltfio_resources",
+					"-lgltfio_resources_lite",
+					"-lviewer",
+					"-ldracodec",
+					"-limage",
+					"-limageio",
+					"-lpng",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/include",
+					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/Users/yangfeng/Desktop/DigitalArche2/external/getopt/include,
+					/usr/local/include/SDL2,
+					/usr/local/include,
+					"/Users/yangfeng/Desktop/filament-1.9.8/libs/utils/include",
+					"/Users/yangfeng/Desktop/filament-1.9.8/libs/imageio/include",
+				);
 			};
 			name = Debug;
 		};
 		0466C48D255FC46100224683 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = apps/apps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/yangfeng/Desktop/DigitalArche2/render.filamentapp,
+					/Users/yangfeng/Desktop/DigitalArche2/render.filagui,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/lib/x86_64",
+					/usr/local/lib,
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/cmake-debug/libs/gltfio",
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/cmake-debug/libs/imageio",
+				);
+				OTHER_LDFLAGS = (
+					"-lfilameshio",
+					"-lmeshoptimizer",
+					"-lutils",
+					"-lgltfio",
+					"-lgltfio_core",
+					"-lgltfio_resources",
+					"-lgltfio_resources_lite",
+					"-lviewer",
+					"-ldracodec",
+					"-limage",
+					"-limageio",
+					"-lpng",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament-1.9.8/out/debug/filament/include",
+					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/Users/yangfeng/Desktop/DigitalArche2/external/getopt/include,
+					/usr/local/include/SDL2,
+					/usr/local/include,
+					"/Users/yangfeng/Desktop/filament-1.9.8/libs/utils/include",
+					"/Users/yangfeng/Desktop/filament-1.9.8/libs/imageio/include",
+				);
 			};
 			name = Release;
 		};
@@ -6335,6 +6556,7 @@
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/external/getopt/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -6351,6 +6573,7 @@
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/external/getopt/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

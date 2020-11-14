@@ -147,7 +147,7 @@ void FilamentApp::run(const Config& config, SetupCallback setupCallback,
 
     if (imguiCallback) {
         mImGuiHelper = std::make_unique<ImGuiHelper>(mEngine, window->mUiView->getView(),
-            getRootAssetsPath() + "assets/fonts/Roboto-Medium.ttf");
+            "../assets/fonts/Roboto-Medium.ttf");
         ImGuiIO& io = ImGui::GetIO();
         #ifdef WIN32
             SDL_SysWMinfo wmInfo;
