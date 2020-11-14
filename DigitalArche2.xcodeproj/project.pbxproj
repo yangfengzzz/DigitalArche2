@@ -23,7 +23,7 @@
 		04549167256020FA004B6515 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454915F256020F9004B6515 /* Config.h */; };
 		04549168256020FA004B6515 /* Cube.h in Headers */ = {isa = PBXBuildFile; fileRef = 04549160256020F9004B6515 /* Cube.h */; };
 		04549169256020FA004B6515 /* NativeWindowHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04549161256020FA004B6515 /* NativeWindowHelper.h */; };
-		0454922C2560235D004B6515 /* filamentapp.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 0454922A2560235D004B6515 /* filamentapp.apple.S */; };
+		0454922C2560235D004B6515 /* filamentapp.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 0454922A2560235D004B6515 /* filamentapp.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/render.filamentapp"; }; };
 		0454922D2560235D004B6515 /* filamentapp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454922B2560235D004B6515 /* filamentapp.h */; };
 		045492502560239D004B6515 /* imconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 045492472560239D004B6515 /* imconfig.h */; };
 		045492512560239D004B6515 /* imstb_rectpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 045492482560239D004B6515 /* imstb_rectpack.h */; };
@@ -40,7 +40,7 @@
 		045492AF25602450004B6515 /* ImGuiHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045492AD25602450004B6515 /* ImGuiHelper.cpp */; };
 		045492B025602450004B6515 /* ImGuiExtensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045492AE25602450004B6515 /* ImGuiExtensions.cpp */; };
 		045492E725602496004B6515 /* filagui_resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 045492E525602496004B6515 /* filagui_resources.h */; };
-		045492E825602496004B6515 /* filagui_resources.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 045492E625602496004B6515 /* filagui_resources.apple.S */; };
+		045492E825602496004B6515 /* filagui_resources.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 045492E625602496004B6515 /* filagui_resources.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/render.filagui"; }; };
 		04549312256024E9004B6515 /* libexternal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4ED255FC64700224683 /* libexternal.dylib */; };
 		04549380256025C1004B6515 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454937F256025C0004B6515 /* CoreVideo.framework */; };
 		0454938F256025CB004B6515 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454938E256025CB004B6515 /* Metal.framework */; };
@@ -59,8 +59,8 @@
 		0454977525602FA2004B6515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454941F25602673004B6515 /* Cocoa.framework */; };
 		045497EE256030FD004B6515 /* tinyexr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 045497EC256030FD004B6515 /* tinyexr.cc */; };
 		045497EF256030FD004B6515 /* tinyexr.h in Headers */ = {isa = PBXBuildFile; fileRef = 045497ED256030FD004B6515 /* tinyexr.h */; };
-		04549A7E25603859004B6515 /* gltf_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954925602959004B6515 /* gltf_viewer.cpp */; };
 		04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549572256029A4004B6515 /* gltf_viewer.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
+		04549CC625604264004B6515 /* hellopbr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954F2560295A004B6515 /* hellopbr.cpp */; };
 		0466C7BA255FC77000224683 /* sph_points_to_implicit2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59E255FC75B00224683 /* sph_points_to_implicit2.h */; };
 		0466C7BB255FC77000224683 /* matrix_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59F255FC75B00224683 /* matrix_csr.h */; };
 		0466C7BC255FC77000224683 /* quadtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C5A0255FC75B00224683 /* quadtree.h */; };
@@ -5284,7 +5284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04549A7E25603859004B6515 /* gltf_viewer.cpp in Sources */,
+				04549CC625604264004B6515 /* hellopbr.cpp in Sources */,
 				045495C725602A4D004B6515 /* monkey.apple.S in Sources */,
 				04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */,
 				045495C525602A4D004B6515 /* resources.apple.S in Sources */,
