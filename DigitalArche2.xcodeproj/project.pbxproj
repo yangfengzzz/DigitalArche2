@@ -52,7 +52,6 @@
 		0454959C256029C1004B6515 /* librender.filagui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454927525602427004B6515 /* librender.filagui.dylib */; };
 		0454959D256029C1004B6515 /* librender.filamentapp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454911B256020B8004B6515 /* librender.filamentapp.dylib */; };
 		045495C525602A4D004B6515 /* resources.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549577256029A5004B6515 /* resources.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
-		045495C625602A4D004B6515 /* gltf_viewer.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549572256029A4004B6515 /* gltf_viewer.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
 		045495C725602A4D004B6515 /* monkey.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549576256029A5004B6515 /* monkey.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
 		0454964225602D08004B6515 /* getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454964125602D08004B6515 /* getopt.h */; };
 		0454965225602D0F004B6515 /* getopt_long.c in Sources */ = {isa = PBXBuildFile; fileRef = 0454965025602D0F004B6515 /* getopt_long.c */; };
@@ -60,7 +59,8 @@
 		0454977525602FA2004B6515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454941F25602673004B6515 /* Cocoa.framework */; };
 		045497EE256030FD004B6515 /* tinyexr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 045497EC256030FD004B6515 /* tinyexr.cc */; };
 		045497EF256030FD004B6515 /* tinyexr.h in Headers */ = {isa = PBXBuildFile; fileRef = 045497ED256030FD004B6515 /* tinyexr.h */; };
-		04549A7025603779004B6515 /* sample_normal_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954525602959004B6515 /* sample_normal_map.cpp */; };
+		04549A7E25603859004B6515 /* gltf_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954925602959004B6515 /* gltf_viewer.cpp */; };
+		04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549572256029A4004B6515 /* gltf_viewer.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
 		0466C7BA255FC77000224683 /* sph_points_to_implicit2.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59E255FC75B00224683 /* sph_points_to_implicit2.h */; };
 		0466C7BB255FC77000224683 /* matrix_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C59F255FC75B00224683 /* matrix_csr.h */; };
 		0466C7BC255FC77000224683 /* quadtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0466C5A0255FC75B00224683 /* quadtree.h */; };
@@ -5284,9 +5284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045495C625602A4D004B6515 /* gltf_viewer.apple.S in Sources */,
-				04549A7025603779004B6515 /* sample_normal_map.cpp in Sources */,
+				04549A7E25603859004B6515 /* gltf_viewer.cpp in Sources */,
 				045495C725602A4D004B6515 /* monkey.apple.S in Sources */,
+				04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */,
 				045495C525602A4D004B6515 /* resources.apple.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
