@@ -1302,6 +1302,72 @@
 		04AC15E325610F850047ECE3 /* additive_animation_builder_tests.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC15D725610F850047ECE3 /* additive_animation_builder_tests.cc */; };
 		04AC15E425610F850047ECE3 /* skeleton_builder_tests.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC15D825610F850047ECE3 /* skeleton_builder_tests.cc */; };
 		04AC15E525610F850047ECE3 /* raw_animation_utils_tests.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC15D925610F850047ECE3 /* raw_animation_utils_tests.cc */; };
+		04AC16B025611A500047ECE3 /* raw_track.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16A625611A4E0047ECE3 /* raw_track.h */; };
+		04AC16B125611A500047ECE3 /* raw_animation_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16A725611A4E0047ECE3 /* raw_animation_utils.h */; };
+		04AC16B225611A500047ECE3 /* animation_optimizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16A825611A4E0047ECE3 /* animation_optimizer.h */; };
+		04AC16B325611A500047ECE3 /* additive_animation_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16A925611A4F0047ECE3 /* additive_animation_builder.h */; };
+		04AC16B425611A500047ECE3 /* raw_animation.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16AA25611A4F0047ECE3 /* raw_animation.h */; };
+		04AC16B525611A500047ECE3 /* raw_skeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16AB25611A4F0047ECE3 /* raw_skeleton.h */; };
+		04AC16B625611A500047ECE3 /* track_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16AC25611A4F0047ECE3 /* track_builder.h */; };
+		04AC16B725611A500047ECE3 /* animation_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16AD25611A4F0047ECE3 /* animation_builder.h */; };
+		04AC16B825611A500047ECE3 /* track_optimizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16AE25611A4F0047ECE3 /* track_optimizer.h */; };
+		04AC16B925611A500047ECE3 /* skeleton_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC16AF25611A4F0047ECE3 /* skeleton_builder.h */; };
+		04AC171325611AAF0047ECE3 /* local_to_model_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170625611AAD0047ECE3 /* local_to_model_job.h */; };
+		04AC171425611AAF0047ECE3 /* ik_aim_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170725611AAD0047ECE3 /* ik_aim_job.h */; };
+		04AC171525611AAF0047ECE3 /* track_sampling_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170825611AAE0047ECE3 /* track_sampling_job.h */; };
+		04AC171625611AAF0047ECE3 /* track_triggering_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170925611AAE0047ECE3 /* track_triggering_job.h */; };
+		04AC171725611AAF0047ECE3 /* ik_two_bone_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170A25611AAE0047ECE3 /* ik_two_bone_job.h */; };
+		04AC171825611AAF0047ECE3 /* track_triggering_job_trait.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170B25611AAE0047ECE3 /* track_triggering_job_trait.h */; };
+		04AC171925611AAF0047ECE3 /* animation.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170C25611AAE0047ECE3 /* animation.h */; };
+		04AC171A25611AAF0047ECE3 /* blending_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170D25611AAE0047ECE3 /* blending_job.h */; };
+		04AC171B25611AAF0047ECE3 /* sampling_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170E25611AAE0047ECE3 /* sampling_job.h */; };
+		04AC171C25611AAF0047ECE3 /* skeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC170F25611AAF0047ECE3 /* skeleton.h */; };
+		04AC171D25611AAF0047ECE3 /* skeleton_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC171025611AAF0047ECE3 /* skeleton_utils.h */; };
+		04AC171E25611AAF0047ECE3 /* animation_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC171125611AAF0047ECE3 /* animation_utils.h */; };
+		04AC171F25611AAF0047ECE3 /* track.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC171225611AAF0047ECE3 /* track.h */; };
+		04AC17E325611B590047ECE3 /* gtest_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC17DE25611B580047ECE3 /* gtest_helper.h */; };
+		04AC17E425611B590047ECE3 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC17DF25611B580047ECE3 /* endianness.h */; };
+		04AC17E525611B590047ECE3 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC17E025611B590047ECE3 /* log.h */; };
+		04AC17E625611B590047ECE3 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC17E125611B590047ECE3 /* platform.h */; };
+		04AC17E725611B590047ECE3 /* span.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC17E225611B590047ECE3 /* span.h */; };
+		04AC186B25611B7B0047ECE3 /* box.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC185A25611B780047ECE3 /* box.h */; };
+		04AC186C25611B7B0047ECE3 /* math_archive.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC185B25611B790047ECE3 /* math_archive.h */; };
+		04AC186D25611B7B0047ECE3 /* simd_math_archive.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC185C25611B790047ECE3 /* simd_math_archive.h */; };
+		04AC186E25611B7B0047ECE3 /* math_ex.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC185D25611B790047ECE3 /* math_ex.h */; };
+		04AC186F25611B7B0047ECE3 /* rect.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC185E25611B790047ECE3 /* rect.h */; };
+		04AC187025611B7B0047ECE3 /* math_constant.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC185F25611B790047ECE3 /* math_constant.h */; };
+		04AC187125611B7B0047ECE3 /* simd_math.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186025611B790047ECE3 /* simd_math.h */; };
+		04AC187225611B7B0047ECE3 /* soa_quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186125611B790047ECE3 /* soa_quaternion.h */; };
+		04AC187325611B7B0047ECE3 /* vec_float.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186225611B7A0047ECE3 /* vec_float.h */; };
+		04AC187425611B7B0047ECE3 /* soa_float.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186325611B7A0047ECE3 /* soa_float.h */; };
+		04AC187525611B7B0047ECE3 /* soa_math_archive.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186425611B7A0047ECE3 /* soa_math_archive.h */; };
+		04AC187625611B7B0047ECE3 /* transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186525611B7A0047ECE3 /* transform.h */; };
+		04AC187725611B7B0047ECE3 /* gtest_math_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186625611B7A0047ECE3 /* gtest_math_helper.h */; };
+		04AC187825611B7B0047ECE3 /* simd_quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186725611B7A0047ECE3 /* simd_quaternion.h */; };
+		04AC187925611B7B0047ECE3 /* soa_float4x4.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186825611B7A0047ECE3 /* soa_float4x4.h */; };
+		04AC187A25611B7B0047ECE3 /* quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186925611B7B0047ECE3 /* quaternion.h */; };
+		04AC187B25611B7B0047ECE3 /* soa_transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC186A25611B7B0047ECE3 /* soa_transform.h */; };
+		04AC1A0625611BD40047ECE3 /* string_archive.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19F825611BD20047ECE3 /* string_archive.h */; };
+		04AC1A0725611BD40047ECE3 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19F925611BD30047ECE3 /* set.h */; };
+		04AC1A0825611BD40047ECE3 /* string.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19FA25611BD30047ECE3 /* string.h */; };
+		04AC1A0925611BD40047ECE3 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19FB25611BD30047ECE3 /* list.h */; };
+		04AC1A0A25611BD40047ECE3 /* intrusive_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19FC25611BD30047ECE3 /* intrusive_list.h */; };
+		04AC1A0B25611BD40047ECE3 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19FD25611BD30047ECE3 /* stack.h */; };
+		04AC1A0C25611BD40047ECE3 /* deque.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19FE25611BD30047ECE3 /* deque.h */; };
+		04AC1A0D25611BD40047ECE3 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC19FF25611BD30047ECE3 /* queue.h */; };
+		04AC1A0E25611BD40047ECE3 /* vector_archive.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1A0025611BD40047ECE3 /* vector_archive.h */; };
+		04AC1A0F25611BD40047ECE3 /* unordered_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1A0125611BD40047ECE3 /* unordered_set.h */; };
+		04AC1A1025611BD40047ECE3 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1A0225611BD40047ECE3 /* vector.h */; };
+		04AC1A1125611BD40047ECE3 /* std_allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1A0325611BD40047ECE3 /* std_allocator.h */; };
+		04AC1A1225611BD40047ECE3 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1A0425611BD40047ECE3 /* map.h */; };
+		04AC1A1325611BD40047ECE3 /* unordered_map.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1A0525611BD40047ECE3 /* unordered_map.h */; };
+		04AC1B4625611C130047ECE3 /* allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1B4425611C120047ECE3 /* allocator.h */; };
+		04AC1B4725611C130047ECE3 /* unique_ptr.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1B4525611C130047ECE3 /* unique_ptr.h */; };
+		04AC1B9725611C250047ECE3 /* archive_traits.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1B9425611C250047ECE3 /* archive_traits.h */; };
+		04AC1B9825611C250047ECE3 /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1B9525611C250047ECE3 /* archive.h */; };
+		04AC1B9925611C250047ECE3 /* stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1B9625611C250047ECE3 /* stream.h */; };
+		04AC1BE725611C350047ECE3 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1BE625611C350047ECE3 /* options.h */; };
+		04AC1C0F25611C470047ECE3 /* skinning_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1C0E25611C470047ECE3 /* skinning_job.h */; };
 		04ACD47D2560CC910047ECE3 /* meshoptimizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4702560CC900047ECE3 /* meshoptimizer.h */; };
 		04ACD47E2560CC910047ECE3 /* vfetchanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4712560CC900047ECE3 /* vfetchanalyzer.cpp */; };
 		04ACD47F2560CC910047ECE3 /* simplifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4722560CC900047ECE3 /* simplifier.cpp */; };
@@ -3772,6 +3838,72 @@
 		04AC15D925610F850047ECE3 /* raw_animation_utils_tests.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = raw_animation_utils_tests.cc; path = animation/offline/raw_animation_utils_tests.cc; sourceTree = "<group>"; };
 		04AC15DA25610F850047ECE3 /* raw_animation_archive_versioning_tests.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = raw_animation_archive_versioning_tests.cc; path = animation/offline/raw_animation_archive_versioning_tests.cc; sourceTree = "<group>"; };
 		04AC15DB25610F850047ECE3 /* raw_animation_archive_tests.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = raw_animation_archive_tests.cc; path = animation/offline/raw_animation_archive_tests.cc; sourceTree = "<group>"; };
+		04AC16A625611A4E0047ECE3 /* raw_track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = raw_track.h; path = ozz/animation/offline/raw_track.h; sourceTree = "<group>"; };
+		04AC16A725611A4E0047ECE3 /* raw_animation_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = raw_animation_utils.h; path = ozz/animation/offline/raw_animation_utils.h; sourceTree = "<group>"; };
+		04AC16A825611A4E0047ECE3 /* animation_optimizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation_optimizer.h; path = ozz/animation/offline/animation_optimizer.h; sourceTree = "<group>"; };
+		04AC16A925611A4F0047ECE3 /* additive_animation_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = additive_animation_builder.h; path = ozz/animation/offline/additive_animation_builder.h; sourceTree = "<group>"; };
+		04AC16AA25611A4F0047ECE3 /* raw_animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = raw_animation.h; path = ozz/animation/offline/raw_animation.h; sourceTree = "<group>"; };
+		04AC16AB25611A4F0047ECE3 /* raw_skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = raw_skeleton.h; path = ozz/animation/offline/raw_skeleton.h; sourceTree = "<group>"; };
+		04AC16AC25611A4F0047ECE3 /* track_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_builder.h; path = ozz/animation/offline/track_builder.h; sourceTree = "<group>"; };
+		04AC16AD25611A4F0047ECE3 /* animation_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation_builder.h; path = ozz/animation/offline/animation_builder.h; sourceTree = "<group>"; };
+		04AC16AE25611A4F0047ECE3 /* track_optimizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_optimizer.h; path = ozz/animation/offline/track_optimizer.h; sourceTree = "<group>"; };
+		04AC16AF25611A4F0047ECE3 /* skeleton_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skeleton_builder.h; path = ozz/animation/offline/skeleton_builder.h; sourceTree = "<group>"; };
+		04AC170625611AAD0047ECE3 /* local_to_model_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = local_to_model_job.h; path = ozz/animation/runtime/local_to_model_job.h; sourceTree = "<group>"; };
+		04AC170725611AAD0047ECE3 /* ik_aim_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ik_aim_job.h; path = ozz/animation/runtime/ik_aim_job.h; sourceTree = "<group>"; };
+		04AC170825611AAE0047ECE3 /* track_sampling_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_sampling_job.h; path = ozz/animation/runtime/track_sampling_job.h; sourceTree = "<group>"; };
+		04AC170925611AAE0047ECE3 /* track_triggering_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_triggering_job.h; path = ozz/animation/runtime/track_triggering_job.h; sourceTree = "<group>"; };
+		04AC170A25611AAE0047ECE3 /* ik_two_bone_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ik_two_bone_job.h; path = ozz/animation/runtime/ik_two_bone_job.h; sourceTree = "<group>"; };
+		04AC170B25611AAE0047ECE3 /* track_triggering_job_trait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track_triggering_job_trait.h; path = ozz/animation/runtime/track_triggering_job_trait.h; sourceTree = "<group>"; };
+		04AC170C25611AAE0047ECE3 /* animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation.h; path = ozz/animation/runtime/animation.h; sourceTree = "<group>"; };
+		04AC170D25611AAE0047ECE3 /* blending_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blending_job.h; path = ozz/animation/runtime/blending_job.h; sourceTree = "<group>"; };
+		04AC170E25611AAE0047ECE3 /* sampling_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sampling_job.h; path = ozz/animation/runtime/sampling_job.h; sourceTree = "<group>"; };
+		04AC170F25611AAF0047ECE3 /* skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skeleton.h; path = ozz/animation/runtime/skeleton.h; sourceTree = "<group>"; };
+		04AC171025611AAF0047ECE3 /* skeleton_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skeleton_utils.h; path = ozz/animation/runtime/skeleton_utils.h; sourceTree = "<group>"; };
+		04AC171125611AAF0047ECE3 /* animation_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation_utils.h; path = ozz/animation/runtime/animation_utils.h; sourceTree = "<group>"; };
+		04AC171225611AAF0047ECE3 /* track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = track.h; path = ozz/animation/runtime/track.h; sourceTree = "<group>"; };
+		04AC17DE25611B580047ECE3 /* gtest_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtest_helper.h; path = ozz/base/gtest_helper.h; sourceTree = "<group>"; };
+		04AC17DF25611B580047ECE3 /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = endianness.h; path = ozz/base/endianness.h; sourceTree = "<group>"; };
+		04AC17E025611B590047ECE3 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = ozz/base/log.h; sourceTree = "<group>"; };
+		04AC17E125611B590047ECE3 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = ozz/base/platform.h; sourceTree = "<group>"; };
+		04AC17E225611B590047ECE3 /* span.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = span.h; path = ozz/base/span.h; sourceTree = "<group>"; };
+		04AC185A25611B780047ECE3 /* box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = box.h; path = ozz/base/maths/box.h; sourceTree = "<group>"; };
+		04AC185B25611B790047ECE3 /* math_archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_archive.h; path = ozz/base/maths/math_archive.h; sourceTree = "<group>"; };
+		04AC185C25611B790047ECE3 /* simd_math_archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simd_math_archive.h; path = ozz/base/maths/simd_math_archive.h; sourceTree = "<group>"; };
+		04AC185D25611B790047ECE3 /* math_ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_ex.h; path = ozz/base/maths/math_ex.h; sourceTree = "<group>"; };
+		04AC185E25611B790047ECE3 /* rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rect.h; path = ozz/base/maths/rect.h; sourceTree = "<group>"; };
+		04AC185F25611B790047ECE3 /* math_constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_constant.h; path = ozz/base/maths/math_constant.h; sourceTree = "<group>"; };
+		04AC186025611B790047ECE3 /* simd_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simd_math.h; path = ozz/base/maths/simd_math.h; sourceTree = "<group>"; };
+		04AC186125611B790047ECE3 /* soa_quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soa_quaternion.h; path = ozz/base/maths/soa_quaternion.h; sourceTree = "<group>"; };
+		04AC186225611B7A0047ECE3 /* vec_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec_float.h; path = ozz/base/maths/vec_float.h; sourceTree = "<group>"; };
+		04AC186325611B7A0047ECE3 /* soa_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soa_float.h; path = ozz/base/maths/soa_float.h; sourceTree = "<group>"; };
+		04AC186425611B7A0047ECE3 /* soa_math_archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soa_math_archive.h; path = ozz/base/maths/soa_math_archive.h; sourceTree = "<group>"; };
+		04AC186525611B7A0047ECE3 /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transform.h; path = ozz/base/maths/transform.h; sourceTree = "<group>"; };
+		04AC186625611B7A0047ECE3 /* gtest_math_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gtest_math_helper.h; path = ozz/base/maths/gtest_math_helper.h; sourceTree = "<group>"; };
+		04AC186725611B7A0047ECE3 /* simd_quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simd_quaternion.h; path = ozz/base/maths/simd_quaternion.h; sourceTree = "<group>"; };
+		04AC186825611B7A0047ECE3 /* soa_float4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soa_float4x4.h; path = ozz/base/maths/soa_float4x4.h; sourceTree = "<group>"; };
+		04AC186925611B7B0047ECE3 /* quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quaternion.h; path = ozz/base/maths/quaternion.h; sourceTree = "<group>"; };
+		04AC186A25611B7B0047ECE3 /* soa_transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soa_transform.h; path = ozz/base/maths/soa_transform.h; sourceTree = "<group>"; };
+		04AC19F825611BD20047ECE3 /* string_archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_archive.h; path = ozz/base/containers/string_archive.h; sourceTree = "<group>"; };
+		04AC19F925611BD30047ECE3 /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = set.h; path = ozz/base/containers/set.h; sourceTree = "<group>"; };
+		04AC19FA25611BD30047ECE3 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string.h; path = ozz/base/containers/string.h; sourceTree = "<group>"; };
+		04AC19FB25611BD30047ECE3 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = list.h; path = ozz/base/containers/list.h; sourceTree = "<group>"; };
+		04AC19FC25611BD30047ECE3 /* intrusive_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = intrusive_list.h; path = ozz/base/containers/intrusive_list.h; sourceTree = "<group>"; };
+		04AC19FD25611BD30047ECE3 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = ozz/base/containers/stack.h; sourceTree = "<group>"; };
+		04AC19FE25611BD30047ECE3 /* deque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deque.h; path = ozz/base/containers/deque.h; sourceTree = "<group>"; };
+		04AC19FF25611BD30047ECE3 /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = queue.h; path = ozz/base/containers/queue.h; sourceTree = "<group>"; };
+		04AC1A0025611BD40047ECE3 /* vector_archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector_archive.h; path = ozz/base/containers/vector_archive.h; sourceTree = "<group>"; };
+		04AC1A0125611BD40047ECE3 /* unordered_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unordered_set.h; path = ozz/base/containers/unordered_set.h; sourceTree = "<group>"; };
+		04AC1A0225611BD40047ECE3 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = ozz/base/containers/vector.h; sourceTree = "<group>"; };
+		04AC1A0325611BD40047ECE3 /* std_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = std_allocator.h; path = ozz/base/containers/std_allocator.h; sourceTree = "<group>"; };
+		04AC1A0425611BD40047ECE3 /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = ozz/base/containers/map.h; sourceTree = "<group>"; };
+		04AC1A0525611BD40047ECE3 /* unordered_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unordered_map.h; path = ozz/base/containers/unordered_map.h; sourceTree = "<group>"; };
+		04AC1B4425611C120047ECE3 /* allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = ozz/base/memory/allocator.h; sourceTree = "<group>"; };
+		04AC1B4525611C130047ECE3 /* unique_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unique_ptr.h; path = ozz/base/memory/unique_ptr.h; sourceTree = "<group>"; };
+		04AC1B9425611C250047ECE3 /* archive_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_traits.h; path = ozz/base/io/archive_traits.h; sourceTree = "<group>"; };
+		04AC1B9525611C250047ECE3 /* archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive.h; path = ozz/base/io/archive.h; sourceTree = "<group>"; };
+		04AC1B9625611C250047ECE3 /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream.h; path = ozz/base/io/stream.h; sourceTree = "<group>"; };
+		04AC1BE625611C350047ECE3 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = options.h; path = ozz/options/options.h; sourceTree = "<group>"; };
+		04AC1C0E25611C470047ECE3 /* skinning_job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skinning_job.h; path = ozz/geometry/runtime/skinning_job.h; sourceTree = "<group>"; };
 		04ACD2E52560C8870047ECE3 /* librender.math.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.math.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACD3022560C8940047ECE3 /* librender.utils.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.utils.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACD3202560C8A80047ECE3 /* librender.ibl.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.ibl.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6335,22 +6467,32 @@
 		04AC0579256100DF0047ECE3 /* offline */ = {
 			isa = PBXGroup;
 			children = (
+				04AC0581256100F70047ECE3 /* decimate.h */,
+				04AC16A925611A4F0047ECE3 /* additive_animation_builder.h */,
+				04AC0586256100F70047ECE3 /* additive_animation_builder.cc */,
+				04AC16AD25611A4F0047ECE3 /* animation_builder.h */,
+				04AC057D256100F60047ECE3 /* animation_builder.cc */,
+				04AC16A825611A4E0047ECE3 /* animation_optimizer.h */,
+				04AC057B256100F60047ECE3 /* animation_optimizer.cc */,
+				04AC16A725611A4E0047ECE3 /* raw_animation_utils.h */,
+				04AC057E256100F60047ECE3 /* raw_animation_utils.cc */,
+				04AC16AA25611A4F0047ECE3 /* raw_animation.h */,
+				04AC0587256100F70047ECE3 /* raw_animation.cc */,
+				04AC16AB25611A4F0047ECE3 /* raw_skeleton.h */,
+				04AC0585256100F70047ECE3 /* raw_skeleton.cc */,
+				04AC16A625611A4E0047ECE3 /* raw_track.h */,
+				04AC0580256100F70047ECE3 /* raw_track.cc */,
+				04AC16AF25611A4F0047ECE3 /* skeleton_builder.h */,
+				04AC0584256100F70047ECE3 /* skeleton_builder.cc */,
+				04AC16AC25611A4F0047ECE3 /* track_builder.h */,
+				04AC0582256100F70047ECE3 /* track_builder.cc */,
+				04AC16AE25611A4F0047ECE3 /* track_optimizer.h */,
+				04AC057F256100F70047ECE3 /* track_optimizer.cc */,
 				04AC073A256102400047ECE3 /* gltf */,
 				04AC0739256102380047ECE3 /* tools */,
 				04AC0738256102300047ECE3 /* fbx */,
-				04AC0586256100F70047ECE3 /* additive_animation_builder.cc */,
-				04AC057D256100F60047ECE3 /* animation_builder.cc */,
-				04AC057B256100F60047ECE3 /* animation_optimizer.cc */,
-				04AC0581256100F70047ECE3 /* decimate.h */,
 				04AC0583256100F70047ECE3 /* raw_animation_archive.cc */,
-				04AC057E256100F60047ECE3 /* raw_animation_utils.cc */,
-				04AC0587256100F70047ECE3 /* raw_animation.cc */,
 				04AC057C256100F60047ECE3 /* raw_skeleton_archive.cc */,
-				04AC0585256100F70047ECE3 /* raw_skeleton.cc */,
-				04AC0580256100F70047ECE3 /* raw_track.cc */,
-				04AC0584256100F70047ECE3 /* skeleton_builder.cc */,
-				04AC0582256100F70047ECE3 /* track_builder.cc */,
-				04AC057F256100F70047ECE3 /* track_optimizer.cc */,
 			);
 			name = offline;
 			sourceTree = "<group>";
@@ -6359,17 +6501,30 @@
 			isa = PBXGroup;
 			children = (
 				04AC05C4256101190047ECE3 /* animation_keyframe.h */,
+				04AC171125611AAF0047ECE3 /* animation_utils.h */,
 				04AC05C1256101180047ECE3 /* animation_utils.cc */,
+				04AC170C25611AAE0047ECE3 /* animation.h */,
 				04AC05BA256101170047ECE3 /* animation.cc */,
+				04AC170D25611AAE0047ECE3 /* blending_job.h */,
 				04AC05BD256101180047ECE3 /* blending_job.cc */,
+				04AC170725611AAD0047ECE3 /* ik_aim_job.h */,
 				04AC05C5256101190047ECE3 /* ik_aim_job.cc */,
+				04AC170A25611AAE0047ECE3 /* ik_two_bone_job.h */,
 				04AC05B9256101170047ECE3 /* ik_two_bone_job.cc */,
+				04AC170625611AAD0047ECE3 /* local_to_model_job.h */,
 				04AC05BB256101180047ECE3 /* local_to_model_job.cc */,
+				04AC170E25611AAE0047ECE3 /* sampling_job.h */,
 				04AC05BC256101180047ECE3 /* sampling_job.cc */,
+				04AC171025611AAF0047ECE3 /* skeleton_utils.h */,
 				04AC05BE256101180047ECE3 /* skeleton_utils.cc */,
+				04AC170F25611AAF0047ECE3 /* skeleton.h */,
 				04AC05BF256101180047ECE3 /* skeleton.cc */,
+				04AC170825611AAE0047ECE3 /* track_sampling_job.h */,
 				04AC05C2256101180047ECE3 /* track_sampling_job.cc */,
+				04AC170925611AAE0047ECE3 /* track_triggering_job.h */,
+				04AC170B25611AAE0047ECE3 /* track_triggering_job_trait.h */,
 				04AC05C3256101190047ECE3 /* track_triggering_job.cc */,
+				04AC171225611AAF0047ECE3 /* track.h */,
 				04AC05C0256101180047ECE3 /* track.cc */,
 			);
 			name = runtime;
@@ -6378,11 +6533,16 @@
 		04AC061B256101570047ECE3 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				04AC17E225611B590047ECE3 /* span.h */,
+				04AC17DF25611B580047ECE3 /* endianness.h */,
+				04AC17DE25611B580047ECE3 /* gtest_helper.h */,
+				04AC17E025611B590047ECE3 /* log.h */,
+				04AC0646256101760047ECE3 /* log.cc */,
+				04AC17E125611B590047ECE3 /* platform.h */,
+				04AC0645256101760047ECE3 /* platform.cc */,
 				04AC0709256101D90047ECE3 /* maths */,
 				04AC06E2256101C90047ECE3 /* containers */,
 				04AC066D256101870047ECE3 /* memory */,
-				04AC0646256101760047ECE3 /* log.cc */,
-				04AC0645256101760047ECE3 /* platform.cc */,
 				04AC061C2561015A0047ECE3 /* io */,
 			);
 			name = base;
@@ -6391,7 +6551,10 @@
 		04AC061C2561015A0047ECE3 /* io */ = {
 			isa = PBXGroup;
 			children = (
+				04AC1B9425611C250047ECE3 /* archive_traits.h */,
+				04AC1B9525611C250047ECE3 /* archive.h */,
 				04AC061E256101660047ECE3 /* archive.cc */,
+				04AC1B9625611C250047ECE3 /* stream.h */,
 				04AC061D256101660047ECE3 /* stream.cc */,
 			);
 			name = io;
@@ -6400,7 +6563,9 @@
 		04AC066D256101870047ECE3 /* memory */ = {
 			isa = PBXGroup;
 			children = (
+				04AC1B4425611C120047ECE3 /* allocator.h */,
 				04AC066E2561018F0047ECE3 /* allocator.cc */,
+				04AC1B4525611C130047ECE3 /* unique_ptr.h */,
 			);
 			name = memory;
 			sourceTree = "<group>";
@@ -6408,6 +6573,7 @@
 		04AC0694256101A10047ECE3 /* geometry */ = {
 			isa = PBXGroup;
 			children = (
+				04AC1C0E25611C470047ECE3 /* skinning_job.h */,
 				04AC0695256101A80047ECE3 /* skinning_job.cc */,
 			);
 			name = geometry;
@@ -6416,6 +6582,7 @@
 		04AC06BB256101B50047ECE3 /* options */ = {
 			isa = PBXGroup;
 			children = (
+				04AC1BE625611C350047ECE3 /* options.h */,
 				04AC06BC256101BC0047ECE3 /* options.cc */,
 			);
 			name = options;
@@ -6424,6 +6591,20 @@
 		04AC06E2256101C90047ECE3 /* containers */ = {
 			isa = PBXGroup;
 			children = (
+				04AC1A0325611BD40047ECE3 /* std_allocator.h */,
+				04AC1A0225611BD40047ECE3 /* vector.h */,
+				04AC19FE25611BD30047ECE3 /* deque.h */,
+				04AC19FB25611BD30047ECE3 /* list.h */,
+				04AC19FC25611BD30047ECE3 /* intrusive_list.h */,
+				04AC19FF25611BD30047ECE3 /* queue.h */,
+				04AC19FD25611BD30047ECE3 /* stack.h */,
+				04AC1A0425611BD40047ECE3 /* map.h */,
+				04AC1A0525611BD40047ECE3 /* unordered_map.h */,
+				04AC19F925611BD30047ECE3 /* set.h */,
+				04AC1A0125611BD40047ECE3 /* unordered_set.h */,
+				04AC19FA25611BD30047ECE3 /* string.h */,
+				04AC1A0025611BD40047ECE3 /* vector_archive.h */,
+				04AC19F825611BD20047ECE3 /* string_archive.h */,
 				04AC06E3256101D00047ECE3 /* string_archive.cc */,
 			);
 			name = containers;
@@ -6432,10 +6613,27 @@
 		04AC0709256101D90047ECE3 /* maths */ = {
 			isa = PBXGroup;
 			children = (
-				04AC070A256101E40047ECE3 /* box.cc */,
-				04AC070E256101E40047ECE3 /* math_archive.cc */,
-				04AC070D256101E40047ECE3 /* simd_math_archive.cc */,
+				04AC186625611B7A0047ECE3 /* gtest_math_helper.h */,
+				04AC185F25611B790047ECE3 /* math_constant.h */,
+				04AC185D25611B790047ECE3 /* math_ex.h */,
+				04AC186225611B7A0047ECE3 /* vec_float.h */,
+				04AC186925611B7B0047ECE3 /* quaternion.h */,
+				04AC186025611B790047ECE3 /* simd_math.h */,
 				04AC070B256101E40047ECE3 /* simd_math.cc */,
+				04AC186725611B7A0047ECE3 /* simd_quaternion.h */,
+				04AC186325611B7A0047ECE3 /* soa_float.h */,
+				04AC186825611B7A0047ECE3 /* soa_float4x4.h */,
+				04AC186125611B790047ECE3 /* soa_quaternion.h */,
+				04AC186A25611B7B0047ECE3 /* soa_transform.h */,
+				04AC186525611B7A0047ECE3 /* transform.h */,
+				04AC185E25611B790047ECE3 /* rect.h */,
+				04AC185A25611B780047ECE3 /* box.h */,
+				04AC070A256101E40047ECE3 /* box.cc */,
+				04AC185B25611B790047ECE3 /* math_archive.h */,
+				04AC070E256101E40047ECE3 /* math_archive.cc */,
+				04AC185C25611B790047ECE3 /* simd_math_archive.h */,
+				04AC070D256101E40047ECE3 /* simd_math_archive.cc */,
+				04AC186425611B7A0047ECE3 /* soa_math_archive.h */,
 				04AC070C256101E40047ECE3 /* soa_math_archive.cc */,
 			);
 			name = maths;
@@ -7907,11 +8105,77 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AC171B25611AAF0047ECE3 /* sampling_job.h in Headers */,
+				04AC186E25611B7B0047ECE3 /* math_ex.h in Headers */,
+				04AC171425611AAF0047ECE3 /* ik_aim_job.h in Headers */,
+				04AC16B225611A500047ECE3 /* animation_optimizer.h in Headers */,
+				04AC17E425611B590047ECE3 /* endianness.h in Headers */,
 				04AC074B256102520047ECE3 /* import2ozz_track.h in Headers */,
+				04AC187125611B7B0047ECE3 /* simd_math.h in Headers */,
+				04AC16B525611A500047ECE3 /* raw_skeleton.h in Headers */,
+				04AC1A1325611BD40047ECE3 /* unordered_map.h in Headers */,
+				04AC16B925611A500047ECE3 /* skeleton_builder.h in Headers */,
+				04AC187525611B7B0047ECE3 /* soa_math_archive.h in Headers */,
+				04AC187025611B7B0047ECE3 /* math_constant.h in Headers */,
+				04AC171725611AAF0047ECE3 /* ik_two_bone_job.h in Headers */,
 				04AC058E256100F80047ECE3 /* decimate.h in Headers */,
+				04AC1A0825611BD40047ECE3 /* string.h in Headers */,
+				04AC1C0F25611C470047ECE3 /* skinning_job.h in Headers */,
+				04AC16B025611A500047ECE3 /* raw_track.h in Headers */,
 				04AC05D1256101190047ECE3 /* animation_keyframe.h in Headers */,
+				04AC171F25611AAF0047ECE3 /* track.h in Headers */,
+				04AC187325611B7B0047ECE3 /* vec_float.h in Headers */,
+				04AC186F25611B7B0047ECE3 /* rect.h in Headers */,
+				04AC171A25611AAF0047ECE3 /* blending_job.h in Headers */,
+				04AC171825611AAF0047ECE3 /* track_triggering_job_trait.h in Headers */,
+				04AC16B425611A500047ECE3 /* raw_animation.h in Headers */,
+				04AC1A0F25611BD40047ECE3 /* unordered_set.h in Headers */,
+				04AC187625611B7B0047ECE3 /* transform.h in Headers */,
+				04AC186C25611B7B0047ECE3 /* math_archive.h in Headers */,
+				04AC186D25611B7B0047ECE3 /* simd_math_archive.h in Headers */,
+				04AC1A0925611BD40047ECE3 /* list.h in Headers */,
+				04AC1A0E25611BD40047ECE3 /* vector_archive.h in Headers */,
+				04AC187A25611B7B0047ECE3 /* quaternion.h in Headers */,
+				04AC1A0B25611BD40047ECE3 /* stack.h in Headers */,
+				04AC17E625611B590047ECE3 /* platform.h in Headers */,
+				04AC187825611B7B0047ECE3 /* simd_quaternion.h in Headers */,
+				04AC187725611B7B0047ECE3 /* gtest_math_helper.h in Headers */,
+				04AC1B9925611C250047ECE3 /* stream.h in Headers */,
+				04AC187B25611B7B0047ECE3 /* soa_transform.h in Headers */,
+				04AC187925611B7B0047ECE3 /* soa_float4x4.h in Headers */,
+				04AC187225611B7B0047ECE3 /* soa_quaternion.h in Headers */,
+				04AC1B9825611C250047ECE3 /* archive.h in Headers */,
+				04AC1A0725611BD40047ECE3 /* set.h in Headers */,
+				04AC1B9725611C250047ECE3 /* archive_traits.h in Headers */,
+				04AC1A1025611BD40047ECE3 /* vector.h in Headers */,
+				04AC1A0A25611BD40047ECE3 /* intrusive_list.h in Headers */,
+				04AC1B4625611C130047ECE3 /* allocator.h in Headers */,
+				04AC1B4725611C130047ECE3 /* unique_ptr.h in Headers */,
+				04AC171D25611AAF0047ECE3 /* skeleton_utils.h in Headers */,
+				04AC1A0C25611BD40047ECE3 /* deque.h in Headers */,
+				04AC16B725611A500047ECE3 /* animation_builder.h in Headers */,
+				04AC1BE725611C350047ECE3 /* options.h in Headers */,
+				04AC171E25611AAF0047ECE3 /* animation_utils.h in Headers */,
+				04AC1A0625611BD40047ECE3 /* string_archive.h in Headers */,
+				04AC1A0D25611BD40047ECE3 /* queue.h in Headers */,
+				04AC171525611AAF0047ECE3 /* track_sampling_job.h in Headers */,
+				04AC171C25611AAF0047ECE3 /* skeleton.h in Headers */,
+				04AC16B125611A500047ECE3 /* raw_animation_utils.h in Headers */,
+				04AC171625611AAF0047ECE3 /* track_triggering_job.h in Headers */,
+				04AC16B625611A500047ECE3 /* track_builder.h in Headers */,
+				04AC171925611AAF0047ECE3 /* animation.h in Headers */,
 				04AC074C256102520047ECE3 /* import2ozz_config.h in Headers */,
+				04AC1A1125611BD40047ECE3 /* std_allocator.h in Headers */,
+				04AC171325611AAF0047ECE3 /* local_to_model_job.h in Headers */,
+				04AC16B325611A500047ECE3 /* additive_animation_builder.h in Headers */,
+				04AC17E725611B590047ECE3 /* span.h in Headers */,
+				04AC187425611B7B0047ECE3 /* soa_float.h in Headers */,
+				04AC1A1225611BD40047ECE3 /* map.h in Headers */,
+				04AC17E325611B590047ECE3 /* gtest_helper.h in Headers */,
 				04AC0745256102520047ECE3 /* import2ozz_skel.h in Headers */,
+				04AC186B25611B7B0047ECE3 /* box.h in Headers */,
+				04AC17E525611B590047ECE3 /* log.h in Headers */,
+				04AC16B825611A500047ECE3 /* track_optimizer.h in Headers */,
 				04AC074D256102520047ECE3 /* import2ozz_anim.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
