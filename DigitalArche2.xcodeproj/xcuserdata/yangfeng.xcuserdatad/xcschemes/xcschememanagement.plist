@@ -134,6 +134,46 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>unit_tests.render.camutils.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
+		</dict>
+		<key>unit_tests.render.filamat.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>31</integer>
+		</dict>
+		<key>unit_tests.render.filament.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>34</integer>
+		</dict>
+		<key>unit_tests.render.filameshio.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>33</integer>
+		</dict>
+		<key>unit_tests.render.image.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
+		<key>unit_tests.render.math.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>unit_tests.render.utils.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>unit_tests.render.viewer.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>32</integer>
+		</dict>
 		<key>unit_tests.vdb.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -173,6 +213,36 @@
 			<true/>
 		</dict>
 		<key>0466C55F255FC69400224683</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04AC02172560F8740047ECE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04ACF7C42560F1050047ECE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04ACF8DB2560F2090047ECE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04ACFA552560F3A70047ECE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04ACFB772560F4BF0047ECE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04ACFE382560F6610047ECE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
