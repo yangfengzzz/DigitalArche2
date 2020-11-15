@@ -144,6 +144,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>unit_tests.ozz.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>37</integer>
+		</dict>
 		<key>unit_tests.render.camutils.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
