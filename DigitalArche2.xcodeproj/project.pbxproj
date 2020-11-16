@@ -1146,6 +1146,7 @@
 		0466DE8D255FF92300224683 /* fdm_iccg_solver3_tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0466DE86255FF92300224683 /* fdm_iccg_solver3_tests.cpp */; };
 		0466DE8E255FF92300224683 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0466DE87255FF92300224683 /* main.cpp */; };
 		0466DEC9255FF97700224683 /* libsrc.common.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4B7255FC60C00224683 /* libsrc.common.dylib */; };
+		048A0DFC25629E0E000D30CD /* sample_user_channel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0DCE256106A40047ECE3 /* sample_user_channel.cc */; };
 		04AC00232560F7190047ECE3 /* test_filamesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AC00222560F7180047ECE3 /* test_filamesh.cpp */; };
 		04AC01142560F7780047ECE3 /* librender.filament.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACD3A22560C8EE0047ECE3 /* librender.filament.dylib */; };
 		04AC01392560F7850047ECE3 /* librender.filameshio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACF1732560EC5A0047ECE3 /* librender.filameshio.dylib */; };
@@ -1248,7 +1249,6 @@
 		04AC0AEE2561050F0047ECE3 /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0AE52561050F0047ECE3 /* cocoa_joystick.m */; };
 		04AC0B60256105790047ECE3 /* libexternal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466C4ED255FC64700224683 /* libexternal.dylib */; };
 		04AC0B87256105810047ECE3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AC0B86256105810047ECE3 /* OpenGL.framework */; };
-		04AC11E925610D220047ECE3 /* sample_user_channel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0DCE256106A40047ECE3 /* sample_user_channel.cc */; };
 		04AC129125610DD90047ECE3 /* platform_tests.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC128D25610DD80047ECE3 /* platform_tests.cc */; };
 		04AC129225610DD90047ECE3 /* endianness_tests.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC128E25610DD80047ECE3 /* endianness_tests.cc */; };
 		04AC129325610DD90047ECE3 /* span_tests.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC128F25610DD90047ECE3 /* span_tests.cc */; };
@@ -5051,9 +5051,9 @@
 				04ACD4352560CA000047ECE3 /* render.camutils */,
 				04ACFB792560F4BF0047ECE3 /* unit_tests.render.camutils */,
 				04ACD3602560C8D10047ECE3 /* render.filaflat */,
-				04ACD3812560C8E00047ECE3 /* render.filabridge */,
 				04ACD3C62560C8FB0047ECE3 /* render.filamat */,
 				04ACFC622560F56D0047ECE3 /* unit_tests.render.filamat */,
+				04ACD3812560C8E00047ECE3 /* render.filabridge */,
 				04ACD3A32560C8EE0047ECE3 /* render.filament */,
 				04ACD99E2560D1E50047ECE3 /* render.backend */,
 				04AC02192560F8740047ECE3 /* unit_tests.render.filament */,
@@ -6734,6 +6734,34 @@
 			name = particle_based;
 			sourceTree = "<group>";
 		};
+		048A0CC4256263EB000D30CD /* blend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = blend;
+			sourceTree = "<group>";
+		};
+		048A0D5F2562678D000D30CD /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		048A0D60256267BB000D30CD /* attaching */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = attaching;
+			sourceTree = "<group>";
+		};
+		048A0D612562684D000D30CD /* ik */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ik;
+			sourceTree = "<group>";
+		};
 		04AC02192560F8740047ECE3 /* unit_tests.render.filament */ = {
 			isa = PBXGroup;
 			children = (
@@ -6998,20 +7026,24 @@
 		04AC0942256103E20047ECE3 /* apps.ozz */ = {
 			isa = PBXGroup;
 			children = (
-				04AC0DCE256106A40047ECE3 /* sample_user_channel.cc */,
-				04AC0DA72561069F0047ECE3 /* sample_two_bone_ik.cc */,
-				04AC0D80256106980047ECE3 /* sample_skinning.cc */,
-				04AC0D59256106920047ECE3 /* sample_playback.cc */,
-				04AC0D322561068C0047ECE3 /* sample_partial_blend.cc */,
-				04AC0D0B256106860047ECE3 /* sample_optimize.cc */,
-				04AC0CE4256106800047ECE3 /* sample_multithread.cc */,
 				04AC0CBD2561067A0047ECE3 /* sample_millipede.cc */,
-				04AC0C962561066F0047ECE3 /* sample_look_at.cc */,
-				04AC0C6F256106680047ECE3 /* sample_foot_ik.cc */,
-				04AC0C48256106640047ECE3 /* sample_blend.cc */,
+				04AC0D59256106920047ECE3 /* sample_playback.cc */,
+				04AC0CE4256106800047ECE3 /* sample_multithread.cc */,
+				048A0D5F2562678D000D30CD /* base */,
 				04AC0C212561065E0047ECE3 /* sample_baked.cc */,
 				04AC0BF92561064F0047ECE3 /* sample_attach.cc */,
+				04AC0D80256106980047ECE3 /* sample_skinning.cc */,
+				048A0D60256267BB000D30CD /* attaching */,
+				04AC0DA72561069F0047ECE3 /* sample_two_bone_ik.cc */,
+				04AC0C962561066F0047ECE3 /* sample_look_at.cc */,
+				04AC0C6F256106680047ECE3 /* sample_foot_ik.cc */,
+				048A0D612562684D000D30CD /* ik */,
+				04AC0C48256106640047ECE3 /* sample_blend.cc */,
 				04AC0BD2256106490047ECE3 /* sample_additive.cc */,
+				04AC0D322561068C0047ECE3 /* sample_partial_blend.cc */,
+				048A0CC4256263EB000D30CD /* blend */,
+				04AC0DCE256106A40047ECE3 /* sample_user_channel.cc */,
+				04AC0D0B256106860047ECE3 /* sample_optimize.cc */,
 				04AC09BA256104150047ECE3 /* framework */,
 			);
 			path = apps.ozz;
@@ -7020,19 +7052,19 @@
 		04AC09BA256104150047ECE3 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				04AC09F1256104330047ECE3 /* internal */,
-				04AC09C4256104260047ECE3 /* application.cc */,
-				04AC09C1256104250047ECE3 /* application.h */,
-				04AC09C6256104260047ECE3 /* image.cc */,
-				04AC09C5256104260047ECE3 /* image.h */,
 				04AC09C3256104260047ECE3 /* imgui.h */,
-				04AC09C2256104260047ECE3 /* mesh.cc */,
-				04AC09BC256104250047ECE3 /* mesh.h */,
-				04AC09BB256104250047ECE3 /* profile.cc */,
-				04AC09BD256104250047ECE3 /* profile.h */,
 				04AC09BE256104250047ECE3 /* renderer.h */,
-				04AC09C0256104250047ECE3 /* utils.cc */,
+				04AC09F1256104330047ECE3 /* internal */,
+				04AC09C1256104250047ECE3 /* application.h */,
+				04AC09C4256104260047ECE3 /* application.cc */,
+				04AC09BD256104250047ECE3 /* profile.h */,
+				04AC09BB256104250047ECE3 /* profile.cc */,
+				04AC09C5256104260047ECE3 /* image.h */,
+				04AC09C6256104260047ECE3 /* image.cc */,
+				04AC09BC256104250047ECE3 /* mesh.h */,
+				04AC09C2256104260047ECE3 /* mesh.cc */,
 				04AC09BF256104250047ECE3 /* utils.h */,
+				04AC09C0256104250047ECE3 /* utils.cc */,
 			);
 			name = framework;
 			sourceTree = "<group>";
@@ -7040,19 +7072,19 @@
 		04AC09F1256104330047ECE3 /* internal */ = {
 			isa = PBXGroup;
 			children = (
-				04AC09FA256104400047ECE3 /* camera.cc */,
-				04AC09F72561043F0047ECE3 /* camera.h */,
 				04AC09F52561043F0047ECE3 /* icosphere.h */,
-				04AC09F42561043F0047ECE3 /* imgui_impl.cc */,
 				04AC09F62561043F0047ECE3 /* imgui_impl.h */,
-				04AC09F8256104400047ECE3 /* immediate.cc */,
-				04AC09F22561043F0047ECE3 /* immediate.h */,
-				04AC09FD256104400047ECE3 /* renderer_impl.cc */,
+				04AC09F42561043F0047ECE3 /* imgui_impl.cc */,
 				04AC09F32561043F0047ECE3 /* renderer_impl.h */,
-				04AC09FB256104400047ECE3 /* shader.cc */,
+				04AC09FD256104400047ECE3 /* renderer_impl.cc */,
 				04AC09F9256104400047ECE3 /* shader.h */,
-				04AC09FE256104400047ECE3 /* shooter.cc */,
+				04AC09FB256104400047ECE3 /* shader.cc */,
+				04AC09F72561043F0047ECE3 /* camera.h */,
+				04AC09FA256104400047ECE3 /* camera.cc */,
+				04AC09F22561043F0047ECE3 /* immediate.h */,
+				04AC09F8256104400047ECE3 /* immediate.cc */,
 				04AC09FC256104400047ECE3 /* shooter.h */,
+				04AC09FE256104400047ECE3 /* shooter.cc */,
 			);
 			name = internal;
 			sourceTree = "<group>";
@@ -10757,6 +10789,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AC09C9256104260047ECE3 /* mesh.cc in Sources */,
+				048A0DFC25629E0E000D30CD /* sample_user_channel.cc in Sources */,
 				04AC0A03256104400047ECE3 /* renderer_impl.cc in Sources */,
 				04AC0A04256104400047ECE3 /* shooter.cc in Sources */,
 				04AC09C8256104260047ECE3 /* utils.cc in Sources */,
@@ -10766,7 +10799,6 @@
 				04AC09FF256104400047ECE3 /* imgui_impl.cc in Sources */,
 				04AC09CB256104260047ECE3 /* image.cc in Sources */,
 				04AC0A01256104400047ECE3 /* camera.cc in Sources */,
-				04AC11E925610D220047ECE3 /* sample_user_channel.cc in Sources */,
 				04AC0A00256104400047ECE3 /* immediate.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

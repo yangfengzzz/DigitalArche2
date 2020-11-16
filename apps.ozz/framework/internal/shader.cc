@@ -48,7 +48,7 @@ static const char* kPlatformSpecivicFSHeader = "precision mediump float;\n";
 static const char* kPlatformSpecivicVSHeader = "";
 static const char* kPlatformSpecivicFSHeader = "";
 #endif  // EMSCRIPTEN
-
+//MARK:- Shader
 Shader::Shader() : program_(0), vertex_(0), fragment_(0) {}
 
 Shader::~Shader() {
@@ -172,6 +172,7 @@ void Shader::Unbind() {
   GL(UseProgram(0));
 }
 
+//MARK:- ImmediatePCShader
 ozz::unique_ptr<ImmediatePCShader> ImmediatePCShader::Build() {
   bool success = true;
 
@@ -239,6 +240,7 @@ void ImmediatePCShader::Bind(const math::Float4x4& _model,
   GL(UniformMatrix4fv(mvp_uniform, 1, false, values));
 }
 
+//MARK:- ImmediatePTCShader
 ozz::unique_ptr<ImmediatePTCShader> ImmediatePTCShader::Build() {
   bool success = true;
 
@@ -387,6 +389,7 @@ const char* kShaderAmbientTexturedFS =
     "}\n";
 }  // namespace
 
+//MARK:- SkeletonShader
 void SkeletonShader::Bind(const math::Float4x4& _model,
                           const math::Float4x4& _view_proj, GLsizei _pos_stride,
                           GLsizei _pos_offset, GLsizei _normal_stride,
@@ -420,6 +423,7 @@ void SkeletonShader::Bind(const math::Float4x4& _model,
   GL(UniformMatrix4fv(mvp_uniform, 1, false, values));
 }
 
+//MARK:- JointShader
 ozz::unique_ptr<JointShader> JointShader::Build() {
   bool success = true;
 
@@ -477,6 +481,7 @@ ozz::unique_ptr<JointShader> JointShader::Build() {
   return shader;
 }
 
+//MARK:- BoneShader
 ozz::unique_ptr<BoneShader>
 BoneShader::Build() {  // Builds a world matrix from joint uniforms,
                        // sticking bone model between
@@ -539,6 +544,7 @@ BoneShader::Build() {  // Builds a world matrix from joint uniforms,
   return shader;
 }
 
+//MARK:- AmbientShader
 ozz::unique_ptr<AmbientShader> AmbientShader::Build() {
   const char* vs[] = {
       kPlatformSpecivicVSHeader, kPassNoUv,
@@ -617,6 +623,7 @@ void AmbientShader::Bind(const math::Float4x4& _model,
   GL(UniformMatrix4fv(mvp_uniform, 1, false, values));
 }
 
+//MARK:- AmbientShaderInstanced
 ozz::unique_ptr<AmbientShaderInstanced> AmbientShaderInstanced::Build() {
   bool success = true;
 
@@ -724,6 +731,7 @@ void AmbientShaderInstanced::Unbind() {
   Shader::Unbind();
 }
 
+//MARK:- AmbientTexturedShader
 ozz::unique_ptr<AmbientTexturedShader> AmbientTexturedShader::Build() {
   const char* vs[] = {
       kPlatformSpecivicVSHeader, kPassUv,

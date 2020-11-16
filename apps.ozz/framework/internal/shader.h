@@ -37,7 +37,7 @@ struct Float4x4;
 }
 namespace sample {
 namespace internal {
-
+//MARK:- Shader
 // Declares a shader program.
 class Shader {
  public:
@@ -92,6 +92,7 @@ class Shader {
   ozz::vector<GLint> attribs_;
 };
 
+//MARK:- ImmediatePCShader
 class ImmediatePCShader : public Shader {
  public:
   ImmediatePCShader() {}
@@ -109,6 +110,7 @@ class ImmediatePCShader : public Shader {
             GLsizei _color_offset);
 };
 
+//MARK:- ImmediatePTCShader
 class ImmediatePTCShader : public Shader {
  public:
   ImmediatePTCShader() {}
@@ -126,6 +128,7 @@ class ImmediatePTCShader : public Shader {
             GLsizei _tex_offset, GLsizei _color_stride, GLsizei _color_offset);
 };
 
+//MARK:- SkeletonShader
 class SkeletonShader : public Shader {
  public:
   SkeletonShader() {}
@@ -144,6 +147,7 @@ class SkeletonShader : public Shader {
   GLint joint_uniform() const { return uniform(1); }
 };
 
+//MARK:- JointShader
 class JointShader : public SkeletonShader {
  public:
   JointShader() {}
@@ -156,6 +160,7 @@ class JointShader : public SkeletonShader {
   static ozz::unique_ptr<JointShader> Build();
 };
 
+//MARK:- BoneShader
 class BoneShader : public SkeletonShader {
  public:
   BoneShader() {}
@@ -168,6 +173,7 @@ class BoneShader : public SkeletonShader {
   static ozz::unique_ptr<BoneShader> Build();
 };
 
+//MARK:- AmbientShader
 class AmbientShader : public Shader {
  public:
   AmbientShader() {}
@@ -190,6 +196,7 @@ class AmbientShader : public Shader {
                      int _fragment_count, const char** _fragment);
 };
 
+//MARK:- AmbientShaderInstanced
 class AmbientShaderInstanced : public Shader {
  public:
   AmbientShaderInstanced() {}
@@ -210,6 +217,7 @@ class AmbientShaderInstanced : public Shader {
   virtual void Unbind();
 };
 
+//MARK:- AmbientTexturedShader
 class AmbientTexturedShader : public AmbientShader {
  public:
   // Constructs the shader.
