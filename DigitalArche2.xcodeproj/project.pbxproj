@@ -597,11 +597,6 @@
 		0454959D256029C1004B6515 /* librender.filamentapp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454911B256020B8004B6515 /* librender.filamentapp.dylib */; };
 		045495C525602A4D004B6515 /* resources.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549577256029A5004B6515 /* resources.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
 		045495C725602A4D004B6515 /* monkey.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549576256029A5004B6515 /* monkey.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
-		0454964225602D08004B6515 /* getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0454964125602D08004B6515 /* getopt.h */; };
-		0454965225602D0F004B6515 /* getopt_long.c in Sources */ = {isa = PBXBuildFile; fileRef = 0454965025602D0F004B6515 /* getopt_long.c */; };
-		0454965325602D0F004B6515 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 0454965125602D0F004B6515 /* getopt.c */; };
-		045497EE256030FD004B6515 /* tinyexr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 045497EC256030FD004B6515 /* tinyexr.cc */; };
-		045497EF256030FD004B6515 /* tinyexr.h in Headers */ = {isa = PBXBuildFile; fileRef = 045497ED256030FD004B6515 /* tinyexr.h */; };
 		04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */ = {isa = PBXBuildFile; fileRef = 04549572256029A4004B6515 /* gltf_viewer.apple.S */; settings = {COMPILER_FLAGS = "-I/Users/yangfeng/Desktop/DigitalArche2/apps"; }; };
 		048A0E732562ACFB000D30CD /* simd_math_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 048A0E702562ACFB000D30CD /* simd_math_config.h */; };
 		048A0E742562ACFB000D30CD /* simd_math_ref-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 048A0E712562ACFB000D30CD /* simd_math_ref-inl.h */; };
@@ -825,50 +820,6 @@
 		04AC1B9925611C250047ECE3 /* stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1B9625611C250047ECE3 /* stream.h */; };
 		04AC1BE725611C350047ECE3 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1BE625611C350047ECE3 /* options.h */; };
 		04AC1C0F25611C470047ECE3 /* skinning_job.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC1C0E25611C470047ECE3 /* skinning_job.h */; };
-		04ACD47D2560CC910047ECE3 /* meshoptimizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4702560CC900047ECE3 /* meshoptimizer.h */; };
-		04ACD47E2560CC910047ECE3 /* vfetchanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4712560CC900047ECE3 /* vfetchanalyzer.cpp */; };
-		04ACD47F2560CC910047ECE3 /* simplifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4722560CC900047ECE3 /* simplifier.cpp */; };
-		04ACD4802560CC910047ECE3 /* vcacheanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4732560CC900047ECE3 /* vcacheanalyzer.cpp */; };
-		04ACD4812560CC910047ECE3 /* vertexcodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4742560CC900047ECE3 /* vertexcodec.cpp */; };
-		04ACD4822560CC910047ECE3 /* clusterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4752560CC900047ECE3 /* clusterizer.cpp */; };
-		04ACD4832560CC910047ECE3 /* vcacheoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4762560CC900047ECE3 /* vcacheoptimizer.cpp */; };
-		04ACD4842560CC910047ECE3 /* overdrawoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4772560CC900047ECE3 /* overdrawoptimizer.cpp */; };
-		04ACD4852560CC910047ECE3 /* vfetchoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4782560CC900047ECE3 /* vfetchoptimizer.cpp */; };
-		04ACD4862560CC910047ECE3 /* indexcodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4792560CC900047ECE3 /* indexcodec.cpp */; };
-		04ACD4872560CC910047ECE3 /* indexgenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD47A2560CC900047ECE3 /* indexgenerator.cpp */; };
-		04ACD4882560CC910047ECE3 /* overdrawanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD47B2560CC900047ECE3 /* overdrawanalyzer.cpp */; };
-		04ACD4892560CC910047ECE3 /* stripifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD47C2560CC910047ECE3 /* stripifier.cpp */; };
-		04ACD4A52560CCBA0047ECE3 /* smolv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4A32560CCBA0047ECE3 /* smolv.cpp */; };
-		04ACD4A62560CCBA0047ECE3 /* smolv.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4A42560CCBA0047ECE3 /* smolv.h */; };
-		04ACD4E02560CCDE0047ECE3 /* astc_partition_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C12560CCDC0047ECE3 /* astc_partition_tables.cpp */; };
-		04ACD4E12560CCDE0047ECE3 /* astc_kmeans_partitioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C22560CCDC0047ECE3 /* astc_kmeans_partitioning.cpp */; };
-		04ACD4E22560CCDE0047ECE3 /* astc_encoding_choice_error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C32560CCDC0047ECE3 /* astc_encoding_choice_error.cpp */; };
-		04ACD4E32560CCDE0047ECE3 /* astc_compute_variance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C42560CCDC0047ECE3 /* astc_compute_variance.cpp */; };
-		04ACD4E42560CCDE0047ECE3 /* astc_percentile_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C52560CCDC0047ECE3 /* astc_percentile_tables.cpp */; };
-		04ACD4E52560CCDE0047ECE3 /* astc_color_quantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C62560CCDC0047ECE3 /* astc_color_quantize.cpp */; };
-		04ACD4E62560CCDE0047ECE3 /* vectypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4C72560CCDC0047ECE3 /* vectypes.h */; };
-		04ACD4E72560CCDE0047ECE3 /* astc_weight_align.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C82560CCDC0047ECE3 /* astc_weight_align.cpp */; };
-		04ACD4E82560CCDE0047ECE3 /* astc_ideal_endpoints_and_weights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4C92560CCDC0047ECE3 /* astc_ideal_endpoints_and_weights.cpp */; };
-		04ACD4E92560CCDE0047ECE3 /* astc_block_sizes2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4CA2560CCDC0047ECE3 /* astc_block_sizes2.cpp */; };
-		04ACD4EA2560CCDE0047ECE3 /* astc_compress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4CB2560CCDC0047ECE3 /* astc_compress_symbolic.cpp */; };
-		04ACD4EB2560CCDE0047ECE3 /* astc_pick_best_endpoint_format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4CC2560CCDC0047ECE3 /* astc_pick_best_endpoint_format.cpp */; };
-		04ACD4EC2560CCDE0047ECE3 /* softfloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4CD2560CCDC0047ECE3 /* softfloat.cpp */; };
-		04ACD4ED2560CCDE0047ECE3 /* astc_decompress_symbolic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4CE2560CCDD0047ECE3 /* astc_decompress_symbolic.cpp */; };
-		04ACD4EE2560CCDE0047ECE3 /* astc_quantization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4CF2560CCDD0047ECE3 /* astc_quantization.cpp */; };
-		04ACD4EF2560CCDE0047ECE3 /* astc_weight_quant_xfer_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4D02560CCDD0047ECE3 /* astc_weight_quant_xfer_tables.cpp */; };
-		04ACD4F12560CCDE0047ECE3 /* astc_averages_and_directions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4D22560CCDD0047ECE3 /* astc_averages_and_directions.cpp */; };
-		04ACD4F22560CCDE0047ECE3 /* astc_image_load_store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4D32560CCDD0047ECE3 /* astc_image_load_store.cpp */; };
-		04ACD4F32560CCDE0047ECE3 /* softfloat.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4D42560CCDD0047ECE3 /* softfloat.h */; };
-		04ACD4F52560CCDE0047ECE3 /* mathlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4D62560CCDD0047ECE3 /* mathlib.h */; };
-		04ACD4F62560CCDE0047ECE3 /* astc_symbolic_physical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4D72560CCDD0047ECE3 /* astc_symbolic_physical.cpp */; };
-		04ACD4F72560CCDE0047ECE3 /* astc_find_best_partitioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4D82560CCDD0047ECE3 /* astc_find_best_partitioning.cpp */; };
-		04ACD4F82560CCDE0047ECE3 /* astc_toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4D92560CCDD0047ECE3 /* astc_toplevel.cpp */; };
-		04ACD4F92560CCDE0047ECE3 /* astc_integer_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4DA2560CCDE0047ECE3 /* astc_integer_sequence.cpp */; };
-		04ACD4FA2560CCDE0047ECE3 /* mathlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4DB2560CCDE0047ECE3 /* mathlib.cpp */; };
-		04ACD4FB2560CCDE0047ECE3 /* astc_ktx_dds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4DC2560CCDE0047ECE3 /* astc_ktx_dds.cpp */; };
-		04ACD4FC2560CCDE0047ECE3 /* astc_color_unquantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD4DD2560CCDE0047ECE3 /* astc_color_unquantize.cpp */; };
-		04ACD4FD2560CCDE0047ECE3 /* astc_codec_internals.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD4DE2560CCDE0047ECE3 /* astc_codec_internals.h */; };
-		04ACD5172560CCF60047ECE3 /* astcenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACD5162560CCF60047ECE3 /* astcenc.h */; };
 		04ACD63A2560CE670047ECE3 /* api_level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD6282560CE650047ECE3 /* api_level.cpp */; };
 		04ACD63B2560CE670047ECE3 /* ashmem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD6292560CE660047ECE3 /* ashmem.cpp */; };
 		04ACD63C2560CE670047ECE3 /* Panic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD62A2560CE660047ECE3 /* Panic.cpp */; };
@@ -2570,11 +2521,6 @@
 		04549576256029A5004B6515 /* monkey.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = monkey.apple.S; sourceTree = "<group>"; };
 		04549577256029A5004B6515 /* resources.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = resources.apple.S; sourceTree = "<group>"; };
 		0454961725602B39004B6515 /* apps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = apps.entitlements; sourceTree = "<group>"; };
-		0454964125602D08004B6515 /* getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getopt.h; path = getopt/include/getopt/getopt.h; sourceTree = "<group>"; };
-		0454965025602D0F004B6515 /* getopt_long.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getopt_long.c; path = getopt/src/getopt_long.c; sourceTree = "<group>"; };
-		0454965125602D0F004B6515 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getopt.c; path = getopt/src/getopt.c; sourceTree = "<group>"; };
-		045497EC256030FD004B6515 /* tinyexr.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyexr.cc; path = tinyexr/tinyexr.cc; sourceTree = "<group>"; };
-		045497ED256030FD004B6515 /* tinyexr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyexr.h; path = tinyexr/tinyexr.h; sourceTree = "<group>"; };
 		0466C484255FC46100224683 /* apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apps; sourceTree = BUILT_PRODUCTS_DIR; };
 		0466C4ED255FC64700224683 /* libexternal.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libexternal.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		048A0E702562ACFB000D30CD /* simd_math_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simd_math_config.h; path = ozz/base/maths/internal/simd_math_config.h; sourceTree = "<group>"; };
@@ -2847,50 +2793,6 @@
 		04ACD3E92560C90B0047ECE3 /* librender.gltfio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.gltfio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACD40E2560C9D70047ECE3 /* librender.geometry.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.geometry.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACD4342560CA000047ECE3 /* librender.camutils.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.camutils.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		04ACD4702560CC900047ECE3 /* meshoptimizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = meshoptimizer.h; path = meshoptimizer/src/meshoptimizer.h; sourceTree = "<group>"; };
-		04ACD4712560CC900047ECE3 /* vfetchanalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vfetchanalyzer.cpp; path = meshoptimizer/src/vfetchanalyzer.cpp; sourceTree = "<group>"; };
-		04ACD4722560CC900047ECE3 /* simplifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simplifier.cpp; path = meshoptimizer/src/simplifier.cpp; sourceTree = "<group>"; };
-		04ACD4732560CC900047ECE3 /* vcacheanalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vcacheanalyzer.cpp; path = meshoptimizer/src/vcacheanalyzer.cpp; sourceTree = "<group>"; };
-		04ACD4742560CC900047ECE3 /* vertexcodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vertexcodec.cpp; path = meshoptimizer/src/vertexcodec.cpp; sourceTree = "<group>"; };
-		04ACD4752560CC900047ECE3 /* clusterizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clusterizer.cpp; path = meshoptimizer/src/clusterizer.cpp; sourceTree = "<group>"; };
-		04ACD4762560CC900047ECE3 /* vcacheoptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vcacheoptimizer.cpp; path = meshoptimizer/src/vcacheoptimizer.cpp; sourceTree = "<group>"; };
-		04ACD4772560CC900047ECE3 /* overdrawoptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = overdrawoptimizer.cpp; path = meshoptimizer/src/overdrawoptimizer.cpp; sourceTree = "<group>"; };
-		04ACD4782560CC900047ECE3 /* vfetchoptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vfetchoptimizer.cpp; path = meshoptimizer/src/vfetchoptimizer.cpp; sourceTree = "<group>"; };
-		04ACD4792560CC900047ECE3 /* indexcodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = indexcodec.cpp; path = meshoptimizer/src/indexcodec.cpp; sourceTree = "<group>"; };
-		04ACD47A2560CC900047ECE3 /* indexgenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = indexgenerator.cpp; path = meshoptimizer/src/indexgenerator.cpp; sourceTree = "<group>"; };
-		04ACD47B2560CC900047ECE3 /* overdrawanalyzer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = overdrawanalyzer.cpp; path = meshoptimizer/src/overdrawanalyzer.cpp; sourceTree = "<group>"; };
-		04ACD47C2560CC910047ECE3 /* stripifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stripifier.cpp; path = meshoptimizer/src/stripifier.cpp; sourceTree = "<group>"; };
-		04ACD4A32560CCBA0047ECE3 /* smolv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = smolv.cpp; path = "smol-v/source/smolv.cpp"; sourceTree = "<group>"; };
-		04ACD4A42560CCBA0047ECE3 /* smolv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smolv.h; path = "smol-v/source/smolv.h"; sourceTree = "<group>"; };
-		04ACD4C12560CCDC0047ECE3 /* astc_partition_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_partition_tables.cpp; path = astcenc/Source/astc_partition_tables.cpp; sourceTree = "<group>"; };
-		04ACD4C22560CCDC0047ECE3 /* astc_kmeans_partitioning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_kmeans_partitioning.cpp; path = astcenc/Source/astc_kmeans_partitioning.cpp; sourceTree = "<group>"; };
-		04ACD4C32560CCDC0047ECE3 /* astc_encoding_choice_error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_encoding_choice_error.cpp; path = astcenc/Source/astc_encoding_choice_error.cpp; sourceTree = "<group>"; };
-		04ACD4C42560CCDC0047ECE3 /* astc_compute_variance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_compute_variance.cpp; path = astcenc/Source/astc_compute_variance.cpp; sourceTree = "<group>"; };
-		04ACD4C52560CCDC0047ECE3 /* astc_percentile_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_percentile_tables.cpp; path = astcenc/Source/astc_percentile_tables.cpp; sourceTree = "<group>"; };
-		04ACD4C62560CCDC0047ECE3 /* astc_color_quantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_color_quantize.cpp; path = astcenc/Source/astc_color_quantize.cpp; sourceTree = "<group>"; };
-		04ACD4C72560CCDC0047ECE3 /* vectypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vectypes.h; path = astcenc/Source/vectypes.h; sourceTree = "<group>"; };
-		04ACD4C82560CCDC0047ECE3 /* astc_weight_align.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_weight_align.cpp; path = astcenc/Source/astc_weight_align.cpp; sourceTree = "<group>"; };
-		04ACD4C92560CCDC0047ECE3 /* astc_ideal_endpoints_and_weights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_ideal_endpoints_and_weights.cpp; path = astcenc/Source/astc_ideal_endpoints_and_weights.cpp; sourceTree = "<group>"; };
-		04ACD4CA2560CCDC0047ECE3 /* astc_block_sizes2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_block_sizes2.cpp; path = astcenc/Source/astc_block_sizes2.cpp; sourceTree = "<group>"; };
-		04ACD4CB2560CCDC0047ECE3 /* astc_compress_symbolic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_compress_symbolic.cpp; path = astcenc/Source/astc_compress_symbolic.cpp; sourceTree = "<group>"; };
-		04ACD4CC2560CCDC0047ECE3 /* astc_pick_best_endpoint_format.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_pick_best_endpoint_format.cpp; path = astcenc/Source/astc_pick_best_endpoint_format.cpp; sourceTree = "<group>"; };
-		04ACD4CD2560CCDC0047ECE3 /* softfloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = softfloat.cpp; path = astcenc/Source/softfloat.cpp; sourceTree = "<group>"; };
-		04ACD4CE2560CCDD0047ECE3 /* astc_decompress_symbolic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_decompress_symbolic.cpp; path = astcenc/Source/astc_decompress_symbolic.cpp; sourceTree = "<group>"; };
-		04ACD4CF2560CCDD0047ECE3 /* astc_quantization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_quantization.cpp; path = astcenc/Source/astc_quantization.cpp; sourceTree = "<group>"; };
-		04ACD4D02560CCDD0047ECE3 /* astc_weight_quant_xfer_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_weight_quant_xfer_tables.cpp; path = astcenc/Source/astc_weight_quant_xfer_tables.cpp; sourceTree = "<group>"; };
-		04ACD4D22560CCDD0047ECE3 /* astc_averages_and_directions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_averages_and_directions.cpp; path = astcenc/Source/astc_averages_and_directions.cpp; sourceTree = "<group>"; };
-		04ACD4D32560CCDD0047ECE3 /* astc_image_load_store.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_image_load_store.cpp; path = astcenc/Source/astc_image_load_store.cpp; sourceTree = "<group>"; };
-		04ACD4D42560CCDD0047ECE3 /* softfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = softfloat.h; path = astcenc/Source/softfloat.h; sourceTree = "<group>"; };
-		04ACD4D62560CCDD0047ECE3 /* mathlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathlib.h; path = astcenc/Source/mathlib.h; sourceTree = "<group>"; };
-		04ACD4D72560CCDD0047ECE3 /* astc_symbolic_physical.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_symbolic_physical.cpp; path = astcenc/Source/astc_symbolic_physical.cpp; sourceTree = "<group>"; };
-		04ACD4D82560CCDD0047ECE3 /* astc_find_best_partitioning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_find_best_partitioning.cpp; path = astcenc/Source/astc_find_best_partitioning.cpp; sourceTree = "<group>"; };
-		04ACD4D92560CCDD0047ECE3 /* astc_toplevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_toplevel.cpp; path = astcenc/Source/astc_toplevel.cpp; sourceTree = "<group>"; };
-		04ACD4DA2560CCDE0047ECE3 /* astc_integer_sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_integer_sequence.cpp; path = astcenc/Source/astc_integer_sequence.cpp; sourceTree = "<group>"; };
-		04ACD4DB2560CCDE0047ECE3 /* mathlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mathlib.cpp; path = astcenc/Source/mathlib.cpp; sourceTree = "<group>"; };
-		04ACD4DC2560CCDE0047ECE3 /* astc_ktx_dds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_ktx_dds.cpp; path = astcenc/Source/astc_ktx_dds.cpp; sourceTree = "<group>"; };
-		04ACD4DD2560CCDE0047ECE3 /* astc_color_unquantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = astc_color_unquantize.cpp; path = astcenc/Source/astc_color_unquantize.cpp; sourceTree = "<group>"; };
-		04ACD4DE2560CCDE0047ECE3 /* astc_codec_internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = astc_codec_internals.h; path = astcenc/Source/astc_codec_internals.h; sourceTree = "<group>"; };
-		04ACD5162560CCF60047ECE3 /* astcenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = astcenc.h; path = astcenc/include/astcenc.h; sourceTree = "<group>"; };
 		04ACD6282560CE650047ECE3 /* api_level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = api_level.cpp; sourceTree = "<group>"; };
 		04ACD6292560CE660047ECE3 /* ashmem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ashmem.cpp; sourceTree = "<group>"; };
 		04ACD62A2560CE660047ECE3 /* Panic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Panic.cpp; sourceTree = "<group>"; };
@@ -4502,25 +4404,6 @@
 			path = render.filagui;
 			sourceTree = "<group>";
 		};
-		0454964025602CFE004B6515 /* getopt */ = {
-			isa = PBXGroup;
-			children = (
-				0454965025602D0F004B6515 /* getopt_long.c */,
-				0454965125602D0F004B6515 /* getopt.c */,
-				0454964125602D08004B6515 /* getopt.h */,
-			);
-			name = getopt;
-			sourceTree = "<group>";
-		};
-		045497EB256030EB004B6515 /* tinyexr */ = {
-			isa = PBXGroup;
-			children = (
-				045497ED256030FD004B6515 /* tinyexr.h */,
-				045497EC256030FD004B6515 /* tinyexr.cc */,
-			);
-			name = tinyexr;
-			sourceTree = "<group>";
-		};
 		0454984825603288004B6515 /* direct */ = {
 			isa = PBXGroup;
 			children = (
@@ -4646,11 +4529,6 @@
 				04AC0A77256104EA0047ECE3 /* glfw */,
 				045492462560238E004B6515 /* imgui */,
 				04AC07BB256102E60047ECE3 /* jsoncpp */,
-				0454964025602CFE004B6515 /* getopt */,
-				04ACD46F2560CC7E0047ECE3 /* meshoptimizer */,
-				04ACD4A22560CCAE0047ECE3 /* smol-v */,
-				04ACD4BF2560CCC40047ECE3 /* astcenc */,
-				045497EB256030EB004B6515 /* tinyexr */,
 			);
 			path = external;
 			sourceTree = "<group>";
@@ -5593,71 +5471,6 @@
 			path = render.camutils;
 			sourceTree = "<group>";
 		};
-		04ACD46F2560CC7E0047ECE3 /* meshoptimizer */ = {
-			isa = PBXGroup;
-			children = (
-				04ACD4752560CC900047ECE3 /* clusterizer.cpp */,
-				04ACD4792560CC900047ECE3 /* indexcodec.cpp */,
-				04ACD47A2560CC900047ECE3 /* indexgenerator.cpp */,
-				04ACD4702560CC900047ECE3 /* meshoptimizer.h */,
-				04ACD47B2560CC900047ECE3 /* overdrawanalyzer.cpp */,
-				04ACD4772560CC900047ECE3 /* overdrawoptimizer.cpp */,
-				04ACD4722560CC900047ECE3 /* simplifier.cpp */,
-				04ACD47C2560CC910047ECE3 /* stripifier.cpp */,
-				04ACD4732560CC900047ECE3 /* vcacheanalyzer.cpp */,
-				04ACD4762560CC900047ECE3 /* vcacheoptimizer.cpp */,
-				04ACD4742560CC900047ECE3 /* vertexcodec.cpp */,
-				04ACD4712560CC900047ECE3 /* vfetchanalyzer.cpp */,
-				04ACD4782560CC900047ECE3 /* vfetchoptimizer.cpp */,
-			);
-			name = meshoptimizer;
-			sourceTree = "<group>";
-		};
-		04ACD4A22560CCAE0047ECE3 /* smol-v */ = {
-			isa = PBXGroup;
-			children = (
-				04ACD4A32560CCBA0047ECE3 /* smolv.cpp */,
-				04ACD4A42560CCBA0047ECE3 /* smolv.h */,
-			);
-			name = "smol-v";
-			sourceTree = "<group>";
-		};
-		04ACD4BF2560CCC40047ECE3 /* astcenc */ = {
-			isa = PBXGroup;
-			children = (
-				04ACD5162560CCF60047ECE3 /* astcenc.h */,
-				04ACD4D22560CCDD0047ECE3 /* astc_averages_and_directions.cpp */,
-				04ACD4CA2560CCDC0047ECE3 /* astc_block_sizes2.cpp */,
-				04ACD4DE2560CCDE0047ECE3 /* astc_codec_internals.h */,
-				04ACD4C62560CCDC0047ECE3 /* astc_color_quantize.cpp */,
-				04ACD4DD2560CCDE0047ECE3 /* astc_color_unquantize.cpp */,
-				04ACD4CB2560CCDC0047ECE3 /* astc_compress_symbolic.cpp */,
-				04ACD4C42560CCDC0047ECE3 /* astc_compute_variance.cpp */,
-				04ACD4CE2560CCDD0047ECE3 /* astc_decompress_symbolic.cpp */,
-				04ACD4C32560CCDC0047ECE3 /* astc_encoding_choice_error.cpp */,
-				04ACD4D82560CCDD0047ECE3 /* astc_find_best_partitioning.cpp */,
-				04ACD4C92560CCDC0047ECE3 /* astc_ideal_endpoints_and_weights.cpp */,
-				04ACD4D32560CCDD0047ECE3 /* astc_image_load_store.cpp */,
-				04ACD4DA2560CCDE0047ECE3 /* astc_integer_sequence.cpp */,
-				04ACD4C22560CCDC0047ECE3 /* astc_kmeans_partitioning.cpp */,
-				04ACD4DC2560CCDE0047ECE3 /* astc_ktx_dds.cpp */,
-				04ACD4C12560CCDC0047ECE3 /* astc_partition_tables.cpp */,
-				04ACD4C52560CCDC0047ECE3 /* astc_percentile_tables.cpp */,
-				04ACD4CC2560CCDC0047ECE3 /* astc_pick_best_endpoint_format.cpp */,
-				04ACD4CF2560CCDD0047ECE3 /* astc_quantization.cpp */,
-				04ACD4D72560CCDD0047ECE3 /* astc_symbolic_physical.cpp */,
-				04ACD4D92560CCDD0047ECE3 /* astc_toplevel.cpp */,
-				04ACD4C82560CCDC0047ECE3 /* astc_weight_align.cpp */,
-				04ACD4D02560CCDD0047ECE3 /* astc_weight_quant_xfer_tables.cpp */,
-				04ACD4DB2560CCDE0047ECE3 /* mathlib.cpp */,
-				04ACD4D62560CCDD0047ECE3 /* mathlib.h */,
-				04ACD4CD2560CCDC0047ECE3 /* softfloat.cpp */,
-				04ACD4D42560CCDD0047ECE3 /* softfloat.h */,
-				04ACD4C72560CCDC0047ECE3 /* vectypes.h */,
-			);
-			name = astcenc;
-			sourceTree = "<group>";
-		};
 		04ACD99E2560D1E50047ECE3 /* render.backend */ = {
 			isa = PBXGroup;
 			children = (
@@ -6421,23 +6234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				045492502560239D004B6515 /* imconfig.h in Headers */,
-				0454964225602D08004B6515 /* getopt.h in Headers */,
-				04ACD4E62560CCDE0047ECE3 /* vectypes.h in Headers */,
 				04AC0A8C256105030047ECE3 /* internal.h in Headers */,
-				04ACD4FD2560CCDE0047ECE3 /* astc_codec_internals.h in Headers */,
 				04AC0AEC2561050F0047ECE3 /* platform.h in Headers */,
 				04AC0809256102FC0047ECE3 /* json.h in Headers */,
 				04AC0808256102FC0047ECE3 /* json-forwards.h in Headers */,
-				04ACD4F32560CCDE0047ECE3 /* softfloat.h in Headers */,
-				045497EF256030FD004B6515 /* tinyexr.h in Headers */,
-				04ACD47D2560CC910047ECE3 /* meshoptimizer.h in Headers */,
-				04ACD4A62560CCBA0047ECE3 /* smolv.h in Headers */,
 				045492512560239D004B6515 /* imstb_rectpack.h in Headers */,
 				045492572560239D004B6515 /* imstb_truetype.h in Headers */,
-				04ACD4F52560CCDE0047ECE3 /* mathlib.h in Headers */,
 				045492552560239D004B6515 /* imgui.h in Headers */,
 				045492532560239D004B6515 /* imgui_internal.h in Headers */,
-				04ACD5172560CCF60047ECE3 /* astcenc.h in Headers */,
 				045492542560239D004B6515 /* imstb_textedit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -7850,66 +7654,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ACD4FB2560CCDE0047ECE3 /* astc_ktx_dds.cpp in Sources */,
 				04AC0AED2561050F0047ECE3 /* cocoa_thread.c in Sources */,
 				04AC0AE92561050F0047ECE3 /* cocoa_window.m in Sources */,
-				04ACD4F92560CCDE0047ECE3 /* astc_integer_sequence.cpp in Sources */,
-				04ACD4FC2560CCDE0047ECE3 /* astc_color_unquantize.cpp in Sources */,
-				0454965325602D0F004B6515 /* getopt.c in Sources */,
-				04ACD4E82560CCDE0047ECE3 /* astc_ideal_endpoints_and_weights.cpp in Sources */,
-				04ACD4852560CC910047ECE3 /* vfetchoptimizer.cpp in Sources */,
-				04ACD4E22560CCDE0047ECE3 /* astc_encoding_choice_error.cpp in Sources */,
-				04ACD4FA2560CCDE0047ECE3 /* mathlib.cpp in Sources */,
-				04ACD4872560CC910047ECE3 /* indexgenerator.cpp in Sources */,
-				04ACD4802560CC910047ECE3 /* vcacheanalyzer.cpp in Sources */,
-				04ACD4862560CC910047ECE3 /* indexcodec.cpp in Sources */,
 				04AC0A8E256105030047ECE3 /* joystick.c in Sources */,
-				04ACD4882560CC910047ECE3 /* overdrawanalyzer.cpp in Sources */,
-				04ACD4A52560CCBA0047ECE3 /* smolv.cpp in Sources */,
-				04ACD4E12560CCDE0047ECE3 /* astc_kmeans_partitioning.cpp in Sources */,
-				04ACD4E52560CCDE0047ECE3 /* astc_color_quantize.cpp in Sources */,
-				04ACD4ED2560CCDE0047ECE3 /* astc_decompress_symbolic.cpp in Sources */,
 				04AC0AE62561050F0047ECE3 /* cocoa_glext.m in Sources */,
-				04ACD47E2560CC910047ECE3 /* vfetchanalyzer.cpp in Sources */,
 				04AC0A91256105030047ECE3 /* tga.c in Sources */,
 				04AC0A87256105030047ECE3 /* stream.c in Sources */,
-				04ACD4F82560CCDE0047ECE3 /* astc_toplevel.cpp in Sources */,
-				0454965225602D0F004B6515 /* getopt_long.c in Sources */,
-				04ACD4812560CC910047ECE3 /* vertexcodec.cpp in Sources */,
 				04AC0A89256105030047ECE3 /* fullscreen.c in Sources */,
-				04ACD4832560CC910047ECE3 /* vcacheoptimizer.cpp in Sources */,
-				04ACD4EC2560CCDE0047ECE3 /* softfloat.cpp in Sources */,
-				04ACD4EA2560CCDE0047ECE3 /* astc_compress_symbolic.cpp in Sources */,
 				04AC0A8A256105030047ECE3 /* init.c in Sources */,
 				04AC0A88256105030047ECE3 /* input.c in Sources */,
-				04ACD4F62560CCDE0047ECE3 /* astc_symbolic_physical.cpp in Sources */,
-				04ACD4E02560CCDE0047ECE3 /* astc_partition_tables.cpp in Sources */,
-				04ACD4EB2560CCDE0047ECE3 /* astc_pick_best_endpoint_format.cpp in Sources */,
-				04ACD4842560CC910047ECE3 /* overdrawoptimizer.cpp in Sources */,
 				04AC0A90256105030047ECE3 /* thread.c in Sources */,
 				04AC0AEA2561050F0047ECE3 /* cocoa_fullscreen.m in Sources */,
-				04ACD4E42560CCDE0047ECE3 /* astc_percentile_tables.cpp in Sources */,
-				04ACD4F12560CCDE0047ECE3 /* astc_averages_and_directions.cpp in Sources */,
 				04AC07E1256102F30047ECE3 /* jsoncpp.cpp in Sources */,
-				04ACD4F72560CCDE0047ECE3 /* astc_find_best_partitioning.cpp in Sources */,
 				04AC0AEB2561050F0047ECE3 /* cocoa_init.m in Sources */,
 				04AC0AE82561050F0047ECE3 /* cocoa_enable.m in Sources */,
-				04ACD4EE2560CCDE0047ECE3 /* astc_quantization.cpp in Sources */,
-				04ACD47F2560CC910047ECE3 /* simplifier.cpp in Sources */,
-				04ACD4EF2560CCDE0047ECE3 /* astc_weight_quant_xfer_tables.cpp in Sources */,
-				04ACD4E32560CCDE0047ECE3 /* astc_compute_variance.cpp in Sources */,
 				04AC0A8B256105030047ECE3 /* glext.c in Sources */,
-				04ACD4892560CC910047ECE3 /* stripifier.cpp in Sources */,
 				04AC0A85256105030047ECE3 /* enable.c in Sources */,
-				04ACD4E92560CCDE0047ECE3 /* astc_block_sizes2.cpp in Sources */,
-				04ACD4822560CC910047ECE3 /* clusterizer.cpp in Sources */,
 				04AC0A8F256105030047ECE3 /* image.c in Sources */,
 				045492582560239D004B6515 /* imgui_draw.cpp in Sources */,
-				045497EE256030FD004B6515 /* tinyexr.cc in Sources */,
-				04ACD4E72560CCDE0047ECE3 /* astc_weight_align.cpp in Sources */,
 				04AC0AE72561050F0047ECE3 /* cocoa_time.m in Sources */,
 				045492522560239D004B6515 /* imgui_widgets.cpp in Sources */,
-				04ACD4F22560CCDE0047ECE3 /* astc_image_load_store.cpp in Sources */,
 				04AC0A8D256105030047ECE3 /* window.c in Sources */,
 				04AC0A86256105030047ECE3 /* time.c in Sources */,
 				045492562560239D004B6515 /* imgui.cpp in Sources */,
@@ -9463,13 +9227,19 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/etc2comp/EtcLib",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/libpng/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/astcenc/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/tinyexr/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/libz/tnt",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
 					"-lpng",
 					"-lEtcLib",
+					"-lastcenc",
+					"-ltinyexr",
+					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -9479,7 +9249,7 @@
 					/Users/yangfeng/Desktop/filament/third_party/etc2comp/EtcLib/EtcCodec,
 					/Users/yangfeng/Desktop/filament/third_party/stb,
 					/Users/yangfeng/Desktop/filament/third_party/tinyexr,
-					/usr/local/include,
+					/Users/yangfeng/Desktop/filament/third_party/libpng,
 				);
 			};
 			name = Debug;
@@ -9501,13 +9271,19 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/etc2comp/EtcLib",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/libpng/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/astcenc/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/tinyexr/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/libz/tnt",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
 					"-lpng",
 					"-lEtcLib",
+					"-lastcenc",
+					"-ltinyexr",
+					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -9517,7 +9293,7 @@
 					/Users/yangfeng/Desktop/filament/third_party/etc2comp/EtcLib/EtcCodec,
 					/Users/yangfeng/Desktop/filament/third_party/stb,
 					/Users/yangfeng/Desktop/filament/third_party/tinyexr,
-					/usr/local/include,
+					/Users/yangfeng/Desktop/filament/third_party/libpng,
 				);
 			};
 			name = Release;
@@ -9701,6 +9477,7 @@
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/link",
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/opt",
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/reduce",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/smol-v/tnt",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
@@ -9716,6 +9493,7 @@
 					"-lSPIRV-Tools-link",
 					"-lSPIRV-Tools-opt",
 					"-lSPIRV-Tools-reduce",
+					"-lsmol-v",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -9728,7 +9506,8 @@
 					/Users/yangfeng/Desktop/filament/third_party/glslang/SPIRV,
 					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/MachineIndependent,
 					"/Users/yangfeng/Desktop/filament/third_party/spirv-cross",
-					/usr/local/include,
+					"/Users/yangfeng/Desktop/filament/third_party/spirv-tools/include",
+					/Users/yangfeng/Desktop/filament/third_party/glslang,
 				);
 			};
 			name = Debug;
@@ -9762,6 +9541,7 @@
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/link",
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/opt",
 					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/reduce",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/smol-v/tnt",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
@@ -9777,6 +9557,7 @@
 					"-lSPIRV-Tools-link",
 					"-lSPIRV-Tools-opt",
 					"-lSPIRV-Tools-reduce",
+					"-lsmol-v",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -9789,7 +9570,8 @@
 					/Users/yangfeng/Desktop/filament/third_party/glslang/SPIRV,
 					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/MachineIndependent,
 					"/Users/yangfeng/Desktop/filament/third_party/spirv-cross",
-					/usr/local/include,
+					"/Users/yangfeng/Desktop/filament/third_party/spirv-tools/include",
+					/Users/yangfeng/Desktop/filament/third_party/glslang,
 				);
 			};
 			name = Release;
@@ -10094,6 +9876,8 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.backend,
 					/Users/yangfeng/Desktop/DigitalArche2/render.filabridge,
 				);
+				LIBRARY_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/meshoptimizer";
+				OTHER_LDFLAGS = "-lmeshoptimizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/filament/third_party/meshoptimizer/src;
@@ -10120,6 +9904,8 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.backend,
 					/Users/yangfeng/Desktop/DigitalArche2/render.filabridge,
 				);
+				LIBRARY_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/meshoptimizer";
+				OTHER_LDFLAGS = "-lmeshoptimizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/filament/third_party/meshoptimizer/src;
