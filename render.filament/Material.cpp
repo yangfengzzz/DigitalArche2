@@ -44,6 +44,34 @@ namespace filament {
 
 using namespace backend;
 
+static MaterialParser* createParser(Backend backend, const void* data, size_t size) {
+    MaterialParser* materialParser = new MaterialParser(backend, data, size);
+
+    MaterialParser::ParseResult materialResult = materialParser->parse();
+
+    if (backend == Backend::NOOP) {
+        return materialParser;
+    }
+
+    if (!ASSERT_POSTCONDITION_NON_FATAL(materialResult != MaterialParser::ParseResult::ERROR_MISSING_BACKEND,
+                "the material was not built for the %s backend\n", backendToString(backend))) {
+        return nullptr;
+    }
+
+    if (!ASSERT_POSTCONDITION_NON_FATAL(materialResult == MaterialParser::ParseResult::SUCCESS,
+                "could not parse the material package")) {
+        return nullptr;
+    }
+
+    uint32_t version = 0;
+    materialParser->getMaterialVersion(&version);
+    ASSERT_PRECONDITION(version == MATERIAL_VERSION, "Material version mismatch. Expected %d but "
+            "received %d.", MATERIAL_VERSION, version);
+
+    assert(backend != Backend::DEFAULT && "Default backend has not been resolved.");
+
+    return materialParser;
+}
 
 struct Material::BuilderDetails {
     const void* mPayload = nullptr;
@@ -71,7 +99,7 @@ Material::Builder& Material::Builder::package(const void* payload, size_t size) 
 }
 
 Material* Material::Builder::build(Engine& engine) {
-    MaterialParser* materialParser = FMaterial::createParser(
+    MaterialParser* materialParser = createParser(
             upcast(engine).getBackend(), mImpl->mPayload, mImpl->mSize);
 
     uint32_t v = 0;
@@ -79,15 +107,15 @@ Material* Material::Builder::build(Engine& engine) {
     utils::bitset32 shaderModels;
     shaderModels.setValue(v);
 
-    backend::ShaderModel shaderModel = upcast(engine).getDriver().getShaderModel();
+    ShaderModel shaderModel = upcast(engine).getDriver().getShaderModel();
     if (!shaderModels.test(static_cast<uint32_t>(shaderModel))) {
         CString name;
         materialParser->getName(&name);
         slog.e << "The material '" << name.c_str_safe() << "' was not built for ";
         switch (shaderModel) {
-            case backend::ShaderModel::GL_ES_30: slog.e << "mobile.\n"; break;
-            case backend::ShaderModel::GL_CORE_41: slog.e << "desktop.\n"; break;
-            case backend::ShaderModel::UNKNOWN: /* should never happen */ break;
+            case ShaderModel::GL_ES_30: slog.e << "mobile.\n"; break;
+            case ShaderModel::GL_CORE_41: slog.e << "desktop.\n"; break;
+            case ShaderModel::UNKNOWN: /* should never happen */ break;
         }
         slog.e << "Compiled material contains shader models 0x"
                 << io::hex << shaderModels.getValue() << io::dec << "." << io::endl;
@@ -123,7 +151,8 @@ static void addSamplerGroup(Program& pb, uint8_t bindingPoint, SamplerInterfaceB
             uint8_t binding = 0;
             UTILS_UNUSED bool ok = map.getSamplerBinding(bindingPoint, (uint8_t)i, &binding);
             assert(ok);
-            samplers[i] = { std::move(uniformName), binding };
+            const bool strict = (bindingPoint == filament::BindingPoints::PER_MATERIAL_INSTANCE);
+            samplers[i] = { std::move(uniformName), binding, strict };
         }
         pb.setSamplerGroup(bindingPoint, samplers.data(), samplers.size());
     }
@@ -144,6 +173,11 @@ FMaterial::FMaterial(FEngine& engine, const Material::Builder& builder)
 
     UTILS_UNUSED_IN_RELEASE bool uibOK = parser->getUIB(&mUniformInterfaceBlock);
     assert(uibOK);
+
+    // Older materials will not have a subpass chunk; this should not be an error.
+    if (!parser->getSubpasses(&mSubpassInfo)) {
+        mSubpassInfo.isValid = false;
+    }
 
     // Populate sampler bindings for the backend that will consume this Material.
     mSamplerBindings.populate(&mSamplerInterfaceBlock);
@@ -292,10 +326,9 @@ FMaterialInstance* FMaterial::createInstance(const char* name) const noexcept {
 }
 
 bool FMaterial::hasParameter(const char* name) const noexcept {
-    if (!mUniformInterfaceBlock.hasUniform(name)) {
-        return mSamplerInterfaceBlock.hasSampler(name);
-    }
-    return true;
+    return mUniformInterfaceBlock.hasUniform(name) ||
+            mSamplerInterfaceBlock.hasSampler(name) ||
+            mSubpassInfo.name == utils::CString(name);
 }
 
 bool FMaterial::isSampler(const char* name) const noexcept {
@@ -311,7 +344,7 @@ UniformInterfaceBlock::UniformInfo const* FMaterial::reflect(
     return p == list.end() ? nullptr : &static_cast<UniformInterfaceBlock::UniformInfo const&>(*p);
 }
 
-backend::Handle<backend::HwProgram> FMaterial::getProgramSlow(uint8_t variantKey) const noexcept {
+Handle<HwProgram> FMaterial::getProgramSlow(uint8_t variantKey) const noexcept {
     switch (getMaterialDomain()) {
         case MaterialDomain::SURFACE:
             return getSurfaceProgramSlow(variantKey);
@@ -321,7 +354,7 @@ backend::Handle<backend::HwProgram> FMaterial::getProgramSlow(uint8_t variantKey
     }
 }
 
-backend::Handle<backend::HwProgram> FMaterial::getSurfaceProgramSlow(uint8_t variantKey)
+Handle<HwProgram> FMaterial::getSurfaceProgramSlow(uint8_t variantKey)
     const noexcept {
     // filterVariant() has already been applied in generateCommands(), shouldn't be needed here
     // if we're unlit, we don't have any bits that correspond to lit materials
@@ -351,7 +384,7 @@ backend::Handle<backend::HwProgram> FMaterial::getSurfaceProgramSlow(uint8_t var
     return createAndCacheProgram(std::move(pb), variantKey);
 }
 
-backend::Handle<backend::HwProgram> FMaterial::getPostProcessProgramSlow(uint8_t variantKey)
+Handle<HwProgram> FMaterial::getPostProcessProgramSlow(uint8_t variantKey)
     const noexcept {
 
     Program pb = getProgramBuilderWithVariants(variantKey, variantKey, variantKey);
@@ -369,6 +402,7 @@ Program FMaterial::getProgramBuilderWithVariants(
         uint8_t vertexVariantKey,
         uint8_t fragmentVariantKey) const noexcept {
     const ShaderModel sm = mEngine.getDriver().getShaderModel();
+    const bool isNoop = mEngine.getBackend() == Backend::NOOP;
 
     /*
      * Vertex shader
@@ -379,7 +413,7 @@ Program FMaterial::getProgramBuilderWithVariants(
     UTILS_UNUSED_IN_RELEASE bool vsOK = mMaterialParser->getShader(vsBuilder, sm,
             vertexVariantKey, ShaderType::VERTEX);
 
-    ASSERT_POSTCONDITION(vsOK && vsBuilder.size() > 0,
+    ASSERT_POSTCONDITION(isNoop || (vsOK && vsBuilder.size() > 0),
             "The material '%s' has not been compiled to include the required "
             "GLSL or SPIR-V chunks for the vertex shader (variant=0x%x, filtered=0x%x).",
             mName.c_str(), variantKey, vertexVariantKey);
@@ -393,7 +427,7 @@ Program FMaterial::getProgramBuilderWithVariants(
     UTILS_UNUSED_IN_RELEASE bool fsOK = mMaterialParser->getShader(fsBuilder, sm,
             fragmentVariantKey, ShaderType::FRAGMENT);
 
-    ASSERT_POSTCONDITION(fsOK && fsBuilder.size() > 0,
+    ASSERT_POSTCONDITION(isNoop || (fsOK && fsBuilder.size() > 0),
             "The material '%s' has not been compiled to include the required "
             "GLSL or SPIR-V chunks for the fragment shader (variant=0x%x, filterer=0x%x).",
             mName.c_str(), variantKey, fragmentVariantKey);
@@ -405,7 +439,7 @@ Program FMaterial::getProgramBuilderWithVariants(
     return pb;
 }
 
-backend::Handle<backend::HwProgram> FMaterial::createAndCacheProgram(Program&& p,
+Handle<HwProgram> FMaterial::createAndCacheProgram(Program&& p,
         uint8_t variantKey) const noexcept {
     auto program = mEngine.getDriverApi().createProgram(std::move(p));
     assert(program);
@@ -425,20 +459,34 @@ size_t FMaterial::getParameters(ParameterInfo* parameters, size_t count) const n
         const auto& uniformInfo = uniforms[i];
         info.name = uniformInfo.name.c_str();
         info.isSampler = false;
+        info.isSubpass = false;
         info.type = uniformInfo.type;
         info.count = uniformInfo.size;
         info.precision = uniformInfo.precision;
     }
 
     const auto& samplers = mSamplerInterfaceBlock.getSamplerInfoList();
-    for (size_t j = 0; i < count; i++, j++) {
+    size_t samplerCount = samplers.size();
+    for (size_t j = 0; i < count && j < samplerCount; i++, j++) {
         ParameterInfo& info = parameters[i];
         const auto& samplerInfo = samplers[j];
         info.name = samplerInfo.name.c_str();
         info.isSampler = true;
+        info.isSubpass = false;
         info.samplerType = samplerInfo.type;
         info.count = 1;
         info.precision = samplerInfo.precision;
+    }
+
+    if (mSubpassInfo.isValid && i < count) {
+        ParameterInfo& info = parameters[i];
+        info.name = mSubpassInfo.name.c_str();
+        info.isSampler = false;
+        info.isSubpass = true;
+        info.subpassType = mSubpassInfo.type;
+        info.count = 1;
+        info.precision = mSubpassInfo.precision;
+        i++;
     }
 
     return count;
@@ -463,7 +511,7 @@ void FMaterial::applyPendingEdits() noexcept {
 /**
  * Callback handlers for the debug server, potentially called from any thread. These methods are
  * never called during normal operation and exist for debugging purposes only.
- * 
+ *
  * @{
  */
 
@@ -474,8 +522,7 @@ void FMaterial::onEditCallback(void* userdata, const utils::CString& name, const
 
     // This is called on a web server thread so we defer clearing the program cache
     // and swapping out the MaterialParser until the next getProgram call.
-    material->mPendingEdits = FMaterial::createParser(engine.getBackend(), packageData,
-            packageSize);
+    material->mPendingEdits = createParser(engine.getBackend(), packageData, packageSize);
 }
 
 void FMaterial::onQueryCallback(void* userdata, uint64_t* pVariants) {
@@ -491,31 +538,6 @@ void FMaterial::onQueryCallback(void* userdata, uint64_t* pVariants) {
 }
 
  /** @}*/
-
-MaterialParser* FMaterial::createParser(backend::Backend backend, const void* data, size_t size) {
-    MaterialParser* materialParser = new MaterialParser(backend, data, size);
-
-    MaterialParser::ParseResult materialResult = materialParser->parse();
-
-    if (!ASSERT_POSTCONDITION_NON_FATAL(materialResult != MaterialParser::ParseResult::ERROR_MISSING_BACKEND,
-                "the material was not built for the %s backend\n", backendToString(backend))) {
-        return nullptr;
-    }
-
-    if (!ASSERT_POSTCONDITION_NON_FATAL(materialResult == MaterialParser::ParseResult::SUCCESS,
-                "could not parse the material package")) {
-        return nullptr;
-    }
-
-    uint32_t version = 0;
-    materialParser->getMaterialVersion(&version);
-    ASSERT_PRECONDITION(version == MATERIAL_VERSION, "Material version mismatch. Expected %d but "
-            "received %d.", MATERIAL_VERSION, version);
-
-    assert(backend != Backend::DEFAULT && "Default backend has not been resolved.");
-
-    return materialParser;
-}
 
 void FMaterial::destroyPrograms(FEngine& engine) {
     DriverApi& driverApi = engine.getDriverApi();

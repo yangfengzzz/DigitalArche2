@@ -107,9 +107,9 @@ const TBuiltInResource DefaultTBuiltInResource = {
         /* .maxTaskWorkGroupSizeY_NV = */ 1,
         /* .maxTaskWorkGroupSizeZ_NV = */ 1,
         /* .maxMeshViewCountNV = */ 4,
-//        /* .maxDualSourceDrawBuffersEXT = */ 1,
+        /* .maxDualSourceDrawBuffersEXT = */ 1,
 
-//        /* .limits = */ {
+        /* .limits = */ {
                 /* .nonInductiveForLoops = */ 1,
                 /* .whileLoops = */ 1,
                 /* .doWhileLoops = */ 1,
@@ -119,5 +119,5 @@ const TBuiltInResource DefaultTBuiltInResource = {
                 /* .generalSamplerIndexing = */ 1,
                 /* .generalVariableIndexing = */ 1,
                 /* .generalConstantMatrixVectorIndexing = */ 1,
-//        }
+        }
 };

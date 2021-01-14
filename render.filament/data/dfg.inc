@@ -1,4 +1,4 @@
-// generated with: cmgen --ibl-dfg=/Users/yangfeng/Desktop/filament-1.9.8/out/cmake-release/filament/generated/data/dfg.inc
+// generated with: cmgen --ibl-dfg=/Users/yangfeng/Desktop/filament/out/cmake-release/filament/generated/data/dfg.inc
 // DFG LUT stored as an RG16F texture, in GL order
 
     0x3bd7, 0x3bff, 0x4c90, 0x3b8b, 0x3c00, 0x4751, 0x3b40, 0x3c00, 0x4216, 0x3af7, 0x3c00, 0x3cfd, 

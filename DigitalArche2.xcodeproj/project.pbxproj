@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040DC0C625B08D5600986C9C /* ShaderMinifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC0C425B08D5600986C9C /* ShaderMinifier.h */; };
+		040DC0C725B08D5600986C9C /* ShaderMinifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC0C525B08D5600986C9C /* ShaderMinifier.cpp */; };
+		040DC1E025B090DD00986C9C /* render_math.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC1DF25B090DD00986C9C /* render_math.h */; };
 		044C8B6B256605230000ECB4 /* sample_skinning.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0D80256106980047ECE3 /* sample_skinning.cc */; };
 		044C8C1925664D020000ECB4 /* btBulletDynamicsCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C8C1725664D020000ECB4 /* btBulletDynamicsCommon.h */; };
 		044C8C1A25664D020000ECB4 /* btBulletCollisionCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C8C1825664D020000ECB4 /* btBulletCollisionCommon.h */; };
@@ -1057,7 +1060,6 @@
 		04ACE0C42560D7B40047ECE3 /* DictionaryTextChunk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE0AE2560D7B30047ECE3 /* DictionaryTextChunk.cpp */; };
 		04ACE0C52560D7B40047ECE3 /* BlobDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE0AF2560D7B40047ECE3 /* BlobDictionary.cpp */; };
 		04ACE37E2560DA740047ECE3 /* Animator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE1B72560D90B0047ECE3 /* Animator.cpp */; };
-		04ACE3992560DA9E0047ECE3 /* render_math.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ACE3982560DA9E0047ECE3 /* render_math.h */; };
 		04ACE4532560DB610047ECE3 /* UbershaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE1AB2560D90A0047ECE3 /* UbershaderLoader.cpp */; };
 		04ACE4542560DB610047ECE3 /* MaterialGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE1B52560D90B0047ECE3 /* MaterialGenerator.cpp */; };
 		04ACE4552560DB610047ECE3 /* ResourceLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACE1AA2560D90A0047ECE3 /* ResourceLoader.cpp */; };
@@ -1128,7 +1130,6 @@
 		04ACF31E2560ED510047ECE3 /* librender.filameshio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACF1732560EC5A0047ECE3 /* librender.filameshio.dylib */; };
 		04ACF4A12560EE140047ECE3 /* librender.image.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACD33F2560C8B50047ECE3 /* librender.image.dylib */; };
 		04ACF6FE2560EED10047ECE3 /* librender.filamat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACD3C52560C8FB0047ECE3 /* librender.filamat.dylib */; };
-		04ACF7A52560EF530047ECE3 /* gltf_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954925602959004B6515 /* gltf_viewer.cpp */; };
 		04ACF8272560F13B0047ECE3 /* test_quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACF8202560F13A0047ECE3 /* test_quat.cpp */; };
 		04ACF8282560F13B0047ECE3 /* test_half.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACF8212560F13A0047ECE3 /* test_half.cpp */; };
 		04ACF8292560F13B0047ECE3 /* test_vec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACF8222560F13A0047ECE3 /* test_vec.cpp */; };
@@ -1169,6 +1170,7 @@
 		04ACFDF42560F6200047ECE3 /* librender.filamat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACD3C52560C8FB0047ECE3 /* librender.filamat.dylib */; };
 		04ACFEA42560F6750047ECE3 /* test_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACFEA32560F6750047ECE3 /* test_settings.cpp */; };
 		04ACFF6D2560F6CF0047ECE3 /* librender.viewer.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACECEA2560E84D0047ECE3 /* librender.viewer.dylib */; };
+		04C3F16E25B085AA0098EC0F /* gltf_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954925602959004B6515 /* gltf_viewer.cpp */; };
 		04CBF09525614F8A001EBE0D /* SimpleViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF09125614F8A001EBE0D /* SimpleViewer.h */; };
 		04CBF09625614F8A001EBE0D /* AutomationEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF09225614F8A001EBE0D /* AutomationEngine.h */; };
 		04CBF09725614F8A001EBE0D /* Settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF09325614F8A001EBE0D /* Settings.h */; };
@@ -1903,6 +1905,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		040DC08625B08CAA00986C9C /* unit_tests.render.utils.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.utils.entitlements; sourceTree = "<group>"; };
+		040DC0A525B08D0800986C9C /* unit_tests.render.camutils.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.camutils.entitlements; sourceTree = "<group>"; };
+		040DC0C425B08D5600986C9C /* ShaderMinifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderMinifier.h; sourceTree = "<group>"; };
+		040DC0C525B08D5600986C9C /* ShaderMinifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderMinifier.cpp; sourceTree = "<group>"; };
+		040DC12225B08DA400986C9C /* unit_tests.render.filamat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.filamat.entitlements; sourceTree = "<group>"; };
+		040DC1C025B0900100986C9C /* unit_tests.render.filament.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.filament.entitlements; sourceTree = "<group>"; };
+		040DC1DF25B090DD00986C9C /* render_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_math.h; sourceTree = "<group>"; };
+		040DC21D25B0914D00986C9C /* unit_tests.render.filameshio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.filameshio.entitlements; sourceTree = "<group>"; };
 		044C8BD025664CC10000ECB4 /* libsrc.bullet.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.bullet.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C8C1725664D020000ECB4 /* btBulletDynamicsCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletDynamicsCommon.h; sourceTree = "<group>"; };
 		044C8C1825664D020000ECB4 /* btBulletCollisionCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletCollisionCommon.h; sourceTree = "<group>"; };
@@ -3041,7 +3051,6 @@
 		04ACE1B82560D90B0047ECE3 /* GltfEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GltfEnums.h; sourceTree = "<group>"; };
 		04ACE1B92560D90B0047ECE3 /* DependencyGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependencyGraph.h; sourceTree = "<group>"; };
 		04ACE1BA2560D90B0047ECE3 /* MaterialProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaterialProvider.cpp; sourceTree = "<group>"; };
-		04ACE3982560DA9E0047ECE3 /* render_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_math.h; sourceTree = "<group>"; };
 		04ACE4A92560DCF20047ECE3 /* materials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = materials.h; sourceTree = "<group>"; };
 		04ACE4AA2560DCF20047ECE3 /* materials.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = materials.apple.S; sourceTree = "<group>"; };
 		04ACE58C2560DEC80047ECE3 /* shaders.apple.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = shaders.apple.S; sourceTree = "<group>"; };
@@ -4616,6 +4625,7 @@
 		04AC02192560F8740047ECE3 /* unit_tests.render.filament */ = {
 			isa = PBXGroup;
 			children = (
+				040DC1C025B0900100986C9C /* unit_tests.render.filament.entitlements */,
 				04AC02972560F91F0047ECE3 /* filament_test_resources.apple.S */,
 				04AC02982560F91F0047ECE3 /* filament_test_resources.h */,
 				04AC026C2560F8AE0047ECE3 /* PerformanceCounters.h */,
@@ -5393,6 +5403,8 @@
 			children = (
 				04ACE58C2560DEC80047ECE3 /* shaders.apple.S */,
 				04ACE58D2560DEC80047ECE3 /* shaders.h */,
+				040DC0C425B08D5600986C9C /* ShaderMinifier.h */,
+				040DC0C525B08D5600986C9C /* ShaderMinifier.cpp */,
 				04CBF3B525615338001EBE0D /* Enums.h */,
 				04ACE00E2560D7750047ECE3 /* Enums.cpp */,
 				04CBF3B625615338001EBE0D /* MaterialBuilder.h */,
@@ -5415,6 +5427,7 @@
 		04ACD3EA2560C90B0047ECE3 /* render.gltfio */ = {
 			isa = PBXGroup;
 			children = (
+				040DC1DF25B090DD00986C9C /* render_math.h */,
 				04ACE7D82560E1DB0047ECE3 /* gltfresources.apple.S */,
 				04ACE7D72560E1DB0047ECE3 /* gltfresources.h */,
 				04CBF1612561502A001EBE0D /* Animator.h */,
@@ -5435,7 +5448,6 @@
 				04ACE1AA2560D90A0047ECE3 /* ResourceLoader.cpp */,
 				04ACE1B62560D90B0047ECE3 /* upcast.h */,
 				04ACE1B82560D90B0047ECE3 /* GltfEnums.h */,
-				04ACE3982560DA9E0047ECE3 /* render_math.h */,
 				04ACE1B92560D90B0047ECE3 /* DependencyGraph.h */,
 				04ACE1A92560D90A0047ECE3 /* DependencyGraph.cpp */,
 				04ACE1AE2560D90A0047ECE3 /* DracoCache.h */,
@@ -5742,6 +5754,7 @@
 		04ACF8DD2560F2090047ECE3 /* unit_tests.render.utils */ = {
 			isa = PBXGroup;
 			children = (
+				040DC08625B08CAA00986C9C /* unit_tests.render.utils.entitlements */,
 				04ACF91E2560F22B0047ECE3 /* benchmark_allocators.cpp */,
 				04ACF92C2560F22C0047ECE3 /* benchmark_binary_search.cpp */,
 				04ACF9302560F22C0047ECE3 /* benchmark_callee.cpp */,
@@ -5780,6 +5793,7 @@
 		04ACFB792560F4BF0047ECE3 /* unit_tests.render.camutils */ = {
 			isa = PBXGroup;
 			children = (
+				040DC0A525B08D0800986C9C /* unit_tests.render.camutils.entitlements */,
 				04ACFBFB2560F51D0047ECE3 /* test_camutils.cpp */,
 			);
 			path = unit_tests.render.camutils;
@@ -5788,6 +5802,7 @@
 		04ACFC622560F56D0047ECE3 /* unit_tests.render.filamat */ = {
 			isa = PBXGroup;
 			children = (
+				040DC12225B08DA400986C9C /* unit_tests.render.filamat.entitlements */,
 				04ACFCCA2560F5840047ECE3 /* MockIncluder.h */,
 				04ACFCCB2560F5840047ECE3 /* test_filamat_lite.cpp */,
 				04ACFCC82560F5830047ECE3 /* test_filamat.cpp */,
@@ -5808,6 +5823,7 @@
 		04ACFFB62560F7040047ECE3 /* unit_tests.render.filameshio */ = {
 			isa = PBXGroup;
 			children = (
+				040DC21D25B0914D00986C9C /* unit_tests.render.filameshio.entitlements */,
 				04AC00222560F7180047ECE3 /* test_filamesh.cpp */,
 			);
 			path = unit_tests.render.filameshio;
@@ -6570,6 +6586,7 @@
 				04ACE58F2560DEC80047ECE3 /* shaders.h in Headers */,
 				04ACE0BF2560D7B40047ECE3 /* MaterialInterfaceBlockChunk.h in Headers */,
 				04ACE07C2560D7A20047ECE3 /* MaterialInfo.h in Headers */,
+				040DC0C625B08D5600986C9C /* ShaderMinifier.h in Headers */,
 				04ACE0BC2560D7B40047ECE3 /* Flattener.h in Headers */,
 				04CBF3BB25615339001EBE0D /* IncludeCallback.h in Headers */,
 				04ACE0B72560D7B40047ECE3 /* ChunkContainer.h in Headers */,
@@ -6588,7 +6605,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ACE3992560DA9E0047ECE3 /* render_math.h in Headers */,
 				04CBF1682561502A001EBE0D /* Animator.h in Headers */,
 				04CBF1632561502A001EBE0D /* FilamentInstance.h in Headers */,
 				04CBF1672561502A001EBE0D /* MaterialProvider.h in Headers */,
@@ -6597,6 +6613,7 @@
 				04CBF1622561502A001EBE0D /* ResourceLoader.h in Headers */,
 				04CBF1662561502A001EBE0D /* Image.h in Headers */,
 				04CBF1652561502A001EBE0D /* FilamentAsset.h in Headers */,
+				040DC1E025B090DD00986C9C /* render_math.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7645,7 +7662,7 @@
 			files = (
 				045495C725602A4D004B6515 /* monkey.apple.S in Sources */,
 				04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */,
-				04ACF7A52560EF530047ECE3 /* gltf_viewer.cpp in Sources */,
+				04C3F16E25B085AA0098EC0F /* gltf_viewer.cpp in Sources */,
 				045495C525602A4D004B6515 /* resources.apple.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -7974,6 +7991,7 @@
 				04ACE0162560D7750047ECE3 /* Enums.cpp in Sources */,
 				04ACE0B42560D7B40047ECE3 /* MaterialTextChunk.cpp in Sources */,
 				04ACE0182560D7750047ECE3 /* MaterialVariants.cpp in Sources */,
+				040DC0C725B08D5600986C9C /* ShaderMinifier.cpp in Sources */,
 				04ACE0C22560D7B40047ECE3 /* SimpleFieldChunk.cpp in Sources */,
 				04ACE05B2560D7830047ECE3 /* ASTHelpers.cpp in Sources */,
 				04ACE0152560D7750047ECE3 /* Includes.cpp in Sources */,
@@ -8914,6 +8932,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.filament/unit_tests.render.filament.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -8937,7 +8956,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
 				);
 			};
 			name = Debug;
@@ -8946,6 +8965,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.filament/unit_tests.render.filament.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -8969,7 +8989,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
 				);
 			};
 			name = Release;
@@ -9966,6 +9986,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.utils/unit_tests.render.utils.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -9985,7 +10006,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
 				);
 			};
 			name = Debug;
@@ -9994,6 +10015,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.utils/unit_tests.render.utils.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -10013,7 +10035,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
 				);
 			};
 			name = Release;
@@ -10076,6 +10098,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.camutils/unit_tests.render.camutils.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -10101,6 +10124,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.camutils/unit_tests.render.camutils.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -10126,6 +10150,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.filamat/unit_tests.render.filamat.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -10149,8 +10174,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
-					"/Users/yangfeng/Desktop/DigitalArche2/external/smol-v/source",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/smol-v/source",
 					/usr/local/include/glslang/Public,
 					/usr/local/include/glslang/Include,
 					/usr/local/include/glslang/SPIRV,
@@ -10164,6 +10189,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.filamat/unit_tests.render.filamat.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -10187,8 +10213,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					/usr/local/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
-					"/Users/yangfeng/Desktop/DigitalArche2/external/smol-v/source",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/smol-v/source",
 					/usr/local/include/glslang/Public,
 					/usr/local/include/glslang/Include,
 					/usr/local/include/glslang/SPIRV,
@@ -10260,6 +10286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.filameshio/unit_tests.render.filameshio.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;
@@ -10289,6 +10316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = unit_tests.render.filameshio/unit_tests.render.filameshio.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SL5L673UU;

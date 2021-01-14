@@ -25,6 +25,11 @@
 #pragma clang diagnostic ignored "-Wnullability-completeness"
 #pragma clang diagnostic ignored "-Wweak-vtables"
 #pragma clang diagnostic ignored "-Wimplicit-fallthrough"
+
+static const PFN_vkGetInstanceProcAddr& vkGetInstanceProcAddr = bluevk::vkGetInstanceProcAddr;
+static const PFN_vkGetDeviceProcAddr& vkGetDeviceProcAddr = bluevk::vkGetDeviceProcAddr;
+
+#define VMA_DYNAMIC_VULKAN_FUNCTIONS 1
 #define VMA_IMPLEMENTATION
 #include <cstdio>
 #include "vk_mem_alloc.h"
@@ -37,6 +42,8 @@
 #include <utils/Panic.h>
 
 #define FILAMENT_VULKAN_CHECK_BLIT_FORMAT 0
+
+using namespace bluevk;
 
 namespace filament {
 namespace backend {
@@ -588,7 +595,7 @@ void waitForIdle(VulkanContext& context) {
             }
         }
         if (nfences > 0) {
-            vkWaitForFences(context.device, nfences, fences, VK_FALSE, ~0ull);
+            vkWaitForFences(context.device, nfences, fences, VK_TRUE, UINT64_MAX);
         }
 
         // Next flush the active command buffer and wait for it to finish.
@@ -631,7 +638,7 @@ bool acquireSwapCommandBuffer(VulkanContext& context) {
     // Ensure that the previous submission of this command buffer has finished.
     auto& cmdfence = swap.commands.fence;
     if (cmdfence) {
-        VkResult result = vkWaitForFences(context.device, 1, &cmdfence->fence, VK_FALSE, UINT64_MAX);
+        VkResult result = vkWaitForFences(context.device, 1, &cmdfence->fence, VK_TRUE, UINT64_MAX);
         ASSERT_POSTCONDITION(result == VK_SUCCESS, "vkWaitForFences error.");
     }
 
@@ -678,7 +685,7 @@ void flushCommandBuffer(VulkanContext& context) {
     cmdfence->condition.notify_all();
 
     // Restart the command buffer.
-    error = vkWaitForFences(context.device, 1, &cmdfence->fence, VK_FALSE, UINT64_MAX);
+    error = vkWaitForFences(context.device, 1, &cmdfence->fence, VK_TRUE, UINT64_MAX);
     ASSERT_POSTCONDITION(!error, "vkWaitForFences error.");
     error = vkResetFences(context.device, 1, &cmdfence->fence);
     ASSERT_POSTCONDITION(!error, "vkResetFences error.");
@@ -713,7 +720,7 @@ VkCommandBuffer acquireWorkCommandBuffer(VulkanContext& context) {
     const VkCommandBufferBeginInfo binfo { .sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO };
     if (work.fence && work.fence->submitted) {
         work.fence->submitted = false;
-        vkWaitForFences(context.device, 1, &work.fence->fence, VK_FALSE, UINT64_MAX);
+        vkWaitForFences(context.device, 1, &work.fence->fence, VK_TRUE, UINT64_MAX);
         vkResetCommandBuffer(work.cmdbuffer, 0);
         vkBeginCommandBuffer(work.cmdbuffer, &binfo);
     }
@@ -861,6 +868,7 @@ static void blit(VkImageAspectFlags aspect, VkFilter filter, VulkanContext* cont
             VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL, dst.level, 1, 1, aspect);
 
     if (src.texture && src.texture->samples > 1 && dst.texture && dst.texture->samples == 1) {
+        assert(aspect != VK_IMAGE_ASPECT_DEPTH_BIT && "Resolve with depth is not yet supported.");
         vkCmdResolveImage(cmdbuffer, src.image, VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL, dst.image,
                 VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL, 1, resolveRegions);
     } else {
@@ -947,6 +955,15 @@ void blitColor(VulkanContext* context, const VulkanRenderTarget* dstTarget,
         VkCommandBuffer cmdbuf = context->currentCommands->cmdbuffer;
         blit(aspect, filter, context, srcTarget, src, dst, srcRect, dstRect, cmdbuf);
     }
+}
+
+void createEmptyTexture(VulkanContext& context, VulkanStagePool& stagePool) {
+    context.emptyTexture = new VulkanTexture(context, SamplerType::SAMPLER_2D, 1,
+            TextureFormat::RGBA8, 1, 1, 1, 1,
+            TextureUsage::DEFAULT | TextureUsage::COLOR_ATTACHMENT, stagePool);
+    uint32_t black = 0;
+    PixelBufferDescriptor pbd(&black, 4, PixelDataFormat::RGBA, PixelDataType::UBYTE);
+    context.emptyTexture->update2DImage(pbd, 1, 1, 0);
 }
 
 } // namespace filament

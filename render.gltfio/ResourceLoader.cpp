@@ -100,7 +100,7 @@ struct ResourceLoader::Impl {
     int mNumDecoderTasks;
     int mNumDecoderTasksFinished;
     JobSystem::Job* mDecoderRootJob = nullptr;
-    FFilamentAsset* mCurrentAsset;
+    FFilamentAsset* mCurrentAsset = nullptr;
 
     void computeTangents(FFilamentAsset* asset);
     bool createTextures(bool async);
@@ -116,43 +116,20 @@ struct ResourceLoader::Impl {
 uint32_t computeBindingSize(const cgltf_accessor* accessor);
 uint32_t computeBindingOffset(const cgltf_accessor* accessor);
 
-// The AssetPool tracks references to raw source data (cgltf hierarchies) and frees them
-// appropriately. It releases all source assets only after the pending upload count is zero and the
-// client has destroyed the ResourceLoader object. If the ResourceLoader is destroyed while uploads
-// are still pending, then the AssetPool will stay alive until all uploads are complete.
-class AssetPool {
-public:
-    AssetPool()  {}
-    ~AssetPool() {
-        for (auto asset : mAssets) {
-            asset->releaseSourceAsset();
-        }
-    }
-    void addAsset(FFilamentAsset* asset) {
-        mAssets.push_back(asset);
-        asset->acquireSourceAsset();
-    }
-    void addPendingUpload() {
-        ++mPendingUploads;
-    }
-    static void onLoadedResource(void* buffer, size_t size, void* user) {
-        auto pool = (AssetPool*) user;
-        if (--pool->mPendingUploads == 0 && pool->mLoaderDestroyed) {
-            delete pool;
-        }
-    }
-    void onLoaderDestroyed() {
-        if (mPendingUploads == 0) {
-            delete this;
-        } else {
-            mLoaderDestroyed = true;
-        }
-    }
-private:
-    std::vector<FFilamentAsset*> mAssets;
-    bool mLoaderDestroyed = false;
-    int mPendingUploads = 0;
+// This little struct holds a shared_ptr that wraps cgltf_data (and, potentially, glb data) while
+// uploading vertex buffer data to the GPU.
+struct UploadEvent {
+    FFilamentAsset::SourceHandle handle;
 };
+
+UploadEvent* uploadUserdata(FFilamentAsset* asset) {
+    return new UploadEvent({ asset->mSourceAsset });
+}
+
+static void uploadCallback(void* buffer, size_t size, void* user) {
+    auto event = (UploadEvent*) user;
+    delete event;
+}
 
 static void importSkins(const cgltf_data* gltf, const NodeMap& nodeMap, SkinVector& dstSkins) {
     dstSkins.resize(gltf->skins_count);
@@ -205,7 +182,7 @@ static void convertBytesToShorts(uint16_t* dst, const uint8_t* src, size_t count
 }
 
 static void decodeDracoMeshes(FFilamentAsset* asset) {
-    DracoCache* dracoCache = &asset->mDracoCache;
+    DracoCache* dracoCache = &asset->mSourceAsset->dracoCache;
 
     // For a given primitive and attribute, find the corresponding accessor.
     auto findAccessor = [](const cgltf_primitive* prim, cgltf_attribute_type type, cgltf_int idx) {
@@ -244,7 +221,7 @@ static void decodeDracoMeshes(FFilamentAsset* asset) {
         for (cgltf_size i = 0; i < draco.attributes_count; i++) {
 
             // In cgltf, each Draco attribute's data pointer is an attribute id, not an accessor.
-            const uint32_t id = draco.attributes[i].data - asset->mSourceAsset->accessors;
+            const uint32_t id = draco.attributes[i].data - asset->mSourceAsset->hierarchy->accessors;
 
             // Find the destination accessor; this contains the desired component type, etc.
             const cgltf_attribute_type type = draco.attributes[i].type;
@@ -261,11 +238,9 @@ static void decodeDracoMeshes(FFilamentAsset* asset) {
     }
 }
 
-ResourceLoader::ResourceLoader(const ResourceConfiguration& config) :
-        mPool(new AssetPool), pImpl(new Impl(config)) { }
+ResourceLoader::ResourceLoader(const ResourceConfiguration& config) : pImpl(new Impl(config)) { }
 
 ResourceLoader::~ResourceLoader() {
-    mPool->onLoaderDestroyed();
     delete pImpl;
 }
 
@@ -296,8 +271,7 @@ bool ResourceLoader::loadResources(FFilamentAsset* asset, bool async) {
     if (asset->mResourcesLoaded) {
         return false;
     }
-    mPool->addAsset(asset);
-    const cgltf_data* gltf = asset->mSourceAsset;
+    const cgltf_data* gltf = asset->mSourceAsset->hierarchy;
     cgltf_options options {};
 
     // For emscripten and Android builds we have a custom implementation of cgltf_load_buffers which
@@ -413,8 +387,7 @@ bool ResourceLoader::loadResources(FFilamentAsset* asset, bool async) {
         const uint8_t* data = computeBindingOffset(accessor) + bufferData;
         const uint32_t size = computeBindingSize(accessor);
         if (slot.vertexBuffer) {
-            mPool->addPendingUpload();
-            VertexBuffer::BufferDescriptor bd(data, size, AssetPool::onLoadedResource, mPool);
+            VertexBuffer::BufferDescriptor bd(data, size, uploadCallback, uploadUserdata(asset));
             slot.vertexBuffer->setBufferAt(engine, slot.bufferIndex, std::move(bd));
             continue;
         }
@@ -427,8 +400,7 @@ bool ResourceLoader::loadResources(FFilamentAsset* asset, bool async) {
             slot.indexBuffer->setBuffer(engine, std::move(bd));
             continue;
         }
-        mPool->addPendingUpload();
-        IndexBuffer::BufferDescriptor bd(data, size, AssetPool::onLoadedResource, mPool);
+        IndexBuffer::BufferDescriptor bd(data, size, uploadCallback, uploadUserdata(asset));
         slot.indexBuffer->setBuffer(engine, std::move(bd));
     }
 
@@ -454,6 +426,7 @@ bool ResourceLoader::asyncBeginLoad(FilamentAsset* asset) {
 
 void ResourceLoader::asyncCancelLoad() {
     pImpl->cancelTextureDecoding();
+    pImpl->mEngine->flushAndWait();
 }
 
 float ResourceLoader::asyncGetLoadProgress() const {
@@ -566,8 +539,12 @@ void ResourceLoader::Impl::addTextureCacheEntry(const TextureSlot& tb) {
         }
         entry = (mBufferTextureCache[sourceData] = std::make_unique<TextureCacheEntry>()).get();
         entry->srgb = tb.srgb;
-        stbi_info_from_memory(sourceData, totalSize, &entry->width, &entry->height,
-                &entry->numComponents);
+        if (!stbi_info_from_memory(sourceData, totalSize, &entry->width, &entry->height,
+                &entry->numComponents)) {
+            slog.e << "Unable to decode BufferView texture: " << stbi_failure_reason() << io::endl;
+            mBufferTextureCache.erase(sourceData);
+            return;
+        }
         entry->bufferSize = totalSize;
         return;
     }
@@ -585,15 +562,22 @@ void ResourceLoader::Impl::addTextureCacheEntry(const TextureSlot& tb) {
     auto iter = mUriDataCache.find(uri);
     if (iter != mUriDataCache.end()) {
         const uint8_t* sourceData = (const uint8_t*) iter->second.buffer;
-        stbi_info_from_memory(sourceData, iter->second.size, &entry->width,
-                &entry->height, &entry->numComponents);
+        if (!stbi_info_from_memory(sourceData, iter->second.size, &entry->width,
+                &entry->height, &entry->numComponents)) {
+            slog.e << "Unable to decode " << uri << " : " << stbi_failure_reason() << io::endl;
+            mUriTextureCache.erase(uri);
+        }
         return;
     }
     #if !USE_FILESYSTEM
         slog.e << "Unable to load texture: " << uri << io::endl;
     #else
         Path fullpath = Path(mGltfPath).getParent() + uri;
-        stbi_info(fullpath.c_str(), &entry->width, &entry->height, &entry->numComponents);
+        if (!stbi_info(fullpath.c_str(), &entry->width, &entry->height, &entry->numComponents)) {
+            slog.e << "Unable to decode " << fullpath.c_str() << " : " << stbi_failure_reason()
+                    << io::endl;
+            mUriTextureCache.erase(uri);
+        }
     #endif
 }
 
@@ -609,19 +593,24 @@ void ResourceLoader::Impl::bindTextureToMaterial(const TextureSlot& tb) {
     // First check if this is a buffer-based texture.
     if (data) {
         const uint8_t* sourceData = offset + (const uint8_t*) *data;
-        auto& entry = mBufferTextureCache[sourceData];
-        if (entry.get() && entry->texture) {
-            asset->bindTexture(tb, entry->texture);
+        if (auto iter = mBufferTextureCache.find(sourceData); iter != mBufferTextureCache.end()) {
+            auto& entry = iter->second;
+            if (entry.get() && entry->texture) {
+                asset->bindTexture(tb, entry->texture);
+            }
         }
         return;
     }
 
     // Next check if this is a URI-based texture.
-    auto& entry = mUriTextureCache[uri];
-    if (entry.get() && entry->texture) {
-        asset->bindTexture(tb, entry->texture);
+    if (auto iter = mUriTextureCache.find(uri); iter != mUriTextureCache.end()) {
+        auto& entry = iter->second;
+        if (entry.get() && entry->texture) {
+            asset->bindTexture(tb, entry->texture);
+        }
     }
 }
+
 void ResourceLoader::Impl::cancelTextureDecoding() {
     JobSystem* js = &mEngine->getJobSystem();
     if (mDecoderRootJob) {
@@ -800,7 +789,7 @@ void ResourceLoader::Impl::computeTangents(FFilamentAsset* asset) {
         } else {
             const cgltf_morph_target& morphTarget = prim.targets[morphTargetIndex];
             for (cgltf_size aindex = 0; aindex < morphTarget.attributes_count; aindex++) {
-                const cgltf_attribute& attr = prim.attributes[aindex];
+                const cgltf_attribute& attr = morphTarget.attributes[aindex];
                 if (attr.index == 0) {
                     accessors[attr.type] = attr.data;
                     vertexCount = attr.data->count;
@@ -974,7 +963,7 @@ void ResourceLoader::normalizeSkinningWeights(FFilamentAsset* asset) const {
             floats[i] = weights / sum;
         }
     };
-    const cgltf_data* gltf = asset->mSourceAsset;
+    const cgltf_data* gltf = asset->mSourceAsset->hierarchy;
     cgltf_size mcount = gltf->meshes_count;
     for (cgltf_size mindex = 0; mindex < mcount; ++mindex) {
         const cgltf_mesh& mesh = gltf->meshes[mindex];
