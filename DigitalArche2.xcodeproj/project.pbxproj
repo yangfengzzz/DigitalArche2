@@ -8807,8 +8807,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/stb,
 					/usr/local/include/SDL2,
 					/usr/local/include,
 				);
@@ -8849,8 +8849,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/stb,
 					/usr/local/include/SDL2,
 					/usr/local/include,
 				);
@@ -8882,7 +8882,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
 					/usr/local/include/SDL2,
 					/usr/local/include,
 				);
@@ -8914,7 +8914,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
 					/usr/local/include/SDL2,
 					/usr/local/include,
 				);
@@ -9061,10 +9061,10 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
-					/Users/yangfeng/Desktop/DigitalArche2/external/getopt/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/stb,
+					/Users/yangfeng/Desktop/filament/third_party/getopt/include,
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
 					/usr/local/include/SDL2,
 					/usr/local/include,
 				);
@@ -9100,10 +9100,10 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
-					/Users/yangfeng/Desktop/DigitalArche2/external/getopt/include,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/stb,
+					/Users/yangfeng/Desktop/filament/third_party/getopt/include,
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
 					/usr/local/include/SDL2,
 					/usr/local/include,
 				);
@@ -9377,7 +9377,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Debug;
 		};
@@ -9396,7 +9396,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Release;
 		};
@@ -9419,7 +9419,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Debug;
 		};
@@ -9442,7 +9442,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Release;
 		};
@@ -9464,7 +9464,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib,
-					/Users/yangfeng/Desktop/DigitalArche2/external/etc2comp/build/EtcLib,
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/etc2comp/EtcLib",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
@@ -9474,11 +9474,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/astcenc/include,
-					/Users/yangfeng/Desktop/DigitalArche2/external/etc2comp/EtcLib/Etc,
-					/Users/yangfeng/Desktop/DigitalArche2/external/etc2comp/EtcLib/EtcCodec,
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
-					/Users/yangfeng/Desktop/DigitalArche2/external/tinyexr,
+					/Users/yangfeng/Desktop/filament/third_party/astcenc/include,
+					/Users/yangfeng/Desktop/filament/third_party/etc2comp/EtcLib/Etc,
+					/Users/yangfeng/Desktop/filament/third_party/etc2comp/EtcLib/EtcCodec,
+					/Users/yangfeng/Desktop/filament/third_party/stb,
+					/Users/yangfeng/Desktop/filament/third_party/tinyexr,
 					/usr/local/include,
 				);
 			};
@@ -9502,7 +9502,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib,
-					/Users/yangfeng/Desktop/DigitalArche2/external/etc2comp/build/EtcLib,
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/etc2comp/EtcLib",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
@@ -9512,11 +9512,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/astcenc/include,
-					/Users/yangfeng/Desktop/DigitalArche2/external/etc2comp/EtcLib/Etc,
-					/Users/yangfeng/Desktop/DigitalArche2/external/etc2comp/EtcLib/EtcCodec,
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
-					/Users/yangfeng/Desktop/DigitalArche2/external/tinyexr,
+					/Users/yangfeng/Desktop/filament/third_party/astcenc/include,
+					/Users/yangfeng/Desktop/filament/third_party/etc2comp/EtcLib/Etc,
+					/Users/yangfeng/Desktop/filament/third_party/etc2comp/EtcLib/EtcCodec,
+					/Users/yangfeng/Desktop/filament/third_party/stb,
+					/Users/yangfeng/Desktop/filament/third_party/tinyexr,
 					/usr/local/include,
 				);
 			};
@@ -9541,7 +9541,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Debug;
 		};
@@ -9564,7 +9564,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Release;
 		};
@@ -9588,7 +9588,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Debug;
 		};
@@ -9612,7 +9612,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Release;
 		};
@@ -9640,7 +9640,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Debug;
 		};
@@ -9668,7 +9668,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Release;
 		};
@@ -9691,32 +9691,44 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
 					/Users/yangfeng/Desktop/DigitalArche2/render.math,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-cross/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/OGLCompilersDLL",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/SPIRV",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/glslang",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/glslang/OSDependent/Unix",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/link",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/opt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/reduce",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
 					"-lglslang",
-					"-lHLSL",
 					"-lSPIRV",
-					"-lOGLCompiler",
-					"-lOSDependent",
 					"-lSPVRemapper",
+					"-lOGLCompiler",
 					"-lspirv-cross-core",
 					"-lspirv-cross-glsl",
 					"-lspirv-cross-msl",
+					"-lOSDependent",
 					"-lSPIRV-Tools",
+					"-lSPIRV-Tools-link",
 					"-lSPIRV-Tools-opt",
+					"-lSPIRV-Tools-reduce",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
-					"/Users/yangfeng/Desktop/DigitalArche2/external/smol-v/source",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/smol-v/source",
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/Public,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/Include,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/SPIRV,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/SPIRV,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/MachineIndependent,
+					"/Users/yangfeng/Desktop/filament/third_party/spirv-cross",
 					/usr/local/include,
-					/usr/local/include/glslang/Public,
-					/usr/local/include/glslang/Include,
-					/usr/local/include/glslang/SPIRV,
-					/usr/local/include/glslang/MachineIndependent,
-					/usr/local/include/spirv_cross,
 				);
 			};
 			name = Debug;
@@ -9740,32 +9752,44 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
 					/Users/yangfeng/Desktop/DigitalArche2/render.math,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-cross/tnt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/OGLCompilersDLL",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/SPIRV",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/glslang",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/glslang/tnt/glslang/OSDependent/Unix",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/link",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/opt",
+					"/Users/yangfeng/Desktop/filament/out/cmake-release/third_party/spirv-tools/source/reduce",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				OTHER_LDFLAGS = (
 					"-lglslang",
-					"-lHLSL",
 					"-lSPIRV",
-					"-lOGLCompiler",
-					"-lOSDependent",
 					"-lSPVRemapper",
+					"-lOGLCompiler",
 					"-lspirv-cross-core",
 					"-lspirv-cross-glsl",
 					"-lspirv-cross-msl",
+					"-lOSDependent",
 					"-lSPIRV-Tools",
+					"-lSPIRV-Tools-link",
 					"-lSPIRV-Tools-opt",
+					"-lSPIRV-Tools-reduce",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
-					"/Users/yangfeng/Desktop/DigitalArche2/external/smol-v/source",
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/smol-v/source",
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/Public,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/Include,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/SPIRV,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/SPIRV,
+					/Users/yangfeng/Desktop/filament/third_party/glslang/glslang/MachineIndependent,
+					"/Users/yangfeng/Desktop/filament/third_party/spirv-cross",
 					/usr/local/include,
-					/usr/local/include/glslang/Public,
-					/usr/local/include/glslang/Include,
-					/usr/local/include/glslang/SPIRV,
-					/usr/local/include/glslang/MachineIndependent,
-					/usr/local/include/spirv_cross,
 				);
 			};
 			name = Release;
@@ -9795,10 +9819,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/cgltf,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
-					"/Users/yangfeng/Desktop/DigitalArche2/external/hat-trie",
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/Users/yangfeng/Desktop/filament/third_party/cgltf,
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/hat-trie",
+					/Users/yangfeng/Desktop/filament/third_party/stb,
 				);
 			};
 			name = Debug;
@@ -9828,10 +9852,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/cgltf,
-					"/Users/yangfeng/Desktop/DigitalArche2/external/robin-map",
-					"/Users/yangfeng/Desktop/DigitalArche2/external/hat-trie",
-					/Users/yangfeng/Desktop/DigitalArche2/external/stb,
+					/Users/yangfeng/Desktop/filament/third_party/cgltf,
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					"/Users/yangfeng/Desktop/filament/third_party/hat-trie",
+					/Users/yangfeng/Desktop/filament/third_party/stb,
 				);
 			};
 			name = Release;
@@ -9950,7 +9974,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Debug;
 		};
@@ -9982,7 +10006,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/DigitalArche2/external/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
 			};
 			name = Release;
 		};
@@ -10012,8 +10036,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
-					/Users/yangfeng/Desktop/DigitalArche2/external/jsmn,
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/jsmn,
 				);
 			};
 			name = Debug;
@@ -10044,8 +10068,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/Users/yangfeng/Desktop/DigitalArche2/external/imgui,
-					/Users/yangfeng/Desktop/DigitalArche2/external/jsmn,
+					/Users/yangfeng/Desktop/filament/third_party/imgui,
+					/Users/yangfeng/Desktop/filament/third_party/jsmn,
 				);
 			};
 			name = Release;
@@ -10072,7 +10096,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/external/meshoptimizer/src;
+				SYSTEM_HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/filament/third_party/meshoptimizer/src;
 			};
 			name = Debug;
 		};
@@ -10098,7 +10122,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/external/meshoptimizer/src;
+				SYSTEM_HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/filament/third_party/meshoptimizer/src;
 			};
 			name = Release;
 		};

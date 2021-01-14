@@ -140,7 +140,7 @@ void SpvToMsl(const SpirvBlob* spirv, std::string* outMsl, const GLSLPostProcess
     mslCompiler.set_msl_options(CompilerMSL::Options {
         .platform = platform,
         .msl_version = CompilerMSL::Options::make_msl_version(1, 1),
-        .ios_use_framebuffer_fetch_subpasses = true
+        .use_framebuffer_fetch_subpasses = true
     });
 
     auto executionModel = mslCompiler.get_execution_model();
