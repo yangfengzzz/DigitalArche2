@@ -10,6 +10,39 @@
 		040DC0C625B08D5600986C9C /* ShaderMinifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC0C425B08D5600986C9C /* ShaderMinifier.h */; };
 		040DC0C725B08D5600986C9C /* ShaderMinifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC0C525B08D5600986C9C /* ShaderMinifier.cpp */; };
 		040DC1E025B090DD00986C9C /* render_math.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC1DF25B090DD00986C9C /* render_math.h */; };
+		040DC28B25B0946700986C9C /* BlueVKDarwin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC28925B0946700986C9C /* BlueVKDarwin.cpp */; };
+		040DC28C25B0946700986C9C /* BlueVK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC28A25B0946700986C9C /* BlueVK.cpp */; };
+		040DC2EC25B094B000986C9C /* librender.utils.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACD3022560C8940047ECE3 /* librender.utils.dylib */; };
+		040DC30D25B094C600986C9C /* BlueVK.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC30C25B094C600986C9C /* BlueVK.h */; };
+		040DC34E25B0951000986C9C /* VulkanDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC32E25B0950D00986C9C /* VulkanDriver.cpp */; };
+		040DC35025B0951000986C9C /* VulkanHandles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33025B0950D00986C9C /* VulkanHandles.cpp */; };
+		040DC35125B0951000986C9C /* VulkanSamplerCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33125B0950E00986C9C /* VulkanSamplerCache.h */; };
+		040DC35225B0951000986C9C /* PlatformVkCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33225B0950E00986C9C /* PlatformVkCocoa.mm */; };
+		040DC35325B0951000986C9C /* VulkanDisposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33325B0950E00986C9C /* VulkanDisposer.cpp */; };
+		040DC35425B0951000986C9C /* VulkanHandles.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33425B0950E00986C9C /* VulkanHandles.h */; };
+		040DC35725B0951000986C9C /* VulkanPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33725B0950E00986C9C /* VulkanPlatform.cpp */; };
+		040DC35825B0951000986C9C /* VulkanBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33825B0950E00986C9C /* VulkanBuffer.h */; };
+		040DC35925B0951000986C9C /* VulkanContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33925B0950E00986C9C /* VulkanContext.h */; };
+		040DC35A25B0951000986C9C /* VulkanPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33A25B0950E00986C9C /* VulkanPlatform.h */; };
+		040DC35B25B0951000986C9C /* VulkanSamplerCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33B25B0950E00986C9C /* VulkanSamplerCache.cpp */; };
+		040DC35C25B0951000986C9C /* VulkanStagePool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33C25B0950F00986C9C /* VulkanStagePool.cpp */; };
+		040DC35D25B0951000986C9C /* VulkanBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33D25B0950F00986C9C /* VulkanBinder.h */; };
+		040DC35E25B0951000986C9C /* VulkanBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC33E25B0950F00986C9C /* VulkanBuffer.cpp */; };
+		040DC35F25B0951000986C9C /* VulkanDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC33F25B0950F00986C9C /* VulkanDriver.h */; };
+		040DC36225B0951000986C9C /* PlatformVkCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC34225B0950F00986C9C /* PlatformVkCocoa.h */; };
+		040DC36325B0951000986C9C /* VulkanBinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC34325B0950F00986C9C /* VulkanBinder.cpp */; };
+		040DC36425B0951000986C9C /* VulkanContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC34425B0950F00986C9C /* VulkanContext.cpp */; };
+		040DC36525B0951000986C9C /* VulkanStagePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC34525B0950F00986C9C /* VulkanStagePool.h */; };
+		040DC36625B0951000986C9C /* VulkanDriverFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC34625B0951000986C9C /* VulkanDriverFactory.h */; };
+		040DC36725B0951000986C9C /* VulkanFboCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC34725B0951000986C9C /* VulkanFboCache.cpp */; };
+		040DC36825B0951000986C9C /* VulkanFboCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC34825B0951000986C9C /* VulkanFboCache.h */; };
+		040DC36925B0951000986C9C /* VulkanUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC34925B0951000986C9C /* VulkanUtility.h */; };
+		040DC36A25B0951000986C9C /* VulkanDisposer.h in Headers */ = {isa = PBXBuildFile; fileRef = 040DC34A25B0951000986C9C /* VulkanDisposer.h */; };
+		040DC36D25B0951000986C9C /* VulkanUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC34D25B0951000986C9C /* VulkanUtility.cpp */; };
+		040DC3EC25B0958B00986C9C /* librender.bluevk.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 040DC24025B0944200986C9C /* librender.bluevk.dylib */; };
+		040DC50125B0961700986C9C /* BlueGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC4FF25B0961700986C9C /* BlueGL.cpp */; };
+		040DC50225B0961700986C9C /* BlueGLDarwin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC50025B0961700986C9C /* BlueGLDarwin.cpp */; };
+		040DC58525B0968800986C9C /* librender.bluegl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 040DC4B425B095ED00986C9C /* librender.bluegl.dylib */; };
 		044C8B6B256605230000ECB4 /* sample_skinning.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0D80256106980047ECE3 /* sample_skinning.cc */; };
 		044C8C1925664D020000ECB4 /* btBulletDynamicsCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C8C1725664D020000ECB4 /* btBulletDynamicsCommon.h */; };
 		044C8C1A25664D020000ECB4 /* btBulletCollisionCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C8C1825664D020000ECB4 /* btBulletCollisionCommon.h */; };
@@ -1331,6 +1364,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		040DC2EA25B094AB00986C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04ACD3012560C8940047ECE3;
+			remoteInfo = render.utils;
+		};
+		040DC3EA25B0958800986C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040DC23F25B0944200986C9C;
+			remoteInfo = render.bluevk;
+		};
+		040DC58325B0968200986C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0466C47C255FC46100224683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040DC4B325B095ED00986C9C;
+			remoteInfo = render.bluegl;
+		};
 		04549310256024E5004B6515 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0466C47C255FC46100224683 /* Project object */;
@@ -1913,6 +1967,41 @@
 		040DC1C025B0900100986C9C /* unit_tests.render.filament.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.filament.entitlements; sourceTree = "<group>"; };
 		040DC1DF25B090DD00986C9C /* render_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_math.h; sourceTree = "<group>"; };
 		040DC21D25B0914D00986C9C /* unit_tests.render.filameshio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = unit_tests.render.filameshio.entitlements; sourceTree = "<group>"; };
+		040DC24025B0944200986C9C /* librender.bluevk.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.bluevk.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		040DC28925B0946700986C9C /* BlueVKDarwin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlueVKDarwin.cpp; sourceTree = "<group>"; };
+		040DC28A25B0946700986C9C /* BlueVK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlueVK.cpp; sourceTree = "<group>"; };
+		040DC30C25B094C600986C9C /* BlueVK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueVK.h; path = bluevk/BlueVK.h; sourceTree = "<group>"; };
+		040DC32E25B0950D00986C9C /* VulkanDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanDriver.cpp; path = vulkan/VulkanDriver.cpp; sourceTree = "<group>"; };
+		040DC33025B0950D00986C9C /* VulkanHandles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanHandles.cpp; path = vulkan/VulkanHandles.cpp; sourceTree = "<group>"; };
+		040DC33125B0950E00986C9C /* VulkanSamplerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanSamplerCache.h; path = vulkan/VulkanSamplerCache.h; sourceTree = "<group>"; };
+		040DC33225B0950E00986C9C /* PlatformVkCocoa.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PlatformVkCocoa.mm; path = vulkan/PlatformVkCocoa.mm; sourceTree = "<group>"; };
+		040DC33325B0950E00986C9C /* VulkanDisposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanDisposer.cpp; path = vulkan/VulkanDisposer.cpp; sourceTree = "<group>"; };
+		040DC33425B0950E00986C9C /* VulkanHandles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanHandles.h; path = vulkan/VulkanHandles.h; sourceTree = "<group>"; };
+		040DC33725B0950E00986C9C /* VulkanPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanPlatform.cpp; path = vulkan/VulkanPlatform.cpp; sourceTree = "<group>"; };
+		040DC33825B0950E00986C9C /* VulkanBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanBuffer.h; path = vulkan/VulkanBuffer.h; sourceTree = "<group>"; };
+		040DC33925B0950E00986C9C /* VulkanContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanContext.h; path = vulkan/VulkanContext.h; sourceTree = "<group>"; };
+		040DC33A25B0950E00986C9C /* VulkanPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanPlatform.h; path = vulkan/VulkanPlatform.h; sourceTree = "<group>"; };
+		040DC33B25B0950E00986C9C /* VulkanSamplerCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanSamplerCache.cpp; path = vulkan/VulkanSamplerCache.cpp; sourceTree = "<group>"; };
+		040DC33C25B0950F00986C9C /* VulkanStagePool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanStagePool.cpp; path = vulkan/VulkanStagePool.cpp; sourceTree = "<group>"; };
+		040DC33D25B0950F00986C9C /* VulkanBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanBinder.h; path = vulkan/VulkanBinder.h; sourceTree = "<group>"; };
+		040DC33E25B0950F00986C9C /* VulkanBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanBuffer.cpp; path = vulkan/VulkanBuffer.cpp; sourceTree = "<group>"; };
+		040DC33F25B0950F00986C9C /* VulkanDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanDriver.h; path = vulkan/VulkanDriver.h; sourceTree = "<group>"; };
+		040DC34225B0950F00986C9C /* PlatformVkCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatformVkCocoa.h; path = vulkan/PlatformVkCocoa.h; sourceTree = "<group>"; };
+		040DC34325B0950F00986C9C /* VulkanBinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanBinder.cpp; path = vulkan/VulkanBinder.cpp; sourceTree = "<group>"; };
+		040DC34425B0950F00986C9C /* VulkanContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanContext.cpp; path = vulkan/VulkanContext.cpp; sourceTree = "<group>"; };
+		040DC34525B0950F00986C9C /* VulkanStagePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanStagePool.h; path = vulkan/VulkanStagePool.h; sourceTree = "<group>"; };
+		040DC34625B0951000986C9C /* VulkanDriverFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanDriverFactory.h; path = vulkan/VulkanDriverFactory.h; sourceTree = "<group>"; };
+		040DC34725B0951000986C9C /* VulkanFboCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanFboCache.cpp; path = vulkan/VulkanFboCache.cpp; sourceTree = "<group>"; };
+		040DC34825B0951000986C9C /* VulkanFboCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanFboCache.h; path = vulkan/VulkanFboCache.h; sourceTree = "<group>"; };
+		040DC34925B0951000986C9C /* VulkanUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanUtility.h; path = vulkan/VulkanUtility.h; sourceTree = "<group>"; };
+		040DC34A25B0951000986C9C /* VulkanDisposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VulkanDisposer.h; path = vulkan/VulkanDisposer.h; sourceTree = "<group>"; };
+		040DC34D25B0951000986C9C /* VulkanUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VulkanUtility.cpp; path = vulkan/VulkanUtility.cpp; sourceTree = "<group>"; };
+		040DC4B425B095ED00986C9C /* librender.bluegl.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librender.bluegl.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		040DC4FF25B0961700986C9C /* BlueGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlueGL.cpp; sourceTree = "<group>"; };
+		040DC50025B0961700986C9C /* BlueGLDarwin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlueGLDarwin.cpp; sourceTree = "<group>"; };
+		040DC5E825B096B800986C9C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		040DC60A25B096C300986C9C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		040DC62C25B096DC00986C9C /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = System/Library/Frameworks/AGL.framework; sourceTree = SDKROOT; };
 		044C8BD025664CC10000ECB4 /* libsrc.bullet.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.bullet.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C8C1725664D020000ECB4 /* btBulletDynamicsCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletDynamicsCommon.h; sourceTree = "<group>"; };
 		044C8C1825664D020000ECB4 /* btBulletCollisionCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletCollisionCommon.h; sourceTree = "<group>"; };
@@ -3279,6 +3368,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		040DC23E25B0944200986C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DC2EC25B094B000986C9C /* librender.utils.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DC4B225B095ED00986C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C8BCE25664CC10000ECB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -3473,6 +3577,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040DC58525B0968800986C9C /* librender.bluegl.dylib in Frameworks */,
+				040DC3EC25B0958B00986C9C /* librender.bluevk.dylib in Frameworks */,
 				04ACDF512560D6C20047ECE3 /* Metal.framework in Frameworks */,
 				04ACDF1D2560D6B30047ECE3 /* CoreVideo.framework in Frameworks */,
 				04ACDF032560D6A90047ECE3 /* librender.utils.dylib in Frameworks */,
@@ -3564,6 +3670,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040DC24125B0944200986C9C /* render.bluevk */ = {
+			isa = PBXGroup;
+			children = (
+				040DC30C25B094C600986C9C /* BlueVK.h */,
+				040DC28A25B0946700986C9C /* BlueVK.cpp */,
+				040DC28925B0946700986C9C /* BlueVKDarwin.cpp */,
+			);
+			path = render.bluevk;
+			sourceTree = "<group>";
+		};
+		040DC32D25B094FB00986C9C /* vulkan */ = {
+			isa = PBXGroup;
+			children = (
+				040DC34225B0950F00986C9C /* PlatformVkCocoa.h */,
+				040DC33225B0950E00986C9C /* PlatformVkCocoa.mm */,
+				040DC34325B0950F00986C9C /* VulkanBinder.cpp */,
+				040DC33D25B0950F00986C9C /* VulkanBinder.h */,
+				040DC33E25B0950F00986C9C /* VulkanBuffer.cpp */,
+				040DC33825B0950E00986C9C /* VulkanBuffer.h */,
+				040DC34425B0950F00986C9C /* VulkanContext.cpp */,
+				040DC33925B0950E00986C9C /* VulkanContext.h */,
+				040DC33325B0950E00986C9C /* VulkanDisposer.cpp */,
+				040DC34A25B0951000986C9C /* VulkanDisposer.h */,
+				040DC32E25B0950D00986C9C /* VulkanDriver.cpp */,
+				040DC33F25B0950F00986C9C /* VulkanDriver.h */,
+				040DC34625B0951000986C9C /* VulkanDriverFactory.h */,
+				040DC34725B0951000986C9C /* VulkanFboCache.cpp */,
+				040DC34825B0951000986C9C /* VulkanFboCache.h */,
+				040DC33025B0950D00986C9C /* VulkanHandles.cpp */,
+				040DC33425B0950E00986C9C /* VulkanHandles.h */,
+				040DC33725B0950E00986C9C /* VulkanPlatform.cpp */,
+				040DC33A25B0950E00986C9C /* VulkanPlatform.h */,
+				040DC33B25B0950E00986C9C /* VulkanSamplerCache.cpp */,
+				040DC33125B0950E00986C9C /* VulkanSamplerCache.h */,
+				040DC33C25B0950F00986C9C /* VulkanStagePool.cpp */,
+				040DC34525B0950F00986C9C /* VulkanStagePool.h */,
+				040DC34D25B0951000986C9C /* VulkanUtility.cpp */,
+				040DC34925B0951000986C9C /* VulkanUtility.h */,
+			);
+			name = vulkan;
+			sourceTree = "<group>";
+		};
+		040DC4B525B095ED00986C9C /* render.bluegl */ = {
+			isa = PBXGroup;
+			children = (
+				040DC4FF25B0961700986C9C /* BlueGL.cpp */,
+				040DC50025B0961700986C9C /* BlueGLDarwin.cpp */,
+			);
+			path = render.bluegl;
+			sourceTree = "<group>";
+		};
 		044C8BD125664CC10000ECB4 /* src.bullet */ = {
 			isa = PBXGroup;
 			children = (
@@ -4454,6 +4611,8 @@
 				0454911C256020B8004B6515 /* render.filamentapp */,
 				0466C486255FC46100224683 /* apps */,
 				04AC0942256103E20047ECE3 /* apps.ozz */,
+				040DC24125B0944200986C9C /* render.bluevk */,
+				040DC4B525B095ED00986C9C /* render.bluegl */,
 				0466C485255FC46100224683 /* Products */,
 				0466D680255FD3B500224683 /* Frameworks */,
 			);
@@ -4492,6 +4651,8 @@
 				04AC0941256103E20047ECE3 /* apps.ozz */,
 				04AC121325610DAC0047ECE3 /* unit_tests.ozz */,
 				044C8BD025664CC10000ECB4 /* libsrc.bullet.dylib */,
+				040DC24025B0944200986C9C /* librender.bluevk.dylib */,
+				040DC4B425B095ED00986C9C /* librender.bluegl.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4545,6 +4706,9 @@
 		0466D680255FD3B500224683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				040DC62C25B096DC00986C9C /* AGL.framework */,
+				040DC60A25B096C300986C9C /* GLKit.framework */,
+				040DC5E825B096B800986C9C /* GLUT.framework */,
 				04AC0B86256105810047ECE3 /* OpenGL.framework */,
 				045494DE25602899004B6515 /* QuartzCore.framework */,
 				0454941F25602673004B6515 /* Cocoa.framework */,
@@ -5518,6 +5682,7 @@
 				04CBF208256150A4001EBE0D /* TargetBufferInfo.h */,
 				04ACE7642560E1220047ECE3 /* noop */,
 				04ACDBC52560D38B0047ECE3 /* metal */,
+				040DC32D25B094FB00986C9C /* vulkan */,
 				04ACDB952560D3830047ECE3 /* DataReshaper.h */,
 				04ACDB9A2560D3830047ECE3 /* CommandStreamDispatcher.h */,
 				04ACDB972560D3830047ECE3 /* TextureReshaper.h */,
@@ -5856,6 +6021,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		040DC23C25B0944200986C9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DC30D25B094C600986C9C /* BlueVK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DC4B025B095ED00986C9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C8BCC25664CC10000ECB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -6643,9 +6823,12 @@
 			files = (
 				04CBF209256150A4001EBE0D /* PixelBufferDescriptor.h in Headers */,
 				04CBF26E25615120001EBE0D /* Program.h in Headers */,
+				040DC36925B0951000986C9C /* VulkanUtility.h in Headers */,
+				040DC35D25B0951000986C9C /* VulkanBinder.h in Headers */,
 				04ACDBEE2560D3970047ECE3 /* MetalBuffer.h in Headers */,
 				04ACE7822560E12A0047ECE3 /* PlatformNoop.h in Headers */,
 				04ACDBF42560D3970047ECE3 /* MetalContext.h in Headers */,
+				040DC35125B0951000986C9C /* VulkanSamplerCache.h in Headers */,
 				04CBF27025615120001EBE0D /* CircularBuffer.h in Headers */,
 				04CBF210256150A4001EBE0D /* TargetBufferInfo.h in Headers */,
 				04CBF26C25615120001EBE0D /* SamplerGroup.h in Headers */,
@@ -6655,28 +6838,38 @@
 				04ACDBE42560D3970047ECE3 /* PlatformMetal.h in Headers */,
 				04ACDBE02560D3970047ECE3 /* MetalEnums.h in Headers */,
 				04CBF20E256150A4001EBE0D /* Handle.h in Headers */,
+				040DC35A25B0951000986C9C /* VulkanPlatform.h in Headers */,
 				04ACDBA42560D3830047ECE3 /* DataReshaper.h in Headers */,
 				04ACDBEB2560D3970047ECE3 /* MetalTimerQuery.h in Headers */,
+				040DC36A25B0951000986C9C /* VulkanDisposer.h in Headers */,
 				04ACDBEA2560D3970047ECE3 /* MetalBlitter.h in Headers */,
+				040DC35825B0951000986C9C /* VulkanBuffer.h in Headers */,
 				04ACDBDE2560D3970047ECE3 /* MetalBufferPool.h in Headers */,
+				040DC35F25B0951000986C9C /* VulkanDriver.h in Headers */,
 				04CBF20C256150A4001EBE0D /* PresentCallable.h in Headers */,
+				040DC36525B0951000986C9C /* VulkanStagePool.h in Headers */,
+				040DC35925B0951000986C9C /* VulkanContext.h in Headers */,
 				04CBF27125615120001EBE0D /* BackendUtils.h in Headers */,
 				04CBF20B256150A4001EBE0D /* BufferDescriptor.h in Headers */,
 				04ACDBE22560D3970047ECE3 /* MetalResourceTracker.h in Headers */,
 				04ACDBE52560D3970047ECE3 /* MetalDriverFactory.h in Headers */,
 				04CBF26B25615120001EBE0D /* Driver.h in Headers */,
 				04CBF20D256150A4001EBE0D /* DriverEnums.h in Headers */,
+				040DC36825B0951000986C9C /* VulkanFboCache.h in Headers */,
 				04ACDBE62560D3970047ECE3 /* MetalState.h in Headers */,
 				04ACE7842560E12A0047ECE3 /* NoopDriver.h in Headers */,
+				040DC36225B0951000986C9C /* PlatformVkCocoa.h in Headers */,
 				04CBF20A256150A4001EBE0D /* Platform.h in Headers */,
 				04ACDBA92560D3830047ECE3 /* CommandStreamDispatcher.h in Headers */,
 				04ACDBA62560D3830047ECE3 /* TextureReshaper.h in Headers */,
+				040DC36625B0951000986C9C /* VulkanDriverFactory.h in Headers */,
 				04CBF26F25615120001EBE0D /* OpenGLPlatform.h in Headers */,
 				04CBF26825615120001EBE0D /* CommandBufferQueue.h in Headers */,
 				04CBF26A25615120001EBE0D /* AcquiredImage.h in Headers */,
 				04ACDBA22560D3830047ECE3 /* DriverBase.h in Headers */,
 				04CBF27225615120001EBE0D /* CommandStream.h in Headers */,
 				04CBF26D25615120001EBE0D /* DriverApi.h in Headers */,
+				040DC35425B0951000986C9C /* VulkanHandles.h in Headers */,
 				04ACDBE72560D3970047ECE3 /* MetalHandles.h in Headers */,
 				04ACDBDF2560D3970047ECE3 /* MetalExternalImage.h in Headers */,
 			);
@@ -6706,6 +6899,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		040DC23F25B0944200986C9C /* render.bluevk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040DC24A25B0944200986C9C /* Build configuration list for PBXNativeTarget "render.bluevk" */;
+			buildPhases = (
+				040DC23C25B0944200986C9C /* Headers */,
+				040DC23D25B0944200986C9C /* Sources */,
+				040DC23E25B0944200986C9C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040DC2EB25B094AB00986C9C /* PBXTargetDependency */,
+			);
+			name = render.bluevk;
+			productName = render.bluevk;
+			productReference = 040DC24025B0944200986C9C /* librender.bluevk.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		040DC4B325B095ED00986C9C /* render.bluegl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040DC4BC25B095ED00986C9C /* Build configuration list for PBXNativeTarget "render.bluegl" */;
+			buildPhases = (
+				040DC4B025B095ED00986C9C /* Headers */,
+				040DC4B125B095ED00986C9C /* Sources */,
+				040DC4B225B095ED00986C9C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = render.bluegl;
+			productName = render.bluegl;
+			productReference = 040DC4B425B095ED00986C9C /* librender.bluegl.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		044C8BCF25664CC10000ECB4 /* src.bullet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044C8BD825664CC10000ECB4 /* Build configuration list for PBXNativeTarget "src.bullet" */;
@@ -7104,6 +7332,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				040DC58425B0968200986C9C /* PBXTargetDependency */,
+				040DC3EB25B0958800986C9C /* PBXTargetDependency */,
 				04ACDF022560D6A40047ECE3 /* PBXTargetDependency */,
 			);
 			name = render.backend;
@@ -7291,6 +7521,12 @@
 			attributes = {
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					040DC23F25B0944200986C9C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					040DC4B325B095ED00986C9C = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					044C8BCF25664CC10000ECB4 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -7426,11 +7662,31 @@
 				0466C483255FC46100224683 /* apps */,
 				04AC0940256103E20047ECE3 /* apps.ozz */,
 				044C8BCF25664CC10000ECB4 /* src.bullet */,
+				040DC23F25B0944200986C9C /* render.bluevk */,
+				040DC4B325B095ED00986C9C /* render.bluegl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		040DC23D25B0944200986C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DC28C25B0946700986C9C /* BlueVK.cpp in Sources */,
+				040DC28B25B0946700986C9C /* BlueVKDarwin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040DC4B125B095ED00986C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040DC50125B0961700986C9C /* BlueGL.cpp in Sources */,
+				040DC50225B0961700986C9C /* BlueGLDarwin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C8BCD25664CC10000ECB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -8048,9 +8304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040DC35B25B0951000986C9C /* VulkanSamplerCache.cpp in Sources */,
 				04ACDB9E2560D3830047ECE3 /* Program.cpp in Sources */,
 				04ACDB9D2560D3830047ECE3 /* TextureReshaper.cpp in Sources */,
+				040DC35C25B0951000986C9C /* VulkanStagePool.cpp in Sources */,
 				04ACDBAB2560D3830047ECE3 /* BackendUtils.cpp in Sources */,
+				040DC36325B0951000986C9C /* VulkanBinder.cpp in Sources */,
+				040DC35025B0951000986C9C /* VulkanHandles.cpp in Sources */,
 				04ACDBE32560D3970047ECE3 /* MetalState.mm in Sources */,
 				04ACDBA02560D3830047ECE3 /* SamplerGroup.cpp in Sources */,
 				04ACDBE82560D3970047ECE3 /* MetalBuffer.mm in Sources */,
@@ -8059,18 +8319,26 @@
 				04ACDBF52560D3970047ECE3 /* MetalHandles.mm in Sources */,
 				04ACDB9F2560D3830047ECE3 /* CircularBuffer.cpp in Sources */,
 				04ACDBF22560D3970047ECE3 /* PlatformMetal.mm in Sources */,
+				040DC35225B0951000986C9C /* PlatformVkCocoa.mm in Sources */,
 				04ACDBA82560D3830047ECE3 /* Handle.cpp in Sources */,
 				04ACDBA52560D3830047ECE3 /* CommandStream.cpp in Sources */,
+				040DC36425B0951000986C9C /* VulkanContext.cpp in Sources */,
+				040DC35325B0951000986C9C /* VulkanDisposer.cpp in Sources */,
 				04ACDBF02560D3970047ECE3 /* MetalResourceTracker.cpp in Sources */,
 				04ACDBF32560D3970047ECE3 /* MetalTimerQuery.mm in Sources */,
+				040DC36D25B0951000986C9C /* VulkanUtility.cpp in Sources */,
+				040DC35E25B0951000986C9C /* VulkanBuffer.cpp in Sources */,
 				04ACDBA72560D3830047ECE3 /* Callable.cpp in Sources */,
+				040DC36725B0951000986C9C /* VulkanFboCache.cpp in Sources */,
 				04ACDBE12560D3970047ECE3 /* MetalBufferPool.mm in Sources */,
 				04ACDBF12560D3970047ECE3 /* MetalDriver.mm in Sources */,
 				04ACE7832560E12A0047ECE3 /* PlatformNoop.cpp in Sources */,
 				04ACDBEF2560D3970047ECE3 /* MetalExternalImage.mm in Sources */,
 				04ACDBA32560D3830047ECE3 /* Platform.cpp in Sources */,
+				040DC35725B0951000986C9C /* VulkanPlatform.cpp in Sources */,
 				04ACDBE92560D3970047ECE3 /* MetalBlitter.mm in Sources */,
 				04ACDBA12560D3830047ECE3 /* Driver.cpp in Sources */,
+				040DC34E25B0951000986C9C /* VulkanDriver.cpp in Sources */,
 				04ACDBEC2560D3970047ECE3 /* MetalContext.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8179,6 +8447,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		040DC2EB25B094AB00986C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04ACD3012560C8940047ECE3 /* render.utils */;
+			targetProxy = 040DC2EA25B094AB00986C9C /* PBXContainerItemProxy */;
+		};
+		040DC3EB25B0958800986C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040DC23F25B0944200986C9C /* render.bluevk */;
+			targetProxy = 040DC3EA25B0958800986C9C /* PBXContainerItemProxy */;
+		};
+		040DC58425B0968200986C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040DC4B325B095ED00986C9C /* render.bluegl */;
+			targetProxy = 040DC58325B0968200986C9C /* PBXContainerItemProxy */;
+		};
 		04549311256024E5004B6515 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0466C4EC255FC64700224683 /* external */;
@@ -8517,6 +8800,84 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		040DC24825B0944200986C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/yangfeng/Desktop/DigitalArche2/render.bluevk,
+					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		040DC24925B0944200986C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/yangfeng/Desktop/DigitalArche2/render.bluevk,
+					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		040DC4BD25B095ED00986C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/render.bluegl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		040DC4BE25B095ED00986C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/yangfeng/Desktop/DigitalArche2/render.bluegl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		044C8BD925664CC10000ECB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9772,11 +10133,16 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
 					/Users/yangfeng/Desktop/DigitalArche2/render.math,
 					/Users/yangfeng/Desktop/DigitalArche2/render.filament,
+					/Users/yangfeng/Desktop/DigitalArche2/render.bluevk,
+					/Users/yangfeng/Desktop/DigitalArche2/render.bluegl,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					/Users/yangfeng/Desktop/filament/third_party/vkmemalloc/src,
+				);
 			};
 			name = Debug;
 		};
@@ -9804,11 +10170,16 @@
 					/Users/yangfeng/Desktop/DigitalArche2/render.utils,
 					/Users/yangfeng/Desktop/DigitalArche2/render.math,
 					/Users/yangfeng/Desktop/DigitalArche2/render.filament,
+					/Users/yangfeng/Desktop/DigitalArche2/render.bluevk,
+					/Users/yangfeng/Desktop/DigitalArche2/render.bluegl,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "/Users/yangfeng/Desktop/filament/third_party/robin-map";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"/Users/yangfeng/Desktop/filament/third_party/robin-map",
+					/Users/yangfeng/Desktop/filament/third_party/vkmemalloc/src,
+				);
 			};
 			name = Release;
 		};
@@ -10345,6 +10716,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		040DC24A25B0944200986C9C /* Build configuration list for PBXNativeTarget "render.bluevk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040DC24825B0944200986C9C /* Debug */,
+				040DC24925B0944200986C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040DC4BC25B095ED00986C9C /* Build configuration list for PBXNativeTarget "render.bluegl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040DC4BD25B095ED00986C9C /* Debug */,
+				040DC4BE25B095ED00986C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		044C8BD825664CC10000ECB4 /* Build configuration list for PBXNativeTarget "src.bullet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

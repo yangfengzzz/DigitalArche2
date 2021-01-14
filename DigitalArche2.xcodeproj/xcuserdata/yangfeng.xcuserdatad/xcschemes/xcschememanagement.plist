@@ -24,6 +24,16 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>render.bluegl.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>31</integer>
+		</dict>
+		<key>render.bluevk.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
+		</dict>
 		<key>render.camutils.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

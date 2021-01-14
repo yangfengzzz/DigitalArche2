@@ -77,33 +77,33 @@ Platform::~Platform() noexcept = default;
 // responsible for destroying it. Initialization of the backend API is deferred until
 // createDriver(). The passed-in backend hint is replaced with the resolved backend.
 DefaultPlatform* DefaultPlatform::create(Backend* backend) noexcept {
-//    SYSTRACE_CALL();
-//    assert(backend);
-//    if (*backend == Backend::DEFAULT) {
-//        *backend = Backend::OPENGL;
-//    }
-//    if (*backend == Backend::NOOP) {
-//        return new PlatformNoop();
-//    }
-//    if (*backend == Backend::VULKAN) {
-//        #if defined(FILAMENT_DRIVER_SUPPORTS_VULKAN)
-//            #if defined(ANDROID)
-//                return new PlatformVkAndroid();
-//            #elif defined(IOS)
-//                return new PlatformVkCocoaTouch();
-//            #elif defined(__linux__)
-//                return new PlatformVkLinux();
-//            #elif defined(__APPLE__)
-//                return new PlatformVkCocoa();
-//            #elif defined(WIN32)
-//                return new PlatformVkWindows();
-//            #else
-//                return nullptr;
-//            #endif
-//        #else
-//            return nullptr;
-//        #endif
-//    }
+    SYSTRACE_CALL();
+    assert(backend);
+    if (*backend == Backend::DEFAULT) {
+        *backend = Backend::METAL;
+    }
+    if (*backend == Backend::NOOP) {
+        return new PlatformNoop();
+    }
+    if (*backend == Backend::VULKAN) {
+        #if defined(FILAMENT_DRIVER_SUPPORTS_VULKAN)
+            #if defined(ANDROID)
+                return new PlatformVkAndroid();
+            #elif defined(IOS)
+                return new PlatformVkCocoaTouch();
+            #elif defined(__linux__)
+                return new PlatformVkLinux();
+            #elif defined(__APPLE__)
+                return new PlatformVkCocoa();
+            #elif defined(WIN32)
+                return new PlatformVkWindows();
+            #else
+                return nullptr;
+            #endif
+        #else
+            return nullptr;
+        #endif
+    }
 //    if (*backend == Backend::METAL) {
 //#if defined(FILAMENT_SUPPORTS_METAL)
         return new PlatformMetal();
