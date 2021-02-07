@@ -43,6 +43,8 @@
 		040DC50125B0961700986C9C /* BlueGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC4FF25B0961700986C9C /* BlueGL.cpp */; };
 		040DC50225B0961700986C9C /* BlueGLDarwin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040DC50025B0961700986C9C /* BlueGLDarwin.cpp */; };
 		040DC58525B0968800986C9C /* librender.bluegl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 040DC4B425B095ED00986C9C /* librender.bluegl.dylib */; };
+		04106CBB25CFCD8F00479A74 /* ImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04106CBA25CFCD8F00479A74 /* ImageDecoder.h */; };
+		042998EE25C7EE75002EF12A /* hellotriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954B2560295A004B6515 /* hellotriangle.cpp */; };
 		044C8B6B256605230000ECB4 /* sample_skinning.cc in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0D80256106980047ECE3 /* sample_skinning.cc */; };
 		044C8C1925664D020000ECB4 /* btBulletDynamicsCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C8C1725664D020000ECB4 /* btBulletDynamicsCommon.h */; };
 		044C8C1A25664D020000ECB4 /* btBulletCollisionCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044C8C1825664D020000ECB4 /* btBulletCollisionCommon.h */; };
@@ -1203,7 +1205,6 @@
 		04ACFDF42560F6200047ECE3 /* librender.filamat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACD3C52560C8FB0047ECE3 /* librender.filamat.dylib */; };
 		04ACFEA42560F6750047ECE3 /* test_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ACFEA32560F6750047ECE3 /* test_settings.cpp */; };
 		04ACFF6D2560F6CF0047ECE3 /* librender.viewer.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ACECEA2560E84D0047ECE3 /* librender.viewer.dylib */; };
-		04C3F16E25B085AA0098EC0F /* gltf_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0454954925602959004B6515 /* gltf_viewer.cpp */; };
 		04CBF09525614F8A001EBE0D /* SimpleViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF09125614F8A001EBE0D /* SimpleViewer.h */; };
 		04CBF09625614F8A001EBE0D /* AutomationEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF09225614F8A001EBE0D /* AutomationEngine.h */; };
 		04CBF09725614F8A001EBE0D /* Settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF09325614F8A001EBE0D /* Settings.h */; };
@@ -1286,7 +1287,6 @@
 		04CBF619256153DD001EBE0D /* ImageDiffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF615256153DD001EBE0D /* ImageDiffer.h */; };
 		04CBF61A256153DD001EBE0D /* ImageEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF616256153DD001EBE0D /* ImageEncoder.h */; };
 		04CBF61B256153DD001EBE0D /* BlockCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF617256153DD001EBE0D /* BlockCompression.h */; };
-		04CBF61C256153DD001EBE0D /* ImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF618256153DD001EBE0D /* ImageDecoder.h */; };
 		04CBF695256153F9001EBE0D /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF68F256153F8001EBE0D /* Image.h */; };
 		04CBF696256153F9001EBE0D /* Cubemap.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF690256153F8001EBE0D /* Cubemap.h */; };
 		04CBF697256153F9001EBE0D /* CubemapSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CBF691256153F8001EBE0D /* CubemapSH.h */; };
@@ -2002,6 +2002,7 @@
 		040DC5E825B096B800986C9C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		040DC60A25B096C300986C9C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		040DC62C25B096DC00986C9C /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = System/Library/Frameworks/AGL.framework; sourceTree = SDKROOT; };
+		04106CBA25CFCD8F00479A74 /* ImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDecoder.h; path = imageio/ImageDecoder.h; sourceTree = "<group>"; };
 		044C8BD025664CC10000ECB4 /* libsrc.bullet.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.bullet.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C8C1725664D020000ECB4 /* btBulletDynamicsCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletDynamicsCommon.h; sourceTree = "<group>"; };
 		044C8C1825664D020000ECB4 /* btBulletCollisionCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletCollisionCommon.h; sourceTree = "<group>"; };
@@ -3290,7 +3291,6 @@
 		04CBF615256153DD001EBE0D /* ImageDiffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDiffer.h; path = imageio/ImageDiffer.h; sourceTree = "<group>"; };
 		04CBF616256153DD001EBE0D /* ImageEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageEncoder.h; path = imageio/ImageEncoder.h; sourceTree = "<group>"; };
 		04CBF617256153DD001EBE0D /* BlockCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockCompression.h; path = imageio/BlockCompression.h; sourceTree = "<group>"; };
-		04CBF618256153DD001EBE0D /* ImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDecoder.h; path = imageio/ImageDecoder.h; sourceTree = "<group>"; };
 		04CBF68F256153F8001EBE0D /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ibl/Image.h; sourceTree = "<group>"; };
 		04CBF690256153F8001EBE0D /* Cubemap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cubemap.h; path = ibl/Cubemap.h; sourceTree = "<group>"; };
 		04CBF691256153F8001EBE0D /* CubemapSH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubemapSH.h; path = ibl/CubemapSH.h; sourceTree = "<group>"; };
@@ -3683,31 +3683,32 @@
 		040DC32D25B094FB00986C9C /* vulkan */ = {
 			isa = PBXGroup;
 			children = (
+				040DC34925B0951000986C9C /* VulkanUtility.h */,
+				040DC34D25B0951000986C9C /* VulkanUtility.cpp */,
+				040DC33D25B0950F00986C9C /* VulkanBinder.h */,
+				040DC34325B0950F00986C9C /* VulkanBinder.cpp */,
+				040DC34A25B0951000986C9C /* VulkanDisposer.h */,
+				040DC33325B0950E00986C9C /* VulkanDisposer.cpp */,
+				04106D7F25CFD00A00479A74 /* base */,
+				040DC33925B0950E00986C9C /* VulkanContext.h */,
+				040DC34425B0950F00986C9C /* VulkanContext.cpp */,
+				040DC34825B0951000986C9C /* VulkanFboCache.h */,
+				040DC34725B0951000986C9C /* VulkanFboCache.cpp */,
+				040DC33125B0950E00986C9C /* VulkanSamplerCache.h */,
+				040DC33B25B0950E00986C9C /* VulkanSamplerCache.cpp */,
+				040DC34525B0950F00986C9C /* VulkanStagePool.h */,
+				040DC33C25B0950F00986C9C /* VulkanStagePool.cpp */,
+				040DC33825B0950E00986C9C /* VulkanBuffer.h */,
+				040DC33E25B0950F00986C9C /* VulkanBuffer.cpp */,
+				040DC33F25B0950F00986C9C /* VulkanDriver.h */,
+				040DC32E25B0950D00986C9C /* VulkanDriver.cpp */,
+				040DC34625B0951000986C9C /* VulkanDriverFactory.h */,
+				040DC33A25B0950E00986C9C /* VulkanPlatform.h */,
+				040DC33725B0950E00986C9C /* VulkanPlatform.cpp */,
 				040DC34225B0950F00986C9C /* PlatformVkCocoa.h */,
 				040DC33225B0950E00986C9C /* PlatformVkCocoa.mm */,
-				040DC34325B0950F00986C9C /* VulkanBinder.cpp */,
-				040DC33D25B0950F00986C9C /* VulkanBinder.h */,
-				040DC33E25B0950F00986C9C /* VulkanBuffer.cpp */,
-				040DC33825B0950E00986C9C /* VulkanBuffer.h */,
-				040DC34425B0950F00986C9C /* VulkanContext.cpp */,
-				040DC33925B0950E00986C9C /* VulkanContext.h */,
-				040DC33325B0950E00986C9C /* VulkanDisposer.cpp */,
-				040DC34A25B0951000986C9C /* VulkanDisposer.h */,
-				040DC32E25B0950D00986C9C /* VulkanDriver.cpp */,
-				040DC33F25B0950F00986C9C /* VulkanDriver.h */,
-				040DC34625B0951000986C9C /* VulkanDriverFactory.h */,
-				040DC34725B0951000986C9C /* VulkanFboCache.cpp */,
-				040DC34825B0951000986C9C /* VulkanFboCache.h */,
-				040DC33025B0950D00986C9C /* VulkanHandles.cpp */,
 				040DC33425B0950E00986C9C /* VulkanHandles.h */,
-				040DC33725B0950E00986C9C /* VulkanPlatform.cpp */,
-				040DC33A25B0950E00986C9C /* VulkanPlatform.h */,
-				040DC33B25B0950E00986C9C /* VulkanSamplerCache.cpp */,
-				040DC33125B0950E00986C9C /* VulkanSamplerCache.h */,
-				040DC33C25B0950F00986C9C /* VulkanStagePool.cpp */,
-				040DC34525B0950F00986C9C /* VulkanStagePool.h */,
-				040DC34D25B0951000986C9C /* VulkanUtility.cpp */,
-				040DC34925B0951000986C9C /* VulkanUtility.h */,
+				040DC33025B0950D00986C9C /* VulkanHandles.cpp */,
 			);
 			name = vulkan;
 			sourceTree = "<group>";
@@ -3719,6 +3720,69 @@
 				040DC50025B0961700986C9C /* BlueGLDarwin.cpp */,
 			);
 			path = render.bluegl;
+			sourceTree = "<group>";
+		};
+		04106C3525CFCBA000479A74 /* stream */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = stream;
+			sourceTree = "<group>";
+		};
+		04106C3625CFCBC400479A74 /* memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = memory;
+			sourceTree = "<group>";
+		};
+		04106C3725CFCBD800479A74 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		04106C3825CFCBE900479A74 /* component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
+		04106C3925CFCC1800479A74 /* job_system */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = job_system;
+			sourceTree = "<group>";
+		};
+		04106D7C25CFCF2300479A74 /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		04106D7D25CFCF6100479A74 /* infos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = infos;
+			sourceTree = "<group>";
+		};
+		04106D7E25CFCFB700479A74 /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		04106D7F25CFD00A00479A74 /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 		044C8BD125664CC10000ECB4 /* src.bullet */ = {
@@ -4589,18 +4653,18 @@
 				04ACF7C62560F1050047ECE3 /* unit_tests.render.math */,
 				04ACD3032560C8940047ECE3 /* render.utils */,
 				04ACF8DD2560F2090047ECE3 /* unit_tests.render.utils */,
-				04ACD3212560C8A80047ECE3 /* render.ibl */,
-				04ACD3402560C8B50047ECE3 /* render.image */,
-				04ACFA572560F3A80047ECE3 /* unit_tests.render.image */,
-				04ACD40F2560C9D70047ECE3 /* render.geometry */,
 				04ACD4352560CA000047ECE3 /* render.camutils */,
 				04ACFB792560F4BF0047ECE3 /* unit_tests.render.camutils */,
-				04ACD3602560C8D10047ECE3 /* render.filaflat */,
+				04ACD40F2560C9D70047ECE3 /* render.geometry */,
+				04ACD3402560C8B50047ECE3 /* render.image */,
+				04ACFA572560F3A80047ECE3 /* unit_tests.render.image */,
+				04ACD3212560C8A80047ECE3 /* render.ibl */,
+				04ACD3812560C8E00047ECE3 /* render.filabridge */,
 				04ACD3C62560C8FB0047ECE3 /* render.filamat */,
 				04ACFC622560F56D0047ECE3 /* unit_tests.render.filamat */,
-				04ACD3812560C8E00047ECE3 /* render.filabridge */,
-				04ACD3A32560C8EE0047ECE3 /* render.filament */,
+				04ACD3602560C8D10047ECE3 /* render.filaflat */,
 				04ACD99E2560D1E50047ECE3 /* render.backend */,
+				04ACD3A32560C8EE0047ECE3 /* render.filament */,
 				04AC02192560F8740047ECE3 /* unit_tests.render.filament */,
 				04ACD3EA2560C90B0047ECE3 /* render.gltfio */,
 				04ACF1742560EC5A0047ECE3 /* render.filameshio */,
@@ -5308,21 +5372,21 @@
 			isa = PBXGroup;
 			children = (
 				04CBF91325615538001EBE0D /* compiler.h */,
-				04CBF90525615536001EBE0D /* mathfwd.h */,
 				04CBF90D25615537001EBE0D /* fast.h */,
 				04CBF90925615537001EBE0D /* half.h */,
+				04CBF91125615538001EBE0D /* scalar.h */,
+				04CBF91225615538001EBE0D /* TVecHelpers.h */,
 				04CBF91025615538001EBE0D /* vec2.h */,
 				04CBF90425615536001EBE0D /* vec3.h */,
 				04CBF90E25615537001EBE0D /* vec4.h */,
+				04CBF90F25615537001EBE0D /* TQuatHelpers.h */,
+				04CBF90A25615537001EBE0D /* quat.h */,
+				04CBF90C25615537001EBE0D /* TMatHelpers.h */,
 				04CBF90825615537001EBE0D /* mat2.h */,
 				04CBF90725615536001EBE0D /* mat3.h */,
 				04CBF90625615536001EBE0D /* mat4.h */,
 				04CBF90B25615537001EBE0D /* norm.h */,
-				04CBF90A25615537001EBE0D /* quat.h */,
-				04CBF91125615538001EBE0D /* scalar.h */,
-				04CBF90C25615537001EBE0D /* TMatHelpers.h */,
-				04CBF90F25615537001EBE0D /* TQuatHelpers.h */,
-				04CBF91225615538001EBE0D /* TVecHelpers.h */,
+				04CBF90525615536001EBE0D /* mathfwd.h */,
 			);
 			path = render.math;
 			sourceTree = "<group>";
@@ -5330,65 +5394,70 @@
 		04ACD3032560C8940047ECE3 /* render.utils */ = {
 			isa = PBXGroup;
 			children = (
+				04CBF7392561542D001EBE0D /* compiler.h */,
 				04CBF73B2561542D001EBE0D /* Mutex.h */,
 				04CBF75225615430001EBE0D /* Condition.h */,
+				04CBF7472561542F001EBE0D /* SpinLock.h */,
+				04CBF75A25615431001EBE0D /* ThreadLocal.h */,
 				04CBF841256154CF001EBE0D /* generic */,
-				04CBF7392561542D001EBE0D /* compiler.h */,
 				04CBF7432561542E001EBE0D /* algorithm.h */,
-				04CBF7452561542F001EBE0D /* Allocator.h */,
-				04ACD62B2560CE660047ECE3 /* Allocator.cpp */,
-				04CBF75125615430001EBE0D /* api_level.h */,
-				04ACD6282560CE650047ECE3 /* api_level.cpp */,
-				04CBF73D2561542E001EBE0D /* architecture.h */,
-				04CBF75925615431001EBE0D /* ashmem.h */,
-				04ACD6292560CE660047ECE3 /* ashmem.cpp */,
-				04CBF7362561542D001EBE0D /* BinaryTreeArray.h */,
-				04CBF73F2561542E001EBE0D /* BitmaskEnum.h */,
 				04CBF7342561542C001EBE0D /* bitset.h */,
-				04CBF75725615431001EBE0D /* CallStack.h */,
-				04ACD6362560CE670047ECE3 /* CallStack.cpp */,
-				04CBF7402561542E001EBE0D /* CountDownLatch.h */,
-				04ACD6352560CE660047ECE3 /* CountDownLatch.cpp */,
 				04CBF7462561542F001EBE0D /* CString.h */,
 				04ACD62C2560CE660047ECE3 /* CString.cpp */,
-				04CBF7372561542D001EBE0D /* CyclicBarrier.h */,
-				04ACD6372560CE670047ECE3 /* CyclicBarrier.cpp */,
+				04CBF75825615431001EBE0D /* ostream.h */,
+				04ACD6382560CE670047ECE3 /* ostream.cpp */,
+				04CBF7482561542F001EBE0D /* sstream.h */,
+				04ACD6302560CE660047ECE3 /* sstream.cpp */,
+				04CBF74B2561542F001EBE0D /* Log.h */,
+				04ACD6312560CE660047ECE3 /* Log.cpp */,
+				04CBF75725615431001EBE0D /* CallStack.h */,
+				04ACD6362560CE670047ECE3 /* CallStack.cpp */,
+				04106C3525CFCBA000479A74 /* stream */,
+				04CBF7442561542E001EBE0D /* memalign.h */,
+				04CBF7452561542F001EBE0D /* Allocator.h */,
+				04ACD62B2560CE660047ECE3 /* Allocator.cpp */,
+				04CBF75525615431001EBE0D /* Slice.h */,
+				04CBF74E25615430001EBE0D /* StructureOfArrays.h */,
+				04106C3625CFCBC400479A74 /* memory */,
 				04CBF73C2561542D001EBE0D /* Entity.h */,
 				04CBF75325615430001EBE0D /* EntityInstance.h */,
 				04CBF7492561542F001EBE0D /* EntityManager.h */,
 				04ACD6332560CE660047ECE3 /* EntityManager.cpp */,
 				04ACD62F2560CE660047ECE3 /* EntityManagerImpl.h */,
-				04CBF74A2561542F001EBE0D /* Hash.h */,
-				04CBF75025615430001EBE0D /* JobSystem.h */,
-				04ACD6342560CE660047ECE3 /* JobSystem.cpp */,
-				04CBF74B2561542F001EBE0D /* Log.h */,
-				04ACD6312560CE660047ECE3 /* Log.cpp */,
-				04CBF7442561542E001EBE0D /* memalign.h */,
+				04106C3725CFCBD800479A74 /* entity */,
 				04CBF7412561542E001EBE0D /* NameComponentManager.h */,
 				04ACD6322560CE660047ECE3 /* NameComponentManager.cpp */,
-				04CBF75825615431001EBE0D /* ostream.h */,
-				04ACD6382560CE670047ECE3 /* ostream.cpp */,
-				04CBF7482561542F001EBE0D /* sstream.h */,
-				04ACD6302560CE660047ECE3 /* sstream.cpp */,
+				04CBF74D25615430001EBE0D /* SingleInstanceComponentManager.h */,
+				04106C3825CFCBE900479A74 /* component */,
 				04CBF7332561542C001EBE0D /* Panic.h */,
 				04ACD62A2560CE660047ECE3 /* Panic.cpp */,
+				04CBF73A2561542D001EBE0D /* Systrace.h */,
+				04ACD62D2560CE660047ECE3 /* Systrace.cpp */,
+				04CBF73D2561542E001EBE0D /* architecture.h */,
+				04CBF75425615431001EBE0D /* WorkStealingDequeue.h */,
+				04CBF75025615430001EBE0D /* JobSystem.h */,
+				04ACD6342560CE660047ECE3 /* JobSystem.cpp */,
+				04106C3925CFCC1800479A74 /* job_system */,
 				04CBF73E2561542E001EBE0D /* Path.h */,
 				04ACD6392560CE670047ECE3 /* Path.cpp */,
 				04ACD6642560CEA50047ECE3 /* Path.mm */,
+				04CBF75125615430001EBE0D /* api_level.h */,
+				04ACD6282560CE650047ECE3 /* api_level.cpp */,
+				04CBF75925615431001EBE0D /* ashmem.h */,
+				04ACD6292560CE660047ECE3 /* ashmem.cpp */,
+				04CBF7372561542D001EBE0D /* CyclicBarrier.h */,
+				04ACD6372560CE670047ECE3 /* CyclicBarrier.cpp */,
+				04CBF7402561542E001EBE0D /* CountDownLatch.h */,
+				04ACD6352560CE660047ECE3 /* CountDownLatch.cpp */,
 				04CBF7352561542D001EBE0D /* Profiler.h */,
 				04ACD62E2560CE660047ECE3 /* Profiler.cpp */,
+				04CBF7362561542D001EBE0D /* BinaryTreeArray.h */,
+				04CBF73F2561542E001EBE0D /* BitmaskEnum.h */,
+				04CBF74A2561542F001EBE0D /* Hash.h */,
 				04CBF74C25615430001EBE0D /* Range.h */,
-				04CBF74D25615430001EBE0D /* SingleInstanceComponentManager.h */,
-				04CBF75525615431001EBE0D /* Slice.h */,
-				04CBF7472561542F001EBE0D /* SpinLock.h */,
-				04CBF74E25615430001EBE0D /* StructureOfArrays.h */,
-				04CBF73A2561542D001EBE0D /* Systrace.h */,
-				04ACD62D2560CE660047ECE3 /* Systrace.cpp */,
-				04CBF75A25615431001EBE0D /* ThreadLocal.h */,
 				04CBF74F25615430001EBE0D /* trap.h */,
 				04CBF7382561542D001EBE0D /* unwindows.h */,
 				04CBF7422561542E001EBE0D /* vector.h */,
-				04CBF75425615431001EBE0D /* WorkStealingDequeue.h */,
 				04CBF75625615431001EBE0D /* Zip2Iterator.h */,
 			);
 			path = render.utils;
@@ -5402,13 +5471,13 @@
 				04ACD6E02560CF660047ECE3 /* Image.cpp */,
 				04CBF690256153F8001EBE0D /* Cubemap.h */,
 				04ACD6E22560CF660047ECE3 /* Cubemap.cpp */,
+				04CBF692256153F8001EBE0D /* CubemapUtils.h */,
+				04ACD6DF2560CF660047ECE3 /* CubemapUtils.cpp */,
+				04ACD6E12560CF660047ECE3 /* CubemapUtilsImpl.h */,
 				04CBF694256153F9001EBE0D /* CubemapIBL.h */,
 				04ACD6E32560CF660047ECE3 /* CubemapIBL.cpp */,
 				04CBF691256153F8001EBE0D /* CubemapSH.h */,
 				04ACD6DE2560CF660047ECE3 /* CubemapSH.cpp */,
-				04CBF692256153F8001EBE0D /* CubemapUtils.h */,
-				04ACD6DF2560CF660047ECE3 /* CubemapUtils.cpp */,
-				04ACD6E12560CF660047ECE3 /* CubemapUtilsImpl.h */,
 			);
 			path = render.ibl;
 			sourceTree = "<group>";
@@ -5416,25 +5485,25 @@
 		04ACD3402560C8B50047ECE3 /* render.image */ = {
 			isa = PBXGroup;
 			children = (
-				04CBF615256153DD001EBE0D /* ImageDiffer.h */,
-				04ACEE082560E9140047ECE3 /* ImageDiffer.cpp */,
-				04CBF618256153DD001EBE0D /* ImageDecoder.h */,
-				04ACEE052560E9140047ECE3 /* ImageDecoder.cpp */,
-				04CBF616256153DD001EBE0D /* ImageEncoder.h */,
-				04ACEE072560E9140047ECE3 /* ImageEncoder.cpp */,
-				04CBF617256153DD001EBE0D /* BlockCompression.h */,
-				04ACEE062560E9140047ECE3 /* BlockCompression.cpp */,
-				04ACEE042560E9080047ECE3 /* imageio */,
+				04CBF500256153BC001EBE0D /* LinearImage.h */,
+				04ACD7962560CFF20047ECE3 /* LinearImage.cpp */,
+				04CBF504256153BD001EBE0D /* ColorTransform.h */,
 				04CBF501256153BC001EBE0D /* ImageOps.h */,
 				04ACD7952560CFF20047ECE3 /* ImageOps.cpp */,
 				04CBF503256153BD001EBE0D /* ImageSampler.h */,
 				04ACD7972560CFF20047ECE3 /* ImageSampler.cpp */,
-				04CBF504256153BD001EBE0D /* ColorTransform.h */,
+				04ACEE042560E9080047ECE3 /* imageio */,
+				04106CBA25CFCD8F00479A74 /* ImageDecoder.h */,
+				04ACEE052560E9140047ECE3 /* ImageDecoder.cpp */,
+				04CBF616256153DD001EBE0D /* ImageEncoder.h */,
+				04ACEE072560E9140047ECE3 /* ImageEncoder.cpp */,
+				04CBF615256153DD001EBE0D /* ImageDiffer.h */,
+				04ACEE082560E9140047ECE3 /* ImageDiffer.cpp */,
+				04CBF617256153DD001EBE0D /* BlockCompression.h */,
+				04ACEE062560E9140047ECE3 /* BlockCompression.cpp */,
 				04CBF502256153BC001EBE0D /* KtxUtility.h */,
 				04CBF4FF256153BC001EBE0D /* KtxBundle.h */,
 				04ACD7982560CFF20047ECE3 /* KtxBundle.cpp */,
-				04CBF500256153BC001EBE0D /* LinearImage.h */,
-				04ACD7962560CFF20047ECE3 /* LinearImage.cpp */,
 			);
 			path = render.image;
 			sourceTree = "<group>";
@@ -5442,17 +5511,17 @@
 		04ACD3602560C8D10047ECE3 /* render.filaflat */ = {
 			isa = PBXGroup;
 			children = (
-				04CBF45525615388001EBE0D /* BlobDictionary.h */,
-				04CBF45A25615388001EBE0D /* ChunkContainer.h */,
-				04ACD8C72560D0E90047ECE3 /* ChunkContainer.cpp */,
-				04CBF45625615388001EBE0D /* DictionaryReader.h */,
-				04ACD8C62560D0E90047ECE3 /* DictionaryReader.cpp */,
-				04CBF45725615388001EBE0D /* MaterialChunk.h */,
-				04ACD8C52560D0E90047ECE3 /* MaterialChunk.cpp */,
 				04CBF45825615388001EBE0D /* ShaderBuilder.h */,
 				04ACD8C92560D0E90047ECE3 /* ShaderBuilder.cpp */,
 				04CBF45925615388001EBE0D /* Unflattener.h */,
 				04ACD8C82560D0E90047ECE3 /* Unflattener.cpp */,
+				04CBF45A25615388001EBE0D /* ChunkContainer.h */,
+				04ACD8C72560D0E90047ECE3 /* ChunkContainer.cpp */,
+				04CBF45625615388001EBE0D /* DictionaryReader.h */,
+				04ACD8C62560D0E90047ECE3 /* DictionaryReader.cpp */,
+				04CBF45525615388001EBE0D /* BlobDictionary.h */,
+				04CBF45725615388001EBE0D /* MaterialChunk.h */,
+				04ACD8C52560D0E90047ECE3 /* MaterialChunk.cpp */,
 			);
 			path = render.filaflat;
 			sourceTree = "<group>";
@@ -5464,8 +5533,8 @@
 				04CBF99625615574001EBE0D /* MaterialEnums.h */,
 				04CBF9C02561557D001EBE0D /* private */,
 				04ACD92F2560D1660047ECE3 /* SamplerBindingMap.cpp */,
-				04ACD9302560D1670047ECE3 /* SamplerInterfaceBlock.cpp */,
 				04ACD9312560D1670047ECE3 /* SibGenerator.cpp */,
+				04ACD9302560D1670047ECE3 /* SamplerInterfaceBlock.cpp */,
 				04ACD9322560D1670047ECE3 /* UibGenerator.cpp */,
 				04ACD9332560D1670047ECE3 /* UniformInterfaceBlock.cpp */,
 			);
@@ -5477,87 +5546,87 @@
 			children = (
 				04ACE4AA2560DCF20047ECE3 /* materials.apple.S */,
 				04ACE4A92560DCF20047ECE3 /* materials.h */,
-				04CBF315256151A7001EBE0D /* Box.h */,
-				04ACD9F52560D2260047ECE3 /* Box.cpp */,
-				04CBF322256151A8001EBE0D /* Camera.h */,
-				04ACDA002560D2270047ECE3 /* Camera.cpp */,
-				04CBF314256151A7001EBE0D /* Color.h */,
-				04ACD9E12560D2240047ECE3 /* Color.cpp */,
-				04CBF31F256151A8001EBE0D /* ColorGrading.h */,
-				04ACD9E92560D2250047ECE3 /* ColorGrading.cpp */,
-				04CBF325256151A9001EBE0D /* DebugRegistry.h */,
-				04ACD9E42560D2240047ECE3 /* DebugRegistry.cpp */,
-				04CBF30D256151A6001EBE0D /* Engine.h */,
-				04ACD9EA2560D2250047ECE3 /* Engine.cpp */,
-				04CBF30F256151A6001EBE0D /* Exposure.h */,
-				04ACDA0B2560D2280047ECE3 /* Exposure.cpp */,
-				04CBF31A256151A7001EBE0D /* Fence.h */,
-				04ACDA092560D2280047ECE3 /* Fence.cpp */,
+				04ACDA042560D2270047ECE3 /* upcast.h */,
 				04CBF310256151A6001EBE0D /* FilamentAPI.h */,
 				04ACD9F92560D2260047ECE3 /* FilamentAPI-impl.h */,
-				04CBF316256151A7001EBE0D /* Frustum.h */,
-				04ACDA0A2560D2280047ECE3 /* Frustum.cpp */,
+				04ACD9DF2560D2240047ECE3 /* UniformBuffer.h */,
+				04ACD9DC2560D2240047ECE3 /* UniformBuffer.cpp */,
 				04CBF312256151A6001EBE0D /* IndexBuffer.h */,
 				04ACD9DB2560D2230047ECE3 /* IndexBuffer.cpp */,
+				04CBF318256151A7001EBE0D /* VertexBuffer.h */,
+				04ACDA022560D2270047ECE3 /* VertexBuffer.cpp */,
+				04CBF313256151A6001EBE0D /* Texture.h */,
+				04ACD9F62560D2260047ECE3 /* Texture.cpp */,
+				04CBF326256151A9001EBE0D /* TextureSampler.h */,
+				04CBF30B256151A5001EBE0D /* Stream.h */,
+				04ACDA032560D2270047ECE3 /* Stream.cpp */,
+				04CBF31A256151A7001EBE0D /* Fence.h */,
+				04ACDA092560D2280047ECE3 /* Fence.cpp */,
+				04CBF321256151A8001EBE0D /* SwapChain.h */,
+				04ACDA012560D2270047ECE3 /* SwapChain.cpp */,
+				04CBF319256151A7001EBE0D /* RenderTarget.h */,
+				04ACD9E52560D2240047ECE3 /* RenderTarget.cpp */,
+				04ACD9F12560D2260047ECE3 /* ResourceAllocator.h */,
+				04ACD9F02560D2260047ECE3 /* ResourceAllocator.cpp */,
+				04ACD9F72560D2260047ECE3 /* Intersections.h */,
+				04CBF315256151A7001EBE0D /* Box.h */,
+				04ACD9F52560D2260047ECE3 /* Box.cpp */,
+				04ACD9F22560D2260047ECE3 /* Culler.cpp */,
+				04CBF316256151A7001EBE0D /* Frustum.h */,
+				04ACDA0A2560D2280047ECE3 /* Frustum.cpp */,
+				04CBF31D256151A8001EBE0D /* Viewport.h */,
+				04ACD9E82560D2250047ECE3 /* Viewport.cpp */,
+				04CBF314256151A7001EBE0D /* Color.h */,
+				04ACD9E12560D2240047ECE3 /* Color.cpp */,
+				04ACD9EB2560D2250047ECE3 /* ColorSpace.h */,
+				04ACD9E62560D2240047ECE3 /* GPUBuffer.h */,
+				04ACD9FC2560D2270047ECE3 /* GPUBuffer.cpp */,
+				04ACDA572560D2300047ECE3 /* fg */,
+				04CBF30C256151A6001EBE0D /* TransformManager.h */,
+				04CBF30F256151A6001EBE0D /* Exposure.h */,
+				04ACDA0B2560D2280047ECE3 /* Exposure.cpp */,
+				04CBF322256151A8001EBE0D /* Camera.h */,
+				04ACDA002560D2270047ECE3 /* Camera.cpp */,
+				04CBF317256151A7001EBE0D /* LightManager.h */,
+				04CBF31C256151A8001EBE0D /* RenderableManager.h */,
+				04ACDAFD2560D27F0047ECE3 /* components */,
 				04CBF323256151A8001EBE0D /* IndirectLight.h */,
 				04ACD9F32560D2260047ECE3 /* IndirectLight.cpp */,
-				04CBF317256151A7001EBE0D /* LightManager.h */,
+				04CBF311256151A6001EBE0D /* Skybox.h */,
+				04ACD9DE2560D2240047ECE3 /* Skybox.cpp */,
+				04CBF31E256151A8001EBE0D /* Scene.h */,
+				04ACD9ED2560D2250047ECE3 /* Scene.cpp */,
 				04CBF324256151A9001EBE0D /* Material.h */,
 				04ACD9FF2560D2270047ECE3 /* Material.cpp */,
 				04CBF30E256151A6001EBE0D /* MaterialInstance.h */,
 				04ACDA062560D2270047ECE3 /* MaterialInstance.cpp */,
-				04CBF31C256151A8001EBE0D /* RenderableManager.h */,
-				04CBF31B256151A7001EBE0D /* Renderer.h */,
-				04ACD9EE2560D2250047ECE3 /* Renderer.cpp */,
-				04CBF319256151A7001EBE0D /* RenderTarget.h */,
-				04ACD9E52560D2240047ECE3 /* RenderTarget.cpp */,
-				04CBF31E256151A8001EBE0D /* Scene.h */,
-				04ACD9ED2560D2250047ECE3 /* Scene.cpp */,
-				04CBF311256151A6001EBE0D /* Skybox.h */,
-				04ACD9DE2560D2240047ECE3 /* Skybox.cpp */,
-				04CBF30B256151A5001EBE0D /* Stream.h */,
-				04ACDA032560D2270047ECE3 /* Stream.cpp */,
-				04CBF321256151A8001EBE0D /* SwapChain.h */,
-				04ACDA012560D2270047ECE3 /* SwapChain.cpp */,
-				04CBF313256151A6001EBE0D /* Texture.h */,
-				04ACD9F62560D2260047ECE3 /* Texture.cpp */,
-				04CBF326256151A9001EBE0D /* TextureSampler.h */,
-				04CBF30C256151A6001EBE0D /* TransformManager.h */,
-				04CBF318256151A7001EBE0D /* VertexBuffer.h */,
-				04ACDA022560D2270047ECE3 /* VertexBuffer.cpp */,
-				04CBF320256151A8001EBE0D /* View.h */,
-				04ACD9F82560D2260047ECE3 /* View.cpp */,
-				04CBF31D256151A8001EBE0D /* Viewport.h */,
-				04ACD9E82560D2250047ECE3 /* Viewport.cpp */,
-				04ACDAFD2560D27F0047ECE3 /* components */,
-				04ACDA042560D2270047ECE3 /* upcast.h */,
-				04ACD9EB2560D2250047ECE3 /* ColorSpace.h */,
-				04ACD9DA2560D2230047ECE3 /* ToneMapping.h */,
-				04ACD9F72560D2260047ECE3 /* Intersections.h */,
-				04ACD9EC2560D2250047ECE3 /* FrameHistory.h */,
-				04ACDA572560D2300047ECE3 /* fg */,
-				04ACD9EF2560D2250047ECE3 /* FrameInfo.h */,
-				04ACD9FE2560D2270047ECE3 /* FrameInfo.cpp */,
-				04ACD9E62560D2240047ECE3 /* GPUBuffer.h */,
-				04ACD9FC2560D2270047ECE3 /* GPUBuffer.cpp */,
-				04ACD9FB2560D2260047ECE3 /* MaterialParser.h */,
-				04ACD9F42560D2260047ECE3 /* MaterialParser.cpp */,
-				04ACDA072560D2280047ECE3 /* PostProcessManager.h */,
-				04ACD9E32560D2240047ECE3 /* PostProcessManager.cpp */,
 				04ACD9E22560D2240047ECE3 /* RenderPass.h */,
 				04ACD9FD2560D2270047ECE3 /* RenderPass.cpp */,
-				04ACD9F12560D2260047ECE3 /* ResourceAllocator.h */,
-				04ACD9F02560D2260047ECE3 /* ResourceAllocator.cpp */,
-				04ACD9DF2560D2240047ECE3 /* UniformBuffer.h */,
-				04ACD9DC2560D2240047ECE3 /* UniformBuffer.cpp */,
-				04ACDAAD2560D2650047ECE3 /* details */,
-				04ACD9F22560D2260047ECE3 /* Culler.cpp */,
+				04ACD9DA2560D2230047ECE3 /* ToneMapping.h */,
+				04CBF31F256151A8001EBE0D /* ColorGrading.h */,
+				04ACD9E92560D2250047ECE3 /* ColorGrading.cpp */,
+				04CBF325256151A9001EBE0D /* DebugRegistry.h */,
+				04ACD9E42560D2240047ECE3 /* DebugRegistry.cpp */,
+				04ACD9EC2560D2250047ECE3 /* FrameHistory.h */,
+				04ACDA072560D2280047ECE3 /* PostProcessManager.h */,
+				04ACD9E32560D2240047ECE3 /* PostProcessManager.cpp */,
 				04ACD9FA2560D2260047ECE3 /* DFG.cpp */,
 				04ACDA082560D2280047ECE3 /* FrameSkipper.cpp */,
-				04ACD9E02560D2240047ECE3 /* Froxelizer.cpp */,
 				04ACD9DD2560D2240047ECE3 /* RenderPrimitive.cpp */,
 				04ACD9E72560D2240047ECE3 /* ShadowMap.cpp */,
 				04ACDA052560D2270047ECE3 /* ShadowMapManager.cpp */,
+				04CBF320256151A8001EBE0D /* View.h */,
+				04ACD9F82560D2260047ECE3 /* View.cpp */,
+				04CBF30D256151A6001EBE0D /* Engine.h */,
+				04ACD9EA2560D2250047ECE3 /* Engine.cpp */,
+				04CBF31B256151A7001EBE0D /* Renderer.h */,
+				04ACD9EE2560D2250047ECE3 /* Renderer.cpp */,
+				04ACD9E02560D2240047ECE3 /* Froxelizer.cpp */,
+				04ACD9EF2560D2250047ECE3 /* FrameInfo.h */,
+				04ACD9FE2560D2270047ECE3 /* FrameInfo.cpp */,
+				04ACDAAD2560D2650047ECE3 /* details */,
+				04ACD9FB2560D2260047ECE3 /* MaterialParser.h */,
+				04ACD9F42560D2260047ECE3 /* MaterialParser.cpp */,
 			);
 			path = render.filament;
 			sourceTree = "<group>";
@@ -5565,25 +5634,25 @@
 		04ACD3C62560C8FB0047ECE3 /* render.filamat */ = {
 			isa = PBXGroup;
 			children = (
-				04ACE58C2560DEC80047ECE3 /* shaders.apple.S */,
-				04ACE58D2560DEC80047ECE3 /* shaders.h */,
-				040DC0C425B08D5600986C9C /* ShaderMinifier.h */,
-				040DC0C525B08D5600986C9C /* ShaderMinifier.cpp */,
-				04CBF3B525615338001EBE0D /* Enums.h */,
-				04ACE00E2560D7750047ECE3 /* Enums.cpp */,
-				04CBF3B625615338001EBE0D /* MaterialBuilder.h */,
-				04ACE00F2560D7750047ECE3 /* MaterialBuilder.cpp */,
-				04CBF3B825615339001EBE0D /* Package.h */,
-				04CBF3B725615339001EBE0D /* IncludeCallback.h */,
-				04ACE0992560D7AA0047ECE3 /* eiff */,
-				04ACE0752560D78A0047ECE3 /* shader */,
-				04ACE0342560D77A0047ECE3 /* sca */,
-				04ACE0112560D7750047ECE3 /* GLSLPostProcessor.h */,
-				04ACE00C2560D7750047ECE3 /* GLSLPostProcessor.cpp */,
-				04ACE0122560D7750047ECE3 /* Includes.h */,
-				04ACE00D2560D7750047ECE3 /* Includes.cpp */,
 				04ACE00B2560D7740047ECE3 /* MaterialVariants.h */,
 				04ACE0102560D7750047ECE3 /* MaterialVariants.cpp */,
+				04CBF3B725615339001EBE0D /* IncludeCallback.h */,
+				04ACE0122560D7750047ECE3 /* Includes.h */,
+				04ACE00D2560D7750047ECE3 /* Includes.cpp */,
+				04CBF3B825615339001EBE0D /* Package.h */,
+				04ACE0992560D7AA0047ECE3 /* eiff */,
+				04ACE0342560D77A0047ECE3 /* sca */,
+				04CBF3B525615338001EBE0D /* Enums.h */,
+				04ACE00E2560D7750047ECE3 /* Enums.cpp */,
+				040DC0C425B08D5600986C9C /* ShaderMinifier.h */,
+				040DC0C525B08D5600986C9C /* ShaderMinifier.cpp */,
+				04ACE0112560D7750047ECE3 /* GLSLPostProcessor.h */,
+				04ACE00C2560D7750047ECE3 /* GLSLPostProcessor.cpp */,
+				04CBF3B625615338001EBE0D /* MaterialBuilder.h */,
+				04ACE00F2560D7750047ECE3 /* MaterialBuilder.cpp */,
+				04ACE0752560D78A0047ECE3 /* shader */,
+				04ACE58C2560DEC80047ECE3 /* shaders.apple.S */,
+				04ACE58D2560DEC80047ECE3 /* shaders.h */,
 			);
 			path = render.filamat;
 			sourceTree = "<group>";
@@ -5650,43 +5719,45 @@
 		04ACD99E2560D1E50047ECE3 /* render.backend */ = {
 			isa = PBXGroup;
 			children = (
-				04CBF25F2561511F001EBE0D /* AcquiredImage.h */,
+				04CBF204256150A4001EBE0D /* PresentCallable.h */,
+				04ACDB982560D3830047ECE3 /* Callable.cpp */,
+				04CBF205256150A4001EBE0D /* DriverEnums.h */,
+				04CBF206256150A4001EBE0D /* Handle.h */,
+				04ACDB992560D3830047ECE3 /* Handle.cpp */,
 				04CBF26625615120001EBE0D /* BackendUtils.h */,
 				04ACDB9C2560D3830047ECE3 /* BackendUtils.cpp */,
-				04CBF26525615120001EBE0D /* CircularBuffer.h */,
-				04ACDB902560D3820047ECE3 /* CircularBuffer.cpp */,
-				04CBF25D2561511F001EBE0D /* CommandBufferQueue.h */,
-				04ACDB9B2560D3830047ECE3 /* CommandBufferQueue.cpp */,
-				04CBF26725615120001EBE0D /* CommandStream.h */,
-				04ACDB962560D3830047ECE3 /* CommandStream.cpp */,
+				04ACDB952560D3830047ECE3 /* DataReshaper.h */,
+				04ACDB972560D3830047ECE3 /* TextureReshaper.h */,
+				04ACDB8E2560D3820047ECE3 /* TextureReshaper.cpp */,
+				04106D7C25CFCF2300479A74 /* base */,
+				04CBF2632561511F001EBE0D /* Program.h */,
+				04ACDB8F2560D3820047ECE3 /* Program.cpp */,
+				04CBF207256150A4001EBE0D /* PipelineState.h */,
+				04CBF203256150A4001EBE0D /* BufferDescriptor.h */,
+				04CBF2612561511F001EBE0D /* SamplerGroup.h */,
+				04ACDB912560D3830047ECE3 /* SamplerGroup.cpp */,
+				04CBF201256150A3001EBE0D /* PixelBufferDescriptor.h */,
+				04CBF25F2561511F001EBE0D /* AcquiredImage.h */,
+				04CBF208256150A4001EBE0D /* TargetBufferInfo.h */,
+				04106D7D25CFCF6100479A74 /* infos */,
+				04CBF202256150A4001EBE0D /* Platform.h */,
+				04ACDB942560D3830047ECE3 /* Platform.cpp */,
 				04CBF2602561511F001EBE0D /* Driver.h */,
 				04ACDB922560D3830047ECE3 /* Driver.cpp */,
 				04ACDB932560D3830047ECE3 /* DriverBase.h */,
 				04CBF2622561511F001EBE0D /* DriverApi.h */,
 				04CBF25E2561511F001EBE0D /* DriverApiForward.h */,
-				04CBF26425615120001EBE0D /* OpenGLPlatform.h */,
-				04CBF2632561511F001EBE0D /* Program.h */,
-				04ACDB8F2560D3820047ECE3 /* Program.cpp */,
-				04CBF2612561511F001EBE0D /* SamplerGroup.h */,
-				04ACDB912560D3830047ECE3 /* SamplerGroup.cpp */,
-				04CBF203256150A4001EBE0D /* BufferDescriptor.h */,
-				04CBF205256150A4001EBE0D /* DriverEnums.h */,
-				04CBF206256150A4001EBE0D /* Handle.h */,
-				04ACDB992560D3830047ECE3 /* Handle.cpp */,
-				04CBF207256150A4001EBE0D /* PipelineState.h */,
-				04CBF201256150A3001EBE0D /* PixelBufferDescriptor.h */,
-				04CBF202256150A4001EBE0D /* Platform.h */,
-				04ACDB942560D3830047ECE3 /* Platform.cpp */,
-				04ACDB982560D3830047ECE3 /* Callable.cpp */,
-				04CBF204256150A4001EBE0D /* PresentCallable.h */,
-				04CBF208256150A4001EBE0D /* TargetBufferInfo.h */,
+				04CBF26725615120001EBE0D /* CommandStream.h */,
+				04ACDB962560D3830047ECE3 /* CommandStream.cpp */,
+				04ACDB9A2560D3830047ECE3 /* CommandStreamDispatcher.h */,
+				04CBF26525615120001EBE0D /* CircularBuffer.h */,
+				04ACDB902560D3820047ECE3 /* CircularBuffer.cpp */,
+				04CBF25D2561511F001EBE0D /* CommandBufferQueue.h */,
+				04ACDB9B2560D3830047ECE3 /* CommandBufferQueue.cpp */,
 				04ACE7642560E1220047ECE3 /* noop */,
 				04ACDBC52560D38B0047ECE3 /* metal */,
 				040DC32D25B094FB00986C9C /* vulkan */,
-				04ACDB952560D3830047ECE3 /* DataReshaper.h */,
-				04ACDB9A2560D3830047ECE3 /* CommandStreamDispatcher.h */,
-				04ACDB972560D3830047ECE3 /* TextureReshaper.h */,
-				04ACDB8E2560D3820047ECE3 /* TextureReshaper.cpp */,
+				04CBF26425615120001EBE0D /* OpenGLPlatform.h */,
 			);
 			path = render.backend;
 			sourceTree = "<group>";
@@ -5694,13 +5765,13 @@
 		04ACDA572560D2300047ECE3 /* fg */ = {
 			isa = PBXGroup;
 			children = (
-				04ACDA832560D24D0047ECE3 /* fg */,
-				04ACDA582560D24A0047ECE3 /* Blackboard.h */,
-				04ACDA5C2560D24B0047ECE3 /* Blackboard.cpp */,
-				04ACDA592560D24B0047ECE3 /* FrameGraph.h */,
-				04ACDA5B2560D24B0047ECE3 /* FrameGraph.cpp */,
 				04ACDA5F2560D24B0047ECE3 /* FrameGraphHandle.h */,
 				04ACDA5D2560D24B0047ECE3 /* FrameGraphHandle.cpp */,
+				04ACDA582560D24A0047ECE3 /* Blackboard.h */,
+				04ACDA5C2560D24B0047ECE3 /* Blackboard.cpp */,
+				04ACDA832560D24D0047ECE3 /* fg */,
+				04ACDA592560D24B0047ECE3 /* FrameGraph.h */,
+				04ACDA5B2560D24B0047ECE3 /* FrameGraph.cpp */,
 				04ACDA5E2560D24B0047ECE3 /* FrameGraphPass.h */,
 				04ACDA602560D24B0047ECE3 /* FrameGraphPassResources.h */,
 				04ACDA5A2560D24B0047ECE3 /* FrameGraphPassResources.cpp */,
@@ -5711,14 +5782,14 @@
 		04ACDA832560D24D0047ECE3 /* fg */ = {
 			isa = PBXGroup;
 			children = (
-				04ACDA882560D2580047ECE3 /* PassNode.h */,
-				04ACDA872560D2580047ECE3 /* PassNode.cpp */,
-				04ACDA842560D2580047ECE3 /* RenderTargetResourceEntry.h */,
-				04ACDA862560D2580047ECE3 /* RenderTargetResourceEntry.cpp */,
+				04ACDA8A2560D2580047ECE3 /* VirtualResource.h */,
 				04ACDA892560D2580047ECE3 /* ResourceEntry.h */,
 				04ACDA8B2560D2580047ECE3 /* ResourceEntry.cpp */,
+				04ACDA842560D2580047ECE3 /* RenderTargetResourceEntry.h */,
+				04ACDA862560D2580047ECE3 /* RenderTargetResourceEntry.cpp */,
+				04ACDA882560D2580047ECE3 /* PassNode.h */,
+				04ACDA872560D2580047ECE3 /* PassNode.cpp */,
 				04ACDA852560D2580047ECE3 /* ResourceNode.h */,
-				04ACDA8A2560D2580047ECE3 /* VirtualResource.h */,
 			);
 			name = fg;
 			sourceTree = "<group>";
@@ -5726,33 +5797,33 @@
 		04ACDAAD2560D2650047ECE3 /* details */ = {
 			isa = PBXGroup;
 			children = (
-				04ACDAC72560D2730047ECE3 /* Allocators.h */,
-				04ACDAB92560D2720047ECE3 /* Camera.h */,
-				04ACDAC62560D2730047ECE3 /* ColorGrading.h */,
-				04ACDAC42560D2730047ECE3 /* Culler.h */,
-				04ACDAC52560D2730047ECE3 /* DebugRegistry.h */,
-				04ACDABA2560D2720047ECE3 /* DFG.h */,
-				04ACDAB82560D2720047ECE3 /* Engine.h */,
-				04ACDAC22560D2730047ECE3 /* Fence.h */,
-				04ACDABF2560D2730047ECE3 /* FrameSkipper.h */,
-				04ACDAB72560D2720047ECE3 /* Froxelizer.h */,
 				04ACDAB02560D2710047ECE3 /* IndexBuffer.h */,
-				04ACDAC02560D2730047ECE3 /* IndirectLight.h */,
-				04ACDABE2560D2730047ECE3 /* Material.h */,
-				04ACDAC32560D2730047ECE3 /* MaterialInstance.h */,
-				04ACDAB22560D2720047ECE3 /* Renderer.h */,
-				04ACDAB62560D2720047ECE3 /* RenderPrimitive.h */,
-				04ACDABD2560D2720047ECE3 /* RenderTarget.h */,
-				04ACDABB2560D2720047ECE3 /* ResourceList.h */,
-				04ACDAAF2560D2710047ECE3 /* Scene.h */,
-				04ACDAC82560D2730047ECE3 /* ShadowMap.h */,
-				04ACDAB32560D2720047ECE3 /* ShadowMapManager.h */,
-				04ACDAB12560D2710047ECE3 /* Skybox.h */,
+				04ACDAC12560D2730047ECE3 /* VertexBuffer.h */,
+				04ACDAB42560D2720047ECE3 /* Texture.h */,
+				04ACDAC22560D2730047ECE3 /* Fence.h */,
 				04ACDABC2560D2720047ECE3 /* Stream.h */,
 				04ACDAAE2560D2710047ECE3 /* SwapChain.h */,
-				04ACDAB42560D2720047ECE3 /* Texture.h */,
-				04ACDAC12560D2730047ECE3 /* VertexBuffer.h */,
+				04ACDABD2560D2720047ECE3 /* RenderTarget.h */,
+				04ACDAC42560D2730047ECE3 /* Culler.h */,
+				04ACDAB92560D2720047ECE3 /* Camera.h */,
+				04ACDAC72560D2730047ECE3 /* Allocators.h */,
+				04ACDAC02560D2730047ECE3 /* IndirectLight.h */,
+				04ACDAB12560D2710047ECE3 /* Skybox.h */,
+				04ACDAAF2560D2710047ECE3 /* Scene.h */,
+				04ACDAC62560D2730047ECE3 /* ColorGrading.h */,
+				04ACDAC52560D2730047ECE3 /* DebugRegistry.h */,
+				04ACDABE2560D2730047ECE3 /* Material.h */,
+				04ACDAC32560D2730047ECE3 /* MaterialInstance.h */,
 				04ACDAB52560D2720047ECE3 /* View.h */,
+				04ACDAB82560D2720047ECE3 /* Engine.h */,
+				04ACDAB22560D2720047ECE3 /* Renderer.h */,
+				04ACDABA2560D2720047ECE3 /* DFG.h */,
+				04ACDABF2560D2730047ECE3 /* FrameSkipper.h */,
+				04ACDAB72560D2720047ECE3 /* Froxelizer.h */,
+				04ACDAB62560D2720047ECE3 /* RenderPrimitive.h */,
+				04ACDABB2560D2720047ECE3 /* ResourceList.h */,
+				04ACDAC82560D2730047ECE3 /* ShadowMap.h */,
+				04ACDAB32560D2720047ECE3 /* ShadowMapManager.h */,
 			);
 			name = details;
 			sourceTree = "<group>";
@@ -5775,30 +5846,31 @@
 		04ACDBC52560D38B0047ECE3 /* metal */ = {
 			isa = PBXGroup;
 			children = (
-				04ACDBD22560D3960047ECE3 /* MetalBlitter.h */,
-				04ACDBD12560D3960047ECE3 /* MetalBlitter.mm */,
-				04ACDBD62560D3960047ECE3 /* MetalBuffer.h */,
-				04ACDBD02560D3960047ECE3 /* MetalBuffer.mm */,
-				04ACDBC62560D3950047ECE3 /* MetalBufferPool.h */,
-				04ACDBC92560D3950047ECE3 /* MetalBufferPool.mm */,
+				04ACDBC82560D3950047ECE3 /* MetalEnums.h */,
+				04ACDBCE2560D3960047ECE3 /* MetalState.h */,
+				04ACDBCB2560D3950047ECE3 /* MetalState.mm */,
+				04ACDBCA2560D3950047ECE3 /* MetalResourceTracker.h */,
+				04ACDBD82560D3960047ECE3 /* MetalResourceTracker.cpp */,
+				04106D7E25CFCFB700479A74 /* base */,
 				04ACDBDC2560D3970047ECE3 /* MetalContext.h */,
 				04ACDBD42560D3960047ECE3 /* MetalContext.mm */,
+				04ACDBD22560D3960047ECE3 /* MetalBlitter.h */,
+				04ACDBD12560D3960047ECE3 /* MetalBlitter.mm */,
+				04ACDBD32560D3960047ECE3 /* MetalTimerQuery.h */,
+				04ACDBDB2560D3970047ECE3 /* MetalTimerQuery.mm */,
+				04ACDBC72560D3950047ECE3 /* MetalExternalImage.h */,
+				04ACDBD72560D3960047ECE3 /* MetalExternalImage.mm */,
+				04ACDBC62560D3950047ECE3 /* MetalBufferPool.h */,
+				04ACDBC92560D3950047ECE3 /* MetalBufferPool.mm */,
+				04ACDBD62560D3960047ECE3 /* MetalBuffer.h */,
+				04ACDBD02560D3960047ECE3 /* MetalBuffer.mm */,
 				04ACDBD52560D3960047ECE3 /* MetalDriver.h */,
 				04ACDBD92560D3960047ECE3 /* MetalDriver.mm */,
 				04ACDBCD2560D3960047ECE3 /* MetalDriverFactory.h */,
-				04ACDBC82560D3950047ECE3 /* MetalEnums.h */,
-				04ACDBC72560D3950047ECE3 /* MetalExternalImage.h */,
-				04ACDBD72560D3960047ECE3 /* MetalExternalImage.mm */,
-				04ACDBCF2560D3960047ECE3 /* MetalHandles.h */,
-				04ACDBDD2560D3970047ECE3 /* MetalHandles.mm */,
-				04ACDBD82560D3960047ECE3 /* MetalResourceTracker.cpp */,
-				04ACDBCA2560D3950047ECE3 /* MetalResourceTracker.h */,
-				04ACDBCE2560D3960047ECE3 /* MetalState.h */,
-				04ACDBCB2560D3950047ECE3 /* MetalState.mm */,
-				04ACDBD32560D3960047ECE3 /* MetalTimerQuery.h */,
-				04ACDBDB2560D3970047ECE3 /* MetalTimerQuery.mm */,
 				04ACDBCC2560D3950047ECE3 /* PlatformMetal.h */,
 				04ACDBDA2560D3970047ECE3 /* PlatformMetal.mm */,
+				04ACDBCF2560D3960047ECE3 /* MetalHandles.h */,
+				04ACDBDD2560D3970047ECE3 /* MetalHandles.mm */,
 			);
 			name = metal;
 			sourceTree = "<group>";
@@ -5832,28 +5904,28 @@
 		04ACE0992560D7AA0047ECE3 /* eiff */ = {
 			isa = PBXGroup;
 			children = (
+				04ACE09B2560D7B20047ECE3 /* LineDictionary.h */,
+				04ACE0A32560D7B30047ECE3 /* LineDictionary.cpp */,
 				04ACE0AB2560D7B30047ECE3 /* BlobDictionary.h */,
 				04ACE0AF2560D7B40047ECE3 /* BlobDictionary.cpp */,
+				04ACE0A62560D7B30047ECE3 /* Flattener.h */,
 				04ACE0AD2560D7B30047ECE3 /* Chunk.h */,
 				04ACE0A02560D7B20047ECE3 /* Chunk.cpp */,
-				04ACE0A12560D7B20047ECE3 /* ChunkContainer.h */,
-				04ACE0A82560D7B30047ECE3 /* ChunkContainer.cpp */,
+				04ACE09D2560D7B20047ECE3 /* SimpleFieldChunk.h */,
+				04ACE0AC2560D7B30047ECE3 /* SimpleFieldChunk.cpp */,
 				04ACE0A42560D7B30047ECE3 /* DictionarySpirvChunk.h */,
 				04ACE09A2560D7B20047ECE3 /* DictionarySpirvChunk.cpp */,
 				04ACE0AA2560D7B30047ECE3 /* DictionaryTextChunk.h */,
 				04ACE0AE2560D7B30047ECE3 /* DictionaryTextChunk.cpp */,
-				04ACE0A62560D7B30047ECE3 /* Flattener.h */,
-				04ACE09B2560D7B20047ECE3 /* LineDictionary.h */,
-				04ACE0A32560D7B30047ECE3 /* LineDictionary.cpp */,
-				04ACE0A92560D7B30047ECE3 /* MaterialInterfaceBlockChunk.h */,
-				04ACE09F2560D7B20047ECE3 /* MaterialInterfaceBlockChunk.cpp */,
+				04ACE09C2560D7B20047ECE3 /* ShaderEntry.h */,
 				04ACE0A22560D7B20047ECE3 /* MaterialSpirvChunk.h */,
 				04ACE0A72560D7B30047ECE3 /* MaterialSpirvChunk.cpp */,
 				04ACE0A52560D7B30047ECE3 /* MaterialTextChunk.h */,
 				04ACE09E2560D7B20047ECE3 /* MaterialTextChunk.cpp */,
-				04ACE09C2560D7B20047ECE3 /* ShaderEntry.h */,
-				04ACE09D2560D7B20047ECE3 /* SimpleFieldChunk.h */,
-				04ACE0AC2560D7B30047ECE3 /* SimpleFieldChunk.cpp */,
+				04ACE0A92560D7B30047ECE3 /* MaterialInterfaceBlockChunk.h */,
+				04ACE09F2560D7B20047ECE3 /* MaterialInterfaceBlockChunk.cpp */,
+				04ACE0A12560D7B20047ECE3 /* ChunkContainer.h */,
+				04ACE0A82560D7B30047ECE3 /* ChunkContainer.cpp */,
 			);
 			name = eiff;
 			sourceTree = "<group>";
@@ -5909,9 +5981,9 @@
 				04ACF8252560F13A0047ECE3 /* benchmark_fast.cpp */,
 				04ACF8242560F13A0047ECE3 /* test_fast.cpp */,
 				04ACF8212560F13A0047ECE3 /* test_half.cpp */,
-				04ACF8262560F13A0047ECE3 /* test_mat.cpp */,
-				04ACF8202560F13A0047ECE3 /* test_quat.cpp */,
 				04ACF8222560F13A0047ECE3 /* test_vec.cpp */,
+				04ACF8202560F13A0047ECE3 /* test_quat.cpp */,
+				04ACF8262560F13A0047ECE3 /* test_mat.cpp */,
 			);
 			path = unit_tests.render.math;
 			sourceTree = "<group>";
@@ -6006,14 +6078,14 @@
 		04CBF9C02561557D001EBE0D /* private */ = {
 			isa = PBXGroup;
 			children = (
+				04CBF9C125615588001EBE0D /* Variant.h */,
 				04CBF9C825615588001EBE0D /* EngineEnums.h */,
 				04CBF9C625615588001EBE0D /* SamplerBindingMap.h */,
-				04CBF9C425615588001EBE0D /* SamplerInterfaceBlock.h */,
 				04CBF9C225615588001EBE0D /* SibGenerator.h */,
-				04CBF9C525615588001EBE0D /* SubpassInfo.h */,
+				04CBF9C425615588001EBE0D /* SamplerInterfaceBlock.h */,
 				04CBF9C725615588001EBE0D /* UibGenerator.h */,
 				04CBF9C325615588001EBE0D /* UniformInterfaceBlock.h */,
-				04CBF9C125615588001EBE0D /* Variant.h */,
+				04CBF9C525615588001EBE0D /* SubpassInfo.h */,
 			);
 			name = private;
 			sourceTree = "<group>";
@@ -6620,7 +6692,7 @@
 				04CBF506256153BD001EBE0D /* LinearImage.h in Headers */,
 				04CBF50A256153BD001EBE0D /* ColorTransform.h in Headers */,
 				04CBF509256153BD001EBE0D /* ImageSampler.h in Headers */,
-				04CBF61C256153DD001EBE0D /* ImageDecoder.h in Headers */,
+				04106CBB25CFCD8F00479A74 /* ImageDecoder.h in Headers */,
 				04CBF507256153BD001EBE0D /* ImageOps.h in Headers */,
 				04CBF61A256153DD001EBE0D /* ImageEncoder.h in Headers */,
 			);
@@ -7918,8 +7990,8 @@
 			files = (
 				045495C725602A4D004B6515 /* monkey.apple.S in Sources */,
 				04549AFA25603A38004B6515 /* gltf_viewer.apple.S in Sources */,
-				04C3F16E25B085AA0098EC0F /* gltf_viewer.cpp in Sources */,
 				045495C525602A4D004B6515 /* resources.apple.S in Sources */,
+				042998EE25C7EE75002EF12A /* hellotriangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
