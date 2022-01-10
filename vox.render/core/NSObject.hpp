@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Foundation/NSObject.hpp
 //
@@ -16,11 +16,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #include "NSDefines.hpp"
 #include "NSPrivate.hpp"
@@ -31,267 +31,250 @@
 
 #include <type_traits>
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-namespace NS
-{
-template <class _Class, class _Base = class Object>
-class Referencing : public _Base
-{
+namespace NS {
+template<class _Class, class _Base = class Object>
+class Referencing : public _Base {
 public:
-    _Class*  retain();
-    void     release();
-
-    _Class*  autorelease();
-
+    _Class *retain();
+    
+    void release();
+    
+    _Class *autorelease();
+    
     UInteger retainCount() const;
 };
 
-template <class _Class, class _Base = class Object>
-class Copying : public Referencing<_Class, _Base>
-{
+template<class _Class, class _Base = class Object>
+class Copying : public Referencing<_Class, _Base> {
 public:
-    _Class* copy() const;
+    _Class *copy() const;
 };
 
-class Object : public Referencing<Object, objc_object>
-{
+class Object : public Referencing<Object, objc_object> {
 public:
-    UInteger      hash() const;
-    bool          isEqual(const Object* pObject) const;
-
-    class String* description() const;
-    class String* debugDescription() const;
-
+    UInteger hash() const;
+    
+    bool isEqual(const Object *pObject) const;
+    
+    class String *description() const;
+    
+    class String *debugDescription() const;
+    
 protected:
     friend class Referencing<Object, objc_object>;
-
-    template <class _Class>
-    static _Class* alloc(const char* pClassName);
-    template <class _Class>
-    static _Class* alloc(const void* pClass);
-    template <class _Class>
-    _Class* init();
-
-    template <class _Dst>
-    static _Dst                   bridgingCast(const void* pObj);
-    static class MethodSignature* methodSignatureForSelector(const void* pObj, SEL selector);
-    static bool                   respondsToSelector(const void* pObj, SEL selector);
-    template <typename _Type>
+    
+    template<class _Class>
+    static _Class *alloc(const char *pClassName);
+    
+    template<class _Class>
+    static _Class *alloc(const void *pClass);
+    
+    template<class _Class>
+    _Class *init();
+    
+    template<class _Dst>
+    static _Dst bridgingCast(const void *pObj);
+    
+    static class MethodSignature *methodSignatureForSelector(const void *pObj, SEL selector);
+    
+    static bool respondsToSelector(const void *pObj, SEL selector);
+    
+    template<typename _Type>
     static constexpr bool doesRequireMsgSendStret();
-    template <typename _Ret, typename... _Args>
-    static _Ret sendMessage(const void* pObj, SEL selector, _Args... args);
-    template <typename _Ret, typename... _Args>
-    static _Ret sendMessageSafe(const void* pObj, SEL selector, _Args... args);
-
+    
+    template<typename _Ret, typename... _Args>
+    static _Ret sendMessage(const void *pObj, SEL selector, _Args... args);
+    
+    template<typename _Ret, typename... _Args>
+    static _Ret sendMessageSafe(const void *pObj, SEL selector, _Args... args);
+    
 private:
     Object() = delete;
-    Object(const Object&) = delete;
+    
+    Object(const Object &) = delete;
+    
     ~Object() = delete;
-
-    Object& operator=(const Object&) = delete;
+    
+    Object &operator=(const Object &) = delete;
 };
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class, class _Base /* = Object */>
-_NS_INLINE _Class* NS::Referencing<_Class, _Base>::retain()
-{
-    return Object::sendMessage<_Class*>(this, _NS_PRIVATE_SEL(retain));
+template<class _Class, class _Base /* = Object */>
+_NS_INLINE _Class *NS::Referencing<_Class, _Base>::retain() {
+    return Object::sendMessage<_Class *>(this, _NS_PRIVATE_SEL(retain));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class, class _Base /* = Object */>
-_NS_INLINE void NS::Referencing<_Class, _Base>::release()
-{
+template<class _Class, class _Base /* = Object */>
+_NS_INLINE void NS::Referencing<_Class, _Base>::release() {
     Object::sendMessage<void>(this, _NS_PRIVATE_SEL(release));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class, class _Base /* = Object */>
-_NS_INLINE _Class* NS::Referencing<_Class, _Base>::autorelease()
-{
-    return Object::sendMessage<_Class*>(this, _NS_PRIVATE_SEL(autorelease));
+template<class _Class, class _Base /* = Object */>
+_NS_INLINE _Class *NS::Referencing<_Class, _Base>::autorelease() {
+    return Object::sendMessage<_Class *>(this, _NS_PRIVATE_SEL(autorelease));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class, class _Base /* = Object */>
-_NS_INLINE NS::UInteger NS::Referencing<_Class, _Base>::retainCount() const
-{
+template<class _Class, class _Base /* = Object */>
+_NS_INLINE NS::UInteger NS::Referencing<_Class, _Base>::retainCount() const {
     return Object::sendMessage<UInteger>(this, _NS_PRIVATE_SEL(retainCount));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class, class _Base /* = Object */>
-_NS_INLINE _Class* NS::Copying<_Class, _Base>::copy() const
-{
-    return Object::sendMessage<_Class*>(this, _NS_PRIVATE_SEL(copy));
+template<class _Class, class _Base /* = Object */>
+_NS_INLINE _Class *NS::Copying<_Class, _Base>::copy() const {
+    return Object::sendMessage<_Class *>(this, _NS_PRIVATE_SEL(copy));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Dst>
-_NS_INLINE _Dst NS::Object::bridgingCast(const void* pObj)
-{
+template<class _Dst>
+_NS_INLINE _Dst NS::Object::bridgingCast(const void *pObj) {
 #if __OBJC__
     return (__bridge _Dst)pObj;
 #else
-    return (_Dst)pObj;
+    return (_Dst) pObj;
 #endif // __OBJC__
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <typename _Type>
-_NS_INLINE constexpr bool NS::Object::doesRequireMsgSendStret()
-{
+template<typename _Type>
+_NS_INLINE constexpr bool NS::Object::doesRequireMsgSendStret() {
 #if (defined(__i386__) || defined(__x86_64__))
     constexpr size_t kStructLimit = (sizeof(std::uintptr_t) << 1);
-
+    
     return sizeof(_Type) > kStructLimit;
 #elif defined(__arm64__)
     return false;
 #elif defined(__arm__)
     constexpr size_t kStructLimit = sizeof(std::uintptr_t);
-
+    
     return std::is_class(_Type) && (sizeof(_Type) > kStructLimit);
 #else
 #error "Unsupported architecture!"
 #endif
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <>
-_NS_INLINE constexpr bool NS::Object::doesRequireMsgSendStret<void>()
-{
+template<>
+_NS_INLINE constexpr bool NS::Object::doesRequireMsgSendStret<void>() {
     return false;
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <typename _Ret, typename... _Args>
-_NS_INLINE _Ret NS::Object::sendMessage(const void* pObj, SEL selector, _Args... args)
-{
+template<typename _Ret, typename... _Args>
+_NS_INLINE _Ret NS::Object::sendMessage(const void *pObj, SEL selector, _Args... args) {
 #if (defined(__i386__) || defined(__x86_64__))
-    if constexpr (std::is_floating_point<_Ret>())
-    {
-        using SendMessageProcFpret = _Ret (*)(const void*, SEL, _Args...);
-
+    if constexpr (std::is_floating_point<_Ret>()) {
+        using SendMessageProcFpret = _Ret (*)(const void *, SEL, _Args...);
+        
         const SendMessageProcFpret pProc = reinterpret_cast<SendMessageProcFpret>(&objc_msgSend_fpret);
-
+        
         return (*pProc)(pObj, selector, args...);
-    }
-    else
+    } else
 #endif // ( defined( __i386__ )  || defined( __x86_64__ )  )
 #if !defined(__arm64__)
-        if constexpr (doesRequireMsgSendStret<_Ret>())
-    {
-        using SendMessageProcStret = void (*)(_Ret*, const void*, SEL, _Args...);
-
-        const SendMessageProcStret pProc = reinterpret_cast<SendMessageProcStret>(&objc_msgSend_stret);
-        _Ret                       ret;
-
-        (*pProc)(&ret, pObj, selector, args...);
-
-        return ret;
-    }
-    else
+        if constexpr (doesRequireMsgSendStret<_Ret>()) {
+            using SendMessageProcStret = void (*)(_Ret *, const void *, SEL, _Args...);
+            
+            const SendMessageProcStret pProc = reinterpret_cast<SendMessageProcStret>(&objc_msgSend_stret);
+            _Ret ret;
+            
+            (*pProc)(&ret, pObj, selector, args...);
+            
+            return ret;
+        } else
 #endif // !defined( __arm64__ )
-    {
-        using SendMessageProc = _Ret (*)(const void*, SEL, _Args...);
-
-        const SendMessageProc pProc = reinterpret_cast<SendMessageProc>(&objc_msgSend);
-
-        return (*pProc)(pObj, selector, args...);
-    }
+        {
+            using SendMessageProc = _Ret (*)(const void *, SEL, _Args...);
+            
+            const SendMessageProc pProc = reinterpret_cast<SendMessageProc>(&objc_msgSend);
+            
+            return (*pProc)(pObj, selector, args...);
+        }
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-_NS_INLINE NS::MethodSignature* NS::Object::methodSignatureForSelector(const void* pObj, SEL selector)
-{
-    return sendMessage<MethodSignature*>(pObj, _NS_PRIVATE_SEL(methodSignatureForSelector_), selector);
+_NS_INLINE NS::MethodSignature *NS::Object::methodSignatureForSelector(const void *pObj, SEL selector) {
+    return sendMessage<MethodSignature *>(pObj, _NS_PRIVATE_SEL(methodSignatureForSelector_), selector);
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-_NS_INLINE bool NS::Object::respondsToSelector(const void* pObj, SEL selector)
-{
+_NS_INLINE bool NS::Object::respondsToSelector(const void *pObj, SEL selector) {
     return sendMessage<bool>(pObj, _NS_PRIVATE_SEL(respondsToSelector_), selector);
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <typename _Ret, typename... _Args>
-_NS_INLINE _Ret NS::Object::sendMessageSafe(const void* pObj, SEL selector, _Args... args)
-{
-    if ((respondsToSelector(pObj, selector)) || (nullptr != methodSignatureForSelector(pObj, selector)))
-    {
+template<typename _Ret, typename... _Args>
+_NS_INLINE _Ret NS::Object::sendMessageSafe(const void *pObj, SEL selector, _Args... args) {
+    if ((respondsToSelector(pObj, selector)) || (nullptr != methodSignatureForSelector(pObj, selector))) {
         return sendMessage<_Ret>(pObj, selector, args...);
     }
-
-    if constexpr (!std::is_void<_Ret>::value)
-    {
+    
+    if constexpr (!std::is_void<_Ret>::value) {
         return 0;
     }
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class>
-_NS_INLINE _Class* NS::Object::alloc(const char* pClassName)
-{
-    return sendMessage<_Class*>(objc_lookUpClass(pClassName), _NS_PRIVATE_SEL(alloc));
+template<class _Class>
+_NS_INLINE _Class *NS::Object::alloc(const char *pClassName) {
+    return sendMessage<_Class *>(objc_lookUpClass(pClassName), _NS_PRIVATE_SEL(alloc));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class>
-_NS_INLINE _Class* NS::Object::alloc(const void* pClass)
-{
-    return sendMessage<_Class*>(pClass, _NS_PRIVATE_SEL(alloc));
+template<class _Class>
+_NS_INLINE _Class *NS::Object::alloc(const void *pClass) {
+    return sendMessage<_Class *>(pClass, _NS_PRIVATE_SEL(alloc));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-template <class _Class>
-_NS_INLINE _Class* NS::Object::init()
-{
-    return sendMessage<_Class*>(this, _NS_PRIVATE_SEL(init));
+template<class _Class>
+_NS_INLINE _Class *NS::Object::init() {
+    return sendMessage<_Class *>(this, _NS_PRIVATE_SEL(init));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-_NS_INLINE NS::UInteger NS::Object::hash() const
-{
+_NS_INLINE NS::UInteger NS::Object::hash() const {
     return sendMessage<UInteger>(this, _NS_PRIVATE_SEL(hash));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-_NS_INLINE bool NS::Object::isEqual(const Object* pObject) const
-{
+_NS_INLINE bool NS::Object::isEqual(const Object *pObject) const {
     return sendMessage<bool>(this, _NS_PRIVATE_SEL(isEqual_), pObject);
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-_NS_INLINE NS::String* NS::Object::description() const
-{
-    return sendMessage<String*>(this, _NS_PRIVATE_SEL(description));
+_NS_INLINE NS::String *NS::Object::description() const {
+    return sendMessage<String *>(this, _NS_PRIVATE_SEL(description));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
-_NS_INLINE NS::String* NS::Object::debugDescription() const
-{
-    return sendMessageSafe<String*>(this, _NS_PRIVATE_SEL(debugDescription));
+_NS_INLINE NS::String *NS::Object::debugDescription() const {
+    return sendMessageSafe<String *>(this, _NS_PRIVATE_SEL(debugDescription));
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------

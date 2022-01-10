@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Metal/MTLIndirectCommandBuffer.hpp
 //
@@ -16,7 +16,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
 
@@ -29,8 +29,7 @@
 #include "MTLIndirectCommandBuffer.hpp"
 #include "MTLResource.hpp"
 
-namespace MTL
-{
+namespace MTL {
 _MTL_OPTIONS(NS::UInteger, IndirectCommandType) {
     IndirectCommandTypeDraw = 1,
     IndirectCommandTypeDrawIndexed = 2,
@@ -40,150 +39,135 @@ _MTL_OPTIONS(NS::UInteger, IndirectCommandType) {
     IndirectCommandTypeConcurrentDispatchThreads = 64,
 };
 
-struct IndirectCommandBufferExecutionRange
-{
+struct IndirectCommandBufferExecutionRange {
     uint32_t location;
     uint32_t length;
 } _MTL_PACKED;
 
-class IndirectCommandBufferDescriptor : public NS::Copying<IndirectCommandBufferDescriptor>
-{
+class IndirectCommandBufferDescriptor : public NS::Copying<IndirectCommandBufferDescriptor> {
 public:
-    static class IndirectCommandBufferDescriptor* alloc();
-
-    class IndirectCommandBufferDescriptor*        init();
-
-    MTL::IndirectCommandType                      commandTypes() const;
-    void                                          setCommandTypes(MTL::IndirectCommandType commandTypes);
-
-    bool                                          inheritPipelineState() const;
-    void                                          setInheritPipelineState(bool inheritPipelineState);
-
-    bool                                          inheritBuffers() const;
-    void                                          setInheritBuffers(bool inheritBuffers);
-
-    NS::UInteger                                  maxVertexBufferBindCount() const;
-    void                                          setMaxVertexBufferBindCount(NS::UInteger maxVertexBufferBindCount);
-
-    NS::UInteger                                  maxFragmentBufferBindCount() const;
-    void                                          setMaxFragmentBufferBindCount(NS::UInteger maxFragmentBufferBindCount);
-
-    NS::UInteger                                  maxKernelBufferBindCount() const;
-    void                                          setMaxKernelBufferBindCount(NS::UInteger maxKernelBufferBindCount);
+    static class IndirectCommandBufferDescriptor *alloc();
+    
+    class IndirectCommandBufferDescriptor *init();
+    
+    MTL::IndirectCommandType commandTypes() const;
+    
+    void setCommandTypes(MTL::IndirectCommandType commandTypes);
+    
+    bool inheritPipelineState() const;
+    
+    void setInheritPipelineState(bool inheritPipelineState);
+    
+    bool inheritBuffers() const;
+    
+    void setInheritBuffers(bool inheritBuffers);
+    
+    NS::UInteger maxVertexBufferBindCount() const;
+    
+    void setMaxVertexBufferBindCount(NS::UInteger maxVertexBufferBindCount);
+    
+    NS::UInteger maxFragmentBufferBindCount() const;
+    
+    void setMaxFragmentBufferBindCount(NS::UInteger maxFragmentBufferBindCount);
+    
+    NS::UInteger maxKernelBufferBindCount() const;
+    
+    void setMaxKernelBufferBindCount(NS::UInteger maxKernelBufferBindCount);
 };
 
-class IndirectCommandBuffer : public NS::Referencing<IndirectCommandBuffer, Resource>
-{
+class IndirectCommandBuffer : public NS::Referencing<IndirectCommandBuffer, Resource> {
 public:
-    NS::UInteger                  size() const;
-
-    void                          reset(NS::Range range);
-
-    class IndirectRenderCommand*  indirectRenderCommand(NS::UInteger commandIndex);
-
-    class IndirectComputeCommand* indirectComputeCommand(NS::UInteger commandIndex);
+    NS::UInteger size() const;
+    
+    void reset(NS::Range range);
+    
+    class IndirectRenderCommand *indirectRenderCommand(NS::UInteger commandIndex);
+    
+    class IndirectComputeCommand *indirectComputeCommand(NS::UInteger commandIndex);
 };
 
 }
 
 // static method: alloc
-_MTL_INLINE MTL::IndirectCommandBufferDescriptor* MTL::IndirectCommandBufferDescriptor::alloc()
-{
+_MTL_INLINE MTL::IndirectCommandBufferDescriptor *MTL::IndirectCommandBufferDescriptor::alloc() {
     return NS::Object::alloc<MTL::IndirectCommandBufferDescriptor>(_MTL_PRIVATE_CLS(MTLIndirectCommandBufferDescriptor));
 }
 
 // method: init
-_MTL_INLINE MTL::IndirectCommandBufferDescriptor* MTL::IndirectCommandBufferDescriptor::init()
-{
+_MTL_INLINE MTL::IndirectCommandBufferDescriptor *MTL::IndirectCommandBufferDescriptor::init() {
     return NS::Object::init<MTL::IndirectCommandBufferDescriptor>();
 }
 
 // property: commandTypes
-_MTL_INLINE MTL::IndirectCommandType MTL::IndirectCommandBufferDescriptor::commandTypes() const
-{
+_MTL_INLINE MTL::IndirectCommandType MTL::IndirectCommandBufferDescriptor::commandTypes() const {
     return Object::sendMessage<MTL::IndirectCommandType>(this, _MTL_PRIVATE_SEL(commandTypes));
 }
 
-_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setCommandTypes(MTL::IndirectCommandType commandTypes)
-{
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setCommandTypes(MTL::IndirectCommandType commandTypes) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setCommandTypes_), commandTypes);
 }
 
 // property: inheritPipelineState
-_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritPipelineState() const
-{
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritPipelineState() const {
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritPipelineState));
 }
 
-_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritPipelineState(bool inheritPipelineState)
-{
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritPipelineState(bool inheritPipelineState) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritPipelineState_), inheritPipelineState);
 }
 
 // property: inheritBuffers
-_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritBuffers() const
-{
+_MTL_INLINE bool MTL::IndirectCommandBufferDescriptor::inheritBuffers() const {
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(inheritBuffers));
 }
 
-_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritBuffers(bool inheritBuffers)
-{
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setInheritBuffers(bool inheritBuffers) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setInheritBuffers_), inheritBuffers);
 }
 
 // property: maxVertexBufferBindCount
-_MTL_INLINE NS::UInteger MTL::IndirectCommandBufferDescriptor::maxVertexBufferBindCount() const
-{
+_MTL_INLINE NS::UInteger MTL::IndirectCommandBufferDescriptor::maxVertexBufferBindCount() const {
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(maxVertexBufferBindCount));
 }
 
-_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxVertexBufferBindCount(NS::UInteger maxVertexBufferBindCount)
-{
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxVertexBufferBindCount(NS::UInteger maxVertexBufferBindCount) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setMaxVertexBufferBindCount_), maxVertexBufferBindCount);
 }
 
 // property: maxFragmentBufferBindCount
-_MTL_INLINE NS::UInteger MTL::IndirectCommandBufferDescriptor::maxFragmentBufferBindCount() const
-{
+_MTL_INLINE NS::UInteger MTL::IndirectCommandBufferDescriptor::maxFragmentBufferBindCount() const {
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(maxFragmentBufferBindCount));
 }
 
-_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxFragmentBufferBindCount(NS::UInteger maxFragmentBufferBindCount)
-{
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxFragmentBufferBindCount(NS::UInteger maxFragmentBufferBindCount) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setMaxFragmentBufferBindCount_), maxFragmentBufferBindCount);
 }
 
 // property: maxKernelBufferBindCount
-_MTL_INLINE NS::UInteger MTL::IndirectCommandBufferDescriptor::maxKernelBufferBindCount() const
-{
+_MTL_INLINE NS::UInteger MTL::IndirectCommandBufferDescriptor::maxKernelBufferBindCount() const {
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(maxKernelBufferBindCount));
 }
 
-_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxKernelBufferBindCount(NS::UInteger maxKernelBufferBindCount)
-{
+_MTL_INLINE void MTL::IndirectCommandBufferDescriptor::setMaxKernelBufferBindCount(NS::UInteger maxKernelBufferBindCount) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setMaxKernelBufferBindCount_), maxKernelBufferBindCount);
 }
 
 // property: size
-_MTL_INLINE NS::UInteger MTL::IndirectCommandBuffer::size() const
-{
+_MTL_INLINE NS::UInteger MTL::IndirectCommandBuffer::size() const {
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(size));
 }
 
 // method: resetWithRange:
-_MTL_INLINE void MTL::IndirectCommandBuffer::reset(NS::Range range)
-{
+_MTL_INLINE void MTL::IndirectCommandBuffer::reset(NS::Range range) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(resetWithRange_), range);
 }
 
 // method: indirectRenderCommandAtIndex:
-_MTL_INLINE MTL::IndirectRenderCommand* MTL::IndirectCommandBuffer::indirectRenderCommand(NS::UInteger commandIndex)
-{
-    return Object::sendMessage<MTL::IndirectRenderCommand*>(this, _MTL_PRIVATE_SEL(indirectRenderCommandAtIndex_), commandIndex);
+_MTL_INLINE MTL::IndirectRenderCommand *MTL::IndirectCommandBuffer::indirectRenderCommand(NS::UInteger commandIndex) {
+    return Object::sendMessage<MTL::IndirectRenderCommand *>(this, _MTL_PRIVATE_SEL(indirectRenderCommandAtIndex_), commandIndex);
 }
 
 // method: indirectComputeCommandAtIndex:
-_MTL_INLINE MTL::IndirectComputeCommand* MTL::IndirectCommandBuffer::indirectComputeCommand(NS::UInteger commandIndex)
-{
-    return Object::sendMessage<MTL::IndirectComputeCommand*>(this, _MTL_PRIVATE_SEL(indirectComputeCommandAtIndex_), commandIndex);
+_MTL_INLINE MTL::IndirectComputeCommand *MTL::IndirectCommandBuffer::indirectComputeCommand(NS::UInteger commandIndex) {
+    return Object::sendMessage<MTL::IndirectComputeCommand *>(this, _MTL_PRIVATE_SEL(indirectComputeCommandAtIndex_), commandIndex);
 }

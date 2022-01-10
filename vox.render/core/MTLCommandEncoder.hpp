@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Metal/MTLCommandEncoder.hpp
 //
@@ -16,7 +16,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
 
@@ -26,8 +26,7 @@
 
 #include "core/foundation.hpp"
 
-namespace MTL
-{
+namespace MTL {
 _MTL_OPTIONS(NS::UInteger, ResourceUsage) {
     ResourceUsageRead = 1,
     ResourceUsageWrite = 2,
@@ -40,62 +39,55 @@ _MTL_OPTIONS(NS::UInteger, BarrierScope) {
     BarrierScopeRenderTargets = 4,
 };
 
-class CommandEncoder : public NS::Referencing<CommandEncoder>
-{
+class CommandEncoder : public NS::Referencing<CommandEncoder> {
 public:
-    class Device* device() const;
-
-    NS::String*   label() const;
-    void          setLabel(const NS::String* label);
-
-    void          endEncoding();
-
-    void          insertDebugSignpost(const NS::String* string);
-
-    void          pushDebugGroup(const NS::String* string);
-
-    void          popDebugGroup();
+    class Device *device() const;
+    
+    NS::String *label() const;
+    
+    void setLabel(const NS::String *label);
+    
+    void endEncoding();
+    
+    void insertDebugSignpost(const NS::String *string);
+    
+    void pushDebugGroup(const NS::String *string);
+    
+    void popDebugGroup();
 };
 
 }
 
 // property: device
-_MTL_INLINE MTL::Device* MTL::CommandEncoder::device() const
-{
-    return Object::sendMessage<MTL::Device*>(this, _MTL_PRIVATE_SEL(device));
+_MTL_INLINE MTL::Device *MTL::CommandEncoder::device() const {
+    return Object::sendMessage<MTL::Device *>(this, _MTL_PRIVATE_SEL(device));
 }
 
 // property: label
-_MTL_INLINE NS::String* MTL::CommandEncoder::label() const
-{
-    return Object::sendMessage<NS::String*>(this, _MTL_PRIVATE_SEL(label));
+_MTL_INLINE NS::String *MTL::CommandEncoder::label() const {
+    return Object::sendMessage<NS::String *>(this, _MTL_PRIVATE_SEL(label));
 }
 
-_MTL_INLINE void MTL::CommandEncoder::setLabel(const NS::String* label)
-{
+_MTL_INLINE void MTL::CommandEncoder::setLabel(const NS::String *label) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setLabel_), label);
 }
 
 // method: endEncoding
-_MTL_INLINE void MTL::CommandEncoder::endEncoding()
-{
+_MTL_INLINE void MTL::CommandEncoder::endEncoding() {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(endEncoding));
 }
 
 // method: insertDebugSignpost:
-_MTL_INLINE void MTL::CommandEncoder::insertDebugSignpost(const NS::String* string)
-{
+_MTL_INLINE void MTL::CommandEncoder::insertDebugSignpost(const NS::String *string) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(insertDebugSignpost_), string);
 }
 
 // method: pushDebugGroup:
-_MTL_INLINE void MTL::CommandEncoder::pushDebugGroup(const NS::String* string)
-{
+_MTL_INLINE void MTL::CommandEncoder::pushDebugGroup(const NS::String *string) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(pushDebugGroup_), string);
 }
 
 // method: popDebugGroup
-_MTL_INLINE void MTL::CommandEncoder::popDebugGroup()
-{
+_MTL_INLINE void MTL::CommandEncoder::popDebugGroup() {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(popDebugGroup));
 }

@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Metal/MTLFunctionConstantValues.hpp
 //
@@ -16,7 +16,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
 
@@ -28,58 +28,50 @@
 
 #include "MTLArgument.hpp"
 
-namespace MTL
-{
-class FunctionConstantValues : public NS::Copying<FunctionConstantValues>
-{
+namespace MTL {
+class FunctionConstantValues : public NS::Copying<FunctionConstantValues> {
 public:
-    static class FunctionConstantValues* alloc();
-
-    class FunctionConstantValues*        init();
-
-    void                                 setConstantValue(const void* value, MTL::DataType type, NS::UInteger index);
-
-    void                                 setConstantValues(const void* values, MTL::DataType type, NS::Range range);
-
-    void                                 setConstantValue(const void* value, MTL::DataType type, const NS::String* name);
-
-    void                                 reset();
+    static class FunctionConstantValues *alloc();
+    
+    class FunctionConstantValues *init();
+    
+    void setConstantValue(const void *value, MTL::DataType type, NS::UInteger index);
+    
+    void setConstantValues(const void *values, MTL::DataType type, NS::Range range);
+    
+    void setConstantValue(const void *value, MTL::DataType type, const NS::String *name);
+    
+    void reset();
 };
 
 }
 
 // static method: alloc
-_MTL_INLINE MTL::FunctionConstantValues* MTL::FunctionConstantValues::alloc()
-{
+_MTL_INLINE MTL::FunctionConstantValues *MTL::FunctionConstantValues::alloc() {
     return NS::Object::alloc<MTL::FunctionConstantValues>(_MTL_PRIVATE_CLS(MTLFunctionConstantValues));
 }
 
 // method: init
-_MTL_INLINE MTL::FunctionConstantValues* MTL::FunctionConstantValues::init()
-{
+_MTL_INLINE MTL::FunctionConstantValues *MTL::FunctionConstantValues::init() {
     return NS::Object::init<MTL::FunctionConstantValues>();
 }
 
 // method: setConstantValue:type:atIndex:
-_MTL_INLINE void MTL::FunctionConstantValues::setConstantValue(const void* value, MTL::DataType type, NS::UInteger index)
-{
+_MTL_INLINE void MTL::FunctionConstantValues::setConstantValue(const void *value, MTL::DataType type, NS::UInteger index) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setConstantValue_type_atIndex_), value, type, index);
 }
 
 // method: setConstantValues:type:withRange:
-_MTL_INLINE void MTL::FunctionConstantValues::setConstantValues(const void* values, MTL::DataType type, NS::Range range)
-{
+_MTL_INLINE void MTL::FunctionConstantValues::setConstantValues(const void *values, MTL::DataType type, NS::Range range) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setConstantValues_type_withRange_), values, type, range);
 }
 
 // method: setConstantValue:type:withName:
-_MTL_INLINE void MTL::FunctionConstantValues::setConstantValue(const void* value, MTL::DataType type, const NS::String* name)
-{
+_MTL_INLINE void MTL::FunctionConstantValues::setConstantValue(const void *value, MTL::DataType type, const NS::String *name) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setConstantValue_type_withName_), value, type, name);
 }
 
 // method: reset
-_MTL_INLINE void MTL::FunctionConstantValues::reset()
-{
+_MTL_INLINE void MTL::FunctionConstantValues::reset() {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(reset));
 }

@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Metal/MTLResource.hpp
 //
@@ -16,7 +16,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
 
@@ -28,8 +28,7 @@
 
 #include "MTLResource.hpp"
 
-namespace MTL
-{
+namespace MTL {
 _MTL_ENUM(NS::UInteger, PurgeableState) {
     PurgeableStateKeepCurrent = 1,
     PurgeableStateNonVolatile = 2,
@@ -69,110 +68,97 @@ _MTL_OPTIONS(NS::UInteger, ResourceOptions) {
     ResourceHazardTrackingModeTracked = 512,
 };
 
-class Resource : public NS::Referencing<Resource>
-{
+class Resource : public NS::Referencing<Resource> {
 public:
-    NS::String*             label() const;
-    void                    setLabel(const NS::String* label);
-
-    class Device*           device() const;
-
-    MTL::CPUCacheMode       cpuCacheMode() const;
-
-    MTL::StorageMode        storageMode() const;
-
+    NS::String *label() const;
+    
+    void setLabel(const NS::String *label);
+    
+    class Device *device() const;
+    
+    MTL::CPUCacheMode cpuCacheMode() const;
+    
+    MTL::StorageMode storageMode() const;
+    
     MTL::HazardTrackingMode hazardTrackingMode() const;
-
-    MTL::ResourceOptions    resourceOptions() const;
-
-    MTL::PurgeableState     setPurgeableState(MTL::PurgeableState state);
-
-    class Heap*             heap() const;
-
-    NS::UInteger            heapOffset() const;
-
-    NS::UInteger            allocatedSize() const;
-
-    void                    makeAliasable();
-
-    bool                    isAliasable();
+    
+    MTL::ResourceOptions resourceOptions() const;
+    
+    MTL::PurgeableState setPurgeableState(MTL::PurgeableState state);
+    
+    class Heap *heap() const;
+    
+    NS::UInteger heapOffset() const;
+    
+    NS::UInteger allocatedSize() const;
+    
+    void makeAliasable();
+    
+    bool isAliasable();
 };
 
 }
 
 // property: label
-_MTL_INLINE NS::String* MTL::Resource::label() const
-{
-    return Object::sendMessage<NS::String*>(this, _MTL_PRIVATE_SEL(label));
+_MTL_INLINE NS::String *MTL::Resource::label() const {
+    return Object::sendMessage<NS::String *>(this, _MTL_PRIVATE_SEL(label));
 }
 
-_MTL_INLINE void MTL::Resource::setLabel(const NS::String* label)
-{
+_MTL_INLINE void MTL::Resource::setLabel(const NS::String *label) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setLabel_), label);
 }
 
 // property: device
-_MTL_INLINE MTL::Device* MTL::Resource::device() const
-{
-    return Object::sendMessage<MTL::Device*>(this, _MTL_PRIVATE_SEL(device));
+_MTL_INLINE MTL::Device *MTL::Resource::device() const {
+    return Object::sendMessage<MTL::Device *>(this, _MTL_PRIVATE_SEL(device));
 }
 
 // property: cpuCacheMode
-_MTL_INLINE MTL::CPUCacheMode MTL::Resource::cpuCacheMode() const
-{
+_MTL_INLINE MTL::CPUCacheMode MTL::Resource::cpuCacheMode() const {
     return Object::sendMessage<MTL::CPUCacheMode>(this, _MTL_PRIVATE_SEL(cpuCacheMode));
 }
 
 // property: storageMode
-_MTL_INLINE MTL::StorageMode MTL::Resource::storageMode() const
-{
+_MTL_INLINE MTL::StorageMode MTL::Resource::storageMode() const {
     return Object::sendMessage<MTL::StorageMode>(this, _MTL_PRIVATE_SEL(storageMode));
 }
 
 // property: hazardTrackingMode
-_MTL_INLINE MTL::HazardTrackingMode MTL::Resource::hazardTrackingMode() const
-{
+_MTL_INLINE MTL::HazardTrackingMode MTL::Resource::hazardTrackingMode() const {
     return Object::sendMessage<MTL::HazardTrackingMode>(this, _MTL_PRIVATE_SEL(hazardTrackingMode));
 }
 
 // property: resourceOptions
-_MTL_INLINE MTL::ResourceOptions MTL::Resource::resourceOptions() const
-{
+_MTL_INLINE MTL::ResourceOptions MTL::Resource::resourceOptions() const {
     return Object::sendMessage<MTL::ResourceOptions>(this, _MTL_PRIVATE_SEL(resourceOptions));
 }
 
 // method: setPurgeableState:
-_MTL_INLINE MTL::PurgeableState MTL::Resource::setPurgeableState(MTL::PurgeableState state)
-{
+_MTL_INLINE MTL::PurgeableState MTL::Resource::setPurgeableState(MTL::PurgeableState state) {
     return Object::sendMessage<MTL::PurgeableState>(this, _MTL_PRIVATE_SEL(setPurgeableState_), state);
 }
 
 // property: heap
-_MTL_INLINE MTL::Heap* MTL::Resource::heap() const
-{
-    return Object::sendMessage<MTL::Heap*>(this, _MTL_PRIVATE_SEL(heap));
+_MTL_INLINE MTL::Heap *MTL::Resource::heap() const {
+    return Object::sendMessage<MTL::Heap *>(this, _MTL_PRIVATE_SEL(heap));
 }
 
 // property: heapOffset
-_MTL_INLINE NS::UInteger MTL::Resource::heapOffset() const
-{
+_MTL_INLINE NS::UInteger MTL::Resource::heapOffset() const {
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(heapOffset));
 }
 
 // property: allocatedSize
-_MTL_INLINE NS::UInteger MTL::Resource::allocatedSize() const
-{
+_MTL_INLINE NS::UInteger MTL::Resource::allocatedSize() const {
     return Object::sendMessage<NS::UInteger>(this, _MTL_PRIVATE_SEL(allocatedSize));
 }
 
 // method: makeAliasable
-_MTL_INLINE void MTL::Resource::makeAliasable()
-{
+_MTL_INLINE void MTL::Resource::makeAliasable() {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(makeAliasable));
 }
 
 // method: isAliasable
-_MTL_INLINE bool MTL::Resource::isAliasable()
-{
+_MTL_INLINE bool MTL::Resource::isAliasable() {
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(isAliasable));
 }

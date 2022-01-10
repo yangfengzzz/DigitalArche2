@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Metal/MTLDynamicLibrary.hpp
 //
@@ -16,7 +16,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
 
@@ -26,8 +26,7 @@
 
 #include "core/foundation.hpp"
 
-namespace MTL
-{
+namespace MTL {
 _MTL_ENUM(NS::UInteger, DynamicLibraryError) {
     DynamicLibraryErrorNone = 0,
     DynamicLibraryErrorInvalidFile = 1,
@@ -37,46 +36,41 @@ _MTL_ENUM(NS::UInteger, DynamicLibraryError) {
     DynamicLibraryErrorUnsupported = 5,
 };
 
-class DynamicLibrary : public NS::Referencing<DynamicLibrary>
-{
+class DynamicLibrary : public NS::Referencing<DynamicLibrary> {
 public:
-    NS::String*   label() const;
-    void          setLabel(const NS::String* label);
-
-    class Device* device() const;
-
-    NS::String*   installName() const;
-
-    bool          serializeToURL(const NS::URL* url, NS::Error** error);
+    NS::String *label() const;
+    
+    void setLabel(const NS::String *label);
+    
+    class Device *device() const;
+    
+    NS::String *installName() const;
+    
+    bool serializeToURL(const NS::URL *url, NS::Error **error);
 };
 
 }
 
 // property: label
-_MTL_INLINE NS::String* MTL::DynamicLibrary::label() const
-{
-    return Object::sendMessage<NS::String*>(this, _MTL_PRIVATE_SEL(label));
+_MTL_INLINE NS::String *MTL::DynamicLibrary::label() const {
+    return Object::sendMessage<NS::String *>(this, _MTL_PRIVATE_SEL(label));
 }
 
-_MTL_INLINE void MTL::DynamicLibrary::setLabel(const NS::String* label)
-{
+_MTL_INLINE void MTL::DynamicLibrary::setLabel(const NS::String *label) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(setLabel_), label);
 }
 
 // property: device
-_MTL_INLINE MTL::Device* MTL::DynamicLibrary::device() const
-{
-    return Object::sendMessage<MTL::Device*>(this, _MTL_PRIVATE_SEL(device));
+_MTL_INLINE MTL::Device *MTL::DynamicLibrary::device() const {
+    return Object::sendMessage<MTL::Device *>(this, _MTL_PRIVATE_SEL(device));
 }
 
 // property: installName
-_MTL_INLINE NS::String* MTL::DynamicLibrary::installName() const
-{
-    return Object::sendMessage<NS::String*>(this, _MTL_PRIVATE_SEL(installName));
+_MTL_INLINE NS::String *MTL::DynamicLibrary::installName() const {
+    return Object::sendMessage<NS::String *>(this, _MTL_PRIVATE_SEL(installName));
 }
 
 // method: serializeToURL:error:
-_MTL_INLINE bool MTL::DynamicLibrary::serializeToURL(const NS::URL* url, NS::Error** error)
-{
+_MTL_INLINE bool MTL::DynamicLibrary::serializeToURL(const NS::URL *url, NS::Error **error) {
     return Object::sendMessage<bool>(this, _MTL_PRIVATE_SEL(serializeToURL_error_), url, error);
 }

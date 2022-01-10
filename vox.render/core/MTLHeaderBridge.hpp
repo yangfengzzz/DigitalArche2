@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 //
 // Metal/MTLHeaderBridge.hpp
 //
@@ -16,13 +16,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 #pragma once
+
 #include "MTLPrivate.hpp"
 
-namespace MTL::Private::Class
-{
+namespace MTL::Private::Class {
 
 _MTL_PRIVATE_DEF_CLS(MTLAccelerationStructureBoundingBoxGeometryDescriptor);
 _MTL_PRIVATE_DEF_CLS(MTLAccelerationStructureDescriptor);
@@ -116,8 +116,7 @@ _MTL_PRIVATE_DEF_CLS(MTLVisibleFunctionTableDescriptor);
 
 }
 
-namespace MTL::Private::Protocol
-{
+namespace MTL::Private::Protocol {
 
 _MTL_PRIVATE_DEF_PRO(MTLAccelerationStructure);
 _MTL_PRIVATE_DEF_PRO(MTLAccelerationStructureCommandEncoder);
@@ -166,1882 +165,1881 @@ _MTL_PRIVATE_DEF_PRO(MTLVisibleFunctionTable);
 
 }
 
-namespace MTL::Private::Selector
-{
+namespace MTL::Private::Selector {
 
 _MTL_PRIVATE_DEF_SEL(GPUEndTime,
-    "GPUEndTime");
+                     "GPUEndTime");
 _MTL_PRIVATE_DEF_SEL(GPUStartTime,
-    "GPUStartTime");
+                     "GPUStartTime");
 _MTL_PRIVATE_DEF_SEL(URL,
-    "URL");
+                     "URL");
 _MTL_PRIVATE_DEF_SEL(accelerationStructureCommandEncoder,
-    "accelerationStructureCommandEncoder");
+                     "accelerationStructureCommandEncoder");
 _MTL_PRIVATE_DEF_SEL(accelerationStructureSizesWithDescriptor_,
-    "accelerationStructureSizesWithDescriptor:");
+                     "accelerationStructureSizesWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(access,
-    "access");
+                     "access");
 _MTL_PRIVATE_DEF_SEL(addCompletedHandler_,
-    "addCompletedHandler:");
+                     "addCompletedHandler:");
 _MTL_PRIVATE_DEF_SEL(addComputePipelineFunctionsWithDescriptor_error_,
-    "addComputePipelineFunctionsWithDescriptor:error:");
+                     "addComputePipelineFunctionsWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(addDebugMarker_range_,
-    "addDebugMarker:range:");
+                     "addDebugMarker:range:");
 _MTL_PRIVATE_DEF_SEL(addFunctionWithDescriptor_library_error_,
-    "addFunctionWithDescriptor:library:error:");
+                     "addFunctionWithDescriptor:library:error:");
 _MTL_PRIVATE_DEF_SEL(addPresentedHandler_,
-    "addPresentedHandler:");
+                     "addPresentedHandler:");
 _MTL_PRIVATE_DEF_SEL(addRenderPipelineFunctionsWithDescriptor_error_,
-    "addRenderPipelineFunctionsWithDescriptor:error:");
+                     "addRenderPipelineFunctionsWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(addScheduledHandler_,
-    "addScheduledHandler:");
+                     "addScheduledHandler:");
 _MTL_PRIVATE_DEF_SEL(addTileRenderPipelineFunctionsWithDescriptor_error_,
-    "addTileRenderPipelineFunctionsWithDescriptor:error:");
+                     "addTileRenderPipelineFunctionsWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(alignment,
-    "alignment");
+                     "alignment");
 _MTL_PRIVATE_DEF_SEL(allocatedSize,
-    "allocatedSize");
+                     "allocatedSize");
 _MTL_PRIVATE_DEF_SEL(allowDuplicateIntersectionFunctionInvocation,
-    "allowDuplicateIntersectionFunctionInvocation");
+                     "allowDuplicateIntersectionFunctionInvocation");
 _MTL_PRIVATE_DEF_SEL(allowGPUOptimizedContents,
-    "allowGPUOptimizedContents");
+                     "allowGPUOptimizedContents");
 _MTL_PRIVATE_DEF_SEL(alphaBlendOperation,
-    "alphaBlendOperation");
+                     "alphaBlendOperation");
 _MTL_PRIVATE_DEF_SEL(areBarycentricCoordsSupported,
-    "areBarycentricCoordsSupported");
+                     "areBarycentricCoordsSupported");
 _MTL_PRIVATE_DEF_SEL(areProgrammableSamplePositionsSupported,
-    "areProgrammableSamplePositionsSupported");
+                     "areProgrammableSamplePositionsSupported");
 _MTL_PRIVATE_DEF_SEL(areRasterOrderGroupsSupported,
-    "areRasterOrderGroupsSupported");
+                     "areRasterOrderGroupsSupported");
 _MTL_PRIVATE_DEF_SEL(argumentBuffersSupport,
-    "argumentBuffersSupport");
+                     "argumentBuffersSupport");
 _MTL_PRIVATE_DEF_SEL(argumentDescriptor,
-    "argumentDescriptor");
+                     "argumentDescriptor");
 _MTL_PRIVATE_DEF_SEL(argumentIndex,
-    "argumentIndex");
+                     "argumentIndex");
 _MTL_PRIVATE_DEF_SEL(argumentIndexStride,
-    "argumentIndexStride");
+                     "argumentIndexStride");
 _MTL_PRIVATE_DEF_SEL(arguments,
-    "arguments");
+                     "arguments");
 _MTL_PRIVATE_DEF_SEL(arrayLength,
-    "arrayLength");
+                     "arrayLength");
 _MTL_PRIVATE_DEF_SEL(arrayType,
-    "arrayType");
+                     "arrayType");
 _MTL_PRIVATE_DEF_SEL(attributeIndex,
-    "attributeIndex");
+                     "attributeIndex");
 _MTL_PRIVATE_DEF_SEL(attributeType,
-    "attributeType");
+                     "attributeType");
 _MTL_PRIVATE_DEF_SEL(attributes,
-    "attributes");
+                     "attributes");
 _MTL_PRIVATE_DEF_SEL(backFaceStencil,
-    "backFaceStencil");
+                     "backFaceStencil");
 _MTL_PRIVATE_DEF_SEL(binaryArchives,
-    "binaryArchives");
+                     "binaryArchives");
 _MTL_PRIVATE_DEF_SEL(binaryFunctions,
-    "binaryFunctions");
+                     "binaryFunctions");
 _MTL_PRIVATE_DEF_SEL(blitCommandEncoder,
-    "blitCommandEncoder");
+                     "blitCommandEncoder");
 _MTL_PRIVATE_DEF_SEL(blitCommandEncoderWithDescriptor_,
-    "blitCommandEncoderWithDescriptor:");
+                     "blitCommandEncoderWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(blitPassDescriptor,
-    "blitPassDescriptor");
+                     "blitPassDescriptor");
 _MTL_PRIVATE_DEF_SEL(borderColor,
-    "borderColor");
+                     "borderColor");
 _MTL_PRIVATE_DEF_SEL(boundingBoxBuffer,
-    "boundingBoxBuffer");
+                     "boundingBoxBuffer");
 _MTL_PRIVATE_DEF_SEL(boundingBoxBufferOffset,
-    "boundingBoxBufferOffset");
+                     "boundingBoxBufferOffset");
 _MTL_PRIVATE_DEF_SEL(boundingBoxBuffers,
-    "boundingBoxBuffers");
+                     "boundingBoxBuffers");
 _MTL_PRIVATE_DEF_SEL(boundingBoxCount,
-    "boundingBoxCount");
+                     "boundingBoxCount");
 _MTL_PRIVATE_DEF_SEL(boundingBoxStride,
-    "boundingBoxStride");
+                     "boundingBoxStride");
 _MTL_PRIVATE_DEF_SEL(buffer,
-    "buffer");
+                     "buffer");
 _MTL_PRIVATE_DEF_SEL(bufferAlignment,
-    "bufferAlignment");
+                     "bufferAlignment");
 _MTL_PRIVATE_DEF_SEL(bufferBytesPerRow,
-    "bufferBytesPerRow");
+                     "bufferBytesPerRow");
 _MTL_PRIVATE_DEF_SEL(bufferDataSize,
-    "bufferDataSize");
+                     "bufferDataSize");
 _MTL_PRIVATE_DEF_SEL(bufferDataType,
-    "bufferDataType");
+                     "bufferDataType");
 _MTL_PRIVATE_DEF_SEL(bufferIndex,
-    "bufferIndex");
+                     "bufferIndex");
 _MTL_PRIVATE_DEF_SEL(bufferOffset,
-    "bufferOffset");
+                     "bufferOffset");
 _MTL_PRIVATE_DEF_SEL(bufferPointerType,
-    "bufferPointerType");
+                     "bufferPointerType");
 _MTL_PRIVATE_DEF_SEL(bufferStructType,
-    "bufferStructType");
+                     "bufferStructType");
 _MTL_PRIVATE_DEF_SEL(buffers,
-    "buffers");
+                     "buffers");
 _MTL_PRIVATE_DEF_SEL(buildAccelerationStructure_descriptor_scratchBuffer_scratchBufferOffset_,
-    "buildAccelerationStructure:descriptor:scratchBuffer:scratchBufferOffset:");
+                     "buildAccelerationStructure:descriptor:scratchBuffer:scratchBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(captureObject,
-    "captureObject");
+                     "captureObject");
 _MTL_PRIVATE_DEF_SEL(clearBarrier,
-    "clearBarrier");
+                     "clearBarrier");
 _MTL_PRIVATE_DEF_SEL(clearColor,
-    "clearColor");
+                     "clearColor");
 _MTL_PRIVATE_DEF_SEL(clearDepth,
-    "clearDepth");
+                     "clearDepth");
 _MTL_PRIVATE_DEF_SEL(clearStencil,
-    "clearStencil");
+                     "clearStencil");
 _MTL_PRIVATE_DEF_SEL(colorAttachments,
-    "colorAttachments");
+                     "colorAttachments");
 _MTL_PRIVATE_DEF_SEL(column,
-    "column");
+                     "column");
 _MTL_PRIVATE_DEF_SEL(commandBuffer,
-    "commandBuffer");
+                     "commandBuffer");
 _MTL_PRIVATE_DEF_SEL(commandBufferWithDescriptor_,
-    "commandBufferWithDescriptor:");
+                     "commandBufferWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(commandBufferWithUnretainedReferences,
-    "commandBufferWithUnretainedReferences");
+                     "commandBufferWithUnretainedReferences");
 _MTL_PRIVATE_DEF_SEL(commandQueue,
-    "commandQueue");
+                     "commandQueue");
 _MTL_PRIVATE_DEF_SEL(commandTypes,
-    "commandTypes");
+                     "commandTypes");
 _MTL_PRIVATE_DEF_SEL(commit,
-    "commit");
+                     "commit");
 _MTL_PRIVATE_DEF_SEL(compareFunction,
-    "compareFunction");
+                     "compareFunction");
 _MTL_PRIVATE_DEF_SEL(computeCommandEncoder,
-    "computeCommandEncoder");
+                     "computeCommandEncoder");
 _MTL_PRIVATE_DEF_SEL(computeCommandEncoderWithDescriptor_,
-    "computeCommandEncoderWithDescriptor:");
+                     "computeCommandEncoderWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(computeCommandEncoderWithDispatchType_,
-    "computeCommandEncoderWithDispatchType:");
+                     "computeCommandEncoderWithDispatchType:");
 _MTL_PRIVATE_DEF_SEL(computeFunction,
-    "computeFunction");
+                     "computeFunction");
 _MTL_PRIVATE_DEF_SEL(computePassDescriptor,
-    "computePassDescriptor");
+                     "computePassDescriptor");
 _MTL_PRIVATE_DEF_SEL(concurrentDispatchThreadgroups_threadsPerThreadgroup_,
-    "concurrentDispatchThreadgroups:threadsPerThreadgroup:");
+                     "concurrentDispatchThreadgroups:threadsPerThreadgroup:");
 _MTL_PRIVATE_DEF_SEL(concurrentDispatchThreads_threadsPerThreadgroup_,
-    "concurrentDispatchThreads:threadsPerThreadgroup:");
+                     "concurrentDispatchThreads:threadsPerThreadgroup:");
 _MTL_PRIVATE_DEF_SEL(constantBlockAlignment,
-    "constantBlockAlignment");
+                     "constantBlockAlignment");
 _MTL_PRIVATE_DEF_SEL(constantDataAtIndex_,
-    "constantDataAtIndex:");
+                     "constantDataAtIndex:");
 _MTL_PRIVATE_DEF_SEL(constantValues,
-    "constantValues");
+                     "constantValues");
 _MTL_PRIVATE_DEF_SEL(contents,
-    "contents");
+                     "contents");
 _MTL_PRIVATE_DEF_SEL(controlDependencies,
-    "controlDependencies");
+                     "controlDependencies");
 _MTL_PRIVATE_DEF_SEL(convertSparsePixelRegions_toTileRegions_withTileSize_alignmentMode_numRegions_,
-    "convertSparsePixelRegions:toTileRegions:withTileSize:alignmentMode:numRegions:");
+                     "convertSparsePixelRegions:toTileRegions:withTileSize:alignmentMode:numRegions:");
 _MTL_PRIVATE_DEF_SEL(convertSparseTileRegions_toPixelRegions_withTileSize_numRegions_,
-    "convertSparseTileRegions:toPixelRegions:withTileSize:numRegions:");
+                     "convertSparseTileRegions:toPixelRegions:withTileSize:numRegions:");
 _MTL_PRIVATE_DEF_SEL(copyAccelerationStructure_toAccelerationStructure_,
-    "copyAccelerationStructure:toAccelerationStructure:");
+                     "copyAccelerationStructure:toAccelerationStructure:");
 _MTL_PRIVATE_DEF_SEL(copyAndCompactAccelerationStructure_toAccelerationStructure_,
-    "copyAndCompactAccelerationStructure:toAccelerationStructure:");
+                     "copyAndCompactAccelerationStructure:toAccelerationStructure:");
 _MTL_PRIVATE_DEF_SEL(copyFromBuffer_sourceOffset_sourceBytesPerRow_sourceBytesPerImage_sourceSize_toTexture_destinationSlice_destinationLevel_destinationOrigin_,
-    "copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:");
+                     "copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:");
 _MTL_PRIVATE_DEF_SEL(copyFromBuffer_sourceOffset_sourceBytesPerRow_sourceBytesPerImage_sourceSize_toTexture_destinationSlice_destinationLevel_destinationOrigin_options_,
-    "copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:options:");
+                     "copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:options:");
 _MTL_PRIVATE_DEF_SEL(copyFromBuffer_sourceOffset_toBuffer_destinationOffset_size_,
-    "copyFromBuffer:sourceOffset:toBuffer:destinationOffset:size:");
+                     "copyFromBuffer:sourceOffset:toBuffer:destinationOffset:size:");
 _MTL_PRIVATE_DEF_SEL(copyFromTexture_sourceSlice_sourceLevel_sourceOrigin_sourceSize_toBuffer_destinationOffset_destinationBytesPerRow_destinationBytesPerImage_,
-    "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:");
+                     "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:");
 _MTL_PRIVATE_DEF_SEL(copyFromTexture_sourceSlice_sourceLevel_sourceOrigin_sourceSize_toBuffer_destinationOffset_destinationBytesPerRow_destinationBytesPerImage_options_,
-    "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:");
+                     "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:options:");
 _MTL_PRIVATE_DEF_SEL(copyFromTexture_sourceSlice_sourceLevel_sourceOrigin_sourceSize_toTexture_destinationSlice_destinationLevel_destinationOrigin_,
-    "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:");
+                     "copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:");
 _MTL_PRIVATE_DEF_SEL(copyFromTexture_sourceSlice_sourceLevel_toTexture_destinationSlice_destinationLevel_sliceCount_levelCount_,
-    "copyFromTexture:sourceSlice:sourceLevel:toTexture:destinationSlice:destinationLevel:sliceCount:levelCount:");
+                     "copyFromTexture:sourceSlice:sourceLevel:toTexture:destinationSlice:destinationLevel:sliceCount:levelCount:");
 _MTL_PRIVATE_DEF_SEL(copyFromTexture_toTexture_,
-    "copyFromTexture:toTexture:");
+                     "copyFromTexture:toTexture:");
 _MTL_PRIVATE_DEF_SEL(copyIndirectCommandBuffer_sourceRange_destination_destinationIndex_,
-    "copyIndirectCommandBuffer:sourceRange:destination:destinationIndex:");
+                     "copyIndirectCommandBuffer:sourceRange:destination:destinationIndex:");
 _MTL_PRIVATE_DEF_SEL(copyParameterDataToBuffer_offset_,
-    "copyParameterDataToBuffer:offset:");
+                     "copyParameterDataToBuffer:offset:");
 _MTL_PRIVATE_DEF_SEL(counterSet,
-    "counterSet");
+                     "counterSet");
 _MTL_PRIVATE_DEF_SEL(counterSets,
-    "counterSets");
+                     "counterSets");
 _MTL_PRIVATE_DEF_SEL(counters,
-    "counters");
+                     "counters");
 _MTL_PRIVATE_DEF_SEL(cpuCacheMode,
-    "cpuCacheMode");
+                     "cpuCacheMode");
 _MTL_PRIVATE_DEF_SEL(currentAllocatedSize,
-    "currentAllocatedSize");
+                     "currentAllocatedSize");
 _MTL_PRIVATE_DEF_SEL(data,
-    "data");
+                     "data");
 _MTL_PRIVATE_DEF_SEL(dataSize,
-    "dataSize");
+                     "dataSize");
 _MTL_PRIVATE_DEF_SEL(dataType,
-    "dataType");
+                     "dataType");
 _MTL_PRIVATE_DEF_SEL(dealloc,
-    "dealloc");
+                     "dealloc");
 _MTL_PRIVATE_DEF_SEL(debugLocation,
-    "debugLocation");
+                     "debugLocation");
 _MTL_PRIVATE_DEF_SEL(debugSignposts,
-    "debugSignposts");
+                     "debugSignposts");
 _MTL_PRIVATE_DEF_SEL(defaultCaptureScope,
-    "defaultCaptureScope");
+                     "defaultCaptureScope");
 _MTL_PRIVATE_DEF_SEL(defaultRasterSampleCount,
-    "defaultRasterSampleCount");
+                     "defaultRasterSampleCount");
 _MTL_PRIVATE_DEF_SEL(depth,
-    "depth");
+                     "depth");
 _MTL_PRIVATE_DEF_SEL(depthAttachment,
-    "depthAttachment");
+                     "depthAttachment");
 _MTL_PRIVATE_DEF_SEL(depthAttachmentPixelFormat,
-    "depthAttachmentPixelFormat");
+                     "depthAttachmentPixelFormat");
 _MTL_PRIVATE_DEF_SEL(depthCompareFunction,
-    "depthCompareFunction");
+                     "depthCompareFunction");
 _MTL_PRIVATE_DEF_SEL(depthFailureOperation,
-    "depthFailureOperation");
+                     "depthFailureOperation");
 _MTL_PRIVATE_DEF_SEL(depthPlane,
-    "depthPlane");
+                     "depthPlane");
 _MTL_PRIVATE_DEF_SEL(depthResolveFilter,
-    "depthResolveFilter");
+                     "depthResolveFilter");
 _MTL_PRIVATE_DEF_SEL(depthStencilPassOperation,
-    "depthStencilPassOperation");
+                     "depthStencilPassOperation");
 _MTL_PRIVATE_DEF_SEL(descriptor,
-    "descriptor");
+                     "descriptor");
 _MTL_PRIVATE_DEF_SEL(destination,
-    "destination");
+                     "destination");
 _MTL_PRIVATE_DEF_SEL(destinationAlphaBlendFactor,
-    "destinationAlphaBlendFactor");
+                     "destinationAlphaBlendFactor");
 _MTL_PRIVATE_DEF_SEL(destinationRGBBlendFactor,
-    "destinationRGBBlendFactor");
+                     "destinationRGBBlendFactor");
 _MTL_PRIVATE_DEF_SEL(device,
-    "device");
+                     "device");
 _MTL_PRIVATE_DEF_SEL(didModifyRange_,
-    "didModifyRange:");
+                     "didModifyRange:");
 _MTL_PRIVATE_DEF_SEL(dispatchQueue,
-    "dispatchQueue");
+                     "dispatchQueue");
 _MTL_PRIVATE_DEF_SEL(dispatchThreadgroups_threadsPerThreadgroup_,
-    "dispatchThreadgroups:threadsPerThreadgroup:");
+                     "dispatchThreadgroups:threadsPerThreadgroup:");
 _MTL_PRIVATE_DEF_SEL(dispatchThreadgroupsWithIndirectBuffer_indirectBufferOffset_threadsPerThreadgroup_,
-    "dispatchThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerThreadgroup:");
+                     "dispatchThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerThreadgroup:");
 _MTL_PRIVATE_DEF_SEL(dispatchThreads_threadsPerThreadgroup_,
-    "dispatchThreads:threadsPerThreadgroup:");
+                     "dispatchThreads:threadsPerThreadgroup:");
 _MTL_PRIVATE_DEF_SEL(dispatchThreadsPerTile_,
-    "dispatchThreadsPerTile:");
+                     "dispatchThreadsPerTile:");
 _MTL_PRIVATE_DEF_SEL(dispatchType,
-    "dispatchType");
+                     "dispatchType");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPatches_patchIndexBuffer_patchIndexBufferOffset_controlPointIndexBuffer_controlPointIndexBufferOffset_indirectBuffer_indirectBufferOffset_,
-    "drawIndexedPatches:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:indirectBuffer:indirectBufferOffset:");
+                     "drawIndexedPatches:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:indirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPatches_patchStart_patchCount_patchIndexBuffer_patchIndexBufferOffset_controlPointIndexBuffer_controlPointIndexBufferOffset_instanceCount_baseInstance_,
-    "drawIndexedPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:instanceCount:baseInstance:");
+                     "drawIndexedPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:instanceCount:baseInstance:");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPatches_patchStart_patchCount_patchIndexBuffer_patchIndexBufferOffset_controlPointIndexBuffer_controlPointIndexBufferOffset_instanceCount_baseInstance_tessellationFactorBuffer_tessellationFactorBufferOffset_tessellationFactorBufferInstanceStride_,
-    "drawIndexedPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:instanceCount:baseInstance:tessellationFactorBuffer:tessellationFactorBufferOffset:tessellationFactorBufferInstanceStride:");
+                     "drawIndexedPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:instanceCount:baseInstance:tessellationFactorBuffer:tessellationFactorBufferOffset:tessellationFactorBufferInstanceStride:");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPrimitives_indexCount_indexType_indexBuffer_indexBufferOffset_,
-    "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:");
+                     "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPrimitives_indexCount_indexType_indexBuffer_indexBufferOffset_instanceCount_,
-    "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:");
+                     "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPrimitives_indexCount_indexType_indexBuffer_indexBufferOffset_instanceCount_baseVertex_baseInstance_,
-    "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:baseVertex:baseInstance:");
+                     "drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:baseVertex:baseInstance:");
 _MTL_PRIVATE_DEF_SEL(drawIndexedPrimitives_indexType_indexBuffer_indexBufferOffset_indirectBuffer_indirectBufferOffset_,
-    "drawIndexedPrimitives:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:");
+                     "drawIndexedPrimitives:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(drawPatches_patchIndexBuffer_patchIndexBufferOffset_indirectBuffer_indirectBufferOffset_,
-    "drawPatches:patchIndexBuffer:patchIndexBufferOffset:indirectBuffer:indirectBufferOffset:");
+                     "drawPatches:patchIndexBuffer:patchIndexBufferOffset:indirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(drawPatches_patchStart_patchCount_patchIndexBuffer_patchIndexBufferOffset_instanceCount_baseInstance_,
-    "drawPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:instanceCount:baseInstance:");
+                     "drawPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:instanceCount:baseInstance:");
 _MTL_PRIVATE_DEF_SEL(drawPatches_patchStart_patchCount_patchIndexBuffer_patchIndexBufferOffset_instanceCount_baseInstance_tessellationFactorBuffer_tessellationFactorBufferOffset_tessellationFactorBufferInstanceStride_,
-    "drawPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:instanceCount:baseInstance:tessellationFactorBuffer:tessellationFactorBufferOffset:tessellationFactorBufferInstanceStride:");
+                     "drawPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:instanceCount:baseInstance:tessellationFactorBuffer:tessellationFactorBufferOffset:tessellationFactorBufferInstanceStride:");
 _MTL_PRIVATE_DEF_SEL(drawPrimitives_indirectBuffer_indirectBufferOffset_,
-    "drawPrimitives:indirectBuffer:indirectBufferOffset:");
+                     "drawPrimitives:indirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(drawPrimitives_vertexStart_vertexCount_,
-    "drawPrimitives:vertexStart:vertexCount:");
+                     "drawPrimitives:vertexStart:vertexCount:");
 _MTL_PRIVATE_DEF_SEL(drawPrimitives_vertexStart_vertexCount_instanceCount_,
-    "drawPrimitives:vertexStart:vertexCount:instanceCount:");
+                     "drawPrimitives:vertexStart:vertexCount:instanceCount:");
 _MTL_PRIVATE_DEF_SEL(drawPrimitives_vertexStart_vertexCount_instanceCount_baseInstance_,
-    "drawPrimitives:vertexStart:vertexCount:instanceCount:baseInstance:");
+                     "drawPrimitives:vertexStart:vertexCount:instanceCount:baseInstance:");
 _MTL_PRIVATE_DEF_SEL(drawableID,
-    "drawableID");
+                     "drawableID");
 _MTL_PRIVATE_DEF_SEL(elementArrayType,
-    "elementArrayType");
+                     "elementArrayType");
 _MTL_PRIVATE_DEF_SEL(elementIsArgumentBuffer,
-    "elementIsArgumentBuffer");
+                     "elementIsArgumentBuffer");
 _MTL_PRIVATE_DEF_SEL(elementPointerType,
-    "elementPointerType");
+                     "elementPointerType");
 _MTL_PRIVATE_DEF_SEL(elementStructType,
-    "elementStructType");
+                     "elementStructType");
 _MTL_PRIVATE_DEF_SEL(elementTextureReferenceType,
-    "elementTextureReferenceType");
+                     "elementTextureReferenceType");
 _MTL_PRIVATE_DEF_SEL(elementType,
-    "elementType");
+                     "elementType");
 _MTL_PRIVATE_DEF_SEL(encodeSignalEvent_value_,
-    "encodeSignalEvent:value:");
+                     "encodeSignalEvent:value:");
 _MTL_PRIVATE_DEF_SEL(encodeWaitForEvent_value_,
-    "encodeWaitForEvent:value:");
+                     "encodeWaitForEvent:value:");
 _MTL_PRIVATE_DEF_SEL(encodedLength,
-    "encodedLength");
+                     "encodedLength");
 _MTL_PRIVATE_DEF_SEL(encoderLabel,
-    "encoderLabel");
+                     "encoderLabel");
 _MTL_PRIVATE_DEF_SEL(endEncoding,
-    "endEncoding");
+                     "endEncoding");
 _MTL_PRIVATE_DEF_SEL(endOfEncoderSampleIndex,
-    "endOfEncoderSampleIndex");
+                     "endOfEncoderSampleIndex");
 _MTL_PRIVATE_DEF_SEL(endOfFragmentSampleIndex,
-    "endOfFragmentSampleIndex");
+                     "endOfFragmentSampleIndex");
 _MTL_PRIVATE_DEF_SEL(endOfVertexSampleIndex,
-    "endOfVertexSampleIndex");
+                     "endOfVertexSampleIndex");
 _MTL_PRIVATE_DEF_SEL(enqueue,
-    "enqueue");
+                     "enqueue");
 _MTL_PRIVATE_DEF_SEL(error,
-    "error");
+                     "error");
 _MTL_PRIVATE_DEF_SEL(errorOptions,
-    "errorOptions");
+                     "errorOptions");
 _MTL_PRIVATE_DEF_SEL(errorState,
-    "errorState");
+                     "errorState");
 _MTL_PRIVATE_DEF_SEL(executeCommandsInBuffer_indirectBuffer_indirectBufferOffset_,
-    "executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:");
+                     "executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(executeCommandsInBuffer_withRange_,
-    "executeCommandsInBuffer:withRange:");
+                     "executeCommandsInBuffer:withRange:");
 _MTL_PRIVATE_DEF_SEL(fastMathEnabled,
-    "fastMathEnabled");
+                     "fastMathEnabled");
 _MTL_PRIVATE_DEF_SEL(fillBuffer_range_value_,
-    "fillBuffer:range:value:");
+                     "fillBuffer:range:value:");
 _MTL_PRIVATE_DEF_SEL(firstMipmapInTail,
-    "firstMipmapInTail");
+                     "firstMipmapInTail");
 _MTL_PRIVATE_DEF_SEL(format,
-    "format");
+                     "format");
 _MTL_PRIVATE_DEF_SEL(fragmentAdditionalBinaryFunctions,
-    "fragmentAdditionalBinaryFunctions");
+                     "fragmentAdditionalBinaryFunctions");
 _MTL_PRIVATE_DEF_SEL(fragmentArguments,
-    "fragmentArguments");
+                     "fragmentArguments");
 _MTL_PRIVATE_DEF_SEL(fragmentBuffers,
-    "fragmentBuffers");
+                     "fragmentBuffers");
 _MTL_PRIVATE_DEF_SEL(fragmentFunction,
-    "fragmentFunction");
+                     "fragmentFunction");
 _MTL_PRIVATE_DEF_SEL(fragmentLinkedFunctions,
-    "fragmentLinkedFunctions");
+                     "fragmentLinkedFunctions");
 _MTL_PRIVATE_DEF_SEL(fragmentPreloadedLibraries,
-    "fragmentPreloadedLibraries");
+                     "fragmentPreloadedLibraries");
 _MTL_PRIVATE_DEF_SEL(frontFaceStencil,
-    "frontFaceStencil");
+                     "frontFaceStencil");
 _MTL_PRIVATE_DEF_SEL(function,
-    "function");
+                     "function");
 _MTL_PRIVATE_DEF_SEL(functionConstantsDictionary,
-    "functionConstantsDictionary");
+                     "functionConstantsDictionary");
 _MTL_PRIVATE_DEF_SEL(functionCount,
-    "functionCount");
+                     "functionCount");
 _MTL_PRIVATE_DEF_SEL(functionDescriptor,
-    "functionDescriptor");
+                     "functionDescriptor");
 _MTL_PRIVATE_DEF_SEL(functionGraphs,
-    "functionGraphs");
+                     "functionGraphs");
 _MTL_PRIVATE_DEF_SEL(functionHandleWithFunction_,
-    "functionHandleWithFunction:");
+                     "functionHandleWithFunction:");
 _MTL_PRIVATE_DEF_SEL(functionHandleWithFunction_stage_,
-    "functionHandleWithFunction:stage:");
+                     "functionHandleWithFunction:stage:");
 _MTL_PRIVATE_DEF_SEL(functionName,
-    "functionName");
+                     "functionName");
 _MTL_PRIVATE_DEF_SEL(functionNames,
-    "functionNames");
+                     "functionNames");
 _MTL_PRIVATE_DEF_SEL(functionType,
-    "functionType");
+                     "functionType");
 _MTL_PRIVATE_DEF_SEL(functions,
-    "functions");
+                     "functions");
 _MTL_PRIVATE_DEF_SEL(generateMipmapsForTexture_,
-    "generateMipmapsForTexture:");
+                     "generateMipmapsForTexture:");
 _MTL_PRIVATE_DEF_SEL(geometryDescriptors,
-    "geometryDescriptors");
+                     "geometryDescriptors");
 _MTL_PRIVATE_DEF_SEL(getBytes_bytesPerRow_bytesPerImage_fromRegion_mipmapLevel_slice_,
-    "getBytes:bytesPerRow:bytesPerImage:fromRegion:mipmapLevel:slice:");
+                     "getBytes:bytesPerRow:bytesPerImage:fromRegion:mipmapLevel:slice:");
 _MTL_PRIVATE_DEF_SEL(getBytes_bytesPerRow_fromRegion_mipmapLevel_,
-    "getBytes:bytesPerRow:fromRegion:mipmapLevel:");
+                     "getBytes:bytesPerRow:fromRegion:mipmapLevel:");
 _MTL_PRIVATE_DEF_SEL(getDefaultSamplePositions_count_,
-    "getDefaultSamplePositions:count:");
+                     "getDefaultSamplePositions:count:");
 _MTL_PRIVATE_DEF_SEL(getSamplePositions_count_,
-    "getSamplePositions:count:");
+                     "getSamplePositions:count:");
 _MTL_PRIVATE_DEF_SEL(getTextureAccessCounters_region_mipLevel_slice_resetCounters_countersBuffer_countersBufferOffset_,
-    "getTextureAccessCounters:region:mipLevel:slice:resetCounters:countersBuffer:countersBufferOffset:");
+                     "getTextureAccessCounters:region:mipLevel:slice:resetCounters:countersBuffer:countersBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(groups,
-    "groups");
+                     "groups");
 _MTL_PRIVATE_DEF_SEL(hasUnifiedMemory,
-    "hasUnifiedMemory");
+                     "hasUnifiedMemory");
 _MTL_PRIVATE_DEF_SEL(hazardTrackingMode,
-    "hazardTrackingMode");
+                     "hazardTrackingMode");
 _MTL_PRIVATE_DEF_SEL(heap,
-    "heap");
+                     "heap");
 _MTL_PRIVATE_DEF_SEL(heapBufferSizeAndAlignWithLength_options_,
-    "heapBufferSizeAndAlignWithLength:options:");
+                     "heapBufferSizeAndAlignWithLength:options:");
 _MTL_PRIVATE_DEF_SEL(heapOffset,
-    "heapOffset");
+                     "heapOffset");
 _MTL_PRIVATE_DEF_SEL(heapTextureSizeAndAlignWithDescriptor_,
-    "heapTextureSizeAndAlignWithDescriptor:");
+                     "heapTextureSizeAndAlignWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(height,
-    "height");
+                     "height");
 _MTL_PRIVATE_DEF_SEL(horizontal,
-    "horizontal");
+                     "horizontal");
 _MTL_PRIVATE_DEF_SEL(horizontalSampleStorage,
-    "horizontalSampleStorage");
+                     "horizontalSampleStorage");
 _MTL_PRIVATE_DEF_SEL(imageblockMemoryLengthForDimensions_,
-    "imageblockMemoryLengthForDimensions:");
+                     "imageblockMemoryLengthForDimensions:");
 _MTL_PRIVATE_DEF_SEL(imageblockSampleLength,
-    "imageblockSampleLength");
+                     "imageblockSampleLength");
 _MTL_PRIVATE_DEF_SEL(index,
-    "index");
+                     "index");
 _MTL_PRIVATE_DEF_SEL(indexBuffer,
-    "indexBuffer");
+                     "indexBuffer");
 _MTL_PRIVATE_DEF_SEL(indexBufferIndex,
-    "indexBufferIndex");
+                     "indexBufferIndex");
 _MTL_PRIVATE_DEF_SEL(indexBufferOffset,
-    "indexBufferOffset");
+                     "indexBufferOffset");
 _MTL_PRIVATE_DEF_SEL(indexType,
-    "indexType");
+                     "indexType");
 _MTL_PRIVATE_DEF_SEL(indirectComputeCommandAtIndex_,
-    "indirectComputeCommandAtIndex:");
+                     "indirectComputeCommandAtIndex:");
 _MTL_PRIVATE_DEF_SEL(indirectRenderCommandAtIndex_,
-    "indirectRenderCommandAtIndex:");
+                     "indirectRenderCommandAtIndex:");
 _MTL_PRIVATE_DEF_SEL(inheritBuffers,
-    "inheritBuffers");
+                     "inheritBuffers");
 _MTL_PRIVATE_DEF_SEL(inheritPipelineState,
-    "inheritPipelineState");
+                     "inheritPipelineState");
 _MTL_PRIVATE_DEF_SEL(init,
-    "init");
+                     "init");
 _MTL_PRIVATE_DEF_SEL(initWithArgumentIndex_,
-    "initWithArgumentIndex:");
+                     "initWithArgumentIndex:");
 _MTL_PRIVATE_DEF_SEL(initWithDispatchQueue_,
-    "initWithDispatchQueue:");
+                     "initWithDispatchQueue:");
 _MTL_PRIVATE_DEF_SEL(initWithFunctionName_nodes_outputNode_attributes_,
-    "initWithFunctionName:nodes:outputNode:attributes:");
+                     "initWithFunctionName:nodes:outputNode:attributes:");
 _MTL_PRIVATE_DEF_SEL(initWithName_arguments_controlDependencies_,
-    "initWithName:arguments:controlDependencies:");
+                     "initWithName:arguments:controlDependencies:");
 _MTL_PRIVATE_DEF_SEL(initWithSampleCount_,
-    "initWithSampleCount:");
+                     "initWithSampleCount:");
 _MTL_PRIVATE_DEF_SEL(initWithSampleCount_horizontal_vertical_,
-    "initWithSampleCount:horizontal:vertical:");
+                     "initWithSampleCount:horizontal:vertical:");
 _MTL_PRIVATE_DEF_SEL(inputPrimitiveTopology,
-    "inputPrimitiveTopology");
+                     "inputPrimitiveTopology");
 _MTL_PRIVATE_DEF_SEL(insertDebugCaptureBoundary,
-    "insertDebugCaptureBoundary");
+                     "insertDebugCaptureBoundary");
 _MTL_PRIVATE_DEF_SEL(insertDebugSignpost_,
-    "insertDebugSignpost:");
+                     "insertDebugSignpost:");
 _MTL_PRIVATE_DEF_SEL(insertLibraries,
-    "insertLibraries");
+                     "insertLibraries");
 _MTL_PRIVATE_DEF_SEL(installName,
-    "installName");
+                     "installName");
 _MTL_PRIVATE_DEF_SEL(instanceCount,
-    "instanceCount");
+                     "instanceCount");
 _MTL_PRIVATE_DEF_SEL(instanceDescriptorBuffer,
-    "instanceDescriptorBuffer");
+                     "instanceDescriptorBuffer");
 _MTL_PRIVATE_DEF_SEL(instanceDescriptorBufferOffset,
-    "instanceDescriptorBufferOffset");
+                     "instanceDescriptorBufferOffset");
 _MTL_PRIVATE_DEF_SEL(instanceDescriptorStride,
-    "instanceDescriptorStride");
+                     "instanceDescriptorStride");
 _MTL_PRIVATE_DEF_SEL(instanceDescriptorType,
-    "instanceDescriptorType");
+                     "instanceDescriptorType");
 _MTL_PRIVATE_DEF_SEL(instancedAccelerationStructures,
-    "instancedAccelerationStructures");
+                     "instancedAccelerationStructures");
 _MTL_PRIVATE_DEF_SEL(intersectionFunctionTableDescriptor,
-    "intersectionFunctionTableDescriptor");
+                     "intersectionFunctionTableDescriptor");
 _MTL_PRIVATE_DEF_SEL(intersectionFunctionTableOffset,
-    "intersectionFunctionTableOffset");
+                     "intersectionFunctionTableOffset");
 _MTL_PRIVATE_DEF_SEL(iosurface,
-    "iosurface");
+                     "iosurface");
 _MTL_PRIVATE_DEF_SEL(iosurfacePlane,
-    "iosurfacePlane");
+                     "iosurfacePlane");
 _MTL_PRIVATE_DEF_SEL(isActive,
-    "isActive");
+                     "isActive");
 _MTL_PRIVATE_DEF_SEL(isAliasable,
-    "isAliasable");
+                     "isAliasable");
 _MTL_PRIVATE_DEF_SEL(isAlphaToCoverageEnabled,
-    "isAlphaToCoverageEnabled");
+                     "isAlphaToCoverageEnabled");
 _MTL_PRIVATE_DEF_SEL(isAlphaToOneEnabled,
-    "isAlphaToOneEnabled");
+                     "isAlphaToOneEnabled");
 _MTL_PRIVATE_DEF_SEL(isBlendingEnabled,
-    "isBlendingEnabled");
+                     "isBlendingEnabled");
 _MTL_PRIVATE_DEF_SEL(isCapturing,
-    "isCapturing");
+                     "isCapturing");
 _MTL_PRIVATE_DEF_SEL(isDepth24Stencil8PixelFormatSupported,
-    "isDepth24Stencil8PixelFormatSupported");
+                     "isDepth24Stencil8PixelFormatSupported");
 _MTL_PRIVATE_DEF_SEL(isDepthTexture,
-    "isDepthTexture");
+                     "isDepthTexture");
 _MTL_PRIVATE_DEF_SEL(isDepthWriteEnabled,
-    "isDepthWriteEnabled");
+                     "isDepthWriteEnabled");
 _MTL_PRIVATE_DEF_SEL(isFramebufferOnly,
-    "isFramebufferOnly");
+                     "isFramebufferOnly");
 _MTL_PRIVATE_DEF_SEL(isHeadless,
-    "isHeadless");
+                     "isHeadless");
 _MTL_PRIVATE_DEF_SEL(isLowPower,
-    "isLowPower");
+                     "isLowPower");
 _MTL_PRIVATE_DEF_SEL(isPatchControlPointData,
-    "isPatchControlPointData");
+                     "isPatchControlPointData");
 _MTL_PRIVATE_DEF_SEL(isPatchData,
-    "isPatchData");
+                     "isPatchData");
 _MTL_PRIVATE_DEF_SEL(isRasterizationEnabled,
-    "isRasterizationEnabled");
+                     "isRasterizationEnabled");
 _MTL_PRIVATE_DEF_SEL(isRemovable,
-    "isRemovable");
+                     "isRemovable");
 _MTL_PRIVATE_DEF_SEL(isShareable,
-    "isShareable");
+                     "isShareable");
 _MTL_PRIVATE_DEF_SEL(isSparse,
-    "isSparse");
+                     "isSparse");
 _MTL_PRIVATE_DEF_SEL(isTessellationFactorScaleEnabled,
-    "isTessellationFactorScaleEnabled");
+                     "isTessellationFactorScaleEnabled");
 _MTL_PRIVATE_DEF_SEL(kernelEndTime,
-    "kernelEndTime");
+                     "kernelEndTime");
 _MTL_PRIVATE_DEF_SEL(kernelStartTime,
-    "kernelStartTime");
+                     "kernelStartTime");
 _MTL_PRIVATE_DEF_SEL(label,
-    "label");
+                     "label");
 _MTL_PRIVATE_DEF_SEL(languageVersion,
-    "languageVersion");
+                     "languageVersion");
 _MTL_PRIVATE_DEF_SEL(layerAtIndex_,
-    "layerAtIndex:");
+                     "layerAtIndex:");
 _MTL_PRIVATE_DEF_SEL(layerCount,
-    "layerCount");
+                     "layerCount");
 _MTL_PRIVATE_DEF_SEL(layers,
-    "layers");
+                     "layers");
 _MTL_PRIVATE_DEF_SEL(layouts,
-    "layouts");
+                     "layouts");
 _MTL_PRIVATE_DEF_SEL(length,
-    "length");
+                     "length");
 _MTL_PRIVATE_DEF_SEL(level,
-    "level");
+                     "level");
 _MTL_PRIVATE_DEF_SEL(libraries,
-    "libraries");
+                     "libraries");
 _MTL_PRIVATE_DEF_SEL(libraryType,
-    "libraryType");
+                     "libraryType");
 _MTL_PRIVATE_DEF_SEL(line,
-    "line");
+                     "line");
 _MTL_PRIVATE_DEF_SEL(linkedFunctions,
-    "linkedFunctions");
+                     "linkedFunctions");
 _MTL_PRIVATE_DEF_SEL(loadAction,
-    "loadAction");
+                     "loadAction");
 _MTL_PRIVATE_DEF_SEL(location,
-    "location");
+                     "location");
 _MTL_PRIVATE_DEF_SEL(locationNumber,
-    "locationNumber");
+                     "locationNumber");
 _MTL_PRIVATE_DEF_SEL(lodAverage,
-    "lodAverage");
+                     "lodAverage");
 _MTL_PRIVATE_DEF_SEL(lodMaxClamp,
-    "lodMaxClamp");
+                     "lodMaxClamp");
 _MTL_PRIVATE_DEF_SEL(lodMinClamp,
-    "lodMinClamp");
+                     "lodMinClamp");
 _MTL_PRIVATE_DEF_SEL(logs,
-    "logs");
+                     "logs");
 _MTL_PRIVATE_DEF_SEL(magFilter,
-    "magFilter");
+                     "magFilter");
 _MTL_PRIVATE_DEF_SEL(makeAliasable,
-    "makeAliasable");
+                     "makeAliasable");
 _MTL_PRIVATE_DEF_SEL(mapPhysicalToScreenCoordinates_forLayer_,
-    "mapPhysicalToScreenCoordinates:forLayer:");
+                     "mapPhysicalToScreenCoordinates:forLayer:");
 _MTL_PRIVATE_DEF_SEL(mapScreenToPhysicalCoordinates_forLayer_,
-    "mapScreenToPhysicalCoordinates:forLayer:");
+                     "mapScreenToPhysicalCoordinates:forLayer:");
 _MTL_PRIVATE_DEF_SEL(maxAnisotropy,
-    "maxAnisotropy");
+                     "maxAnisotropy");
 _MTL_PRIVATE_DEF_SEL(maxArgumentBufferSamplerCount,
-    "maxArgumentBufferSamplerCount");
+                     "maxArgumentBufferSamplerCount");
 _MTL_PRIVATE_DEF_SEL(maxAvailableSizeWithAlignment_,
-    "maxAvailableSizeWithAlignment:");
+                     "maxAvailableSizeWithAlignment:");
 _MTL_PRIVATE_DEF_SEL(maxBufferLength,
-    "maxBufferLength");
+                     "maxBufferLength");
 _MTL_PRIVATE_DEF_SEL(maxCallStackDepth,
-    "maxCallStackDepth");
+                     "maxCallStackDepth");
 _MTL_PRIVATE_DEF_SEL(maxFragmentBufferBindCount,
-    "maxFragmentBufferBindCount");
+                     "maxFragmentBufferBindCount");
 _MTL_PRIVATE_DEF_SEL(maxFragmentCallStackDepth,
-    "maxFragmentCallStackDepth");
+                     "maxFragmentCallStackDepth");
 _MTL_PRIVATE_DEF_SEL(maxKernelBufferBindCount,
-    "maxKernelBufferBindCount");
+                     "maxKernelBufferBindCount");
 _MTL_PRIVATE_DEF_SEL(maxSampleCount,
-    "maxSampleCount");
+                     "maxSampleCount");
 _MTL_PRIVATE_DEF_SEL(maxTessellationFactor,
-    "maxTessellationFactor");
+                     "maxTessellationFactor");
 _MTL_PRIVATE_DEF_SEL(maxThreadgroupMemoryLength,
-    "maxThreadgroupMemoryLength");
+                     "maxThreadgroupMemoryLength");
 _MTL_PRIVATE_DEF_SEL(maxThreadsPerThreadgroup,
-    "maxThreadsPerThreadgroup");
+                     "maxThreadsPerThreadgroup");
 _MTL_PRIVATE_DEF_SEL(maxTotalThreadsPerThreadgroup,
-    "maxTotalThreadsPerThreadgroup");
+                     "maxTotalThreadsPerThreadgroup");
 _MTL_PRIVATE_DEF_SEL(maxTransferRate,
-    "maxTransferRate");
+                     "maxTransferRate");
 _MTL_PRIVATE_DEF_SEL(maxVertexAmplificationCount,
-    "maxVertexAmplificationCount");
+                     "maxVertexAmplificationCount");
 _MTL_PRIVATE_DEF_SEL(maxVertexBufferBindCount,
-    "maxVertexBufferBindCount");
+                     "maxVertexBufferBindCount");
 _MTL_PRIVATE_DEF_SEL(maxVertexCallStackDepth,
-    "maxVertexCallStackDepth");
+                     "maxVertexCallStackDepth");
 _MTL_PRIVATE_DEF_SEL(memberByName_,
-    "memberByName:");
+                     "memberByName:");
 _MTL_PRIVATE_DEF_SEL(members,
-    "members");
+                     "members");
 _MTL_PRIVATE_DEF_SEL(memoryBarrierWithResources_count_,
-    "memoryBarrierWithResources:count:");
+                     "memoryBarrierWithResources:count:");
 _MTL_PRIVATE_DEF_SEL(memoryBarrierWithResources_count_afterStages_beforeStages_,
-    "memoryBarrierWithResources:count:afterStages:beforeStages:");
+                     "memoryBarrierWithResources:count:afterStages:beforeStages:");
 _MTL_PRIVATE_DEF_SEL(memoryBarrierWithScope_,
-    "memoryBarrierWithScope:");
+                     "memoryBarrierWithScope:");
 _MTL_PRIVATE_DEF_SEL(memoryBarrierWithScope_afterStages_beforeStages_,
-    "memoryBarrierWithScope:afterStages:beforeStages:");
+                     "memoryBarrierWithScope:afterStages:beforeStages:");
 _MTL_PRIVATE_DEF_SEL(minFilter,
-    "minFilter");
+                     "minFilter");
 _MTL_PRIVATE_DEF_SEL(minimumLinearTextureAlignmentForPixelFormat_,
-    "minimumLinearTextureAlignmentForPixelFormat:");
+                     "minimumLinearTextureAlignmentForPixelFormat:");
 _MTL_PRIVATE_DEF_SEL(minimumTextureBufferAlignmentForPixelFormat_,
-    "minimumTextureBufferAlignmentForPixelFormat:");
+                     "minimumTextureBufferAlignmentForPixelFormat:");
 _MTL_PRIVATE_DEF_SEL(mipFilter,
-    "mipFilter");
+                     "mipFilter");
 _MTL_PRIVATE_DEF_SEL(mipmapLevelCount,
-    "mipmapLevelCount");
+                     "mipmapLevelCount");
 _MTL_PRIVATE_DEF_SEL(motionEndBorderMode,
-    "motionEndBorderMode");
+                     "motionEndBorderMode");
 _MTL_PRIVATE_DEF_SEL(motionEndTime,
-    "motionEndTime");
+                     "motionEndTime");
 _MTL_PRIVATE_DEF_SEL(motionKeyframeCount,
-    "motionKeyframeCount");
+                     "motionKeyframeCount");
 _MTL_PRIVATE_DEF_SEL(motionStartBorderMode,
-    "motionStartBorderMode");
+                     "motionStartBorderMode");
 _MTL_PRIVATE_DEF_SEL(motionStartTime,
-    "motionStartTime");
+                     "motionStartTime");
 _MTL_PRIVATE_DEF_SEL(motionTransformBuffer,
-    "motionTransformBuffer");
+                     "motionTransformBuffer");
 _MTL_PRIVATE_DEF_SEL(motionTransformBufferOffset,
-    "motionTransformBufferOffset");
+                     "motionTransformBufferOffset");
 _MTL_PRIVATE_DEF_SEL(motionTransformCount,
-    "motionTransformCount");
+                     "motionTransformCount");
 _MTL_PRIVATE_DEF_SEL(mutability,
-    "mutability");
+                     "mutability");
 _MTL_PRIVATE_DEF_SEL(name,
-    "name");
+                     "name");
 _MTL_PRIVATE_DEF_SEL(newAccelerationStructureWithDescriptor_,
-    "newAccelerationStructureWithDescriptor:");
+                     "newAccelerationStructureWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newAccelerationStructureWithSize_,
-    "newAccelerationStructureWithSize:");
+                     "newAccelerationStructureWithSize:");
 _MTL_PRIVATE_DEF_SEL(newArgumentEncoderForBufferAtIndex_,
-    "newArgumentEncoderForBufferAtIndex:");
+                     "newArgumentEncoderForBufferAtIndex:");
 _MTL_PRIVATE_DEF_SEL(newArgumentEncoderWithArguments_,
-    "newArgumentEncoderWithArguments:");
+                     "newArgumentEncoderWithArguments:");
 _MTL_PRIVATE_DEF_SEL(newArgumentEncoderWithBufferIndex_,
-    "newArgumentEncoderWithBufferIndex:");
+                     "newArgumentEncoderWithBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(newArgumentEncoderWithBufferIndex_reflection_,
-    "newArgumentEncoderWithBufferIndex:reflection:");
+                     "newArgumentEncoderWithBufferIndex:reflection:");
 _MTL_PRIVATE_DEF_SEL(newBinaryArchiveWithDescriptor_error_,
-    "newBinaryArchiveWithDescriptor:error:");
+                     "newBinaryArchiveWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(newBufferWithBytes_length_options_,
-    "newBufferWithBytes:length:options:");
+                     "newBufferWithBytes:length:options:");
 _MTL_PRIVATE_DEF_SEL(newBufferWithBytesNoCopy_length_options_deallocator_,
-    "newBufferWithBytesNoCopy:length:options:deallocator:");
+                     "newBufferWithBytesNoCopy:length:options:deallocator:");
 _MTL_PRIVATE_DEF_SEL(newBufferWithLength_options_,
-    "newBufferWithLength:options:");
+                     "newBufferWithLength:options:");
 _MTL_PRIVATE_DEF_SEL(newBufferWithLength_options_offset_,
-    "newBufferWithLength:options:offset:");
+                     "newBufferWithLength:options:offset:");
 _MTL_PRIVATE_DEF_SEL(newCaptureScopeWithCommandQueue_,
-    "newCaptureScopeWithCommandQueue:");
+                     "newCaptureScopeWithCommandQueue:");
 _MTL_PRIVATE_DEF_SEL(newCaptureScopeWithDevice_,
-    "newCaptureScopeWithDevice:");
+                     "newCaptureScopeWithDevice:");
 _MTL_PRIVATE_DEF_SEL(newCommandQueue,
-    "newCommandQueue");
+                     "newCommandQueue");
 _MTL_PRIVATE_DEF_SEL(newCommandQueueWithMaxCommandBufferCount_,
-    "newCommandQueueWithMaxCommandBufferCount:");
+                     "newCommandQueueWithMaxCommandBufferCount:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithAdditionalBinaryFunctions_error_,
-    "newComputePipelineStateWithAdditionalBinaryFunctions:error:");
+                     "newComputePipelineStateWithAdditionalBinaryFunctions:error:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithDescriptor_options_completionHandler_,
-    "newComputePipelineStateWithDescriptor:options:completionHandler:");
+                     "newComputePipelineStateWithDescriptor:options:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithDescriptor_options_reflection_error_,
-    "newComputePipelineStateWithDescriptor:options:reflection:error:");
+                     "newComputePipelineStateWithDescriptor:options:reflection:error:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithFunction_completionHandler_,
-    "newComputePipelineStateWithFunction:completionHandler:");
+                     "newComputePipelineStateWithFunction:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithFunction_error_,
-    "newComputePipelineStateWithFunction:error:");
+                     "newComputePipelineStateWithFunction:error:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithFunction_options_completionHandler_,
-    "newComputePipelineStateWithFunction:options:completionHandler:");
+                     "newComputePipelineStateWithFunction:options:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newComputePipelineStateWithFunction_options_reflection_error_,
-    "newComputePipelineStateWithFunction:options:reflection:error:");
+                     "newComputePipelineStateWithFunction:options:reflection:error:");
 _MTL_PRIVATE_DEF_SEL(newCounterSampleBufferWithDescriptor_error_,
-    "newCounterSampleBufferWithDescriptor:error:");
+                     "newCounterSampleBufferWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(newDefaultLibrary,
-    "newDefaultLibrary");
+                     "newDefaultLibrary");
 _MTL_PRIVATE_DEF_SEL(newDefaultLibraryWithBundle_error_,
-    "newDefaultLibraryWithBundle:error:");
+                     "newDefaultLibraryWithBundle:error:");
 _MTL_PRIVATE_DEF_SEL(newDepthStencilStateWithDescriptor_,
-    "newDepthStencilStateWithDescriptor:");
+                     "newDepthStencilStateWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newDynamicLibrary_error_,
-    "newDynamicLibrary:error:");
+                     "newDynamicLibrary:error:");
 _MTL_PRIVATE_DEF_SEL(newDynamicLibraryWithURL_error_,
-    "newDynamicLibraryWithURL:error:");
+                     "newDynamicLibraryWithURL:error:");
 _MTL_PRIVATE_DEF_SEL(newEvent,
-    "newEvent");
+                     "newEvent");
 _MTL_PRIVATE_DEF_SEL(newFence,
-    "newFence");
+                     "newFence");
 _MTL_PRIVATE_DEF_SEL(newFunctionWithDescriptor_completionHandler_,
-    "newFunctionWithDescriptor:completionHandler:");
+                     "newFunctionWithDescriptor:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newFunctionWithDescriptor_error_,
-    "newFunctionWithDescriptor:error:");
+                     "newFunctionWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(newFunctionWithName_,
-    "newFunctionWithName:");
+                     "newFunctionWithName:");
 _MTL_PRIVATE_DEF_SEL(newFunctionWithName_constantValues_completionHandler_,
-    "newFunctionWithName:constantValues:completionHandler:");
+                     "newFunctionWithName:constantValues:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newFunctionWithName_constantValues_error_,
-    "newFunctionWithName:constantValues:error:");
+                     "newFunctionWithName:constantValues:error:");
 _MTL_PRIVATE_DEF_SEL(newHeapWithDescriptor_,
-    "newHeapWithDescriptor:");
+                     "newHeapWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newIndirectCommandBufferWithDescriptor_maxCommandCount_options_,
-    "newIndirectCommandBufferWithDescriptor:maxCommandCount:options:");
+                     "newIndirectCommandBufferWithDescriptor:maxCommandCount:options:");
 _MTL_PRIVATE_DEF_SEL(newIntersectionFunctionTableWithDescriptor_,
-    "newIntersectionFunctionTableWithDescriptor:");
+                     "newIntersectionFunctionTableWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newIntersectionFunctionTableWithDescriptor_stage_,
-    "newIntersectionFunctionTableWithDescriptor:stage:");
+                     "newIntersectionFunctionTableWithDescriptor:stage:");
 _MTL_PRIVATE_DEF_SEL(newIntersectionFunctionWithDescriptor_completionHandler_,
-    "newIntersectionFunctionWithDescriptor:completionHandler:");
+                     "newIntersectionFunctionWithDescriptor:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newIntersectionFunctionWithDescriptor_error_,
-    "newIntersectionFunctionWithDescriptor:error:");
+                     "newIntersectionFunctionWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithData_error_,
-    "newLibraryWithData:error:");
+                     "newLibraryWithData:error:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithFile_error_,
-    "newLibraryWithFile:error:");
+                     "newLibraryWithFile:error:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithSource_options_completionHandler_,
-    "newLibraryWithSource:options:completionHandler:");
+                     "newLibraryWithSource:options:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithSource_options_error_,
-    "newLibraryWithSource:options:error:");
+                     "newLibraryWithSource:options:error:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithStitchedDescriptor_completionHandler_,
-    "newLibraryWithStitchedDescriptor:completionHandler:");
+                     "newLibraryWithStitchedDescriptor:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithStitchedDescriptor_error_,
-    "newLibraryWithStitchedDescriptor:error:");
+                     "newLibraryWithStitchedDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(newLibraryWithURL_error_,
-    "newLibraryWithURL:error:");
+                     "newLibraryWithURL:error:");
 _MTL_PRIVATE_DEF_SEL(newRasterizationRateMapWithDescriptor_,
-    "newRasterizationRateMapWithDescriptor:");
+                     "newRasterizationRateMapWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newRemoteBufferViewForDevice_,
-    "newRemoteBufferViewForDevice:");
+                     "newRemoteBufferViewForDevice:");
 _MTL_PRIVATE_DEF_SEL(newRemoteTextureViewForDevice_,
-    "newRemoteTextureViewForDevice:");
+                     "newRemoteTextureViewForDevice:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithAdditionalBinaryFunctions_error_,
-    "newRenderPipelineStateWithAdditionalBinaryFunctions:error:");
+                     "newRenderPipelineStateWithAdditionalBinaryFunctions:error:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithDescriptor_completionHandler_,
-    "newRenderPipelineStateWithDescriptor:completionHandler:");
+                     "newRenderPipelineStateWithDescriptor:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithDescriptor_error_,
-    "newRenderPipelineStateWithDescriptor:error:");
+                     "newRenderPipelineStateWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithDescriptor_options_completionHandler_,
-    "newRenderPipelineStateWithDescriptor:options:completionHandler:");
+                     "newRenderPipelineStateWithDescriptor:options:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithDescriptor_options_reflection_error_,
-    "newRenderPipelineStateWithDescriptor:options:reflection:error:");
+                     "newRenderPipelineStateWithDescriptor:options:reflection:error:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithTileDescriptor_options_completionHandler_,
-    "newRenderPipelineStateWithTileDescriptor:options:completionHandler:");
+                     "newRenderPipelineStateWithTileDescriptor:options:completionHandler:");
 _MTL_PRIVATE_DEF_SEL(newRenderPipelineStateWithTileDescriptor_options_reflection_error_,
-    "newRenderPipelineStateWithTileDescriptor:options:reflection:error:");
+                     "newRenderPipelineStateWithTileDescriptor:options:reflection:error:");
 _MTL_PRIVATE_DEF_SEL(newSamplerStateWithDescriptor_,
-    "newSamplerStateWithDescriptor:");
+                     "newSamplerStateWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newSharedEvent,
-    "newSharedEvent");
+                     "newSharedEvent");
 _MTL_PRIVATE_DEF_SEL(newSharedEventHandle,
-    "newSharedEventHandle");
+                     "newSharedEventHandle");
 _MTL_PRIVATE_DEF_SEL(newSharedEventWithHandle_,
-    "newSharedEventWithHandle:");
+                     "newSharedEventWithHandle:");
 _MTL_PRIVATE_DEF_SEL(newSharedTextureHandle,
-    "newSharedTextureHandle");
+                     "newSharedTextureHandle");
 _MTL_PRIVATE_DEF_SEL(newSharedTextureWithDescriptor_,
-    "newSharedTextureWithDescriptor:");
+                     "newSharedTextureWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newSharedTextureWithHandle_,
-    "newSharedTextureWithHandle:");
+                     "newSharedTextureWithHandle:");
 _MTL_PRIVATE_DEF_SEL(newTextureViewWithPixelFormat_,
-    "newTextureViewWithPixelFormat:");
+                     "newTextureViewWithPixelFormat:");
 _MTL_PRIVATE_DEF_SEL(newTextureViewWithPixelFormat_textureType_levels_slices_,
-    "newTextureViewWithPixelFormat:textureType:levels:slices:");
+                     "newTextureViewWithPixelFormat:textureType:levels:slices:");
 _MTL_PRIVATE_DEF_SEL(newTextureViewWithPixelFormat_textureType_levels_slices_swizzle_,
-    "newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:");
+                     "newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:");
 _MTL_PRIVATE_DEF_SEL(newTextureWithDescriptor_,
-    "newTextureWithDescriptor:");
+                     "newTextureWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newTextureWithDescriptor_iosurface_plane_,
-    "newTextureWithDescriptor:iosurface:plane:");
+                     "newTextureWithDescriptor:iosurface:plane:");
 _MTL_PRIVATE_DEF_SEL(newTextureWithDescriptor_offset_,
-    "newTextureWithDescriptor:offset:");
+                     "newTextureWithDescriptor:offset:");
 _MTL_PRIVATE_DEF_SEL(newTextureWithDescriptor_offset_bytesPerRow_,
-    "newTextureWithDescriptor:offset:bytesPerRow:");
+                     "newTextureWithDescriptor:offset:bytesPerRow:");
 _MTL_PRIVATE_DEF_SEL(newVisibleFunctionTableWithDescriptor_,
-    "newVisibleFunctionTableWithDescriptor:");
+                     "newVisibleFunctionTableWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(newVisibleFunctionTableWithDescriptor_stage_,
-    "newVisibleFunctionTableWithDescriptor:stage:");
+                     "newVisibleFunctionTableWithDescriptor:stage:");
 _MTL_PRIVATE_DEF_SEL(nodes,
-    "nodes");
+                     "nodes");
 _MTL_PRIVATE_DEF_SEL(normalizedCoordinates,
-    "normalizedCoordinates");
+                     "normalizedCoordinates");
 _MTL_PRIVATE_DEF_SEL(notifyListener_atValue_block_,
-    "notifyListener:atValue:block:");
+                     "notifyListener:atValue:block:");
 _MTL_PRIVATE_DEF_SEL(objectAtIndexedSubscript_,
-    "objectAtIndexedSubscript:");
+                     "objectAtIndexedSubscript:");
 _MTL_PRIVATE_DEF_SEL(offset,
-    "offset");
+                     "offset");
 _MTL_PRIVATE_DEF_SEL(opaque,
-    "opaque");
+                     "opaque");
 _MTL_PRIVATE_DEF_SEL(optimizeContentsForCPUAccess_,
-    "optimizeContentsForCPUAccess:");
+                     "optimizeContentsForCPUAccess:");
 _MTL_PRIVATE_DEF_SEL(optimizeContentsForCPUAccess_slice_level_,
-    "optimizeContentsForCPUAccess:slice:level:");
+                     "optimizeContentsForCPUAccess:slice:level:");
 _MTL_PRIVATE_DEF_SEL(optimizeContentsForGPUAccess_,
-    "optimizeContentsForGPUAccess:");
+                     "optimizeContentsForGPUAccess:");
 _MTL_PRIVATE_DEF_SEL(optimizeContentsForGPUAccess_slice_level_,
-    "optimizeContentsForGPUAccess:slice:level:");
+                     "optimizeContentsForGPUAccess:slice:level:");
 _MTL_PRIVATE_DEF_SEL(optimizeIndirectCommandBuffer_withRange_,
-    "optimizeIndirectCommandBuffer:withRange:");
+                     "optimizeIndirectCommandBuffer:withRange:");
 _MTL_PRIVATE_DEF_SEL(options,
-    "options");
+                     "options");
 _MTL_PRIVATE_DEF_SEL(outputNode,
-    "outputNode");
+                     "outputNode");
 _MTL_PRIVATE_DEF_SEL(outputURL,
-    "outputURL");
+                     "outputURL");
 _MTL_PRIVATE_DEF_SEL(parallelRenderCommandEncoderWithDescriptor_,
-    "parallelRenderCommandEncoderWithDescriptor:");
+                     "parallelRenderCommandEncoderWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(parameterBufferSizeAndAlign,
-    "parameterBufferSizeAndAlign");
+                     "parameterBufferSizeAndAlign");
 _MTL_PRIVATE_DEF_SEL(parentRelativeLevel,
-    "parentRelativeLevel");
+                     "parentRelativeLevel");
 _MTL_PRIVATE_DEF_SEL(parentRelativeSlice,
-    "parentRelativeSlice");
+                     "parentRelativeSlice");
 _MTL_PRIVATE_DEF_SEL(parentTexture,
-    "parentTexture");
+                     "parentTexture");
 _MTL_PRIVATE_DEF_SEL(patchControlPointCount,
-    "patchControlPointCount");
+                     "patchControlPointCount");
 _MTL_PRIVATE_DEF_SEL(patchType,
-    "patchType");
+                     "patchType");
 _MTL_PRIVATE_DEF_SEL(peerCount,
-    "peerCount");
+                     "peerCount");
 _MTL_PRIVATE_DEF_SEL(peerGroupID,
-    "peerGroupID");
+                     "peerGroupID");
 _MTL_PRIVATE_DEF_SEL(peerIndex,
-    "peerIndex");
+                     "peerIndex");
 _MTL_PRIVATE_DEF_SEL(physicalGranularity,
-    "physicalGranularity");
+                     "physicalGranularity");
 _MTL_PRIVATE_DEF_SEL(physicalSizeForLayer_,
-    "physicalSizeForLayer:");
+                     "physicalSizeForLayer:");
 _MTL_PRIVATE_DEF_SEL(pixelFormat,
-    "pixelFormat");
+                     "pixelFormat");
 _MTL_PRIVATE_DEF_SEL(pointerType,
-    "pointerType");
+                     "pointerType");
 _MTL_PRIVATE_DEF_SEL(popDebugGroup,
-    "popDebugGroup");
+                     "popDebugGroup");
 _MTL_PRIVATE_DEF_SEL(preloadedLibraries,
-    "preloadedLibraries");
+                     "preloadedLibraries");
 _MTL_PRIVATE_DEF_SEL(preprocessorMacros,
-    "preprocessorMacros");
+                     "preprocessorMacros");
 _MTL_PRIVATE_DEF_SEL(present,
-    "present");
+                     "present");
 _MTL_PRIVATE_DEF_SEL(presentAfterMinimumDuration_,
-    "presentAfterMinimumDuration:");
+                     "presentAfterMinimumDuration:");
 _MTL_PRIVATE_DEF_SEL(presentAtTime_,
-    "presentAtTime:");
+                     "presentAtTime:");
 _MTL_PRIVATE_DEF_SEL(presentDrawable_,
-    "presentDrawable:");
+                     "presentDrawable:");
 _MTL_PRIVATE_DEF_SEL(presentDrawable_afterMinimumDuration_,
-    "presentDrawable:afterMinimumDuration:");
+                     "presentDrawable:afterMinimumDuration:");
 _MTL_PRIVATE_DEF_SEL(presentDrawable_atTime_,
-    "presentDrawable:atTime:");
+                     "presentDrawable:atTime:");
 _MTL_PRIVATE_DEF_SEL(presentedTime,
-    "presentedTime");
+                     "presentedTime");
 _MTL_PRIVATE_DEF_SEL(preserveInvariance,
-    "preserveInvariance");
+                     "preserveInvariance");
 _MTL_PRIVATE_DEF_SEL(privateFunctions,
-    "privateFunctions");
+                     "privateFunctions");
 _MTL_PRIVATE_DEF_SEL(pushDebugGroup_,
-    "pushDebugGroup:");
+                     "pushDebugGroup:");
 _MTL_PRIVATE_DEF_SEL(rAddressMode,
-    "rAddressMode");
+                     "rAddressMode");
 _MTL_PRIVATE_DEF_SEL(rasterSampleCount,
-    "rasterSampleCount");
+                     "rasterSampleCount");
 _MTL_PRIVATE_DEF_SEL(rasterizationRateMap,
-    "rasterizationRateMap");
+                     "rasterizationRateMap");
 _MTL_PRIVATE_DEF_SEL(rasterizationRateMapDescriptorWithScreenSize_,
-    "rasterizationRateMapDescriptorWithScreenSize:");
+                     "rasterizationRateMapDescriptorWithScreenSize:");
 _MTL_PRIVATE_DEF_SEL(rasterizationRateMapDescriptorWithScreenSize_layer_,
-    "rasterizationRateMapDescriptorWithScreenSize:layer:");
+                     "rasterizationRateMapDescriptorWithScreenSize:layer:");
 _MTL_PRIVATE_DEF_SEL(rasterizationRateMapDescriptorWithScreenSize_layerCount_layers_,
-    "rasterizationRateMapDescriptorWithScreenSize:layerCount:layers:");
+                     "rasterizationRateMapDescriptorWithScreenSize:layerCount:layers:");
 _MTL_PRIVATE_DEF_SEL(readMask,
-    "readMask");
+                     "readMask");
 _MTL_PRIVATE_DEF_SEL(readWriteTextureSupport,
-    "readWriteTextureSupport");
+                     "readWriteTextureSupport");
 _MTL_PRIVATE_DEF_SEL(recommendedMaxWorkingSetSize,
-    "recommendedMaxWorkingSetSize");
+                     "recommendedMaxWorkingSetSize");
 _MTL_PRIVATE_DEF_SEL(refitAccelerationStructure_descriptor_destination_scratchBuffer_scratchBufferOffset_,
-    "refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:");
+                     "refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(registryID,
-    "registryID");
+                     "registryID");
 _MTL_PRIVATE_DEF_SEL(remoteStorageBuffer,
-    "remoteStorageBuffer");
+                     "remoteStorageBuffer");
 _MTL_PRIVATE_DEF_SEL(remoteStorageTexture,
-    "remoteStorageTexture");
+                     "remoteStorageTexture");
 _MTL_PRIVATE_DEF_SEL(removeAllDebugMarkers,
-    "removeAllDebugMarkers");
+                     "removeAllDebugMarkers");
 _MTL_PRIVATE_DEF_SEL(renderCommandEncoder,
-    "renderCommandEncoder");
+                     "renderCommandEncoder");
 _MTL_PRIVATE_DEF_SEL(renderCommandEncoderWithDescriptor_,
-    "renderCommandEncoderWithDescriptor:");
+                     "renderCommandEncoderWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(renderPassDescriptor,
-    "renderPassDescriptor");
+                     "renderPassDescriptor");
 _MTL_PRIVATE_DEF_SEL(renderTargetArrayLength,
-    "renderTargetArrayLength");
+                     "renderTargetArrayLength");
 _MTL_PRIVATE_DEF_SEL(renderTargetHeight,
-    "renderTargetHeight");
+                     "renderTargetHeight");
 _MTL_PRIVATE_DEF_SEL(renderTargetWidth,
-    "renderTargetWidth");
+                     "renderTargetWidth");
 _MTL_PRIVATE_DEF_SEL(replaceRegion_mipmapLevel_slice_withBytes_bytesPerRow_bytesPerImage_,
-    "replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:");
+                     "replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:");
 _MTL_PRIVATE_DEF_SEL(replaceRegion_mipmapLevel_withBytes_bytesPerRow_,
-    "replaceRegion:mipmapLevel:withBytes:bytesPerRow:");
+                     "replaceRegion:mipmapLevel:withBytes:bytesPerRow:");
 _MTL_PRIVATE_DEF_SEL(required,
-    "required");
+                     "required");
 _MTL_PRIVATE_DEF_SEL(reset,
-    "reset");
+                     "reset");
 _MTL_PRIVATE_DEF_SEL(resetCommandsInBuffer_withRange_,
-    "resetCommandsInBuffer:withRange:");
+                     "resetCommandsInBuffer:withRange:");
 _MTL_PRIVATE_DEF_SEL(resetTextureAccessCounters_region_mipLevel_slice_,
-    "resetTextureAccessCounters:region:mipLevel:slice:");
+                     "resetTextureAccessCounters:region:mipLevel:slice:");
 _MTL_PRIVATE_DEF_SEL(resetWithRange_,
-    "resetWithRange:");
+                     "resetWithRange:");
 _MTL_PRIVATE_DEF_SEL(resolveCounterRange_,
-    "resolveCounterRange:");
+                     "resolveCounterRange:");
 _MTL_PRIVATE_DEF_SEL(resolveCounters_inRange_destinationBuffer_destinationOffset_,
-    "resolveCounters:inRange:destinationBuffer:destinationOffset:");
+                     "resolveCounters:inRange:destinationBuffer:destinationOffset:");
 _MTL_PRIVATE_DEF_SEL(resolveDepthPlane,
-    "resolveDepthPlane");
+                     "resolveDepthPlane");
 _MTL_PRIVATE_DEF_SEL(resolveLevel,
-    "resolveLevel");
+                     "resolveLevel");
 _MTL_PRIVATE_DEF_SEL(resolveSlice,
-    "resolveSlice");
+                     "resolveSlice");
 _MTL_PRIVATE_DEF_SEL(resolveTexture,
-    "resolveTexture");
+                     "resolveTexture");
 _MTL_PRIVATE_DEF_SEL(resourceOptions,
-    "resourceOptions");
+                     "resourceOptions");
 _MTL_PRIVATE_DEF_SEL(resourceStateCommandEncoder,
-    "resourceStateCommandEncoder");
+                     "resourceStateCommandEncoder");
 _MTL_PRIVATE_DEF_SEL(resourceStateCommandEncoderWithDescriptor_,
-    "resourceStateCommandEncoderWithDescriptor:");
+                     "resourceStateCommandEncoderWithDescriptor:");
 _MTL_PRIVATE_DEF_SEL(resourceStatePassDescriptor,
-    "resourceStatePassDescriptor");
+                     "resourceStatePassDescriptor");
 _MTL_PRIVATE_DEF_SEL(retainedReferences,
-    "retainedReferences");
+                     "retainedReferences");
 _MTL_PRIVATE_DEF_SEL(rgbBlendOperation,
-    "rgbBlendOperation");
+                     "rgbBlendOperation");
 _MTL_PRIVATE_DEF_SEL(rootResource,
-    "rootResource");
+                     "rootResource");
 _MTL_PRIVATE_DEF_SEL(sAddressMode,
-    "sAddressMode");
+                     "sAddressMode");
 _MTL_PRIVATE_DEF_SEL(sampleBuffer,
-    "sampleBuffer");
+                     "sampleBuffer");
 _MTL_PRIVATE_DEF_SEL(sampleBufferAttachments,
-    "sampleBufferAttachments");
+                     "sampleBufferAttachments");
 _MTL_PRIVATE_DEF_SEL(sampleCount,
-    "sampleCount");
+                     "sampleCount");
 _MTL_PRIVATE_DEF_SEL(sampleCountersInBuffer_atSampleIndex_withBarrier_,
-    "sampleCountersInBuffer:atSampleIndex:withBarrier:");
+                     "sampleCountersInBuffer:atSampleIndex:withBarrier:");
 _MTL_PRIVATE_DEF_SEL(sampleTimestamps_gpuTimestamp_,
-    "sampleTimestamps:gpuTimestamp:");
+                     "sampleTimestamps:gpuTimestamp:");
 _MTL_PRIVATE_DEF_SEL(screenSize,
-    "screenSize");
+                     "screenSize");
 _MTL_PRIVATE_DEF_SEL(serializeToURL_error_,
-    "serializeToURL:error:");
+                     "serializeToURL:error:");
 _MTL_PRIVATE_DEF_SEL(setAccelerationStructure_atBufferIndex_,
-    "setAccelerationStructure:atBufferIndex:");
+                     "setAccelerationStructure:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setAccelerationStructure_atIndex_,
-    "setAccelerationStructure:atIndex:");
+                     "setAccelerationStructure:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setAccess_,
-    "setAccess:");
+                     "setAccess:");
 _MTL_PRIVATE_DEF_SEL(setAllowDuplicateIntersectionFunctionInvocation_,
-    "setAllowDuplicateIntersectionFunctionInvocation:");
+                     "setAllowDuplicateIntersectionFunctionInvocation:");
 _MTL_PRIVATE_DEF_SEL(setAllowGPUOptimizedContents_,
-    "setAllowGPUOptimizedContents:");
+                     "setAllowGPUOptimizedContents:");
 _MTL_PRIVATE_DEF_SEL(setAlphaBlendOperation_,
-    "setAlphaBlendOperation:");
+                     "setAlphaBlendOperation:");
 _MTL_PRIVATE_DEF_SEL(setAlphaToCoverageEnabled_,
-    "setAlphaToCoverageEnabled:");
+                     "setAlphaToCoverageEnabled:");
 _MTL_PRIVATE_DEF_SEL(setAlphaToOneEnabled_,
-    "setAlphaToOneEnabled:");
+                     "setAlphaToOneEnabled:");
 _MTL_PRIVATE_DEF_SEL(setArgumentBuffer_offset_,
-    "setArgumentBuffer:offset:");
+                     "setArgumentBuffer:offset:");
 _MTL_PRIVATE_DEF_SEL(setArgumentBuffer_startOffset_arrayElement_,
-    "setArgumentBuffer:startOffset:arrayElement:");
+                     "setArgumentBuffer:startOffset:arrayElement:");
 _MTL_PRIVATE_DEF_SEL(setArgumentIndex_,
-    "setArgumentIndex:");
+                     "setArgumentIndex:");
 _MTL_PRIVATE_DEF_SEL(setArguments_,
-    "setArguments:");
+                     "setArguments:");
 _MTL_PRIVATE_DEF_SEL(setArrayLength_,
-    "setArrayLength:");
+                     "setArrayLength:");
 _MTL_PRIVATE_DEF_SEL(setAttributes_,
-    "setAttributes:");
+                     "setAttributes:");
 _MTL_PRIVATE_DEF_SEL(setBackFaceStencil_,
-    "setBackFaceStencil:");
+                     "setBackFaceStencil:");
 _MTL_PRIVATE_DEF_SEL(setBarrier,
-    "setBarrier");
+                     "setBarrier");
 _MTL_PRIVATE_DEF_SEL(setBinaryArchives_,
-    "setBinaryArchives:");
+                     "setBinaryArchives:");
 _MTL_PRIVATE_DEF_SEL(setBinaryFunctions_,
-    "setBinaryFunctions:");
+                     "setBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setBlendColorRed_green_blue_alpha_,
-    "setBlendColorRed:green:blue:alpha:");
+                     "setBlendColorRed:green:blue:alpha:");
 _MTL_PRIVATE_DEF_SEL(setBlendingEnabled_,
-    "setBlendingEnabled:");
+                     "setBlendingEnabled:");
 _MTL_PRIVATE_DEF_SEL(setBorderColor_,
-    "setBorderColor:");
+                     "setBorderColor:");
 _MTL_PRIVATE_DEF_SEL(setBoundingBoxBuffer_,
-    "setBoundingBoxBuffer:");
+                     "setBoundingBoxBuffer:");
 _MTL_PRIVATE_DEF_SEL(setBoundingBoxBufferOffset_,
-    "setBoundingBoxBufferOffset:");
+                     "setBoundingBoxBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(setBoundingBoxBuffers_,
-    "setBoundingBoxBuffers:");
+                     "setBoundingBoxBuffers:");
 _MTL_PRIVATE_DEF_SEL(setBoundingBoxCount_,
-    "setBoundingBoxCount:");
+                     "setBoundingBoxCount:");
 _MTL_PRIVATE_DEF_SEL(setBoundingBoxStride_,
-    "setBoundingBoxStride:");
+                     "setBoundingBoxStride:");
 _MTL_PRIVATE_DEF_SEL(setBuffer_,
-    "setBuffer:");
+                     "setBuffer:");
 _MTL_PRIVATE_DEF_SEL(setBuffer_offset_atIndex_,
-    "setBuffer:offset:atIndex:");
+                     "setBuffer:offset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setBufferIndex_,
-    "setBufferIndex:");
+                     "setBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setBufferOffset_atIndex_,
-    "setBufferOffset:atIndex:");
+                     "setBufferOffset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setBuffers_offsets_withRange_,
-    "setBuffers:offsets:withRange:");
+                     "setBuffers:offsets:withRange:");
 _MTL_PRIVATE_DEF_SEL(setBytes_length_atIndex_,
-    "setBytes:length:atIndex:");
+                     "setBytes:length:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setCaptureObject_,
-    "setCaptureObject:");
+                     "setCaptureObject:");
 _MTL_PRIVATE_DEF_SEL(setClearColor_,
-    "setClearColor:");
+                     "setClearColor:");
 _MTL_PRIVATE_DEF_SEL(setClearDepth_,
-    "setClearDepth:");
+                     "setClearDepth:");
 _MTL_PRIVATE_DEF_SEL(setClearStencil_,
-    "setClearStencil:");
+                     "setClearStencil:");
 _MTL_PRIVATE_DEF_SEL(setColorStoreAction_atIndex_,
-    "setColorStoreAction:atIndex:");
+                     "setColorStoreAction:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setColorStoreActionOptions_atIndex_,
-    "setColorStoreActionOptions:atIndex:");
+                     "setColorStoreActionOptions:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setCommandTypes_,
-    "setCommandTypes:");
+                     "setCommandTypes:");
 _MTL_PRIVATE_DEF_SEL(setCompareFunction_,
-    "setCompareFunction:");
+                     "setCompareFunction:");
 _MTL_PRIVATE_DEF_SEL(setComputeFunction_,
-    "setComputeFunction:");
+                     "setComputeFunction:");
 _MTL_PRIVATE_DEF_SEL(setComputePipelineState_,
-    "setComputePipelineState:");
+                     "setComputePipelineState:");
 _MTL_PRIVATE_DEF_SEL(setComputePipelineState_atIndex_,
-    "setComputePipelineState:atIndex:");
+                     "setComputePipelineState:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setComputePipelineStates_withRange_,
-    "setComputePipelineStates:withRange:");
+                     "setComputePipelineStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setConstantBlockAlignment_,
-    "setConstantBlockAlignment:");
+                     "setConstantBlockAlignment:");
 _MTL_PRIVATE_DEF_SEL(setConstantValue_type_atIndex_,
-    "setConstantValue:type:atIndex:");
+                     "setConstantValue:type:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setConstantValue_type_withName_,
-    "setConstantValue:type:withName:");
+                     "setConstantValue:type:withName:");
 _MTL_PRIVATE_DEF_SEL(setConstantValues_,
-    "setConstantValues:");
+                     "setConstantValues:");
 _MTL_PRIVATE_DEF_SEL(setConstantValues_type_withRange_,
-    "setConstantValues:type:withRange:");
+                     "setConstantValues:type:withRange:");
 _MTL_PRIVATE_DEF_SEL(setControlDependencies_,
-    "setControlDependencies:");
+                     "setControlDependencies:");
 _MTL_PRIVATE_DEF_SEL(setCounterSet_,
-    "setCounterSet:");
+                     "setCounterSet:");
 _MTL_PRIVATE_DEF_SEL(setCpuCacheMode_,
-    "setCpuCacheMode:");
+                     "setCpuCacheMode:");
 _MTL_PRIVATE_DEF_SEL(setCullMode_,
-    "setCullMode:");
+                     "setCullMode:");
 _MTL_PRIVATE_DEF_SEL(setDataType_,
-    "setDataType:");
+                     "setDataType:");
 _MTL_PRIVATE_DEF_SEL(setDefaultCaptureScope_,
-    "setDefaultCaptureScope:");
+                     "setDefaultCaptureScope:");
 _MTL_PRIVATE_DEF_SEL(setDefaultRasterSampleCount_,
-    "setDefaultRasterSampleCount:");
+                     "setDefaultRasterSampleCount:");
 _MTL_PRIVATE_DEF_SEL(setDepth_,
-    "setDepth:");
+                     "setDepth:");
 _MTL_PRIVATE_DEF_SEL(setDepthAttachment_,
-    "setDepthAttachment:");
+                     "setDepthAttachment:");
 _MTL_PRIVATE_DEF_SEL(setDepthAttachmentPixelFormat_,
-    "setDepthAttachmentPixelFormat:");
+                     "setDepthAttachmentPixelFormat:");
 _MTL_PRIVATE_DEF_SEL(setDepthBias_slopeScale_clamp_,
-    "setDepthBias:slopeScale:clamp:");
+                     "setDepthBias:slopeScale:clamp:");
 _MTL_PRIVATE_DEF_SEL(setDepthClipMode_,
-    "setDepthClipMode:");
+                     "setDepthClipMode:");
 _MTL_PRIVATE_DEF_SEL(setDepthCompareFunction_,
-    "setDepthCompareFunction:");
+                     "setDepthCompareFunction:");
 _MTL_PRIVATE_DEF_SEL(setDepthFailureOperation_,
-    "setDepthFailureOperation:");
+                     "setDepthFailureOperation:");
 _MTL_PRIVATE_DEF_SEL(setDepthPlane_,
-    "setDepthPlane:");
+                     "setDepthPlane:");
 _MTL_PRIVATE_DEF_SEL(setDepthResolveFilter_,
-    "setDepthResolveFilter:");
+                     "setDepthResolveFilter:");
 _MTL_PRIVATE_DEF_SEL(setDepthStencilPassOperation_,
-    "setDepthStencilPassOperation:");
+                     "setDepthStencilPassOperation:");
 _MTL_PRIVATE_DEF_SEL(setDepthStencilState_,
-    "setDepthStencilState:");
+                     "setDepthStencilState:");
 _MTL_PRIVATE_DEF_SEL(setDepthStoreAction_,
-    "setDepthStoreAction:");
+                     "setDepthStoreAction:");
 _MTL_PRIVATE_DEF_SEL(setDepthStoreActionOptions_,
-    "setDepthStoreActionOptions:");
+                     "setDepthStoreActionOptions:");
 _MTL_PRIVATE_DEF_SEL(setDepthWriteEnabled_,
-    "setDepthWriteEnabled:");
+                     "setDepthWriteEnabled:");
 _MTL_PRIVATE_DEF_SEL(setDestination_,
-    "setDestination:");
+                     "setDestination:");
 _MTL_PRIVATE_DEF_SEL(setDestinationAlphaBlendFactor_,
-    "setDestinationAlphaBlendFactor:");
+                     "setDestinationAlphaBlendFactor:");
 _MTL_PRIVATE_DEF_SEL(setDestinationRGBBlendFactor_,
-    "setDestinationRGBBlendFactor:");
+                     "setDestinationRGBBlendFactor:");
 _MTL_PRIVATE_DEF_SEL(setDispatchType_,
-    "setDispatchType:");
+                     "setDispatchType:");
 _MTL_PRIVATE_DEF_SEL(setEndOfEncoderSampleIndex_,
-    "setEndOfEncoderSampleIndex:");
+                     "setEndOfEncoderSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setEndOfFragmentSampleIndex_,
-    "setEndOfFragmentSampleIndex:");
+                     "setEndOfFragmentSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setEndOfVertexSampleIndex_,
-    "setEndOfVertexSampleIndex:");
+                     "setEndOfVertexSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setErrorOptions_,
-    "setErrorOptions:");
+                     "setErrorOptions:");
 _MTL_PRIVATE_DEF_SEL(setFastMathEnabled_,
-    "setFastMathEnabled:");
+                     "setFastMathEnabled:");
 _MTL_PRIVATE_DEF_SEL(setFormat_,
-    "setFormat:");
+                     "setFormat:");
 _MTL_PRIVATE_DEF_SEL(setFragmentAccelerationStructure_atBufferIndex_,
-    "setFragmentAccelerationStructure:atBufferIndex:");
+                     "setFragmentAccelerationStructure:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentAdditionalBinaryFunctions_,
-    "setFragmentAdditionalBinaryFunctions:");
+                     "setFragmentAdditionalBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setFragmentBuffer_offset_atIndex_,
-    "setFragmentBuffer:offset:atIndex:");
+                     "setFragmentBuffer:offset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentBufferOffset_atIndex_,
-    "setFragmentBufferOffset:atIndex:");
+                     "setFragmentBufferOffset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentBuffers_offsets_withRange_,
-    "setFragmentBuffers:offsets:withRange:");
+                     "setFragmentBuffers:offsets:withRange:");
 _MTL_PRIVATE_DEF_SEL(setFragmentBytes_length_atIndex_,
-    "setFragmentBytes:length:atIndex:");
+                     "setFragmentBytes:length:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentFunction_,
-    "setFragmentFunction:");
+                     "setFragmentFunction:");
 _MTL_PRIVATE_DEF_SEL(setFragmentIntersectionFunctionTable_atBufferIndex_,
-    "setFragmentIntersectionFunctionTable:atBufferIndex:");
+                     "setFragmentIntersectionFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentIntersectionFunctionTables_withBufferRange_,
-    "setFragmentIntersectionFunctionTables:withBufferRange:");
+                     "setFragmentIntersectionFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setFragmentLinkedFunctions_,
-    "setFragmentLinkedFunctions:");
+                     "setFragmentLinkedFunctions:");
 _MTL_PRIVATE_DEF_SEL(setFragmentPreloadedLibraries_,
-    "setFragmentPreloadedLibraries:");
+                     "setFragmentPreloadedLibraries:");
 _MTL_PRIVATE_DEF_SEL(setFragmentSamplerState_atIndex_,
-    "setFragmentSamplerState:atIndex:");
+                     "setFragmentSamplerState:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentSamplerState_lodMinClamp_lodMaxClamp_atIndex_,
-    "setFragmentSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
+                     "setFragmentSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentSamplerStates_lodMinClamps_lodMaxClamps_withRange_,
-    "setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
+                     "setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
 _MTL_PRIVATE_DEF_SEL(setFragmentSamplerStates_withRange_,
-    "setFragmentSamplerStates:withRange:");
+                     "setFragmentSamplerStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setFragmentTexture_atIndex_,
-    "setFragmentTexture:atIndex:");
+                     "setFragmentTexture:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentTextures_withRange_,
-    "setFragmentTextures:withRange:");
+                     "setFragmentTextures:withRange:");
 _MTL_PRIVATE_DEF_SEL(setFragmentVisibleFunctionTable_atBufferIndex_,
-    "setFragmentVisibleFunctionTable:atBufferIndex:");
+                     "setFragmentVisibleFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setFragmentVisibleFunctionTables_withBufferRange_,
-    "setFragmentVisibleFunctionTables:withBufferRange:");
+                     "setFragmentVisibleFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setFrontFaceStencil_,
-    "setFrontFaceStencil:");
+                     "setFrontFaceStencil:");
 _MTL_PRIVATE_DEF_SEL(setFrontFacingWinding_,
-    "setFrontFacingWinding:");
+                     "setFrontFacingWinding:");
 _MTL_PRIVATE_DEF_SEL(setFunction_atIndex_,
-    "setFunction:atIndex:");
+                     "setFunction:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setFunctionCount_,
-    "setFunctionCount:");
+                     "setFunctionCount:");
 _MTL_PRIVATE_DEF_SEL(setFunctionGraphs_,
-    "setFunctionGraphs:");
+                     "setFunctionGraphs:");
 _MTL_PRIVATE_DEF_SEL(setFunctionName_,
-    "setFunctionName:");
+                     "setFunctionName:");
 _MTL_PRIVATE_DEF_SEL(setFunctions_,
-    "setFunctions:");
+                     "setFunctions:");
 _MTL_PRIVATE_DEF_SEL(setFunctions_withRange_,
-    "setFunctions:withRange:");
+                     "setFunctions:withRange:");
 _MTL_PRIVATE_DEF_SEL(setGeometryDescriptors_,
-    "setGeometryDescriptors:");
+                     "setGeometryDescriptors:");
 _MTL_PRIVATE_DEF_SEL(setGroups_,
-    "setGroups:");
+                     "setGroups:");
 _MTL_PRIVATE_DEF_SEL(setHazardTrackingMode_,
-    "setHazardTrackingMode:");
+                     "setHazardTrackingMode:");
 _MTL_PRIVATE_DEF_SEL(setHeight_,
-    "setHeight:");
+                     "setHeight:");
 _MTL_PRIVATE_DEF_SEL(setImageblockSampleLength_,
-    "setImageblockSampleLength:");
+                     "setImageblockSampleLength:");
 _MTL_PRIVATE_DEF_SEL(setImageblockWidth_height_,
-    "setImageblockWidth:height:");
+                     "setImageblockWidth:height:");
 _MTL_PRIVATE_DEF_SEL(setIndex_,
-    "setIndex:");
+                     "setIndex:");
 _MTL_PRIVATE_DEF_SEL(setIndexBuffer_,
-    "setIndexBuffer:");
+                     "setIndexBuffer:");
 _MTL_PRIVATE_DEF_SEL(setIndexBufferIndex_,
-    "setIndexBufferIndex:");
+                     "setIndexBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setIndexBufferOffset_,
-    "setIndexBufferOffset:");
+                     "setIndexBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(setIndexType_,
-    "setIndexType:");
+                     "setIndexType:");
 _MTL_PRIVATE_DEF_SEL(setIndirectCommandBuffer_atIndex_,
-    "setIndirectCommandBuffer:atIndex:");
+                     "setIndirectCommandBuffer:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setIndirectCommandBuffers_withRange_,
-    "setIndirectCommandBuffers:withRange:");
+                     "setIndirectCommandBuffers:withRange:");
 _MTL_PRIVATE_DEF_SEL(setInheritBuffers_,
-    "setInheritBuffers:");
+                     "setInheritBuffers:");
 _MTL_PRIVATE_DEF_SEL(setInheritPipelineState_,
-    "setInheritPipelineState:");
+                     "setInheritPipelineState:");
 _MTL_PRIVATE_DEF_SEL(setInputPrimitiveTopology_,
-    "setInputPrimitiveTopology:");
+                     "setInputPrimitiveTopology:");
 _MTL_PRIVATE_DEF_SEL(setInsertLibraries_,
-    "setInsertLibraries:");
+                     "setInsertLibraries:");
 _MTL_PRIVATE_DEF_SEL(setInstallName_,
-    "setInstallName:");
+                     "setInstallName:");
 _MTL_PRIVATE_DEF_SEL(setInstanceCount_,
-    "setInstanceCount:");
+                     "setInstanceCount:");
 _MTL_PRIVATE_DEF_SEL(setInstanceDescriptorBuffer_,
-    "setInstanceDescriptorBuffer:");
+                     "setInstanceDescriptorBuffer:");
 _MTL_PRIVATE_DEF_SEL(setInstanceDescriptorBufferOffset_,
-    "setInstanceDescriptorBufferOffset:");
+                     "setInstanceDescriptorBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(setInstanceDescriptorStride_,
-    "setInstanceDescriptorStride:");
+                     "setInstanceDescriptorStride:");
 _MTL_PRIVATE_DEF_SEL(setInstanceDescriptorType_,
-    "setInstanceDescriptorType:");
+                     "setInstanceDescriptorType:");
 _MTL_PRIVATE_DEF_SEL(setInstancedAccelerationStructures_,
-    "setInstancedAccelerationStructures:");
+                     "setInstancedAccelerationStructures:");
 _MTL_PRIVATE_DEF_SEL(setIntersectionFunctionTable_atBufferIndex_,
-    "setIntersectionFunctionTable:atBufferIndex:");
+                     "setIntersectionFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setIntersectionFunctionTable_atIndex_,
-    "setIntersectionFunctionTable:atIndex:");
+                     "setIntersectionFunctionTable:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setIntersectionFunctionTableOffset_,
-    "setIntersectionFunctionTableOffset:");
+                     "setIntersectionFunctionTableOffset:");
 _MTL_PRIVATE_DEF_SEL(setIntersectionFunctionTables_withBufferRange_,
-    "setIntersectionFunctionTables:withBufferRange:");
+                     "setIntersectionFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setIntersectionFunctionTables_withRange_,
-    "setIntersectionFunctionTables:withRange:");
+                     "setIntersectionFunctionTables:withRange:");
 _MTL_PRIVATE_DEF_SEL(setKernelBuffer_offset_atIndex_,
-    "setKernelBuffer:offset:atIndex:");
+                     "setKernelBuffer:offset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setLabel_,
-    "setLabel:");
+                     "setLabel:");
 _MTL_PRIVATE_DEF_SEL(setLanguageVersion_,
-    "setLanguageVersion:");
+                     "setLanguageVersion:");
 _MTL_PRIVATE_DEF_SEL(setLayer_atIndex_,
-    "setLayer:atIndex:");
+                     "setLayer:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setLevel_,
-    "setLevel:");
+                     "setLevel:");
 _MTL_PRIVATE_DEF_SEL(setLibraries_,
-    "setLibraries:");
+                     "setLibraries:");
 _MTL_PRIVATE_DEF_SEL(setLibraryType_,
-    "setLibraryType:");
+                     "setLibraryType:");
 _MTL_PRIVATE_DEF_SEL(setLinkedFunctions_,
-    "setLinkedFunctions:");
+                     "setLinkedFunctions:");
 _MTL_PRIVATE_DEF_SEL(setLoadAction_,
-    "setLoadAction:");
+                     "setLoadAction:");
 _MTL_PRIVATE_DEF_SEL(setLodAverage_,
-    "setLodAverage:");
+                     "setLodAverage:");
 _MTL_PRIVATE_DEF_SEL(setLodMaxClamp_,
-    "setLodMaxClamp:");
+                     "setLodMaxClamp:");
 _MTL_PRIVATE_DEF_SEL(setLodMinClamp_,
-    "setLodMinClamp:");
+                     "setLodMinClamp:");
 _MTL_PRIVATE_DEF_SEL(setMagFilter_,
-    "setMagFilter:");
+                     "setMagFilter:");
 _MTL_PRIVATE_DEF_SEL(setMaxAnisotropy_,
-    "setMaxAnisotropy:");
+                     "setMaxAnisotropy:");
 _MTL_PRIVATE_DEF_SEL(setMaxCallStackDepth_,
-    "setMaxCallStackDepth:");
+                     "setMaxCallStackDepth:");
 _MTL_PRIVATE_DEF_SEL(setMaxFragmentBufferBindCount_,
-    "setMaxFragmentBufferBindCount:");
+                     "setMaxFragmentBufferBindCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxFragmentCallStackDepth_,
-    "setMaxFragmentCallStackDepth:");
+                     "setMaxFragmentCallStackDepth:");
 _MTL_PRIVATE_DEF_SEL(setMaxKernelBufferBindCount_,
-    "setMaxKernelBufferBindCount:");
+                     "setMaxKernelBufferBindCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxTessellationFactor_,
-    "setMaxTessellationFactor:");
+                     "setMaxTessellationFactor:");
 _MTL_PRIVATE_DEF_SEL(setMaxTotalThreadsPerThreadgroup_,
-    "setMaxTotalThreadsPerThreadgroup:");
+                     "setMaxTotalThreadsPerThreadgroup:");
 _MTL_PRIVATE_DEF_SEL(setMaxVertexAmplificationCount_,
-    "setMaxVertexAmplificationCount:");
+                     "setMaxVertexAmplificationCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxVertexBufferBindCount_,
-    "setMaxVertexBufferBindCount:");
+                     "setMaxVertexBufferBindCount:");
 _MTL_PRIVATE_DEF_SEL(setMaxVertexCallStackDepth_,
-    "setMaxVertexCallStackDepth:");
+                     "setMaxVertexCallStackDepth:");
 _MTL_PRIVATE_DEF_SEL(setMinFilter_,
-    "setMinFilter:");
+                     "setMinFilter:");
 _MTL_PRIVATE_DEF_SEL(setMipFilter_,
-    "setMipFilter:");
+                     "setMipFilter:");
 _MTL_PRIVATE_DEF_SEL(setMipmapLevelCount_,
-    "setMipmapLevelCount:");
+                     "setMipmapLevelCount:");
 _MTL_PRIVATE_DEF_SEL(setMotionEndBorderMode_,
-    "setMotionEndBorderMode:");
+                     "setMotionEndBorderMode:");
 _MTL_PRIVATE_DEF_SEL(setMotionEndTime_,
-    "setMotionEndTime:");
+                     "setMotionEndTime:");
 _MTL_PRIVATE_DEF_SEL(setMotionKeyframeCount_,
-    "setMotionKeyframeCount:");
+                     "setMotionKeyframeCount:");
 _MTL_PRIVATE_DEF_SEL(setMotionStartBorderMode_,
-    "setMotionStartBorderMode:");
+                     "setMotionStartBorderMode:");
 _MTL_PRIVATE_DEF_SEL(setMotionStartTime_,
-    "setMotionStartTime:");
+                     "setMotionStartTime:");
 _MTL_PRIVATE_DEF_SEL(setMotionTransformBuffer_,
-    "setMotionTransformBuffer:");
+                     "setMotionTransformBuffer:");
 _MTL_PRIVATE_DEF_SEL(setMotionTransformBufferOffset_,
-    "setMotionTransformBufferOffset:");
+                     "setMotionTransformBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(setMotionTransformCount_,
-    "setMotionTransformCount:");
+                     "setMotionTransformCount:");
 _MTL_PRIVATE_DEF_SEL(setMutability_,
-    "setMutability:");
+                     "setMutability:");
 _MTL_PRIVATE_DEF_SEL(setName_,
-    "setName:");
+                     "setName:");
 _MTL_PRIVATE_DEF_SEL(setNodes_,
-    "setNodes:");
+                     "setNodes:");
 _MTL_PRIVATE_DEF_SEL(setNormalizedCoordinates_,
-    "setNormalizedCoordinates:");
+                     "setNormalizedCoordinates:");
 _MTL_PRIVATE_DEF_SEL(setObject_atIndexedSubscript_,
-    "setObject:atIndexedSubscript:");
+                     "setObject:atIndexedSubscript:");
 _MTL_PRIVATE_DEF_SEL(setOffset_,
-    "setOffset:");
+                     "setOffset:");
 _MTL_PRIVATE_DEF_SEL(setOpaque_,
-    "setOpaque:");
+                     "setOpaque:");
 _MTL_PRIVATE_DEF_SEL(setOpaqueTriangleIntersectionFunctionWithSignature_atIndex_,
-    "setOpaqueTriangleIntersectionFunctionWithSignature:atIndex:");
+                     "setOpaqueTriangleIntersectionFunctionWithSignature:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setOpaqueTriangleIntersectionFunctionWithSignature_withRange_,
-    "setOpaqueTriangleIntersectionFunctionWithSignature:withRange:");
+                     "setOpaqueTriangleIntersectionFunctionWithSignature:withRange:");
 _MTL_PRIVATE_DEF_SEL(setOptions_,
-    "setOptions:");
+                     "setOptions:");
 _MTL_PRIVATE_DEF_SEL(setOutputNode_,
-    "setOutputNode:");
+                     "setOutputNode:");
 _MTL_PRIVATE_DEF_SEL(setOutputURL_,
-    "setOutputURL:");
+                     "setOutputURL:");
 _MTL_PRIVATE_DEF_SEL(setPixelFormat_,
-    "setPixelFormat:");
+                     "setPixelFormat:");
 _MTL_PRIVATE_DEF_SEL(setPreloadedLibraries_,
-    "setPreloadedLibraries:");
+                     "setPreloadedLibraries:");
 _MTL_PRIVATE_DEF_SEL(setPreprocessorMacros_,
-    "setPreprocessorMacros:");
+                     "setPreprocessorMacros:");
 _MTL_PRIVATE_DEF_SEL(setPreserveInvariance_,
-    "setPreserveInvariance:");
+                     "setPreserveInvariance:");
 _MTL_PRIVATE_DEF_SEL(setPrivateFunctions_,
-    "setPrivateFunctions:");
+                     "setPrivateFunctions:");
 _MTL_PRIVATE_DEF_SEL(setPurgeableState_,
-    "setPurgeableState:");
+                     "setPurgeableState:");
 _MTL_PRIVATE_DEF_SEL(setRAddressMode_,
-    "setRAddressMode:");
+                     "setRAddressMode:");
 _MTL_PRIVATE_DEF_SEL(setRasterSampleCount_,
-    "setRasterSampleCount:");
+                     "setRasterSampleCount:");
 _MTL_PRIVATE_DEF_SEL(setRasterizationEnabled_,
-    "setRasterizationEnabled:");
+                     "setRasterizationEnabled:");
 _MTL_PRIVATE_DEF_SEL(setRasterizationRateMap_,
-    "setRasterizationRateMap:");
+                     "setRasterizationRateMap:");
 _MTL_PRIVATE_DEF_SEL(setReadMask_,
-    "setReadMask:");
+                     "setReadMask:");
 _MTL_PRIVATE_DEF_SEL(setRenderPipelineState_,
-    "setRenderPipelineState:");
+                     "setRenderPipelineState:");
 _MTL_PRIVATE_DEF_SEL(setRenderPipelineState_atIndex_,
-    "setRenderPipelineState:atIndex:");
+                     "setRenderPipelineState:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setRenderPipelineStates_withRange_,
-    "setRenderPipelineStates:withRange:");
+                     "setRenderPipelineStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setRenderTargetArrayLength_,
-    "setRenderTargetArrayLength:");
+                     "setRenderTargetArrayLength:");
 _MTL_PRIVATE_DEF_SEL(setRenderTargetHeight_,
-    "setRenderTargetHeight:");
+                     "setRenderTargetHeight:");
 _MTL_PRIVATE_DEF_SEL(setRenderTargetWidth_,
-    "setRenderTargetWidth:");
+                     "setRenderTargetWidth:");
 _MTL_PRIVATE_DEF_SEL(setResolveDepthPlane_,
-    "setResolveDepthPlane:");
+                     "setResolveDepthPlane:");
 _MTL_PRIVATE_DEF_SEL(setResolveLevel_,
-    "setResolveLevel:");
+                     "setResolveLevel:");
 _MTL_PRIVATE_DEF_SEL(setResolveSlice_,
-    "setResolveSlice:");
+                     "setResolveSlice:");
 _MTL_PRIVATE_DEF_SEL(setResolveTexture_,
-    "setResolveTexture:");
+                     "setResolveTexture:");
 _MTL_PRIVATE_DEF_SEL(setResourceOptions_,
-    "setResourceOptions:");
+                     "setResourceOptions:");
 _MTL_PRIVATE_DEF_SEL(setRetainedReferences_,
-    "setRetainedReferences:");
+                     "setRetainedReferences:");
 _MTL_PRIVATE_DEF_SEL(setRgbBlendOperation_,
-    "setRgbBlendOperation:");
+                     "setRgbBlendOperation:");
 _MTL_PRIVATE_DEF_SEL(setSAddressMode_,
-    "setSAddressMode:");
+                     "setSAddressMode:");
 _MTL_PRIVATE_DEF_SEL(setSampleBuffer_,
-    "setSampleBuffer:");
+                     "setSampleBuffer:");
 _MTL_PRIVATE_DEF_SEL(setSampleCount_,
-    "setSampleCount:");
+                     "setSampleCount:");
 _MTL_PRIVATE_DEF_SEL(setSamplePositions_count_,
-    "setSamplePositions:count:");
+                     "setSamplePositions:count:");
 _MTL_PRIVATE_DEF_SEL(setSamplerState_atIndex_,
-    "setSamplerState:atIndex:");
+                     "setSamplerState:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setSamplerState_lodMinClamp_lodMaxClamp_atIndex_,
-    "setSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
+                     "setSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setSamplerStates_lodMinClamps_lodMaxClamps_withRange_,
-    "setSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
+                     "setSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
 _MTL_PRIVATE_DEF_SEL(setSamplerStates_withRange_,
-    "setSamplerStates:withRange:");
+                     "setSamplerStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setScissorRect_,
-    "setScissorRect:");
+                     "setScissorRect:");
 _MTL_PRIVATE_DEF_SEL(setScissorRects_count_,
-    "setScissorRects:count:");
+                     "setScissorRects:count:");
 _MTL_PRIVATE_DEF_SEL(setScreenSize_,
-    "setScreenSize:");
+                     "setScreenSize:");
 _MTL_PRIVATE_DEF_SEL(setSignaledValue_,
-    "setSignaledValue:");
+                     "setSignaledValue:");
 _MTL_PRIVATE_DEF_SEL(setSize_,
-    "setSize:");
+                     "setSize:");
 _MTL_PRIVATE_DEF_SEL(setSlice_,
-    "setSlice:");
+                     "setSlice:");
 _MTL_PRIVATE_DEF_SEL(setSourceAlphaBlendFactor_,
-    "setSourceAlphaBlendFactor:");
+                     "setSourceAlphaBlendFactor:");
 _MTL_PRIVATE_DEF_SEL(setSourceRGBBlendFactor_,
-    "setSourceRGBBlendFactor:");
+                     "setSourceRGBBlendFactor:");
 _MTL_PRIVATE_DEF_SEL(setSpecializedName_,
-    "setSpecializedName:");
+                     "setSpecializedName:");
 _MTL_PRIVATE_DEF_SEL(setStageInRegion_,
-    "setStageInRegion:");
+                     "setStageInRegion:");
 _MTL_PRIVATE_DEF_SEL(setStageInRegionWithIndirectBuffer_indirectBufferOffset_,
-    "setStageInRegionWithIndirectBuffer:indirectBufferOffset:");
+                     "setStageInRegionWithIndirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(setStageInputDescriptor_,
-    "setStageInputDescriptor:");
+                     "setStageInputDescriptor:");
 _MTL_PRIVATE_DEF_SEL(setStartOfEncoderSampleIndex_,
-    "setStartOfEncoderSampleIndex:");
+                     "setStartOfEncoderSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setStartOfFragmentSampleIndex_,
-    "setStartOfFragmentSampleIndex:");
+                     "setStartOfFragmentSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setStartOfVertexSampleIndex_,
-    "setStartOfVertexSampleIndex:");
+                     "setStartOfVertexSampleIndex:");
 _MTL_PRIVATE_DEF_SEL(setStencilAttachment_,
-    "setStencilAttachment:");
+                     "setStencilAttachment:");
 _MTL_PRIVATE_DEF_SEL(setStencilAttachmentPixelFormat_,
-    "setStencilAttachmentPixelFormat:");
+                     "setStencilAttachmentPixelFormat:");
 _MTL_PRIVATE_DEF_SEL(setStencilCompareFunction_,
-    "setStencilCompareFunction:");
+                     "setStencilCompareFunction:");
 _MTL_PRIVATE_DEF_SEL(setStencilFailureOperation_,
-    "setStencilFailureOperation:");
+                     "setStencilFailureOperation:");
 _MTL_PRIVATE_DEF_SEL(setStencilFrontReferenceValue_backReferenceValue_,
-    "setStencilFrontReferenceValue:backReferenceValue:");
+                     "setStencilFrontReferenceValue:backReferenceValue:");
 _MTL_PRIVATE_DEF_SEL(setStencilReferenceValue_,
-    "setStencilReferenceValue:");
+                     "setStencilReferenceValue:");
 _MTL_PRIVATE_DEF_SEL(setStencilResolveFilter_,
-    "setStencilResolveFilter:");
+                     "setStencilResolveFilter:");
 _MTL_PRIVATE_DEF_SEL(setStencilStoreAction_,
-    "setStencilStoreAction:");
+                     "setStencilStoreAction:");
 _MTL_PRIVATE_DEF_SEL(setStencilStoreActionOptions_,
-    "setStencilStoreActionOptions:");
+                     "setStencilStoreActionOptions:");
 _MTL_PRIVATE_DEF_SEL(setStepFunction_,
-    "setStepFunction:");
+                     "setStepFunction:");
 _MTL_PRIVATE_DEF_SEL(setStepRate_,
-    "setStepRate:");
+                     "setStepRate:");
 _MTL_PRIVATE_DEF_SEL(setStorageMode_,
-    "setStorageMode:");
+                     "setStorageMode:");
 _MTL_PRIVATE_DEF_SEL(setStoreAction_,
-    "setStoreAction:");
+                     "setStoreAction:");
 _MTL_PRIVATE_DEF_SEL(setStoreActionOptions_,
-    "setStoreActionOptions:");
+                     "setStoreActionOptions:");
 _MTL_PRIVATE_DEF_SEL(setStride_,
-    "setStride:");
+                     "setStride:");
 _MTL_PRIVATE_DEF_SEL(setSupportAddingBinaryFunctions_,
-    "setSupportAddingBinaryFunctions:");
+                     "setSupportAddingBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setSupportAddingFragmentBinaryFunctions_,
-    "setSupportAddingFragmentBinaryFunctions:");
+                     "setSupportAddingFragmentBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setSupportAddingVertexBinaryFunctions_,
-    "setSupportAddingVertexBinaryFunctions:");
+                     "setSupportAddingVertexBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setSupportArgumentBuffers_,
-    "setSupportArgumentBuffers:");
+                     "setSupportArgumentBuffers:");
 _MTL_PRIVATE_DEF_SEL(setSupportIndirectCommandBuffers_,
-    "setSupportIndirectCommandBuffers:");
+                     "setSupportIndirectCommandBuffers:");
 _MTL_PRIVATE_DEF_SEL(setSwizzle_,
-    "setSwizzle:");
+                     "setSwizzle:");
 _MTL_PRIVATE_DEF_SEL(setTAddressMode_,
-    "setTAddressMode:");
+                     "setTAddressMode:");
 _MTL_PRIVATE_DEF_SEL(setTessellationControlPointIndexType_,
-    "setTessellationControlPointIndexType:");
+                     "setTessellationControlPointIndexType:");
 _MTL_PRIVATE_DEF_SEL(setTessellationFactorBuffer_offset_instanceStride_,
-    "setTessellationFactorBuffer:offset:instanceStride:");
+                     "setTessellationFactorBuffer:offset:instanceStride:");
 _MTL_PRIVATE_DEF_SEL(setTessellationFactorFormat_,
-    "setTessellationFactorFormat:");
+                     "setTessellationFactorFormat:");
 _MTL_PRIVATE_DEF_SEL(setTessellationFactorScale_,
-    "setTessellationFactorScale:");
+                     "setTessellationFactorScale:");
 _MTL_PRIVATE_DEF_SEL(setTessellationFactorScaleEnabled_,
-    "setTessellationFactorScaleEnabled:");
+                     "setTessellationFactorScaleEnabled:");
 _MTL_PRIVATE_DEF_SEL(setTessellationFactorStepFunction_,
-    "setTessellationFactorStepFunction:");
+                     "setTessellationFactorStepFunction:");
 _MTL_PRIVATE_DEF_SEL(setTessellationOutputWindingOrder_,
-    "setTessellationOutputWindingOrder:");
+                     "setTessellationOutputWindingOrder:");
 _MTL_PRIVATE_DEF_SEL(setTessellationPartitionMode_,
-    "setTessellationPartitionMode:");
+                     "setTessellationPartitionMode:");
 _MTL_PRIVATE_DEF_SEL(setTexture_,
-    "setTexture:");
+                     "setTexture:");
 _MTL_PRIVATE_DEF_SEL(setTexture_atIndex_,
-    "setTexture:atIndex:");
+                     "setTexture:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTextureType_,
-    "setTextureType:");
+                     "setTextureType:");
 _MTL_PRIVATE_DEF_SEL(setTextures_withRange_,
-    "setTextures:withRange:");
+                     "setTextures:withRange:");
 _MTL_PRIVATE_DEF_SEL(setThreadGroupSizeIsMultipleOfThreadExecutionWidth_,
-    "setThreadGroupSizeIsMultipleOfThreadExecutionWidth:");
+                     "setThreadGroupSizeIsMultipleOfThreadExecutionWidth:");
 _MTL_PRIVATE_DEF_SEL(setThreadgroupMemoryLength_,
-    "setThreadgroupMemoryLength:");
+                     "setThreadgroupMemoryLength:");
 _MTL_PRIVATE_DEF_SEL(setThreadgroupMemoryLength_atIndex_,
-    "setThreadgroupMemoryLength:atIndex:");
+                     "setThreadgroupMemoryLength:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setThreadgroupMemoryLength_offset_atIndex_,
-    "setThreadgroupMemoryLength:offset:atIndex:");
+                     "setThreadgroupMemoryLength:offset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setThreadgroupSizeMatchesTileSize_,
-    "setThreadgroupSizeMatchesTileSize:");
+                     "setThreadgroupSizeMatchesTileSize:");
 _MTL_PRIVATE_DEF_SEL(setTileAccelerationStructure_atBufferIndex_,
-    "setTileAccelerationStructure:atBufferIndex:");
+                     "setTileAccelerationStructure:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileAdditionalBinaryFunctions_,
-    "setTileAdditionalBinaryFunctions:");
+                     "setTileAdditionalBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setTileBuffer_offset_atIndex_,
-    "setTileBuffer:offset:atIndex:");
+                     "setTileBuffer:offset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileBufferOffset_atIndex_,
-    "setTileBufferOffset:atIndex:");
+                     "setTileBufferOffset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileBuffers_offsets_withRange_,
-    "setTileBuffers:offsets:withRange:");
+                     "setTileBuffers:offsets:withRange:");
 _MTL_PRIVATE_DEF_SEL(setTileBytes_length_atIndex_,
-    "setTileBytes:length:atIndex:");
+                     "setTileBytes:length:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileFunction_,
-    "setTileFunction:");
+                     "setTileFunction:");
 _MTL_PRIVATE_DEF_SEL(setTileHeight_,
-    "setTileHeight:");
+                     "setTileHeight:");
 _MTL_PRIVATE_DEF_SEL(setTileIntersectionFunctionTable_atBufferIndex_,
-    "setTileIntersectionFunctionTable:atBufferIndex:");
+                     "setTileIntersectionFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileIntersectionFunctionTables_withBufferRange_,
-    "setTileIntersectionFunctionTables:withBufferRange:");
+                     "setTileIntersectionFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setTileSamplerState_atIndex_,
-    "setTileSamplerState:atIndex:");
+                     "setTileSamplerState:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileSamplerState_lodMinClamp_lodMaxClamp_atIndex_,
-    "setTileSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
+                     "setTileSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileSamplerStates_lodMinClamps_lodMaxClamps_withRange_,
-    "setTileSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
+                     "setTileSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
 _MTL_PRIVATE_DEF_SEL(setTileSamplerStates_withRange_,
-    "setTileSamplerStates:withRange:");
+                     "setTileSamplerStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setTileTexture_atIndex_,
-    "setTileTexture:atIndex:");
+                     "setTileTexture:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileTextures_withRange_,
-    "setTileTextures:withRange:");
+                     "setTileTextures:withRange:");
 _MTL_PRIVATE_DEF_SEL(setTileVisibleFunctionTable_atBufferIndex_,
-    "setTileVisibleFunctionTable:atBufferIndex:");
+                     "setTileVisibleFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setTileVisibleFunctionTables_withBufferRange_,
-    "setTileVisibleFunctionTables:withBufferRange:");
+                     "setTileVisibleFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setTileWidth_,
-    "setTileWidth:");
+                     "setTileWidth:");
 _MTL_PRIVATE_DEF_SEL(setTriangleCount_,
-    "setTriangleCount:");
+                     "setTriangleCount:");
 _MTL_PRIVATE_DEF_SEL(setTriangleFillMode_,
-    "setTriangleFillMode:");
+                     "setTriangleFillMode:");
 _MTL_PRIVATE_DEF_SEL(setType_,
-    "setType:");
+                     "setType:");
 _MTL_PRIVATE_DEF_SEL(setUrl_,
-    "setUrl:");
+                     "setUrl:");
 _MTL_PRIVATE_DEF_SEL(setUsage_,
-    "setUsage:");
+                     "setUsage:");
 _MTL_PRIVATE_DEF_SEL(setVertexAccelerationStructure_atBufferIndex_,
-    "setVertexAccelerationStructure:atBufferIndex:");
+                     "setVertexAccelerationStructure:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexAdditionalBinaryFunctions_,
-    "setVertexAdditionalBinaryFunctions:");
+                     "setVertexAdditionalBinaryFunctions:");
 _MTL_PRIVATE_DEF_SEL(setVertexAmplificationCount_viewMappings_,
-    "setVertexAmplificationCount:viewMappings:");
+                     "setVertexAmplificationCount:viewMappings:");
 _MTL_PRIVATE_DEF_SEL(setVertexBuffer_,
-    "setVertexBuffer:");
+                     "setVertexBuffer:");
 _MTL_PRIVATE_DEF_SEL(setVertexBuffer_offset_atIndex_,
-    "setVertexBuffer:offset:atIndex:");
+                     "setVertexBuffer:offset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexBufferOffset_,
-    "setVertexBufferOffset:");
+                     "setVertexBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(setVertexBufferOffset_atIndex_,
-    "setVertexBufferOffset:atIndex:");
+                     "setVertexBufferOffset:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexBuffers_,
-    "setVertexBuffers:");
+                     "setVertexBuffers:");
 _MTL_PRIVATE_DEF_SEL(setVertexBuffers_offsets_withRange_,
-    "setVertexBuffers:offsets:withRange:");
+                     "setVertexBuffers:offsets:withRange:");
 _MTL_PRIVATE_DEF_SEL(setVertexBytes_length_atIndex_,
-    "setVertexBytes:length:atIndex:");
+                     "setVertexBytes:length:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexDescriptor_,
-    "setVertexDescriptor:");
+                     "setVertexDescriptor:");
 _MTL_PRIVATE_DEF_SEL(setVertexFunction_,
-    "setVertexFunction:");
+                     "setVertexFunction:");
 _MTL_PRIVATE_DEF_SEL(setVertexIntersectionFunctionTable_atBufferIndex_,
-    "setVertexIntersectionFunctionTable:atBufferIndex:");
+                     "setVertexIntersectionFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexIntersectionFunctionTables_withBufferRange_,
-    "setVertexIntersectionFunctionTables:withBufferRange:");
+                     "setVertexIntersectionFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setVertexLinkedFunctions_,
-    "setVertexLinkedFunctions:");
+                     "setVertexLinkedFunctions:");
 _MTL_PRIVATE_DEF_SEL(setVertexPreloadedLibraries_,
-    "setVertexPreloadedLibraries:");
+                     "setVertexPreloadedLibraries:");
 _MTL_PRIVATE_DEF_SEL(setVertexSamplerState_atIndex_,
-    "setVertexSamplerState:atIndex:");
+                     "setVertexSamplerState:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexSamplerState_lodMinClamp_lodMaxClamp_atIndex_,
-    "setVertexSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
+                     "setVertexSamplerState:lodMinClamp:lodMaxClamp:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexSamplerStates_lodMinClamps_lodMaxClamps_withRange_,
-    "setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
+                     "setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:");
 _MTL_PRIVATE_DEF_SEL(setVertexSamplerStates_withRange_,
-    "setVertexSamplerStates:withRange:");
+                     "setVertexSamplerStates:withRange:");
 _MTL_PRIVATE_DEF_SEL(setVertexStride_,
-    "setVertexStride:");
+                     "setVertexStride:");
 _MTL_PRIVATE_DEF_SEL(setVertexTexture_atIndex_,
-    "setVertexTexture:atIndex:");
+                     "setVertexTexture:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexTextures_withRange_,
-    "setVertexTextures:withRange:");
+                     "setVertexTextures:withRange:");
 _MTL_PRIVATE_DEF_SEL(setVertexVisibleFunctionTable_atBufferIndex_,
-    "setVertexVisibleFunctionTable:atBufferIndex:");
+                     "setVertexVisibleFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setVertexVisibleFunctionTables_withBufferRange_,
-    "setVertexVisibleFunctionTables:withBufferRange:");
+                     "setVertexVisibleFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setViewport_,
-    "setViewport:");
+                     "setViewport:");
 _MTL_PRIVATE_DEF_SEL(setViewports_count_,
-    "setViewports:count:");
+                     "setViewports:count:");
 _MTL_PRIVATE_DEF_SEL(setVisibilityResultBuffer_,
-    "setVisibilityResultBuffer:");
+                     "setVisibilityResultBuffer:");
 _MTL_PRIVATE_DEF_SEL(setVisibilityResultMode_offset_,
-    "setVisibilityResultMode:offset:");
+                     "setVisibilityResultMode:offset:");
 _MTL_PRIVATE_DEF_SEL(setVisibleFunctionTable_atBufferIndex_,
-    "setVisibleFunctionTable:atBufferIndex:");
+                     "setVisibleFunctionTable:atBufferIndex:");
 _MTL_PRIVATE_DEF_SEL(setVisibleFunctionTable_atIndex_,
-    "setVisibleFunctionTable:atIndex:");
+                     "setVisibleFunctionTable:atIndex:");
 _MTL_PRIVATE_DEF_SEL(setVisibleFunctionTables_withBufferRange_,
-    "setVisibleFunctionTables:withBufferRange:");
+                     "setVisibleFunctionTables:withBufferRange:");
 _MTL_PRIVATE_DEF_SEL(setVisibleFunctionTables_withRange_,
-    "setVisibleFunctionTables:withRange:");
+                     "setVisibleFunctionTables:withRange:");
 _MTL_PRIVATE_DEF_SEL(setWidth_,
-    "setWidth:");
+                     "setWidth:");
 _MTL_PRIVATE_DEF_SEL(setWriteMask_,
-    "setWriteMask:");
+                     "setWriteMask:");
 _MTL_PRIVATE_DEF_SEL(sharedCaptureManager,
-    "sharedCaptureManager");
+                     "sharedCaptureManager");
 _MTL_PRIVATE_DEF_SEL(signaledValue,
-    "signaledValue");
+                     "signaledValue");
 _MTL_PRIVATE_DEF_SEL(size,
-    "size");
+                     "size");
 _MTL_PRIVATE_DEF_SEL(slice,
-    "slice");
+                     "slice");
 _MTL_PRIVATE_DEF_SEL(sourceAlphaBlendFactor,
-    "sourceAlphaBlendFactor");
+                     "sourceAlphaBlendFactor");
 _MTL_PRIVATE_DEF_SEL(sourceRGBBlendFactor,
-    "sourceRGBBlendFactor");
+                     "sourceRGBBlendFactor");
 _MTL_PRIVATE_DEF_SEL(sparseTileSizeInBytes,
-    "sparseTileSizeInBytes");
+                     "sparseTileSizeInBytes");
 _MTL_PRIVATE_DEF_SEL(sparseTileSizeWithTextureType_pixelFormat_sampleCount_,
-    "sparseTileSizeWithTextureType:pixelFormat:sampleCount:");
+                     "sparseTileSizeWithTextureType:pixelFormat:sampleCount:");
 _MTL_PRIVATE_DEF_SEL(specializedName,
-    "specializedName");
+                     "specializedName");
 _MTL_PRIVATE_DEF_SEL(stageInputAttributes,
-    "stageInputAttributes");
+                     "stageInputAttributes");
 _MTL_PRIVATE_DEF_SEL(stageInputDescriptor,
-    "stageInputDescriptor");
+                     "stageInputDescriptor");
 _MTL_PRIVATE_DEF_SEL(stageInputOutputDescriptor,
-    "stageInputOutputDescriptor");
+                     "stageInputOutputDescriptor");
 _MTL_PRIVATE_DEF_SEL(startCaptureWithCommandQueue_,
-    "startCaptureWithCommandQueue:");
+                     "startCaptureWithCommandQueue:");
 _MTL_PRIVATE_DEF_SEL(startCaptureWithDescriptor_error_,
-    "startCaptureWithDescriptor:error:");
+                     "startCaptureWithDescriptor:error:");
 _MTL_PRIVATE_DEF_SEL(startCaptureWithDevice_,
-    "startCaptureWithDevice:");
+                     "startCaptureWithDevice:");
 _MTL_PRIVATE_DEF_SEL(startCaptureWithScope_,
-    "startCaptureWithScope:");
+                     "startCaptureWithScope:");
 _MTL_PRIVATE_DEF_SEL(startOfEncoderSampleIndex,
-    "startOfEncoderSampleIndex");
+                     "startOfEncoderSampleIndex");
 _MTL_PRIVATE_DEF_SEL(startOfFragmentSampleIndex,
-    "startOfFragmentSampleIndex");
+                     "startOfFragmentSampleIndex");
 _MTL_PRIVATE_DEF_SEL(startOfVertexSampleIndex,
-    "startOfVertexSampleIndex");
+                     "startOfVertexSampleIndex");
 _MTL_PRIVATE_DEF_SEL(staticThreadgroupMemoryLength,
-    "staticThreadgroupMemoryLength");
+                     "staticThreadgroupMemoryLength");
 _MTL_PRIVATE_DEF_SEL(status,
-    "status");
+                     "status");
 _MTL_PRIVATE_DEF_SEL(stencilAttachment,
-    "stencilAttachment");
+                     "stencilAttachment");
 _MTL_PRIVATE_DEF_SEL(stencilAttachmentPixelFormat,
-    "stencilAttachmentPixelFormat");
+                     "stencilAttachmentPixelFormat");
 _MTL_PRIVATE_DEF_SEL(stencilCompareFunction,
-    "stencilCompareFunction");
+                     "stencilCompareFunction");
 _MTL_PRIVATE_DEF_SEL(stencilFailureOperation,
-    "stencilFailureOperation");
+                     "stencilFailureOperation");
 _MTL_PRIVATE_DEF_SEL(stencilResolveFilter,
-    "stencilResolveFilter");
+                     "stencilResolveFilter");
 _MTL_PRIVATE_DEF_SEL(stepFunction,
-    "stepFunction");
+                     "stepFunction");
 _MTL_PRIVATE_DEF_SEL(stepRate,
-    "stepRate");
+                     "stepRate");
 _MTL_PRIVATE_DEF_SEL(stopCapture,
-    "stopCapture");
+                     "stopCapture");
 _MTL_PRIVATE_DEF_SEL(storageMode,
-    "storageMode");
+                     "storageMode");
 _MTL_PRIVATE_DEF_SEL(storeAction,
-    "storeAction");
+                     "storeAction");
 _MTL_PRIVATE_DEF_SEL(storeActionOptions,
-    "storeActionOptions");
+                     "storeActionOptions");
 _MTL_PRIVATE_DEF_SEL(stride,
-    "stride");
+                     "stride");
 _MTL_PRIVATE_DEF_SEL(structType,
-    "structType");
+                     "structType");
 _MTL_PRIVATE_DEF_SEL(supportAddingBinaryFunctions,
-    "supportAddingBinaryFunctions");
+                     "supportAddingBinaryFunctions");
 _MTL_PRIVATE_DEF_SEL(supportAddingFragmentBinaryFunctions,
-    "supportAddingFragmentBinaryFunctions");
+                     "supportAddingFragmentBinaryFunctions");
 _MTL_PRIVATE_DEF_SEL(supportAddingVertexBinaryFunctions,
-    "supportAddingVertexBinaryFunctions");
+                     "supportAddingVertexBinaryFunctions");
 _MTL_PRIVATE_DEF_SEL(supportArgumentBuffers,
-    "supportArgumentBuffers");
+                     "supportArgumentBuffers");
 _MTL_PRIVATE_DEF_SEL(supportIndirectCommandBuffers,
-    "supportIndirectCommandBuffers");
+                     "supportIndirectCommandBuffers");
 _MTL_PRIVATE_DEF_SEL(supports32BitFloatFiltering,
-    "supports32BitFloatFiltering");
+                     "supports32BitFloatFiltering");
 _MTL_PRIVATE_DEF_SEL(supports32BitMSAA,
-    "supports32BitMSAA");
+                     "supports32BitMSAA");
 _MTL_PRIVATE_DEF_SEL(supportsBCTextureCompression,
-    "supportsBCTextureCompression");
+                     "supportsBCTextureCompression");
 _MTL_PRIVATE_DEF_SEL(supportsCounterSampling_,
-    "supportsCounterSampling:");
+                     "supportsCounterSampling:");
 _MTL_PRIVATE_DEF_SEL(supportsDestination_,
-    "supportsDestination:");
+                     "supportsDestination:");
 _MTL_PRIVATE_DEF_SEL(supportsDynamicLibraries,
-    "supportsDynamicLibraries");
+                     "supportsDynamicLibraries");
 _MTL_PRIVATE_DEF_SEL(supportsFamily_,
-    "supportsFamily:");
+                     "supportsFamily:");
 _MTL_PRIVATE_DEF_SEL(supportsFeatureSet_,
-    "supportsFeatureSet:");
+                     "supportsFeatureSet:");
 _MTL_PRIVATE_DEF_SEL(supportsFunctionPointers,
-    "supportsFunctionPointers");
+                     "supportsFunctionPointers");
 _MTL_PRIVATE_DEF_SEL(supportsFunctionPointersFromRender,
-    "supportsFunctionPointersFromRender");
+                     "supportsFunctionPointersFromRender");
 _MTL_PRIVATE_DEF_SEL(supportsPrimitiveMotionBlur,
-    "supportsPrimitiveMotionBlur");
+                     "supportsPrimitiveMotionBlur");
 _MTL_PRIVATE_DEF_SEL(supportsPullModelInterpolation,
-    "supportsPullModelInterpolation");
+                     "supportsPullModelInterpolation");
 _MTL_PRIVATE_DEF_SEL(supportsQueryTextureLOD,
-    "supportsQueryTextureLOD");
+                     "supportsQueryTextureLOD");
 _MTL_PRIVATE_DEF_SEL(supportsRasterizationRateMapWithLayerCount_,
-    "supportsRasterizationRateMapWithLayerCount:");
+                     "supportsRasterizationRateMapWithLayerCount:");
 _MTL_PRIVATE_DEF_SEL(supportsRaytracing,
-    "supportsRaytracing");
+                     "supportsRaytracing");
 _MTL_PRIVATE_DEF_SEL(supportsRaytracingFromRender,
-    "supportsRaytracingFromRender");
+                     "supportsRaytracingFromRender");
 _MTL_PRIVATE_DEF_SEL(supportsRenderDynamicLibraries,
-    "supportsRenderDynamicLibraries");
+                     "supportsRenderDynamicLibraries");
 _MTL_PRIVATE_DEF_SEL(supportsShaderBarycentricCoordinates,
-    "supportsShaderBarycentricCoordinates");
+                     "supportsShaderBarycentricCoordinates");
 _MTL_PRIVATE_DEF_SEL(supportsTextureSampleCount_,
-    "supportsTextureSampleCount:");
+                     "supportsTextureSampleCount:");
 _MTL_PRIVATE_DEF_SEL(supportsVertexAmplificationCount_,
-    "supportsVertexAmplificationCount:");
+                     "supportsVertexAmplificationCount:");
 _MTL_PRIVATE_DEF_SEL(swizzle,
-    "swizzle");
+                     "swizzle");
 _MTL_PRIVATE_DEF_SEL(synchronizeResource_,
-    "synchronizeResource:");
+                     "synchronizeResource:");
 _MTL_PRIVATE_DEF_SEL(synchronizeTexture_slice_level_,
-    "synchronizeTexture:slice:level:");
+                     "synchronizeTexture:slice:level:");
 _MTL_PRIVATE_DEF_SEL(tAddressMode,
-    "tAddressMode");
+                     "tAddressMode");
 _MTL_PRIVATE_DEF_SEL(tailSizeInBytes,
-    "tailSizeInBytes");
+                     "tailSizeInBytes");
 _MTL_PRIVATE_DEF_SEL(tessellationControlPointIndexType,
-    "tessellationControlPointIndexType");
+                     "tessellationControlPointIndexType");
 _MTL_PRIVATE_DEF_SEL(tessellationFactorFormat,
-    "tessellationFactorFormat");
+                     "tessellationFactorFormat");
 _MTL_PRIVATE_DEF_SEL(tessellationFactorStepFunction,
-    "tessellationFactorStepFunction");
+                     "tessellationFactorStepFunction");
 _MTL_PRIVATE_DEF_SEL(tessellationOutputWindingOrder,
-    "tessellationOutputWindingOrder");
+                     "tessellationOutputWindingOrder");
 _MTL_PRIVATE_DEF_SEL(tessellationPartitionMode,
-    "tessellationPartitionMode");
+                     "tessellationPartitionMode");
 _MTL_PRIVATE_DEF_SEL(texture,
-    "texture");
+                     "texture");
 _MTL_PRIVATE_DEF_SEL(texture2DDescriptorWithPixelFormat_width_height_mipmapped_,
-    "texture2DDescriptorWithPixelFormat:width:height:mipmapped:");
+                     "texture2DDescriptorWithPixelFormat:width:height:mipmapped:");
 _MTL_PRIVATE_DEF_SEL(textureBarrier,
-    "textureBarrier");
+                     "textureBarrier");
 _MTL_PRIVATE_DEF_SEL(textureBufferDescriptorWithPixelFormat_width_resourceOptions_usage_,
-    "textureBufferDescriptorWithPixelFormat:width:resourceOptions:usage:");
+                     "textureBufferDescriptorWithPixelFormat:width:resourceOptions:usage:");
 _MTL_PRIVATE_DEF_SEL(textureCubeDescriptorWithPixelFormat_size_mipmapped_,
-    "textureCubeDescriptorWithPixelFormat:size:mipmapped:");
+                     "textureCubeDescriptorWithPixelFormat:size:mipmapped:");
 _MTL_PRIVATE_DEF_SEL(textureDataType,
-    "textureDataType");
+                     "textureDataType");
 _MTL_PRIVATE_DEF_SEL(textureReferenceType,
-    "textureReferenceType");
+                     "textureReferenceType");
 _MTL_PRIVATE_DEF_SEL(textureType,
-    "textureType");
+                     "textureType");
 _MTL_PRIVATE_DEF_SEL(threadExecutionWidth,
-    "threadExecutionWidth");
+                     "threadExecutionWidth");
 _MTL_PRIVATE_DEF_SEL(threadGroupSizeIsMultipleOfThreadExecutionWidth,
-    "threadGroupSizeIsMultipleOfThreadExecutionWidth");
+                     "threadGroupSizeIsMultipleOfThreadExecutionWidth");
 _MTL_PRIVATE_DEF_SEL(threadgroupMemoryAlignment,
-    "threadgroupMemoryAlignment");
+                     "threadgroupMemoryAlignment");
 _MTL_PRIVATE_DEF_SEL(threadgroupMemoryDataSize,
-    "threadgroupMemoryDataSize");
+                     "threadgroupMemoryDataSize");
 _MTL_PRIVATE_DEF_SEL(threadgroupMemoryLength,
-    "threadgroupMemoryLength");
+                     "threadgroupMemoryLength");
 _MTL_PRIVATE_DEF_SEL(threadgroupSizeMatchesTileSize,
-    "threadgroupSizeMatchesTileSize");
+                     "threadgroupSizeMatchesTileSize");
 _MTL_PRIVATE_DEF_SEL(tileAdditionalBinaryFunctions,
-    "tileAdditionalBinaryFunctions");
+                     "tileAdditionalBinaryFunctions");
 _MTL_PRIVATE_DEF_SEL(tileArguments,
-    "tileArguments");
+                     "tileArguments");
 _MTL_PRIVATE_DEF_SEL(tileBuffers,
-    "tileBuffers");
+                     "tileBuffers");
 _MTL_PRIVATE_DEF_SEL(tileFunction,
-    "tileFunction");
+                     "tileFunction");
 _MTL_PRIVATE_DEF_SEL(tileHeight,
-    "tileHeight");
+                     "tileHeight");
 _MTL_PRIVATE_DEF_SEL(tileWidth,
-    "tileWidth");
+                     "tileWidth");
 _MTL_PRIVATE_DEF_SEL(triangleCount,
-    "triangleCount");
+                     "triangleCount");
 _MTL_PRIVATE_DEF_SEL(type,
-    "type");
+                     "type");
 _MTL_PRIVATE_DEF_SEL(updateFence_,
-    "updateFence:");
+                     "updateFence:");
 _MTL_PRIVATE_DEF_SEL(updateFence_afterStages_,
-    "updateFence:afterStages:");
+                     "updateFence:afterStages:");
 _MTL_PRIVATE_DEF_SEL(updateTextureMapping_mode_indirectBuffer_indirectBufferOffset_,
-    "updateTextureMapping:mode:indirectBuffer:indirectBufferOffset:");
+                     "updateTextureMapping:mode:indirectBuffer:indirectBufferOffset:");
 _MTL_PRIVATE_DEF_SEL(updateTextureMapping_mode_region_mipLevel_slice_,
-    "updateTextureMapping:mode:region:mipLevel:slice:");
+                     "updateTextureMapping:mode:region:mipLevel:slice:");
 _MTL_PRIVATE_DEF_SEL(updateTextureMappings_mode_regions_mipLevels_slices_numRegions_,
-    "updateTextureMappings:mode:regions:mipLevels:slices:numRegions:");
+                     "updateTextureMappings:mode:regions:mipLevels:slices:numRegions:");
 _MTL_PRIVATE_DEF_SEL(url,
-    "url");
+                     "url");
 _MTL_PRIVATE_DEF_SEL(usage,
-    "usage");
+                     "usage");
 _MTL_PRIVATE_DEF_SEL(useHeap_,
-    "useHeap:");
+                     "useHeap:");
 _MTL_PRIVATE_DEF_SEL(useHeap_stages_,
-    "useHeap:stages:");
+                     "useHeap:stages:");
 _MTL_PRIVATE_DEF_SEL(useHeaps_count_,
-    "useHeaps:count:");
+                     "useHeaps:count:");
 _MTL_PRIVATE_DEF_SEL(useHeaps_count_stages_,
-    "useHeaps:count:stages:");
+                     "useHeaps:count:stages:");
 _MTL_PRIVATE_DEF_SEL(useResource_usage_,
-    "useResource:usage:");
+                     "useResource:usage:");
 _MTL_PRIVATE_DEF_SEL(useResource_usage_stages_,
-    "useResource:usage:stages:");
+                     "useResource:usage:stages:");
 _MTL_PRIVATE_DEF_SEL(useResources_count_usage_,
-    "useResources:count:usage:");
+                     "useResources:count:usage:");
 _MTL_PRIVATE_DEF_SEL(useResources_count_usage_stages_,
-    "useResources:count:usage:stages:");
+                     "useResources:count:usage:stages:");
 _MTL_PRIVATE_DEF_SEL(usedSize,
-    "usedSize");
+                     "usedSize");
 _MTL_PRIVATE_DEF_SEL(vertexAdditionalBinaryFunctions,
-    "vertexAdditionalBinaryFunctions");
+                     "vertexAdditionalBinaryFunctions");
 _MTL_PRIVATE_DEF_SEL(vertexArguments,
-    "vertexArguments");
+                     "vertexArguments");
 _MTL_PRIVATE_DEF_SEL(vertexAttributes,
-    "vertexAttributes");
+                     "vertexAttributes");
 _MTL_PRIVATE_DEF_SEL(vertexBuffer,
-    "vertexBuffer");
+                     "vertexBuffer");
 _MTL_PRIVATE_DEF_SEL(vertexBufferOffset,
-    "vertexBufferOffset");
+                     "vertexBufferOffset");
 _MTL_PRIVATE_DEF_SEL(vertexBuffers,
-    "vertexBuffers");
+                     "vertexBuffers");
 _MTL_PRIVATE_DEF_SEL(vertexDescriptor,
-    "vertexDescriptor");
+                     "vertexDescriptor");
 _MTL_PRIVATE_DEF_SEL(vertexFunction,
-    "vertexFunction");
+                     "vertexFunction");
 _MTL_PRIVATE_DEF_SEL(vertexLinkedFunctions,
-    "vertexLinkedFunctions");
+                     "vertexLinkedFunctions");
 _MTL_PRIVATE_DEF_SEL(vertexPreloadedLibraries,
-    "vertexPreloadedLibraries");
+                     "vertexPreloadedLibraries");
 _MTL_PRIVATE_DEF_SEL(vertexStride,
-    "vertexStride");
+                     "vertexStride");
 _MTL_PRIVATE_DEF_SEL(vertical,
-    "vertical");
+                     "vertical");
 _MTL_PRIVATE_DEF_SEL(verticalSampleStorage,
-    "verticalSampleStorage");
+                     "verticalSampleStorage");
 _MTL_PRIVATE_DEF_SEL(visibilityResultBuffer,
-    "visibilityResultBuffer");
+                     "visibilityResultBuffer");
 _MTL_PRIVATE_DEF_SEL(visibleFunctionTableDescriptor,
-    "visibleFunctionTableDescriptor");
+                     "visibleFunctionTableDescriptor");
 _MTL_PRIVATE_DEF_SEL(waitForFence_,
-    "waitForFence:");
+                     "waitForFence:");
 _MTL_PRIVATE_DEF_SEL(waitForFence_beforeStages_,
-    "waitForFence:beforeStages:");
+                     "waitForFence:beforeStages:");
 _MTL_PRIVATE_DEF_SEL(waitUntilCompleted,
-    "waitUntilCompleted");
+                     "waitUntilCompleted");
 _MTL_PRIVATE_DEF_SEL(waitUntilScheduled,
-    "waitUntilScheduled");
+                     "waitUntilScheduled");
 _MTL_PRIVATE_DEF_SEL(width,
-    "width");
+                     "width");
 _MTL_PRIVATE_DEF_SEL(writeCompactedAccelerationStructureSize_toBuffer_offset_,
-    "writeCompactedAccelerationStructureSize:toBuffer:offset:");
+                     "writeCompactedAccelerationStructureSize:toBuffer:offset:");
 _MTL_PRIVATE_DEF_SEL(writeCompactedAccelerationStructureSize_toBuffer_offset_sizeDataType_,
-    "writeCompactedAccelerationStructureSize:toBuffer:offset:sizeDataType:");
+                     "writeCompactedAccelerationStructureSize:toBuffer:offset:sizeDataType:");
 _MTL_PRIVATE_DEF_SEL(writeMask,
-    "writeMask");
+                     "writeMask");
 
 }
