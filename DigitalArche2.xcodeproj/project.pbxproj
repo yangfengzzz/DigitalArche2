@@ -28,7 +28,7 @@
 		043B7AFF278BB54800D5648F /* MTLResourceStatePass.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AAF278BB54600D5648F /* MTLResourceStatePass.hpp */; };
 		043B7B00278BB54800D5648F /* MTLTexture.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB0278BB54600D5648F /* MTLTexture.hpp */; };
 		043B7B01278BB54800D5648F /* NSBundle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB1278BB54600D5648F /* NSBundle.hpp */; };
-		043B7B02278BB54800D5648F /* QuartzCore.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB2278BB54700D5648F /* QuartzCore.hpp */; };
+		043B7B02278BB54800D5648F /* quartz_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB2278BB54700D5648F /* quartz_core.hpp */; };
 		043B7B03278BB54800D5648F /* MTLResource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB3278BB54700D5648F /* MTLResource.hpp */; };
 		043B7B04278BB54800D5648F /* MTLEvent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB4278BB54700D5648F /* MTLEvent.hpp */; };
 		043B7B05278BB54800D5648F /* MTLDynamicLibrary.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AB5278BB54700D5648F /* MTLDynamicLibrary.hpp */; };
@@ -74,7 +74,7 @@
 		043B7B2D278BB54800D5648F /* MTLAccelerationStructureCommandEncoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7ADD278BB54800D5648F /* MTLAccelerationStructureCommandEncoder.hpp */; };
 		043B7B2E278BB54800D5648F /* MTLSampler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7ADE278BB54800D5648F /* MTLSampler.hpp */; };
 		043B7B2F278BB54800D5648F /* MTLTypes.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7ADF278BB54800D5648F /* MTLTypes.hpp */; };
-		043B7B30278BB54800D5648F /* Foundation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE0278BB54800D5648F /* Foundation.hpp */; };
+		043B7B30278BB54800D5648F /* foundation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE0278BB54800D5648F /* foundation.hpp */; };
 		043B7B31278BB54800D5648F /* MTLAccelerationStructure.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE1278BB54800D5648F /* MTLAccelerationStructure.hpp */; };
 		043B7B32278BB54800D5648F /* MTLIntersectionFunctionTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE2278BB54800D5648F /* MTLIntersectionFunctionTable.hpp */; };
 		043B7B33278BB54800D5648F /* MTLRenderPass.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE3278BB54800D5648F /* MTLRenderPass.hpp */; };
@@ -83,12 +83,36 @@
 		043B7B36278BB54800D5648F /* MTLDepthStencil.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE6278BB54800D5648F /* MTLDepthStencil.hpp */; };
 		043B7B37278BB54800D5648F /* NSObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE7278BB54800D5648F /* NSObject.hpp */; };
 		043B7B38278BB54800D5648F /* MTLVisibleFunctionTable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE8278BB54800D5648F /* MTLVisibleFunctionTable.hpp */; };
-		043B7B39278BB54800D5648F /* Metal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE9278BB54800D5648F /* Metal.hpp */; };
+		043B7B39278BB54800D5648F /* metal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AE9278BB54800D5648F /* metal.hpp */; };
 		043B7B3A278BB54800D5648F /* MTLCommandQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AEA278BB54800D5648F /* MTLCommandQueue.hpp */; };
 		043B7B3B278BB54800D5648F /* CAMetalDrawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AEB278BB54800D5648F /* CAMetalDrawable.hpp */; };
 		043B7B3C278BB54800D5648F /* MTLDrawable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 043B7AEC278BB54800D5648F /* MTLDrawable.hpp */; };
 		043B7B3E278BB56200D5648F /* impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043B7B3D278BB56200D5648F /* impl.cpp */; };
+		043B7B46278BB6EC00D5648F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 043B7B45278BB6EC00D5648F /* main.cpp */; };
+		043B7B4D278BB6F700D5648F /* libvox.render.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043B7A8E278BB49400D5648F /* libvox.render.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043B7B4A278BB6F400D5648F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043B7A86278BB49400D5648F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043B7A8D278BB49400D5648F;
+			remoteInfo = vox.render;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		043B7B41278BB6EC00D5648F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		043B7A8E278BB49400D5648F /* libvox.render.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libvox.render.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +137,7 @@
 		043B7AAF278BB54600D5648F /* MTLResourceStatePass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLResourceStatePass.hpp; sourceTree = "<group>"; };
 		043B7AB0278BB54600D5648F /* MTLTexture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLTexture.hpp; sourceTree = "<group>"; };
 		043B7AB1278BB54600D5648F /* NSBundle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NSBundle.hpp; sourceTree = "<group>"; };
-		043B7AB2278BB54700D5648F /* QuartzCore.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuartzCore.hpp; sourceTree = "<group>"; };
+		043B7AB2278BB54700D5648F /* quartz_core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = quartz_core.hpp; sourceTree = "<group>"; };
 		043B7AB3278BB54700D5648F /* MTLResource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLResource.hpp; sourceTree = "<group>"; };
 		043B7AB4278BB54700D5648F /* MTLEvent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLEvent.hpp; sourceTree = "<group>"; };
 		043B7AB5278BB54700D5648F /* MTLDynamicLibrary.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLDynamicLibrary.hpp; sourceTree = "<group>"; };
@@ -159,7 +183,7 @@
 		043B7ADD278BB54800D5648F /* MTLAccelerationStructureCommandEncoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLAccelerationStructureCommandEncoder.hpp; sourceTree = "<group>"; };
 		043B7ADE278BB54800D5648F /* MTLSampler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLSampler.hpp; sourceTree = "<group>"; };
 		043B7ADF278BB54800D5648F /* MTLTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLTypes.hpp; sourceTree = "<group>"; };
-		043B7AE0278BB54800D5648F /* Foundation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Foundation.hpp; sourceTree = "<group>"; };
+		043B7AE0278BB54800D5648F /* foundation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = foundation.hpp; sourceTree = "<group>"; };
 		043B7AE1278BB54800D5648F /* MTLAccelerationStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLAccelerationStructure.hpp; sourceTree = "<group>"; };
 		043B7AE2278BB54800D5648F /* MTLIntersectionFunctionTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLIntersectionFunctionTable.hpp; sourceTree = "<group>"; };
 		043B7AE3278BB54800D5648F /* MTLRenderPass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLRenderPass.hpp; sourceTree = "<group>"; };
@@ -168,11 +192,13 @@
 		043B7AE6278BB54800D5648F /* MTLDepthStencil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLDepthStencil.hpp; sourceTree = "<group>"; };
 		043B7AE7278BB54800D5648F /* NSObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NSObject.hpp; sourceTree = "<group>"; };
 		043B7AE8278BB54800D5648F /* MTLVisibleFunctionTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLVisibleFunctionTable.hpp; sourceTree = "<group>"; };
-		043B7AE9278BB54800D5648F /* Metal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Metal.hpp; sourceTree = "<group>"; };
+		043B7AE9278BB54800D5648F /* metal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = metal.hpp; sourceTree = "<group>"; };
 		043B7AEA278BB54800D5648F /* MTLCommandQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLCommandQueue.hpp; sourceTree = "<group>"; };
 		043B7AEB278BB54800D5648F /* CAMetalDrawable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CAMetalDrawable.hpp; sourceTree = "<group>"; };
 		043B7AEC278BB54800D5648F /* MTLDrawable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLDrawable.hpp; sourceTree = "<group>"; };
 		043B7B3D278BB56200D5648F /* impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = impl.cpp; sourceTree = "<group>"; };
+		043B7B43278BB6EC00D5648F /* apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apps; sourceTree = BUILT_PRODUCTS_DIR; };
+		043B7B45278BB6EC00D5648F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +209,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		043B7B40278BB6EC00D5648F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043B7B4D278BB6F700D5648F /* libvox.render.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -190,7 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				043B7A90278BB49400D5648F /* vox.render */,
+				043B7B44278BB6EC00D5648F /* apps */,
 				043B7A8F278BB49400D5648F /* Products */,
+				043B7B4C278BB6F700D5648F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				043B7A8E278BB49400D5648F /* libvox.render.a */,
+				043B7B43278BB6EC00D5648F /* apps */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,11 +250,72 @@
 		043B7A9C278BB4CD00D5648F /* core */ = {
 			isa = PBXGroup;
 			children = (
+				043B7AE0278BB54800D5648F /* foundation.hpp */,
+				043B7B4E278BBAC500D5648F /* foundation */,
+				043B7AB2278BB54700D5648F /* quartz_core.hpp */,
+				043B7B4F278BBADD00D5648F /* quartz_core */,
+				043B7AE9278BB54800D5648F /* metal.hpp */,
+				043B7B50278BBAF100D5648F /* metal */,
+				043B7B3D278BB56200D5648F /* impl.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		043B7B44278BB6EC00D5648F /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				043B7B45278BB6EC00D5648F /* main.cpp */,
+			);
+			path = apps;
+			sourceTree = "<group>";
+		};
+		043B7B4C278BB6F700D5648F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		043B7B4E278BBAC500D5648F /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				043B7AC3278BB54700D5648F /* NSArray.hpp */,
+				043B7AD7278BB54700D5648F /* NSAutoreleasePool.hpp */,
+				043B7AB1278BB54600D5648F /* NSBundle.hpp */,
+				043B7AC4278BB54700D5648F /* NSData.hpp */,
+				043B7AC0278BB54700D5648F /* NSDate.hpp */,
+				043B7AD8278BB54700D5648F /* NSDefines.hpp */,
+				043B7ACB278BB54700D5648F /* NSDictionary.hpp */,
+				043B7AB6278BB54700D5648F /* NSEnumerator.hpp */,
+				043B7AD0278BB54700D5648F /* NSError.hpp */,
+				043B7AC9278BB54700D5648F /* NSLock.hpp */,
+				043B7AE5278BB54800D5648F /* NSNotification.hpp */,
+				043B7AD9278BB54700D5648F /* NSNumber.hpp */,
+				043B7AA6278BB54600D5648F /* NSObjCRuntime.hpp */,
+				043B7AE7278BB54800D5648F /* NSObject.hpp */,
+				043B7AA1278BB54600D5648F /* NSPrivate.hpp */,
+				043B7AC1278BB54700D5648F /* NSProcessInfo.hpp */,
+				043B7AD1278BB54700D5648F /* NSRange.hpp */,
+				043B7AA4278BB54600D5648F /* NSString.hpp */,
+				043B7AA3278BB54600D5648F /* NSTypes.hpp */,
+				043B7AD2278BB54700D5648F /* NSURL.hpp */,
+			);
+			name = foundation;
+			sourceTree = "<group>";
+		};
+		043B7B4F278BBADD00D5648F /* quartz_core */ = {
+			isa = PBXGroup;
+			children = (
+				043B7A9D278BB54600D5648F /* CAPrivate.hpp */,
 				043B7AA8278BB54600D5648F /* CADefines.hpp */,
 				043B7AEB278BB54800D5648F /* CAMetalDrawable.hpp */,
-				043B7A9D278BB54600D5648F /* CAPrivate.hpp */,
-				043B7AE0278BB54800D5648F /* Foundation.hpp */,
-				043B7AE9278BB54800D5648F /* Metal.hpp */,
+			);
+			name = quartz_core;
+			sourceTree = "<group>";
+		};
+		043B7B50278BBAF100D5648F /* metal */ = {
+			isa = PBXGroup;
+			children = (
 				043B7AE1278BB54800D5648F /* MTLAccelerationStructure.hpp */,
 				043B7ADD278BB54800D5648F /* MTLAccelerationStructureCommandEncoder.hpp */,
 				043B7AD4278BB54700D5648F /* MTLAccelerationStructureTypes.hpp */,
@@ -272,30 +370,8 @@
 				043B7ADF278BB54800D5648F /* MTLTypes.hpp */,
 				043B7AC5278BB54700D5648F /* MTLVertexDescriptor.hpp */,
 				043B7AE8278BB54800D5648F /* MTLVisibleFunctionTable.hpp */,
-				043B7AC3278BB54700D5648F /* NSArray.hpp */,
-				043B7AD7278BB54700D5648F /* NSAutoreleasePool.hpp */,
-				043B7AB1278BB54600D5648F /* NSBundle.hpp */,
-				043B7AC4278BB54700D5648F /* NSData.hpp */,
-				043B7AC0278BB54700D5648F /* NSDate.hpp */,
-				043B7AD8278BB54700D5648F /* NSDefines.hpp */,
-				043B7ACB278BB54700D5648F /* NSDictionary.hpp */,
-				043B7AB6278BB54700D5648F /* NSEnumerator.hpp */,
-				043B7AD0278BB54700D5648F /* NSError.hpp */,
-				043B7AC9278BB54700D5648F /* NSLock.hpp */,
-				043B7AE5278BB54800D5648F /* NSNotification.hpp */,
-				043B7AD9278BB54700D5648F /* NSNumber.hpp */,
-				043B7AA6278BB54600D5648F /* NSObjCRuntime.hpp */,
-				043B7AE7278BB54800D5648F /* NSObject.hpp */,
-				043B7AA1278BB54600D5648F /* NSPrivate.hpp */,
-				043B7AC1278BB54700D5648F /* NSProcessInfo.hpp */,
-				043B7AD1278BB54700D5648F /* NSRange.hpp */,
-				043B7AA4278BB54600D5648F /* NSString.hpp */,
-				043B7AA3278BB54600D5648F /* NSTypes.hpp */,
-				043B7AD2278BB54700D5648F /* NSURL.hpp */,
-				043B7AB2278BB54700D5648F /* QuartzCore.hpp */,
-				043B7B3D278BB56200D5648F /* impl.cpp */,
 			);
-			path = core;
+			name = metal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,13 +387,13 @@
 				043B7AF1278BB54800D5648F /* NSPrivate.hpp in Headers */,
 				043B7B3C278BB54800D5648F /* MTLDrawable.hpp in Headers */,
 				043B7B2A278BB54800D5648F /* MTLFunctionDescriptor.hpp in Headers */,
-				043B7B39278BB54800D5648F /* Metal.hpp in Headers */,
+				043B7B39278BB54800D5648F /* metal.hpp in Headers */,
 				043B7B10278BB54800D5648F /* NSDate.hpp in Headers */,
 				043B7B21278BB54800D5648F /* NSRange.hpp in Headers */,
 				043B7B37278BB54800D5648F /* NSObject.hpp in Headers */,
 				043B7B22278BB54800D5648F /* NSURL.hpp in Headers */,
 				043B7B1A278BB54800D5648F /* MTLHeap.hpp in Headers */,
-				043B7B02278BB54800D5648F /* QuartzCore.hpp in Headers */,
+				043B7B02278BB54800D5648F /* quartz_core.hpp in Headers */,
 				043B7B1E278BB54800D5648F /* MTLPixelFormat.hpp in Headers */,
 				043B7AFC278BB54800D5648F /* MTLParallelRenderCommandEncoder.hpp in Headers */,
 				043B7B09278BB54800D5648F /* MTLCommandEncoder.hpp in Headers */,
@@ -384,7 +460,7 @@
 				043B7B0E278BB54800D5648F /* MTLRenderPipeline.hpp in Headers */,
 				043B7AEE278BB54800D5648F /* MTLCaptureManager.hpp in Headers */,
 				043B7B27278BB54800D5648F /* NSAutoreleasePool.hpp in Headers */,
-				043B7B30278BB54800D5648F /* Foundation.hpp in Headers */,
+				043B7B30278BB54800D5648F /* foundation.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +484,24 @@
 			productReference = 043B7A8E278BB49400D5648F /* libvox.render.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		043B7B42278BB6EC00D5648F /* apps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043B7B47278BB6EC00D5648F /* Build configuration list for PBXNativeTarget "apps" */;
+			buildPhases = (
+				043B7B3F278BB6EC00D5648F /* Sources */,
+				043B7B40278BB6EC00D5648F /* Frameworks */,
+				043B7B41278BB6EC00D5648F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043B7B4B278BB6F400D5648F /* PBXTargetDependency */,
+			);
+			name = apps;
+			productName = apps;
+			productReference = 043B7B43278BB6EC00D5648F /* apps */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,6 +512,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					043B7A8D278BB49400D5648F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					043B7B42278BB6EC00D5648F = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -436,6 +533,7 @@
 			projectRoot = "";
 			targets = (
 				043B7A8D278BB49400D5648F /* vox.render */,
+				043B7B42278BB6EC00D5648F /* apps */,
 			);
 		};
 /* End PBXProject section */
@@ -449,7 +547,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		043B7B3F278BB6EC00D5648F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043B7B46278BB6EC00D5648F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043B7B4B278BB6F400D5648F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043B7A8D278BB49400D5648F /* vox.render */;
+			targetProxy = 043B7B4A278BB6F400D5648F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		043B7A97278BB49400D5648F /* Debug */ = {
@@ -591,6 +705,26 @@
 			};
 			name = Release;
 		};
+		043B7B48278BB6EC00D5648F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		043B7B49278BB6EC00D5648F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SL5L673UU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,6 +742,15 @@
 			buildConfigurations = (
 				043B7A9A278BB49400D5648F /* Debug */,
 				043B7A9B278BB49400D5648F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043B7B47278BB6EC00D5648F /* Build configuration list for PBXNativeTarget "apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043B7B48278BB6EC00D5648F /* Debug */,
+				043B7B49278BB6EC00D5648F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

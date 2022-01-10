@@ -24,7 +24,7 @@
 #include "MTLHeaderBridge.hpp"
 #include "MTLPrivate.hpp"
 
-#include "core/Foundation.hpp"
+#include "core/foundation.hpp"
 
 #include "MTLPipeline.hpp"
 
