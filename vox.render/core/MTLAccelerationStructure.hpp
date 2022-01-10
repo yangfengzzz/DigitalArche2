@@ -58,6 +58,7 @@ public:
     void setUsage(MTL::AccelerationStructureUsage usage);
 };
 
+//MARK: - AccelerationStructureGeometryDescriptor
 class AccelerationStructureGeometryDescriptor : public NS::Copying<AccelerationStructureGeometryDescriptor> {
 public:
     static class AccelerationStructureGeometryDescriptor *alloc();
@@ -86,6 +87,7 @@ _MTL_ENUM(uint32_t, MotionBorderMode) {
     MotionBorderModeVanish = 1,
 };
 
+//MARK: - PrimitiveAccelerationStructureDescriptor
 class PrimitiveAccelerationStructureDescriptor
 : public NS::Copying<PrimitiveAccelerationStructureDescriptor, MTL::AccelerationStructureDescriptor> {
 public:
@@ -120,6 +122,7 @@ public:
     static MTL::PrimitiveAccelerationStructureDescriptor *descriptor();
 };
 
+//MARK: - AccelerationStructureTriangleGeometryDescriptor
 class AccelerationStructureTriangleGeometryDescriptor
 : public NS::Copying<AccelerationStructureTriangleGeometryDescriptor, MTL::AccelerationStructureGeometryDescriptor> {
 public:
@@ -158,6 +161,7 @@ public:
     static MTL::AccelerationStructureTriangleGeometryDescriptor *descriptor();
 };
 
+//MARK: - AccelerationStructureBoundingBoxGeometryDescriptor
 class AccelerationStructureBoundingBoxGeometryDescriptor
 : public NS::Copying<AccelerationStructureBoundingBoxGeometryDescriptor, MTL::AccelerationStructureGeometryDescriptor> {
 public:
@@ -184,6 +188,7 @@ public:
     static MTL::AccelerationStructureBoundingBoxGeometryDescriptor *descriptor();
 };
 
+//MARK: - MotionKeyframeData
 class MotionKeyframeData : public NS::Referencing<MotionKeyframeData> {
 public:
     static class MotionKeyframeData *alloc();
@@ -201,6 +206,7 @@ public:
     static MTL::MotionKeyframeData *data();
 };
 
+//MARK: - AccelerationStructureMotionTriangleGeometryDescriptor
 class AccelerationStructureMotionTriangleGeometryDescriptor
 : public NS::Copying<AccelerationStructureMotionTriangleGeometryDescriptor, MTL::AccelerationStructureGeometryDescriptor> {
 public:
@@ -235,6 +241,7 @@ public:
     static MTL::AccelerationStructureMotionTriangleGeometryDescriptor *descriptor();
 };
 
+//MARK: - AccelerationStructureMotionBoundingBoxGeometryDescriptor
 class AccelerationStructureMotionBoundingBoxGeometryDescriptor
 : public NS::Copying<AccelerationStructureMotionBoundingBoxGeometryDescriptor, MTL::AccelerationStructureGeometryDescriptor> {
 public:
@@ -257,6 +264,7 @@ public:
     static MTL::AccelerationStructureMotionBoundingBoxGeometryDescriptor *descriptor();
 };
 
+//MARK: - AccelerationStructureInstanceDescriptor
 struct AccelerationStructureInstanceDescriptor {
     MTL::PackedFloat4x3 transformationMatrix;
     MTL::AccelerationStructureInstanceOptions options;
@@ -265,6 +273,7 @@ struct AccelerationStructureInstanceDescriptor {
     uint32_t accelerationStructureIndex;
 } _MTL_PACKED;
 
+//MARK: - AccelerationStructureUserIDInstanceDescriptor
 struct AccelerationStructureUserIDInstanceDescriptor {
     MTL::PackedFloat4x3 transformationMatrix;
     MTL::AccelerationStructureInstanceOptions options;
@@ -280,6 +289,7 @@ _MTL_ENUM(NS::UInteger, AccelerationStructureInstanceDescriptorType) {
     AccelerationStructureInstanceDescriptorTypeMotion = 2,
 };
 
+//MARK: - AccelerationStructureMotionInstanceDescriptor
 struct AccelerationStructureMotionInstanceDescriptor {
     MTL::AccelerationStructureInstanceOptions options;
     uint32_t mask;
@@ -294,6 +304,7 @@ struct AccelerationStructureMotionInstanceDescriptor {
     float motionEndTime;
 } _MTL_PACKED;
 
+//MARK: - InstanceAccelerationStructureDescriptor
 class InstanceAccelerationStructureDescriptor
 : public NS::Copying<InstanceAccelerationStructureDescriptor, MTL::AccelerationStructureDescriptor> {
 public:
@@ -340,6 +351,7 @@ public:
     static MTL::InstanceAccelerationStructureDescriptor *descriptor();
 };
 
+//MARK: - AccelerationStructure
 class AccelerationStructure : public NS::Referencing<AccelerationStructure, Resource> {
 public:
     NS::UInteger size() const;
@@ -347,6 +359,7 @@ public:
 
 }
 
+//MARK: - Impl
 // static method: alloc
 _MTL_INLINE MTL::AccelerationStructureDescriptor *MTL::AccelerationStructureDescriptor::alloc() {
     return NS::Object::alloc<MTL::AccelerationStructureDescriptor>(_MTL_PRIVATE_CLS(MTLAccelerationStructureDescriptor));
@@ -478,7 +491,8 @@ _MTL_INLINE void MTL::PrimitiveAccelerationStructureDescriptor::setMotionKeyfram
 
 // static method: descriptor
 _MTL_INLINE MTL::PrimitiveAccelerationStructureDescriptor *MTL::PrimitiveAccelerationStructureDescriptor::descriptor() {
-    return Object::sendMessage<MTL::PrimitiveAccelerationStructureDescriptor *>(_MTL_PRIVATE_CLS(MTLPrimitiveAccelerationStructureDescriptor), _MTL_PRIVATE_SEL(descriptor));
+    return Object::sendMessage<MTL::PrimitiveAccelerationStructureDescriptor *>(_MTL_PRIVATE_CLS(MTLPrimitiveAccelerationStructureDescriptor),
+                                                                                _MTL_PRIVATE_SEL(descriptor));
 }
 
 // static method: alloc
@@ -556,7 +570,8 @@ _MTL_INLINE void MTL::AccelerationStructureTriangleGeometryDescriptor::setTriang
 
 // static method: descriptor
 _MTL_INLINE MTL::AccelerationStructureTriangleGeometryDescriptor *MTL::AccelerationStructureTriangleGeometryDescriptor::descriptor() {
-    return Object::sendMessage<MTL::AccelerationStructureTriangleGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureTriangleGeometryDescriptor), _MTL_PRIVATE_SEL(descriptor));
+    return Object::sendMessage<MTL::AccelerationStructureTriangleGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureTriangleGeometryDescriptor),
+                                                                                       _MTL_PRIVATE_SEL(descriptor));
 }
 
 // static method: alloc
@@ -607,7 +622,8 @@ _MTL_INLINE void MTL::AccelerationStructureBoundingBoxGeometryDescriptor::setBou
 
 // static method: descriptor
 _MTL_INLINE MTL::AccelerationStructureBoundingBoxGeometryDescriptor *MTL::AccelerationStructureBoundingBoxGeometryDescriptor::descriptor() {
-    return Object::sendMessage<MTL::AccelerationStructureBoundingBoxGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureBoundingBoxGeometryDescriptor), _MTL_PRIVATE_SEL(descriptor));
+    return Object::sendMessage<MTL::AccelerationStructureBoundingBoxGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureBoundingBoxGeometryDescriptor),
+                                                                                          _MTL_PRIVATE_SEL(descriptor));
 }
 
 // static method: alloc
@@ -709,7 +725,8 @@ _MTL_INLINE void MTL::AccelerationStructureMotionTriangleGeometryDescriptor::set
 
 // static method: descriptor
 _MTL_INLINE MTL::AccelerationStructureMotionTriangleGeometryDescriptor *MTL::AccelerationStructureMotionTriangleGeometryDescriptor::descriptor() {
-    return Object::sendMessage<MTL::AccelerationStructureMotionTriangleGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureMotionTriangleGeometryDescriptor), _MTL_PRIVATE_SEL(descriptor));
+    return Object::sendMessage<MTL::AccelerationStructureMotionTriangleGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureMotionTriangleGeometryDescriptor),
+                                                                                             _MTL_PRIVATE_SEL(descriptor));
 }
 
 // static method: alloc
@@ -751,7 +768,8 @@ _MTL_INLINE void MTL::AccelerationStructureMotionBoundingBoxGeometryDescriptor::
 
 // static method: descriptor
 _MTL_INLINE MTL::AccelerationStructureMotionBoundingBoxGeometryDescriptor *MTL::AccelerationStructureMotionBoundingBoxGeometryDescriptor::descriptor() {
-    return Object::sendMessage<MTL::AccelerationStructureMotionBoundingBoxGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor), _MTL_PRIVATE_SEL(descriptor));
+    return Object::sendMessage<MTL::AccelerationStructureMotionBoundingBoxGeometryDescriptor *>(_MTL_PRIVATE_CLS(MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor),
+                                                                                                _MTL_PRIVATE_SEL(descriptor));
 }
 
 // static method: alloc
@@ -847,7 +865,8 @@ _MTL_INLINE void MTL::InstanceAccelerationStructureDescriptor::setMotionTransfor
 
 // static method: descriptor
 _MTL_INLINE MTL::InstanceAccelerationStructureDescriptor *MTL::InstanceAccelerationStructureDescriptor::descriptor() {
-    return Object::sendMessage<MTL::InstanceAccelerationStructureDescriptor *>(_MTL_PRIVATE_CLS(MTLInstanceAccelerationStructureDescriptor), _MTL_PRIVATE_SEL(descriptor));
+    return Object::sendMessage<MTL::InstanceAccelerationStructureDescriptor *>(_MTL_PRIVATE_CLS(MTLInstanceAccelerationStructureDescriptor),
+                                                                               _MTL_PRIVATE_SEL(descriptor));
 }
 
 // property: size

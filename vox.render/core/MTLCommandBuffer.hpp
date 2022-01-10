@@ -66,6 +66,7 @@ _MTL_ENUM(NS::Integer, CommandEncoderErrorState) {
     CommandEncoderErrorStateFaulted = 4,
 };
 
+//MARK: - CommandBufferDescriptor
 class CommandBufferDescriptor : public NS::Copying<CommandBufferDescriptor> {
 public:
     static class CommandBufferDescriptor *alloc();
@@ -95,6 +96,7 @@ _MTL_ENUM(NS::UInteger, DispatchType) {
     DispatchTypeConcurrent = 1,
 };
 
+//MARK: - CommandBuffer
 class CommandBuffer;
 
 using CommandBufferHandler = void (^)(CommandBuffer *);
@@ -182,6 +184,7 @@ public:
 
 }
 
+//MARK: - Impl
 // static method: alloc
 _MTL_INLINE MTL::CommandBufferDescriptor *MTL::CommandBufferDescriptor::alloc() {
     return NS::Object::alloc<MTL::CommandBufferDescriptor>(_MTL_PRIVATE_CLS(MTLCommandBufferDescriptor));
@@ -316,12 +319,15 @@ _MTL_INLINE void MTL::CommandBuffer::presentDrawable(const MTL::Drawable *drawab
 }
 
 // method: presentDrawable:atTime:
-_MTL_INLINE void MTL::CommandBuffer::presentDrawableAtTime(const MTL::Drawable *drawable, CFTimeInterval presentationTime) {
-    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(presentDrawable_atTime_), drawable, presentationTime);
+_MTL_INLINE void MTL::CommandBuffer::presentDrawableAtTime(const MTL::Drawable *drawable,
+                                                           CFTimeInterval presentationTime) {
+    Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(presentDrawable_atTime_),
+                              drawable, presentationTime);
 }
 
 // method: presentDrawable:afterMinimumDuration:
-_MTL_INLINE void MTL::CommandBuffer::presentDrawableAfterMinimumDuration(const MTL::Drawable *drawable, CFTimeInterval duration) {
+_MTL_INLINE void MTL::CommandBuffer::presentDrawableAfterMinimumDuration(const MTL::Drawable *drawable,
+                                                                         CFTimeInterval duration) {
     Object::sendMessage<void>(this, _MTL_PRIVATE_SEL(presentDrawable_afterMinimumDuration_), drawable, duration);
 }
 
